@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 import "../../app/globals.css";
@@ -71,8 +72,10 @@ export default async function RootLayout({
         <link rel="icon" href="/logo/icon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo/apple-touch-icon.png" />
         <link rel="manifest" href="/logo/manifest.json" />
-        <script
+        <Script
+          id="organization-jsonld"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
