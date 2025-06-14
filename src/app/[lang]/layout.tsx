@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 import "../../app/globals.css";
-import Providers from "./Providers";
+// import Providers from "./Providers";
 import { generateMetadata } from "../generateMetadata";
 
 const roboto = Roboto({
@@ -80,7 +80,9 @@ export default async function RootLayout({
       <body
         className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-[14px] antialiased`}
       >
-        <Providers>{children}</Providers>
+        {/* <Providers></Providers> */}
+
+        {children}
       </body>
     </html>
   );
