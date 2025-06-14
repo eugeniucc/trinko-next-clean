@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
-import "./globals.css";
+import "../../app/globals.css";
 import Providers from "./Providers";
 import { generateMetadata } from "../generateMetadata";
 
