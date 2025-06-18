@@ -2,8 +2,8 @@ import Script from "next/script";
 import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 import "../../app/globals.css";
-import { generateMetadata } from "../generateMetadata";
 import Providers from "./Providers";
+import { Locale } from "@/app/[lang]/i18n.config";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -48,11 +48,9 @@ const jsonLd = {
   },
 };
 
-export { generateMetadata };
-
 type LayoutProps = {
   children: ReactNode;
-  params: Promise<{ lang: "ru" | "en" }>;
+  params: { lang: Locale };
 };
 
 export default async function RootLayout({ children, params }: LayoutProps) {

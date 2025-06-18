@@ -1,19 +1,13 @@
 import { Metadata } from "next";
-import ru from "../../public/locales/ru/common.json";
-import en from "../../public/locales/en/common.json";
-
-const translations = {
-  ru,
-  en,
-};
+import { Locale } from "@/app/[lang]/i18n.config";
+import { getDictionary } from "@/lib/getDictionary";
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: "ru" | "en" }>;
+  params: { lang: Locale };
 }): Promise<Metadata> {
-  const { lang } = await params;
-  const t = translations[lang] || translations.en;
+  const t = await getDictionary(params.lang);
 
   return {
     title: t.title,
@@ -27,7 +21,7 @@ export async function generateMetadata({
       url: t.openGraphUrl,
       type: "website",
       siteName: "TrinkoTattoo",
-      locale: lang,
+      locale: params.lang,
     },
     twitter: {
       card: "summary_large_image",
