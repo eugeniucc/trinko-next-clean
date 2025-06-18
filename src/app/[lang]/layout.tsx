@@ -50,7 +50,7 @@ const jsonLd = {
 
 type LayoutProps = {
   children: ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 };
 
 export default async function RootLayout({ children, params }: LayoutProps) {
