@@ -1,9 +1,10 @@
 import Script from "next/script";
 import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
-import "../../app/globals.css";
+import "./globals.css";
 import Providers from "./Providers";
 import { Locale } from "@/app/[lang]/i18n.config";
+export { generateMetadata } from "./generateMetadata";
 
 const roboto = Roboto({
   variable: "--font-roboto",

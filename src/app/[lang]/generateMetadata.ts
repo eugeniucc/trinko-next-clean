@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import { Locale } from "@/app/[lang]/i18n.config";
 import { getDictionary } from "@/lib/getDictionary";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: Locale };
+export async function generateMetadata(props: {
+  params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
-  const t = await getDictionary(params.lang);
+  const params = await props.params;
+  const lang = params.lang;
+  const t = await getDictionary(lang);
 
   return {
     title: t.title,
@@ -21,7 +21,7 @@ export async function generateMetadata({
       url: t.openGraphUrl,
       type: "website",
       siteName: "TrinkoTattoo",
-      locale: params.lang,
+      locale: lang,
     },
     twitter: {
       card: "summary_large_image",
