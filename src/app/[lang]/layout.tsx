@@ -50,13 +50,12 @@ const jsonLd = {
 
 export { generateMetadata };
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
+type LayoutProps = {
   children: ReactNode;
   params: Promise<{ lang: "ru" | "en" }>;
-}) {
+};
+
+export default async function RootLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
 
   return (
