@@ -7,11 +7,11 @@ const translations = {
   en,
 };
 
-type generateMetadataProps = {
+export async function generateMetadata({
+  params,
+}: {
   params: Promise<{ lang: "ru" | "en" }>;
-};
-
-export async function generateMetadata({ params }: generateMetadataProps) {
+}): Promise<Metadata> {
   const { lang } = await params;
   const t = translations[lang] || translations.en;
 
