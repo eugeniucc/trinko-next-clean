@@ -2,9 +2,12 @@ import { getDictionary } from "@/lib/getDictionary";
 import { Locale } from "@/app/[lang]/i18n.config";
 import { HeroSliderClient } from "./ui/hero-slider/HeroSliderClient";
 
-export default async function Home({ params }: { params: { lang: Locale } }) {
-  const { lang } = await Promise.resolve(params);
-
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const { lang } = await params;
   const t = await getDictionary(lang);
   const slider = t.homePage.heroSlider;
 
