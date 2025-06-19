@@ -81,7 +81,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
       <body
         className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-[14px] antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers lang={lang}>{children}</Providers>
       </body>
     </html>
   );
