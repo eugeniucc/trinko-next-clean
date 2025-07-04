@@ -1,32 +1,30 @@
 import { Metadata } from "next";
-import { Locale } from "@/app/[lang]/i18n.config";
-import { getDictionary } from "@/lib/getDictionary";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata(props: {
-  params: Promise<{ lang: Locale }>;
+  params: { lang: string };
 }): Promise<Metadata> {
-  const params = await props.params;
-  const lang = params.lang;
-  const t = await getDictionary(lang);
+  const { lang } = await props.params;
+  const t = await getTranslations({ locale: lang, namespace: "seo" });
 
   return {
-    title: t.title,
-    description: t.description,
-    keywords: t.keywords,
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
     robots: "index, follow",
     openGraph: {
-      title: t.openGraphTitle,
-      description: t.openGraphDescription,
+      title: t("openGraphTitle"),
+      description: t("openGraphDescription"),
       images: ["https://trinko-next.vercel.app/logo/icon.png"],
-      url: t.openGraphUrl,
+      url: t("openGraphUrl"),
       type: "website",
       siteName: "TrinkoTattoo",
       locale: lang,
     },
     twitter: {
       card: "summary_large_image",
-      title: t.twitterTitle,
-      description: t.twitterDescription,
+      title: t("twitterTitle"),
+      description: t("twitterDescription"),
       images: ["https://trinko-next.vercel.app/logo/icon.png"],
     },
   };
