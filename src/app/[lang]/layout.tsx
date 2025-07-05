@@ -3,7 +3,9 @@ import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
-import { Messages, NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 export { generateMetadata } from "./generateMetadata";
 
 const roboto = Roboto({
@@ -56,7 +58,9 @@ type LayoutProps = {
 
 export default async function RootLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
-  const messages: Messages = (await import(`@/messages/${lang}.json`)).default;
+  if (!hasLocale(routing.locales, lang)) {
+    notFound();
+  }
 
   return (
     <html lang={lang}>
@@ -82,10 +86,8 @@ export default async function RootLayout({ children, params }: LayoutProps) {
       <body
         className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-[14px] antialiased`}
       >
-        <NextIntlClientProvider locale={lang} messages={messages}>
-          <Providers messages={messages} locale={lang}>
-            {children}
-          </Providers>
+        <NextIntlClientProvider>
+          <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>
     </html>
