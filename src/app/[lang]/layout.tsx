@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 export { generateMetadata } from "./generateMetadata";
@@ -53,7 +53,7 @@ const jsonLd = {
 
 type LayoutProps = {
   children: ReactNode;
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: Locale }>;
 };
 
 export default async function RootLayout({ children, params }: LayoutProps) {
@@ -84,7 +84,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         />
       </head>
       <body
-        className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-[14px] antialiased`}
+        className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-sm antialiased`}
       >
         <NextIntlClientProvider>
           <Providers>{children}</Providers>

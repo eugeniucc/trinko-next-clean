@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const PUBLIC_FILE = /\.(.*)$/;
-const SUPPORTED_LOCALES = ["en", "ru"];
+const SUPPORTED_LOCALES = ["en", "ru", "de", "fr"];
 const DEFAULT_LOCALE = "ru";
 
 export function middleware(request: NextRequest) {

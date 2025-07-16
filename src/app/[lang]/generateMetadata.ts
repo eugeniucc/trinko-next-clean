@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
@@ -6,9 +5,12 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ lang: Locale }>;
-}): Promise<Metadata> {
+}) {
   const { lang } = await params;
   const t = await getTranslations({ locale: lang, namespace: "seo" });
+
+  const baseUrl = "https://trinkotattoo.ink";
+  const fullUrl = `${baseUrl}/${lang}/`;
 
   return {
     title: t("title"),
@@ -19,7 +21,7 @@ export async function generateMetadata({
       title: t("openGraphTitle"),
       description: t("openGraphDescription"),
       images: ["https://trinko-next.vercel.app/logo/icon.png"],
-      url: t("openGraphUrl"),
+      url: fullUrl,
       type: "website",
       siteName: "TrinkoTattoo",
       locale: lang,

@@ -12,7 +12,7 @@ export const MainNav = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Item sss</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Item xxx</NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>Link</NavigationMenuLink>
           </NavigationMenuContent>
