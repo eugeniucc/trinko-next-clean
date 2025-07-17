@@ -10,9 +10,10 @@ export function middleware(request: NextRequest) {
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname.startsWith("/favicon.ico") ||
     PUBLIC_FILE.test(pathname)
   ) {
-    return;
+    return NextResponse.next();
   }
 
   const pathnameIsMissingLocale = SUPPORTED_LOCALES.every(
@@ -35,5 +36,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|favicon.ico).*)"],
+  matcher: ["/((?!_next|api|favicon.ico|.*\\..*).*)"],
 };

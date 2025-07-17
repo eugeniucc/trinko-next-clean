@@ -1,9 +1,13 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
-export const LazySection = () => {
+type Props = {
+  children: ReactNode;
+};
+
+export const LazySection = ({ children }: Props) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -17,5 +21,5 @@ export const LazySection = () => {
     }
   }, [inView]);
 
-  return <div ref={ref}>{isVisible && <div>Lazy Section</div>}</div>;
+  return <div ref={ref}>{isVisible && children}</div>;
 };
