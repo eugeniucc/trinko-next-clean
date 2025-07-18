@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
+import { DOMAIN_URL } from "@/features/constants/constants.contants";
 
 export async function generateMetadata({
   params,
@@ -9,8 +10,7 @@ export async function generateMetadata({
   const { lang } = await params;
   const t = await getTranslations({ locale: lang, namespace: "seo" });
 
-  const baseUrl = "https://trinkotattoo.ink";
-  const fullUrl = `${baseUrl}/${lang}/`;
+  const fullUrl = `${DOMAIN_URL}/${lang}/`;
 
   return {
     title: t("title"),

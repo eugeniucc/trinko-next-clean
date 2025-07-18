@@ -40,7 +40,7 @@ export const LangSwitcher = () => {
 
   return (
     <Select value={pathLocale} onValueChange={handleChange}>
-      <SelectTrigger className="w-[150px]">
+      <SelectTrigger className="bg-transparent text-white   [&>svg]:text-white! text-center flex items-center justify-center w-fit">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>

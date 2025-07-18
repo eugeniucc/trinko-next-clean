@@ -7,5 +7,17 @@
     "openGraphDescription": "The best tattoo studio in Chisinau. Unique tattoos by professionals.",
     "twitterTitle": "TrinkoTattoo - Best Tattoos in Chisinau",
     "twitterDescription": "TrinkoTattoo studio - professional artists and unique designs."
+  },
+  "homePage": {
+    "header": {
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Services", "href": "/services" },
+        { "label": "Gallery", "href": "/gallery" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Course", "href": "/course" },
+        { "label": "Contacts", "href": "/contacts" }
+      ]
+    }
   }
 }
