@@ -1,19 +1,11 @@
 "use client";
 
-import { ReactNode, useLayoutEffect } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useLayoutEffect } from "react";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { JivoChat } from "./components/JivoChat";
 
-const queryClient = new QueryClient();
-
-type ProvidersProps = {
-  children: ReactNode;
-};
-
-export default function Providers({ children }: ProvidersProps) {
+export default function Providers() {
   const pathname = usePathname();
 
   useLayoutEffect(() => {
@@ -24,8 +16,6 @@ export default function Providers({ children }: ProvidersProps) {
     <>
       <SpeedInsights />
       <Analytics />
-      <JivoChat />
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </>
   );
 }

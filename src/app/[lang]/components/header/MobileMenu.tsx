@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Sheet,
   SheetContent,
@@ -17,16 +15,23 @@ import {
   PhoneOutgoing,
   Send,
 } from "lucide-react";
-import { CustomLink } from "@/shared/CustomLink";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
-export const MobileMenu = () => {
-  const t = useTranslations("homePage.header");
-  const links = t.raw("links") as { label: string; href: string }[];
+type Props = {
+  activePath?: string;
+  closeSheet?: () => void;
+};
 
-  const handleScroll = () => {
-    window.scrollTo(0, 0);
-  };
+export default async function MobileMenu({
+  activePath = "",
+  closeSheet,
+}: Props) {
+  const t = await getTranslations("homePage");
+  const links = t.raw("header.links") as {
+    label: string;
+    href: string;
+  }[];
 
   return (
     <div className="flex items-center md:hidden">
@@ -39,20 +44,28 @@ export const MobileMenu = () => {
             <SheetTitle>
               <span className="mb-12 text-red-500">Trinko Tattoo</span>
             </SheetTitle>
-            <SheetDescription>
-              Navigate through the menu to explore our services.
-            </SheetDescription>
+            <SheetDescription>{t("headerMobile.description")}</SheetDescription>
             <nav className="py-6 flex flex-col gap-4">
-              {links.map((link) => (
-                <SheetClose key={link.href} asChild>
-                  <CustomLink
-                    href={link.href}
-                    onClick={handleScroll}
-                    label={link.label}
-                    className="text-black"
-                  />
-                </SheetClose>
-              ))}
+              {links.map((link) => {
+                const isActive =
+                  activePath === link.href ||
+                  activePath.startsWith(link.href + "/");
+
+                return (
+                  <SheetClose onClick={closeSheet} key={link.href} asChild>
+                    <Link
+                      href={link.href}
+                      className={`relative pb-1 transition-colors duration-300 ${
+                        isActive
+                          ? "border-b border-red-500 text-red-500"
+                          : "hover:text-red-500"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </SheetClose>
+                );
+              })}
             </nav>
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-4">
@@ -63,7 +76,7 @@ export const MobileMenu = () => {
                   <PhoneOutgoing className="h-5 w-5" />
                   <p>+37379146506</p>
                 </a>
-                <p>Opening Hours: Mn-Sun: 10 am-8 pm</p>
+                <p>{t("headerMobile.workingHours")}</p>
               </div>
               <div className="flex flex-col gap-4">
                 <a
@@ -101,4 +114,4 @@ export const MobileMenu = () => {
       </Sheet>
     </div>
   );
-};
+}

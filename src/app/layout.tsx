@@ -74,7 +74,7 @@ export default function RootLayout({ children }: LayoutProps) {
         />
       </head>
       <body
-        className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-sm antialiased`}
+        className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-black! text-sm antialiased`}
       >
         {children}
       </body>

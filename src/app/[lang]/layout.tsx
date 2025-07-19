@@ -2,14 +2,15 @@ import { ReactNode } from "react";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
-import Providers from "./Providers";
-
-export { generateMetadata } from "./generateMetadata";
+import ClientWrapper from "./ClientWrapper";
+import HeaderMenu from "./components/header/HeaderMenu";
 
 type LayoutProps = {
   children: ReactNode;
   params: Promise<{ lang: Locale }>;
 };
+
+export { generateMetadata } from "./generateMetadata";
 
 export default async function RootLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
@@ -22,7 +23,8 @@ export default async function RootLayout({ children, params }: LayoutProps) {
 
   return (
     <NextIntlClientProvider locale={lang} messages={messages}>
-      <Providers>{children}</Providers>
+      <HeaderMenu />
+      <ClientWrapper>{children}</ClientWrapper>
     </NextIntlClientProvider>
   );
 }

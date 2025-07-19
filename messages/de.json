@@ -18,6 +18,10 @@
         { "label": "Course", "href": "/course" },
         { "label": "Contacts", "href": "/contacts" }
       ]
+    },
+    "headerMobile": {
+      "description": "Navigate through the menu to explore our services.",
+      "workingHours": "Opening Hours: Mn-Sun: 10 am-8 pm"
     }
   }
 }

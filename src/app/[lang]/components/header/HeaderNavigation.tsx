@@ -1,21 +1,37 @@
-"use client";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
-import { useTranslations } from "next-intl";
-import { CustomLink } from "@/shared/CustomLink";
+type Props = {
+  activePath?: string;
+};
 
-export const HeaderNavigation = () => {
-  const t = useTranslations("homePage.header");
+export default async function HeaderNavigation({ activePath = "" }: Props) {
+  const t = await getTranslations("homePage.header");
   const links = t.raw("links") as { label: string; href: string }[];
 
   return (
     <nav className="hidden items-center gap-12 md:flex lg:gap-20">
       <ul className="flex items-center gap-6 lg:gap-8">
-        {links.map((link) => (
-          <li key={link.href}>
-            <CustomLink href={link.href} label={link.label} />
-          </li>
-        ))}
+        {links.map((link) => {
+          const isActive =
+            activePath === link.href || activePath.startsWith(link.href + "/");
+
+          return (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`relative pb-1 text-white transition-colors duration-300 ${
+                  isActive
+                    ? "border-b border-red-500 text-red-500"
+                    : "hover:text-red-500"
+                }`}
+              >
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
-};
+}
