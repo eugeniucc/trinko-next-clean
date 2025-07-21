@@ -32,7 +32,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
   }
 
-  return NextResponse.next();
+  const localeFromPath =
+    SUPPORTED_LOCALES.find((locale) => pathname.startsWith(`/${locale}`)) ||
+    DEFAULT_LOCALE;
+
+  const response = NextResponse.next();
+  response.headers.set("x-locale", localeFromPath);
+
+  return response;
 }
 
 export const config = {

@@ -18,15 +18,7 @@ import {
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-type Props = {
-  activePath?: string;
-  closeSheet?: () => void;
-};
-
-export default async function MobileMenu({
-  activePath = "",
-  closeSheet,
-}: Props) {
+export default async function MobileMenu() {
   const t = await getTranslations("homePage");
   const links = t.raw("header.links") as {
     label: string;
@@ -46,26 +38,16 @@ export default async function MobileMenu({
             </SheetTitle>
             <SheetDescription>{t("headerMobile.description")}</SheetDescription>
             <nav className="py-6 flex flex-col gap-4">
-              {links.map((link) => {
-                const isActive =
-                  activePath === link.href ||
-                  activePath.startsWith(link.href + "/");
-
-                return (
-                  <SheetClose onClick={closeSheet} key={link.href} asChild>
-                    <Link
-                      href={link.href}
-                      className={`relative pb-1 transition-colors duration-300 ${
-                        isActive
-                          ? "border-b border-red-500 text-red-500"
-                          : "hover:text-red-500"
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
-                  </SheetClose>
-                );
-              })}
+              {links.map((link) => (
+                <SheetClose key={link.href} asChild>
+                  <Link
+                    href={link.href}
+                    className="relative pb-1 transition-colors duration-300 hover:text-red-500"
+                  >
+                    {link.label}
+                  </Link>
+                </SheetClose>
+              ))}
             </nav>
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-4">

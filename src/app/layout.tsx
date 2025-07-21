@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Roboto, Montserrat } from "next/font/google";
 
 import "./globals.css";
+import { headers } from "next/headers";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -51,9 +52,12 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-export default function RootLayout({ children }: LayoutProps) {
+export default async function RootLayout({ children }: LayoutProps) {
+  const head = await headers();
+  const locale = head.get("x-locale") ?? "ru";
+
   return (
-    <html lang="ru">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/logo/favicon.ico" />
         <link rel="icon" href="/logo/favicon.svg" type="image/svg+xml" />
@@ -74,7 +78,7 @@ export default function RootLayout({ children }: LayoutProps) {
         />
       </head>
       <body
-        className={`${roboto.variable} ${montserrat.variable} bg-gray-100 text-black! text-sm antialiased`}
+        className={`${roboto.variable} ${montserrat.variable} bg-zinc-900 text-sm`}
       >
         {children}
       </body>

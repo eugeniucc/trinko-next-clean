@@ -3,7 +3,7 @@ import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import ClientWrapper from "./ClientWrapper";
-import HeaderMenu from "./components/header/HeaderMenu";
+import HeaderMenu from "./ui/header/HeaderMenu";
 
 type LayoutProps = {
   children: ReactNode;

@@ -150,3 +150,41 @@ span {
 button {
   @apply cursor-pointer focus:outline-none;
 }
+
+/* LOADING TSX */
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/* HERO SLIDER */
+
+.custom-hero-bullet {
+  width: 10px;
+  height: 10px;
+  @apply bg-white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-hero-bullet-active {
+  @apply bg-primary;
+}
+
+.custom-hero-bullet:hover {
+  @apply bg-primary;
+}
+
+.custom-hero-pagination {
+  display: flex;
+  align-items: center;
+}
