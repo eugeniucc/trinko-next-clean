@@ -53,11 +53,11 @@ type LayoutProps = {
 };
 
 export default async function RootLayout({ children }: LayoutProps) {
-  const head = await headers();
-  const locale = head.get("x-locale") ?? "ru";
+  const headerList = await headers();
+  const lang = headerList.get("x-lang") || "ru";
 
   return (
-    <html lang={locale}>
+    <html lang={lang}>
       <head>
         <link rel="icon" href="/logo/favicon.ico" />
         <link rel="icon" href="/logo/favicon.svg" type="image/svg+xml" />
