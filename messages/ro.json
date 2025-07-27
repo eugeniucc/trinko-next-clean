@@ -8,6 +8,11 @@
     "twitterTitle": "TrinkoTattoo - Cele Mai Bune Tatuaje din Chișinău",
     "twitterDescription": "Studio TrinkoTattoo - artiști profesioniști și designuri unice."
   },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "text": "Dar încă îți poți face un tatuaj!",
+    "button": "Înapoi și programează un tatuaj"
+  },
   "homePage": {
     "header": {
       "links": [
@@ -21,14 +26,10 @@
     },
     "headerMobile": {
       "description": "Navighează prin meniu pentru a explora serviciile noastre.",
-      "workingHours": "Program: L-D: 10:00–20:00"
+      "workingHours": "Program: L-D: 10:00 - 20:00"
     }
   },
   "aboutPage": {
     "title": "paginaDespre paginaDespre paginaDespre paginaDespre paginaDespre"
-  },
-  "notFound": {
-    "title": "404",
-    "description": "Pagină negăsită"
   }
 }

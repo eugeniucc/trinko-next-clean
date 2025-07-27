@@ -8,6 +8,11 @@
     "twitterTitle": "TrinkoTattoo - I Migliori Tatuaggi a Chisinau",
     "twitterDescription": "Studio TrinkoTattoo - artisti professionisti e design unici."
   },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "Ma puoi ancora farti un tatuaggio!",
+    "button": "Torna indietro e prenota un tatuaggio"
+  },
   "homePage": {
     "header": {
       "links": [
@@ -26,9 +31,5 @@
   },
   "aboutPage": {
     "title": "paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni"
-  },
-  "notFound": {
-    "title": "404",
-    "description": "Pagina non trovata"
   }
 }

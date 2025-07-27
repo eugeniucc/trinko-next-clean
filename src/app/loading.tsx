@@ -11,7 +11,7 @@ export default function Loading() {
         height={120}
       />
       <div className="text-center flex flex-col gap-2">
-        <p className="text-sm text-muted-foreground font-medium">Загрузка...</p>
+        <p className="text-sm text-muted-foreground font-medium">Loading...</p>
         <div className="w-48 h-1.5 bg-white rounded-full overflow-hidden">
           <div className="h-full bg-primary rounded-full animate-[loading-bar_2s_infinite]" />
         </div>
