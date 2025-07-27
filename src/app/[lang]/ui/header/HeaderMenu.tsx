@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 import { HeaderScrollWrapper } from "./HeaderScrollWrapper";
 import HeaderNavigation from "./HeaderNavigation";
 
-export default async function HeaderMenu() {
+export default function HeaderMenu() {
   return (
     <HeaderScrollWrapper>
       <header className="fixed top-0 w-full z-20 transition-all duration-300">
