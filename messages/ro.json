@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "TrinkoTattoo - Studio de Tatuaje Profesional în Chișinău",
+    "description": "TrinkoTattoo este cel mai bun studio de tatuaje din Chișinău. Designuri unice, artiști profesioniști și lucrări de calitate înaltă.",
+    "keywords": "studio de tatuaje, tatuaj, tatuaje, Chișinău, TrinkoTattoo, salon de tatuaje, tatuaje Chișinău, studiouri de tatuaje în Chișinău, artiști tatuatori profesioniști, cei mai buni tatuatori din Chișinău, tatuaje unice",
+    "openGraphTitle": "TrinkoTattoo - Tatuaje Profesionale în Chișinău",
+    "openGraphDescription": "Cel mai bun studio de tatuaje din Chișinău. Tatuaje unice realizate de profesioniști.",
+    "twitterTitle": "TrinkoTattoo - Cele Mai Bune Tatuaje din Chișinău",
+    "twitterDescription": "Studio TrinkoTattoo - artiști profesioniști și designuri unice."
+  },
+  "homePage": {
+    "header": {
+      "links": [
+        { "label": "Despre", "href": "/about" },
+        { "label": "Servicii", "href": "/services" },
+        { "label": "Galerie", "href": "/gallery" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Curs", "href": "/course" },
+        { "label": "Contacte", "href": "/contacts" }
+      ]
+    },
+    "headerMobile": {
+      "description": "Navighează prin meniu pentru a explora serviciile noastre.",
+      "workingHours": "Program: L-D: 10:00–20:00"
+    }
+  },
+  "aboutPage": {
+    "title": "paginaDespre paginaDespre paginaDespre paginaDespre paginaDespre"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Pagină negăsită"
+  }
+}

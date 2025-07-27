@@ -1,16 +1,12 @@
-import { getTranslations } from "next-intl/server";
-import { Locale } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { DOMAIN_URL } from "@/features/constants/constants.contants";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: Locale }>;
-}) {
-  const { lang } = await params;
-  const t = await getTranslations({ locale: lang, namespace: "seo" });
+export async function generateMetadata() {
+  const locale = await getLocale();
 
-  const fullUrl = `${DOMAIN_URL}/${lang}/`;
+  const t = await getTranslations("seo");
+
+  const fullUrl = `${DOMAIN_URL}/${locale}/`;
 
   return {
     title: t("title"),
@@ -24,7 +20,7 @@ export async function generateMetadata({
       url: fullUrl,
       type: "website",
       siteName: "TrinkoTattoo",
-      locale: lang,
+      locale: locale,
     },
     twitter: {
       card: "summary_large_image",

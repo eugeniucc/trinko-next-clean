@@ -26,5 +26,9 @@
   },
   "aboutPage": {
     "title": "aboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPage"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Page not found"
   }
 }

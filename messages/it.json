@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "TrinkoTattoo - Studio di Tatuaggi Professionale a Chisinau",
+    "description": "TrinkoTattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
+    "keywords": "studio di tatuaggi, tatuaggio, tatuaggi, Chisinau, TrinkoTattoo, salone di tatuaggi, tatuaggi Chisinau, studi di tatuaggi a Chisinau, artisti di tatuaggi professionisti, migliori tatuatori a Chisinau, tatuaggi unici",
+    "openGraphTitle": "TrinkoTattoo - Tatuaggi Professionali a Chisinau",
+    "openGraphDescription": "Il miglior studio di tatuaggi a Chisinau. Tatuaggi unici realizzati da professionisti.",
+    "twitterTitle": "TrinkoTattoo - I Migliori Tatuaggi a Chisinau",
+    "twitterDescription": "Studio TrinkoTattoo - artisti professionisti e design unici."
+  },
+  "homePage": {
+    "header": {
+      "links": [
+        { "label": "Chi siamo", "href": "/about" },
+        { "label": "Servizi", "href": "/services" },
+        { "label": "Galleria", "href": "/gallery" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Corso", "href": "/course" },
+        { "label": "Contatti", "href": "/contacts" }
+      ]
+    },
+    "headerMobile": {
+      "description": "Naviga nel menu per scoprire i nostri servizi.",
+      "workingHours": "Orari di apertura: Lun-Dom: 10:00–20:00"
+    }
+  },
+  "aboutPage": {
+    "title": "paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Pagina non trovata"
+  }
+}

@@ -2,14 +2,13 @@ import Image from "next/image";
 
 export default function Loading() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center gap-4 ">
+    <div className="w-full h-screen bg-zinc-900 flex flex-col items-center justify-center gap-4 ">
       <Image
         className="animate-spin [animation-duration:3s]"
         src="/logo/icon.png"
         alt="Логотип TrinkoTattoo"
         width={120}
         height={120}
-        priority
       />
       <div className="text-center flex flex-col gap-2">
         <p className="text-sm text-muted-foreground font-medium">Загрузка...</p>

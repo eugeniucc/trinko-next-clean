@@ -1,8 +1,8 @@
 import MobileMenu from "./MobileMenu";
 import { LangSwitcher } from "./LangSwitcher";
-import { Logo } from "./Logo";
 import { HeaderScrollWrapper } from "./HeaderScrollWrapper";
 import HeaderNavigation from "./HeaderNavigation";
+import Logo from "./Logo";
 
 export default function HeaderMenu() {
   return (

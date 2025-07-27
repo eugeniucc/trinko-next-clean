@@ -54,6 +54,7 @@ export default async function MobileMenu() {
                 <a
                   className="flex items-center gap-2 duration-200 hover:text-red-500"
                   href="tel:+37379146506"
+                  rel="noopener noreferrer"
                 >
                   <PhoneOutgoing className="h-5 w-5" />
                   <p>+37379146506</p>
@@ -65,6 +66,7 @@ export default async function MobileMenu() {
                   href="https://www.instagram.com/trinko_tattoo/"
                   target="_blank"
                   className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  rel="noopener noreferrer"
                 >
                   Instagram <Instagram className="h-5 w-5" />
                 </a>
@@ -72,6 +74,7 @@ export default async function MobileMenu() {
                   href="https://t.me/Trinkonfox"
                   target="_blank"
                   className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  rel="noopener noreferrer"
                 >
                   Telegram <Send className="h-5 w-5" />
                 </a>
@@ -79,6 +82,7 @@ export default async function MobileMenu() {
                   href="https://wa.me/37360833389"
                   target="_blank"
                   className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  rel="noopener noreferrer"
                 >
                   WhatsApp <MessageCircleMore className="h-5 w-5" />
                 </a>
@@ -86,6 +90,7 @@ export default async function MobileMenu() {
                   href="viber://chat?number=%2B37360833389"
                   target="_blank"
                   className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  rel="noopener noreferrer"
                 >
                   Viber <MessageCircleHeart className="h-5 w-5" />
                 </a>
