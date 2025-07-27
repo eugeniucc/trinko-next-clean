@@ -1,7 +1,8 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export default async function HeaderNavigation() {
+  const locale = await getLocale();
   const t = await getTranslations("homePage");
 
   const links = t.raw("header.links") as { label: string; href: string }[];
@@ -13,7 +14,7 @@ export default async function HeaderNavigation() {
           <li key={i}>
             <Link
               className=" text-white transition-colors duration-300 hover:text-red-500"
-              href={link.href}
+              href={`/${locale}${link.href}`}
             >
               {link.label}
             </Link>
