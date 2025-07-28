@@ -1,23 +1,15 @@
-"use client";
+'use client'
 
-import { useEffect, useState, ReactNode } from "react";
+import { ReactNode, useEffect, useState } from 'react'
 
 export const HeaderScrollWrapper = ({ children }: { children: ReactNode }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    const onScroll = () => setIsScrolled(window.scrollY > 10)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
-  return (
-    <div
-      className={`transition-all duration-300 ${
-        isScrolled ? "bg-zinc-900 shadow-md backdrop-blur" : "bg-transparent"
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
+  return <div className={`transition-all duration-300 ${isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent'}`}>{children}</div>
+}

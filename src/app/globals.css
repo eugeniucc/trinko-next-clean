@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 .roboto {
   font-family: var(--font-roboto), sans-serif;
@@ -12,8 +12,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --font-roboto: "Roboto", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
   --radius: 0.65rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);

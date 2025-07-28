@@ -33,20 +33,22 @@
         "firstCard": {
           "title": "Comprehensive Approach",
           "text": "WE DO EVERYTHING",
-          "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing."
+          "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing.",
+          "button": "Book Now"
         },
         "secondCard": {
           "title": "Experience and Comfort",
           "text": "SESSION FOR YOU",
-          "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing."
+          "description": "We work with your preferences in mind: creating custom designs, selecting shape and color based on skin type and anatomy. Comfort and safety are our priorities at every stage, whether it's a tattoo, permanent makeup, or piercing.",
+          "button": "Book Now"
         },
         "thirdCard": {
           "title": "Growth and Learning",
-          "text": "WE’LL TEACH YOU EVERYTHING",
-          "description": "Want to become an artist? Training at Trinkotattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession."
+          "text": "WE’LL TEACH YOU",
+          "description": "Want to become an artist? Training at Trinkotattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
+          "button": "Book Now"
         }
-      },
-      "button": "Book Now"
+      }
     }
   },
   "aboutPage": {

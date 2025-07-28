@@ -27,6 +27,28 @@
     "headerMobile": {
       "description": "Naviga nel menu per scoprire i nostri servizi.",
       "workingHours": "Orari di apertura: Lun-Dom: 10:00–20:00"
+    },
+    "heroSection": {
+      "cards": {
+        "firstCard": {
+          "title": "Approccio Completo",
+          "text": "FACCIAMO TUTTO",
+          "description": "Lavoriamo tenendo conto delle tue preferenze: creiamo design personalizzati, selezioniamo forma e colore in base al tipo di pelle e all'anatomia. Comfort e sicurezza sono le nostre priorità in ogni fase, sia per tatuaggi, trucco permanente o piercing.",
+          "button": "Prenota Ora"
+        },
+        "secondCard": {
+          "title": "Esperienza e Comfort",
+          "text": "SESSIONE PER TE",
+          "description": "Lavoriamo tenendo conto delle tue preferenze: creiamo design personalizzati, selezioniamo forma e colore in base al tipo di pelle e all'anatomia. Comfort e sicurezza sono le nostre priorità in ogni fase, sia per tatuaggi, trucco permanente o piercing.",
+          "button": "Prenota Ora"
+        },
+        "thirdCard": {
+          "title": "Crescita e Apprendimento",
+          "text": "TI INSEGNEREMO",
+          "description": "Vuoi diventare un artista? La formazione presso Trinkotattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
+          "button": "Prenota Ora"
+        }
+      }
     }
   },
   "aboutPage": {

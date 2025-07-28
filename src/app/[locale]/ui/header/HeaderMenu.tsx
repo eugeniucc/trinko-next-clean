@@ -1,14 +1,14 @@
-import MobileMenu from "./MobileMenu";
-import { LangSwitcher } from "./LangSwitcher";
-import { HeaderScrollWrapper } from "./HeaderScrollWrapper";
-import HeaderNavigation from "./HeaderNavigation";
-import Logo from "./Logo";
+import HeaderNavigation from './HeaderNavigation'
+import { HeaderScrollWrapper } from './HeaderScrollWrapper'
+import { LangSwitcher } from './LangSwitcher'
+import Logo from './Logo'
+import MobileMenu from './MobileMenu'
 
 export default function HeaderMenu() {
   return (
     <HeaderScrollWrapper>
-      <header className="fixed top-0 w-full z-20 transition-all duration-300">
-        <div className="container py-2 px-4 mx-auto flex items-center justify-between">
+      <header className="fixed top-0 z-20 w-full transition-all duration-300">
+        <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Logo />
           <div className="flex items-center gap-6 md:gap-10">
             <HeaderNavigation />
@@ -18,5 +18,5 @@ export default function HeaderMenu() {
         </div>
       </header>
     </HeaderScrollWrapper>
-  );
+  )
 }

@@ -27,6 +27,28 @@
     "headerMobile": {
       "description": "Navighează prin meniu pentru a explora serviciile noastre.",
       "workingHours": "Program: L-D: 10:00 - 20:00"
+    },
+    "heroSection": {
+      "cards": {
+        "firstCard": {
+          "title": "Abordare Completă",
+          "text": "FACEM TOTUL",
+          "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
+          "button": "Programează-te"
+        },
+        "secondCard": {
+          "title": "Experiență și Confort",
+          "text": "SESIUNE PENTRU TINE",
+          "description": "Lucrăm ținând cont de preferințele tale: creăm designuri personalizate, alegem forma și culoarea în funcție de tipul de piele și anatomie. Confortul și siguranța sunt prioritățile noastre în fiecare etapă, fie că este vorba de tatuaje, machiaj permanent sau piercing.",
+          "button": "Programează-te"
+        },
+        "thirdCard": {
+          "title": "Creștere și Învățare",
+          "text": "TE ÎNVĂȚĂM TOTUL",
+          "description": "Vrei să devii artist? Instruirea la Trinkotattoo include practică pe modele reale, program flexibil, instructori cu experiență și diplomă recunoscută internațional. Obții nu doar cunoștințe, ci o profesie.",
+          "button": "Programează-te"
+        }
+      }
     }
   },
   "aboutPage": {

@@ -1,15 +1,15 @@
-"use client";
+'use client'
 
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 export default function JivoChat() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const script = document.createElement("script");
-      script.src = "https://code.jivosite.com/widget/z65l5BJYyj";
-      script.async = true;
-      document.body.appendChild(script);
+    if (typeof window !== 'undefined') {
+      const script = document.createElement('script')
+      script.src = 'https://code.jivosite.com/widget/z65l5BJYyj'
+      script.async = true
+      document.body.appendChild(script)
     }
-  }, []);
-  return null;
+  }, [])
+  return null
 }

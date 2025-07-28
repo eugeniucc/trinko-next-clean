@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
-import "./globals.css";
+import { ReactNode } from 'react'
+import './globals.css'
 
 type LayoutProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export default function RootLayout({ children }: LayoutProps) {
-  return children;
+  return children
 }
