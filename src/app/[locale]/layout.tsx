@@ -53,7 +53,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${roboto.variable} ${montserrat.variable} bg-zinc-900 text-sm`}>
+      <body className={`${roboto.variable} ${montserrat.variable} text-sm`}>
         <NextIntlClientProvider>
           <HeaderMenu />
           <ClientWrapper>{children}</ClientWrapper>

@@ -20,7 +20,7 @@ export const HeroSection = () => {
       <Swiper
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
         slidesPerView={1}
-        autoplay={{ delay: 5551500 }}
+        autoplay={{ delay: 1500 }}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         loop
