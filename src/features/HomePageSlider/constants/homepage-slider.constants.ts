@@ -1,0 +1,1 @@
+export const HOMEPAGE_SLIDER_QUERY_KEY = 'HOME_PAGE_SLIDER_QUERY_KEY' as const

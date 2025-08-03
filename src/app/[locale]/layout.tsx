@@ -52,7 +52,6 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -64,6 +63,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     })(window,document,'script','dataLayer','GTM-5JSL5HH7');`
           }}
         />
+        <Script id="jivochat-script" strategy="afterInteractive" src="https://code.jivosite.com/widget/z65l5BJYyj" />
       </head>
 
       <body className={`${roboto.variable} ${montserrat.variable} text-sm`}>

@@ -5,15 +5,8 @@
   "singleQuote": true,
   "printWidth": 150,
   "trailingComma": "none",
-  "plugins": [
-    "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
-  ],
-  "importOrder": [
-    "^(vue|react|svelte)$",
-    "^@/(.*)$",
-    "^[./]"
-  ],
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": ["^(react)$", "^@/(.*)$", "^[./]"],
   "importOrderSeparation": false,
   "importOrderSortSpecifiers": true
 }

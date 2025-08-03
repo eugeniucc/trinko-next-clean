@@ -1,7 +1,18 @@
-import { NextConfig } from "next";
-import createNextIntlPlugin from "next-intl/plugin";
+import { NextConfig } from 'next'
+import createNextIntlPlugin from 'next-intl/plugin'
 
-const nextConfig: NextConfig = {};
+const withNextIntl = createNextIntlPlugin()
 
-const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'weekgblszaodxieblpuz.supabase.co',
+        pathname: '/storage/v1/object/public/homepage-slider/**'
+      }
+    ]
+  }
+}
+
+export default withNextIntl(nextConfig)

@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
@@ -11,12 +12,14 @@ import 'swiper/css/scrollbar'
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Container } from '@/components/custom/Container'
+import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
+import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 
 export const HeroSection = () => {
   const t = useTranslations('homePage.heroSection.cards')
 
   return (
-    <div className="relative h-screen w-full">
+    <CustomSectionAria className={'relative min-h-screen w-full'} aria={'hero-section-title'}>
       <Swiper
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
         slidesPerView={1}
@@ -38,61 +41,63 @@ export const HeroSection = () => {
         className="h-screen w-full"
       >
         <SwiperSlide>
-          <div className="absolute inset-0 z-0 bg-[url('/images/home/header/1.webp')] bg-cover bg-center grayscale" />
+          <Image
+            src="/images/home/header/1.webp"
+            alt="тату цветы и змея в Кишиневе"
+            width={1920}
+            height={1080}
+            priority
+            className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
+          />
+
           <div className="pointer-events-none absolute inset-0 z-10 bg-black/50" />
+
           <Container className="relative z-20 flex min-h-screen items-center justify-center">
             <div className="flex w-full flex-col gap-6 text-white">
               <p className="text-3xl font-bold md:text-5xl">{t('firstCard.title')}</p>
               <p className="text-2xl font-bold lg:text-8xl">{t('firstCard.text')}</p>
               <p className="max-w-3xl text-lg">{t('firstCard.description')}</p>
-              <a
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
-              >
-                {t('firstCard.button')}
-              </a>
+              <CustomLinkAppointment text={t('firstCard.button')} />
             </div>
           </Container>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="absolute inset-0 z-0 bg-[url('/images/home/header/2.webp')] bg-cover bg-center grayscale" />
+          <Image
+            src="/images/home/header/2.webp"
+            alt="тату цветы и надпись в Кишиневе"
+            width={1920}
+            height={1080}
+            priority
+            className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
+          />
           <div className="pointer-events-none absolute inset-0 z-10 bg-black/50" />
           <Container className="relative z-20 flex min-h-screen items-center justify-center">
             <div className="flex w-full flex-col gap-6 text-white">
               <p className="text-3xl font-bold md:text-5xl">{t('secondCard.title')}</p>
               <p className="text-2xl font-bold lg:text-8xl">{t('secondCard.text')}</p>
               <p className="max-w-3xl text-lg">{t('secondCard.description')}</p>
-              <a
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
-              >
-                {t('secondCard.button')}
-              </a>
+              <CustomLinkAppointment text={t('secondCard.button')} />
             </div>
           </Container>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="absolute inset-0 z-0 bg-[url('/images/home/header/3.webp')] bg-cover bg-center grayscale" />
+          <Image
+            src="/images/home/header/3.webp"
+            alt="тату цветы на руке в Кишиневе"
+            width={1920}
+            height={1080}
+            priority
+            className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
+          />
           <div className="pointer-events-none absolute inset-0 z-10 bg-black/50" />
           <Container className="relative z-20 flex min-h-screen items-center justify-center">
             <div className="flex w-full flex-col gap-6 text-white">
               <p className="text-3xl font-bold md:text-5xl">{t('thirdCard.title')}</p>
               <p className="text-2xl font-bold lg:text-8xl">{t('thirdCard.text')}</p>
               <p className="max-w-3xl text-lg">{t('thirdCard.description')}</p>
-              <a
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
-              >
-                {t('thirdCard.button')}
-              </a>
+              <CustomLinkAppointment text={t('thirdCard.button')} />
             </div>
           </Container>
         </SwiperSlide>
@@ -111,6 +116,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </CustomSectionAria>
   )
 }

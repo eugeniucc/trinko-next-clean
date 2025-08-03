@@ -1,11 +1,15 @@
+import { AboutSection } from './ui/sections/AboutSection'
 import { HeroSection } from './ui/sections/HeroSection'
-import { OurServices } from './ui/sections/OurServices'
+import { OurServicesSection } from './ui/sections/OurServicesSection'
+import { SketchesSection } from './ui/sections/SketchesSection'
 
 export default function Home() {
   return (
     <main className="flex flex-col">
       <HeroSection />
-      <OurServices />
+      <OurServicesSection />
+      <AboutSection />
+      <SketchesSection />
     </main>
   )
 }

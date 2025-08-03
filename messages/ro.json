@@ -49,6 +49,43 @@
           "button": "Programează-te"
         }
       }
+    },
+    "ourServicesSection": {
+      "mainTitle": "Salon de tatuaje în Chișinău TrinkoTattoo: Tatuaje profesionale, piercing și machiaj permanent.",
+      "title": "Serviciile noastre de tatuaje în Chișinău",
+      "description": "Salonul nostru de tatuaje din Chișinău oferă o gamă largă de servicii — de la tatuaje și piercing până la acoperirea tatuajelor vechi și machiaj permanent. Tatuatorii noștri experimentați din Chișinău garantează calitate, sterilitate și o abordare individuală.",
+      "cards": [
+        {
+          "title": "Tatuaje în Chișinău",
+          "description": "Tatuaje de înaltă calitate, de orice complexitate, în salonul nostru din Chișinău."
+        },
+        {
+          "title": "Piercing în Chișinău",
+          "description": "Piercing cu ac în condiții sterile și selecția bijuteriilor în Chișinău."
+        },
+        {
+          "title": "Acoperire tatuaje și cicatrici",
+          "description": "Acoperim profesionist tatuaje vechi și cicatrici în salonul nostru de tatuaje."
+        },
+        {
+          "title": "Design de tatuaje",
+          "description": "Crearea de schițe individuale ținând cont de anatomia clientului."
+        },
+        {
+          "title": "Machiaj permanent în Chișinău",
+          "description": "Machiaj de lungă durată realizat de artiști certificați în salonul nostru din Chișinău."
+        },
+        {
+          "title": "Corectarea tatuajelor",
+          "description": "Împrospătăm culoarea și forma tatuajelor în salonul nostru din Chișinău."
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "Câteva cuvinte despre salonul nostru de tatuaje din Chișinău",
+      "text": "Salon de tatuaje în Chișinău cu o echipă experimentată de profesioniști. Oferim tatuaje în Chișinău, piercing, acoperirea tatuajelor și a cicatricilor, machiaj permanent.",
+      "description": "Artiștii noștri cu ani de experiență creează modele unice adaptate anatomiei și dorințelor clientului. Lucrăm steril și în siguranță.",
+      "button": "Programează-te"
     }
   },
   "aboutPage": {

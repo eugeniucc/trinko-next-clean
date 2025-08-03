@@ -49,6 +49,43 @@
           "button": "Book Now"
         }
       }
+    },
+    "ourServicesSection": {
+      "mainTitle": "Tattoo Studio in Chisinau TrinkoTattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
+      "title": "Our Tattoo Services in Chisinau",
+      "description": "Our tattoo studio in Chisinau offers a wide range of services — from tattoos and piercings to cover-ups and permanent makeup. Experienced tattoo artists in Chisinau guarantee quality, sterility, and a personalized approach.",
+      "cards": [
+        {
+          "title": "Tattoos in Chisinau",
+          "description": "High-quality tattoos of any complexity in our Chisinau tattoo studio."
+        },
+        {
+          "title": "Piercing in Chisinau",
+          "description": "Needle piercing with full sterility and jewelry selection in Chisinau."
+        },
+        {
+          "title": "Tattoo and Scar Cover-Up",
+          "description": "Professional cover-up of old tattoos and scars in our tattoo studio."
+        },
+        {
+          "title": "Tattoo Design",
+          "description": "Custom sketches tailored to each client's anatomy."
+        },
+        {
+          "title": "Permanent Makeup in Chisinau",
+          "description": "Long-lasting makeup by certified artists in our Chisinau tattoo studio."
+        },
+        {
+          "title": "Tattoo Correction",
+          "description": "We refresh the color and shape of tattoos in our Chisinau studio."
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "A few words about our tattoo studio in Chisinau",
+      "text": "Tattoo studio in Chisinau with an experienced team of professionals. We offer tattoos in Chisinau, piercings, tattoo and scar cover-ups, and permanent makeup.",
+      "description": "Our artists with years of experience create unique designs tailored to the client’s anatomy and preferences. We work in a sterile and safe environment.",
+      "button": "Book now"
     }
   },
   "aboutPage": {

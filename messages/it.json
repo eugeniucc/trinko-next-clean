@@ -49,6 +49,43 @@
           "button": "Prenota Ora"
         }
       }
+    },
+    "ourServicesSection": {
+      "mainTitle": "Studio di tatuaggi a Chisinau TrinkoTattoo: Tatuaggi professionali, piercing e trucco permanente.",
+      "title": "I nostri servizi di tatuaggi a Chişinău",
+      "description": "Il nostro studio di tatuaggi a Chişinău offre una vasta gamma di servizi — dai tatuaggi e piercing alla copertura di vecchi tatuaggi e trucco permanente. I nostri tatuatori esperti garantiscono qualità, sterilità e un approccio personalizzato.",
+      "cards": [
+        {
+          "title": "Tatuaggi a Chişinău",
+          "description": "Tatuaggi di alta qualità di qualsiasi complessità nel nostro studio di tatuaggi a Chişinău."
+        },
+        {
+          "title": "Piercing a Chişinău",
+          "description": "Piercing con ago eseguito in condizioni sterili e selezione dei gioielli a Chişinău."
+        },
+        {
+          "title": "Copertura di tatuaggi e cicatrici",
+          "description": "Copriamo professionalmente vecchi tatuaggi e cicatrici nel nostro studio."
+        },
+        {
+          "title": "Design di tatuaggi",
+          "description": "Creazione di bozzetti personalizzati in base alle caratteristiche anatomiche del cliente."
+        },
+        {
+          "title": "Trucco permanente a Chişinău",
+          "description": "Trucco duraturo eseguito da artisti certificati nel nostro studio di tatuaggi."
+        },
+        {
+          "title": "Correzione tatuaggi",
+          "description": "Rinfreschiamo il colore e la forma dei tatuaggi nel nostro studio a Chişinău."
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "Qualche parola sul nostro studio di tatuaggi a Chisinau",
+      "text": "Studio di tatuaggi a Chisinau con un team di professionisti esperti. Offriamo tatuaggi a Chisinau, piercing, copertura di tatuaggi e cicatrici, trucco permanente.",
+      "description": "I nostri artisti con anni di esperienza creano disegni unici in base all'anatomia e alle preferenze del cliente. Lavoriamo in un ambiente sterile e sicuro.",
+      "button": "Prenota ora"
     }
   },
   "aboutPage": {
