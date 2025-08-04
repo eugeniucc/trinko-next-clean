@@ -1,10 +1,11 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import Loading from '@/app/loading'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 
 const HeroSlider = dynamic(() => import('./HeroSlider'), {
-  loading: () => <p>Загрузка...</p>
+  loading: () => <Loading />
 })
 
 export const HeroSection = () => {
