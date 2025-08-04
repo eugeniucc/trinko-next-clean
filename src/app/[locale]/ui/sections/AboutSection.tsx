@@ -10,7 +10,7 @@ export const AboutSection = async () => {
 
   return (
     <CustomSectionAria className={'relative'} aria={'about-section-title'}>
-      <div className="pointer-events-none absolute inset-0 z-1 bg-black/50"></div>
+      <div className="pointer-events-none absolute inset-0 bg-black/50"></div>
       <Image
         src="/images/home/sections/about/1.webp"
         width={1920}
