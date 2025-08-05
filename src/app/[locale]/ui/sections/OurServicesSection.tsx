@@ -26,7 +26,7 @@ export const OurServicesSection = async () => {
   return (
     <CustomSectionAria aria={'our-services-section-title'}>
       <Container className="flex flex-col gap-20 py-20">
-        <h1 className="text-center text-xl font-bold break-words">{t('mainTitle')}</h1>
+        <h1 className="xl:3xl text-center text-2xl break-words 2xl:text-5xl">{t('mainTitle')}</h1>
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
             <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>

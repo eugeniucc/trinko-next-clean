@@ -1,21 +1,23 @@
-import Image from 'next/image'
+import { getTranslations } from 'next-intl/server'
+import dynamic from 'next/dynamic'
 import { Container } from '@/components/custom/Container'
+import { CustomLoading } from '@/components/custom/CustomLoading'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { getHomePageSlider } from '@/features/home-page-slider/api/homepage-slider.api'
+
+const SketchesSlider = dynamic(() => import('./SketchesSlider'))
 
 export default async function SketchesSection() {
   const homepageSlider = await getHomePageSlider()
 
+  const t = await getTranslations('homePage.sketchesSection')
+
   return (
-    <CustomSectionAria aria="sketches-section-title">
-      <Container>
-        {homepageSlider &&
-          homepageSlider.map((item) => (
-            <div key={item.id}>
-              <Image className="h-auto w-auto" width={200} height={200} src={item.url} alt={item.alt} />
-            </div>
-          ))}
-        <p>test</p>
+    <CustomSectionAria className="bg-zinc-900" aria="sketches-section-title">
+      <Container className="flex flex-col items-center gap-10 py-20 text-center">
+        <h2 className="text-4xl text-white md:text-6xl">{t('title')}</h2>
+        <p className="max-w-2xl text-white">{t('description')}</p>
+        {homepageSlider ? <SketchesSlider items={homepageSlider} /> : <CustomLoading />}
       </Container>
     </CustomSectionAria>
   )
