@@ -8,7 +8,7 @@ type Props = {
 
 export const CustomSectionAria = ({ ...props }: Props) => {
   return (
-    <section className={props.className} aria-labelledby={props.aria}>
+    <section className={props.className} aria-label={props.aria}>
       {props.children}
     </section>
   )

@@ -48,7 +48,8 @@
           "description": "Want to become an artist? Training at Trinkotattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
           "button": "Book Now"
         }
-      }
+      },
+      "ariaLabel": "Intro section with tattoo, training, and piercing highlights"
     },
     "ourServicesSection": {
       "mainTitle": "Tattoo Studio in Chisinau TrinkoTattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
@@ -79,24 +80,28 @@
           "title": "Tattoo Correction",
           "description": "We refresh the color and shape of tattoos in our Chisinau studio."
         }
-      ]
+      ],
+      "ariaLabel": "Overview of tattoo, piercing, and permanent makeup services at TrinkoTattoo in Chisinau"
     },
     "aboutSection": {
       "title": "A few words about our tattoo studio in Chisinau",
       "text": "Tattoo studio in Chisinau with an experienced team of professionals. We offer tattoos in Chisinau, piercings, tattoo and scar cover-ups, and permanent makeup.",
       "description": "Our artists with years of experience create unique designs tailored to the client’s anatomy and preferences. We work in a sterile and safe environment.",
-      "button": "Book now"
+      "button": "Book now",
+      "ariaLabel": "About TrinkoTattoo — tattoo studio in Chisinau offering tattoos, piercings, and permanent makeup"
     },
     "sketchesSection": {
       "title": "Tattoo Sketches in Chisinau",
-      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo."
+      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo.",
+      "ariaLabel": "Tattoo sketch gallery in Chisinau with custom designs and artist examples"
     },
     "advantagesSection": {
       "text": "Our Advantages",
       "title": "Why People Choose Trinkotattoo — Tattoo Studio in Chisinau",
       "description": "Trinkotattoo is a team of artists, each an expert in their field: tattoos, piercings, or permanent makeup. We don’t just do the job — we provide a personalized approach for every client to ensure the result matches your style and expectations.",
       "extra": "Each of our specialists has years of experience and continually improves their skills by mastering modern techniques and approaches. We strictly follow hygiene standards and use only trusted materials.",
-      "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage."
+      "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage.",
+      "ariaLabel": "Advantages of TrinkoTattoo studio in Chisinau: quality, experience, and personalized approach"
     }
   },
   "aboutPage": {

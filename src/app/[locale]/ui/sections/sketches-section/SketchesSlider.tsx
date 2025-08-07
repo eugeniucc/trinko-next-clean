@@ -6,15 +6,10 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-type SlideItem = {
-  title: string
-  url: string
-  alt: string
-}
+import { HomePageSketchesResponse } from '@/features/home-sketches-slider/types/homepage-sketches.types'
 
 type Props = {
-  items: SlideItem[]
+  items: HomePageSketchesResponse[]
 }
 
 export default function SketchesSlider({ items }: Props) {

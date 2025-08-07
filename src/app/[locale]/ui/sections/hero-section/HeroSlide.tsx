@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Container } from '@/components/custom/Container'
@@ -23,8 +21,7 @@ export const HeroSlide = ({ ...props }: Props) => {
       <Image
         src={props.imageSrc}
         alt={props.imageAlt}
-        width={1920}
-        height={1080}
+        fill
         priority={props.priority}
         className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
       />

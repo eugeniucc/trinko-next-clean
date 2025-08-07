@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'weekgblszaodxieblpuz.supabase.co',
-        pathname: '/storage/v1/object/public/homepage-slider/**'
+        pathname: '/storage/v1/object/public/**'
       }
     ]
   }

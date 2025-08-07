@@ -7,7 +7,7 @@ dotenv.config()
 const supabaseUrl = process.env.SUPABASE_URL
 const supabaseKey = process.env.SUPABASE_KEY
 
-const bucket = 'homepage-slider'
+const bucket = 'homepage-sketches'
 const supabase = createClient(supabaseUrl!, supabaseKey!)
 
 async function getBucketLinks() {

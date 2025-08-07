@@ -9,10 +9,10 @@ export const AboutSection = async () => {
   const t = await getTranslations('homePage.aboutSection')
 
   return (
-    <CustomSectionAria className={'relative'} aria={'about-section-title'}>
+    <CustomSectionAria className={'relative'} aria={t('ariaLabel')}>
       <div className="pointer-events-none absolute inset-0 bg-black/50"></div>
       <Image
-        src="/images/home/sections/about/1.webp"
+        src="https://weekgblszaodxieblpuz.supabase.co/storage/v1/object/public/homepage-about/1.webp"
         width={1920}
         height={1080}
         alt="Мастер делает татуировку в салоне TrinkoTattoo"

@@ -2,11 +2,11 @@ import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 
-export default async function AdvantagesSection() {
+export const AdvantagesSection = async () => {
   const t = await getTranslations('homePage.advantagesSection')
 
   return (
-    <CustomSectionAria aria={'advantages-title'}>
+    <CustomSectionAria aria={t('title')}>
       <Container className="grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
           <p className="text-4xl lg:text-6xl">{t('text')}</p>

@@ -1,4 +1,4 @@
-export type HomePageSliderResponse = {
+export type HomePageSketchesResponse = {
   id: number
   title: string
   url: string

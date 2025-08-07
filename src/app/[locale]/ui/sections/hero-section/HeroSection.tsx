@@ -1,4 +1,6 @@
+import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
+import React from 'react'
 import Loading from '@/app/loading'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 
@@ -6,9 +8,11 @@ const HeroSlider = dynamic(() => import('./HeroSlider'), {
   loading: () => <Loading />
 })
 
-export const HeroSection = () => {
+export const HeroSection = async () => {
+  const t = await getTranslations('homePage.heroSection')
+
   return (
-    <CustomSectionAria className={'relative min-h-screen w-full'} aria={'hero-section-title'}>
+    <CustomSectionAria className={'relative min-h-screen w-full'} aria={t('ariaLabel')}>
       <HeroSlider />
     </CustomSectionAria>
   )

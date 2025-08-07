@@ -37,7 +37,7 @@ const HeroSlider = () => {
       >
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/home/header/1.webp"
+            imageSrc="https://weekgblszaodxieblpuz.supabase.co/storage/v1/object/public/homepage-hero-slider/1.webp"
             imageAlt="тату цветы и змея в Кишиневе"
             title="firstCard"
             text="firstCard"
@@ -49,7 +49,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/home/header/2.webp"
+            imageSrc="https://weekgblszaodxieblpuz.supabase.co/storage/v1/object/public/homepage-hero-slider/2.webp"
             imageAlt="тату цветы и надпись в Кишиневе"
             title="secondCard"
             text="secondCard"
@@ -61,7 +61,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/home/header/3.webp"
+            imageSrc="https://weekgblszaodxieblpuz.supabase.co/storage/v1/object/public/homepage-hero-slider/3.webp"
             imageAlt="тату цветы на руке в Кишиневе"
             title="thirdCard"
             text="thirdCard"

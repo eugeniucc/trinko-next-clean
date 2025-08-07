@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { cardsImages } from './mocks/mocks'
 
 export const OurServicesSection = async () => {
   const t = await getTranslations('homePage.ourServicesSection')
@@ -14,17 +15,8 @@ export const OurServicesSection = async () => {
     description: string
   }[]
 
-  const cardsImages = [
-    '/images/home/sections/services/icon-01-80x80.webp',
-    '/images/home/sections/services/icon-02-80x80.webp',
-    '/images/home/sections/services/icon-03-80x80.webp',
-    '/images/home/sections/services/icon-04-80x80.webp',
-    '/images/home/sections/services/icon-05-80x80.webp',
-    '/images/home/sections/services/icon-06-80x80.webp'
-  ]
-
   return (
-    <CustomSectionAria aria={'our-services-section-title'}>
+    <CustomSectionAria aria={t('ariaLabel')}>
       <Container className="flex flex-col gap-20 py-20">
         <h1 className="xl:3xl text-center text-2xl break-words 2xl:text-5xl">{t('mainTitle')}</h1>
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
