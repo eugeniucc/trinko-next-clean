@@ -39,7 +39,7 @@ export default function SketchesSlider({ items }: Props) {
           <SwiperSlide key={i} className="h-[380px]! w-[280px]! overflow-hidden rounded-xl md:h-[750px]! md:w-[550px]!">
             <div className="group relative h-full w-full">
               <Image
-                src={item.url}
+                src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/${item.url}`}
                 alt={item.alt}
                 width={650}
                 height={550}
