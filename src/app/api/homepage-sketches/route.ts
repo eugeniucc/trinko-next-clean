@@ -6,7 +6,7 @@ export const revalidate = 3600
 export async function GET() {
   const data = await prisma.homepageSketches.findMany({
     orderBy: {
-      createdAt: 'desc'
+      id: 'asc'
     }
   })
   return NextResponse.json(data)

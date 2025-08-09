@@ -7,7 +7,7 @@ export default async function Logo() {
 
   return (
     <Link href={`/${locale}`}>
-      <Image src="/logo/icon.png" alt="Тату салон в Кишиневе TrinkoTattoo" width={64} height={64} priority />
+      <Image src="/logo/icon.png" alt="Тату салон в Кишиневе TrinkoTattoo" width={64} height={64} />
     </Link>
   )
 }

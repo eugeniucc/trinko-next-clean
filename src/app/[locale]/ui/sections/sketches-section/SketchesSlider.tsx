@@ -44,7 +44,7 @@ export default function SketchesSlider({ items }: Props) {
                 width={650}
                 height={550}
                 className="h-full w-full object-cover brightness-90 transition-all duration-300 group-hover:brightness-110"
-                priority={i < 3}
+                priority={i === 0}
               />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="translate-y-4 text-xl font-bold text-white transition-transform duration-300 group-hover:translate-y-0">

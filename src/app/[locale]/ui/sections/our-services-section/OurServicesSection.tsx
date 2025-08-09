@@ -27,7 +27,7 @@ export const OurServicesSection = async () => {
                 className="group relative -mb-[1px] -ml-[1px] flex flex-col items-center gap-4 border border-gray-200 p-6 text-center"
               >
                 <Image
-                  src={cardsImages[i]}
+                  src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}${cardsImages[i]}`}
                   width={80}
                   height={80}
                   alt="Тату атрибуты"

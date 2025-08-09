@@ -26,6 +26,7 @@
     "framer-motion": "^12.23.12",
     "ky": "^1.8.2",
     "lucide-react": "^0.515.0",
+    "maplibre-gl": "^5.6.2",
     "next": "15.3.3",
     "next-intl": "^4.3.4",
     "prisma": "^6.13.0",
