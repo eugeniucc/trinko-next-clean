@@ -1,10 +1,11 @@
 // import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { getPortfolioImages } from '@/features/portfolio-images/api/portfolio-images.api'
+
+// import { getPortfolioImages } from '@/features/portfolio-images/api/portfolio-images.api'
 
 export const PortfolioSection = async () => {
-  const portfolioImages = await getPortfolioImages({ page: 1 })
+  // const portfolioImages = await getPortfolioImages({ page: 1 })
 
   // const t = await getTranslations('homePage.portfolioSection')
 
@@ -17,9 +18,9 @@ export const PortfolioSection = async () => {
           стерильных условиях. Мы гордимся качеством каждой работы.
         </p>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-          {portfolioImages.map((image) => (
+          {/* {portfolioImages.map((image) => (
             <p key={image.id}>{image.url}</p>
-          ))}
+          ))} */}
         </div>
       </CustomSectionAria>
     </Container>
