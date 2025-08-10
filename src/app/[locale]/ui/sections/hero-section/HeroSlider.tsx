@@ -1,6 +1,7 @@
 'use client'
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
@@ -13,6 +14,8 @@ import { Container } from '@/components/custom/Container'
 import { HeroSlide } from './HeroSlide'
 
 const HeroSlider = () => {
+  const t = useTranslations('pageSpeedLabel.homeSlider')
+
   return (
     <>
       <Swiper
@@ -75,11 +78,11 @@ const HeroSlider = () => {
       <Container className="relative">
         <div className="absolute bottom-4 left-4 z-2 flex items-center gap-4">
           <div className="flex gap-6">
-            <button className="custom-hero-prev text-white">
+            <button aria-label={t('previousSlide')} className="custom-hero-prev text-white">
               <ChevronLeft size={20} />
             </button>
             <div className="custom-hero-pagination flex gap-6"></div>
-            <button className="custom-hero-next text-white">
+            <button aria-label={t('nextSlide')} className="custom-hero-next text-white">
               <ChevronRight size={20} />
             </button>
           </div>

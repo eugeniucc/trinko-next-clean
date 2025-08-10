@@ -1,6 +1,5 @@
 'use client'
 
-import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { usePathname } from 'next/navigation'
 import { ReactNode, useLayoutEffect } from 'react'
@@ -17,7 +16,6 @@ export default function ClientWrapper({ children }: { children: ReactNode }) {
   return (
     <>
       <SpeedInsights />
-      <Analytics />
       <LazyGTM />
       <LazyJivoChat />
       {children}

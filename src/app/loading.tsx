@@ -1,8 +1,13 @@
 import Image from 'next/image'
+import { cn } from '@/lib/utils'
 
-export default function Loading() {
+type Props = {
+  className?: string
+}
+
+export default function Loading({ className }: Props) {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-4 bg-zinc-900">
+    <div className={cn('flex h-screen w-full flex-col items-center justify-center gap-4 bg-zinc-900', className || '')}>
       <Image className="animate-spin [animation-duration:3s]" src="/logo/icon.png" alt="Логотип TrinkoTattoo" width={120} height={120} />
       <div className="flex flex-col gap-2 text-center">
         <p className="text-muted-foreground text-sm font-medium">TrinkoTattoo...</p>

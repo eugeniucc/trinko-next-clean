@@ -13,6 +13,14 @@
     "text": "Dar încă îți poți face un tatuaj!",
     "button": "Înapoi și programează un tatuaj"
   },
+  "pageSpeedLabel": {
+    "burgerMenu": "Deschide meniul de navigare",
+    "translationButton": "Deschide meniul de traduceri",
+    "homeSlider": {
+      "previousSlide": "Slide anterior",
+      "nextSlide": "Slide următor"
+    }
+  },
   "homePage": {
     "header": {
       "links": [
@@ -100,9 +108,16 @@
       "title": "De ce aleg oamenii Trinkotattoo — Salon de Tatuaje în Chișinău",
       "description": "Trinkotattoo este o echipă de artiști, fiecare specializat în domeniul său: tatuaje, piercing sau machiaj permanent. Nu facem doar o lucrare — oferim o abordare personalizată pentru ca rezultatul să se potrivească stilului și așteptărilor tale.",
       "extra": "Fiecare specialist are ani de experiență și își perfecționează constant abilitățile, învățând tehnici și metode moderne. Respectăm cu strictețe standardele de sterilitate și folosim doar materiale verificate.",
-      "more_text": "Oferim condiții transparente, prețuri corecte și atenție sinceră la detalii. Înainte de a începe lucrul, discutăm întotdeauna schița, etapele și îngrijirea ulterioară, pentru ca tu să te simți încrezător în fiecare pas."
+      "more_text": "Oferim condiții transparente, prețuri corecte și atenție sinceră la detalii. Înainte de a începe lucrul, discutăm întotdeauna schița, etapele și îngrijirea ulterioară, pentru ca tu să te simți încrezător în fiecare pas.",
+      "ariaLabel": "Avantajele studioului TrinkoTattoo din Chișinău: calitate, experiență și abordare personalizată"
     },
-    "ariaLabel": "Avantajele studioului TrinkoTattoo din Chișinău: calitate, experiență și abordare personalizată"
+    "portfolioSection": {
+      "title": "Portofoliul artiștilor tatuatori din Chișinău - TrinkoTattoo",
+      "text": "Aici puteți vedea lucrările reale ale artiștilor noștri. Tatuaje, piercinguri, acoperiri și schițe — toate realizate cu atenție la detalii și în condiții sterile. Suntem mândri de calitatea fiecărei lucrări.",
+      "ariaLabel": "Portofoliul studioului TrinkoTattoo din Chișinău: tatuaje, piercinguri și schițe ale artiștilor",
+      "linkLabel": "Deschide fotografia mărită",
+      "link": "Vezi toate fotografiile"
+    }
   },
   "aboutPage": {
     "title": "paginaDespre paginaDespre paginaDespre paginaDespre paginaDespre"

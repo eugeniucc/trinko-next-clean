@@ -13,6 +13,14 @@
     "text": "But you can still get a tattoo!",
     "button": "Go back and book a tattoo"
   },
+  "pageSpeedLabel": {
+    "burgerMenu": "Open navigation menu",
+    "translationButton": "Open translations menu",
+    "homeSlider": {
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide"
+    }
+  },
   "homePage": {
     "header": {
       "links": [
@@ -102,6 +110,13 @@
       "extra": "Each of our specialists has years of experience and continually improves their skills by mastering modern techniques and approaches. We strictly follow hygiene standards and use only trusted materials.",
       "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage.",
       "ariaLabel": "Advantages of TrinkoTattoo studio in Chisinau: quality, experience, and personalized approach"
+    },
+    "portfolioSection": {
+      "title": "Portfolio of tattoo artists in Chisinau - TrinkoTattoo",
+      "text": "Here you can see real works by our artists. Tattoos, piercings, cover-ups, and sketches — all created with attention to detail and in sterile conditions. We are proud of the quality of each work.",
+      "ariaLabel": "Portfolio of TrinkoTattoo studio in Chisinau: tattoos, piercings, and artists' sketches",
+      "linkLabel": "View larger photo",
+      "link": "View all photos"
     }
   },
   "aboutPage": {

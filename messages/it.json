@@ -13,6 +13,14 @@
     "text": "Ma puoi ancora farti un tatuaggio!",
     "button": "Torna indietro e prenota un tatuaggio"
   },
+  "pageSpeedLabel": {
+    "burgerMenu": "Apri il menu di navigazione",
+    "translationButton": "Apri il menu delle traduzioni",
+    "homeSlider": {
+      "previousSlide": "Slide precedente",
+      "nextSlide": "Slide successiva"
+    }
+  },
   "homePage": {
     "header": {
       "links": [
@@ -100,9 +108,16 @@
       "title": "Perché scegliere Trinkotattoo — Studio di Tatuaggi a Chisinau",
       "description": "Trinkotattoo è un team di professionisti, ciascuno esperto nel proprio campo: tatuaggi, piercing o trucco permanente. Non ci limitiamo al lavoro tecnico — offriamo un approccio personalizzato per garantire che il risultato rispecchi il tuo stile e le tue aspettative.",
       "extra": "Ogni nostro specialista ha anni di esperienza e continua a formarsi per apprendere le tecniche e i metodi più moderni. Rispettiamo rigorosamente gli standard di sterilità e utilizziamo solo materiali affidabili.",
-      "more_text": "Offriamo condizioni trasparenti, prezzi onesti e una sincera attenzione ai dettagli. Prima di iniziare, discutiamo sempre il disegno, le fasi del lavoro e la cura successiva, così da farti sentire sicuro in ogni momento."
+      "more_text": "Offriamo condizioni trasparenti, prezzi onesti e una sincera attenzione ai dettagli. Prima di iniziare, discutiamo sempre il disegno, le fasi del lavoro e la cura successiva, così da farti sentire sicuro in ogni momento.",
+      "ariaLabel": "Vantaggi dello studio TrinkoTattoo a Chisinau: qualità, esperienza e approccio personalizzato"
     },
-    "ariaLabel": "Vantaggi dello studio TrinkoTattoo a Chisinau: qualità, esperienza e approccio personalizzato"
+    "portfolioSection": {
+      "title": "Portfolio dei tatuatori a Chisinau - TrinkoTattoo",
+      "text": "Qui puoi vedere i veri lavori dei nostri artisti. Tatuaggi, piercing, coperture e schizzi — tutto realizzato con attenzione ai dettagli e in condizioni sterili. Siamo orgogliosi della qualità di ogni lavoro.",
+      "ariaLabel": "Portfolio dello studio TrinkoTattoo a Chisinau: tatuaggi, piercing e schizzi degli artisti",
+      "linkLabel": "Apri la foto in grande",
+      "link": "Vedi tutte le foto"
+    }
   },
   "aboutPage": {
     "title": "paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni"
