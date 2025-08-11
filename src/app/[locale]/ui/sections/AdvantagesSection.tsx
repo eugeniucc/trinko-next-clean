@@ -19,7 +19,7 @@ export const AdvantagesSection = async () => {
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayOnView
               title="gotovaya-tatu-posle-seansa"
-              src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-videos/gotovaya-tatu-posle-seansa.mp4`}
+              src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/gotovaya-tatu-posle-seansa_a8bcjg.mp4'}
             />
           </div>
           <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
@@ -30,7 +30,7 @@ export const AdvantagesSection = async () => {
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayOnView
               title="process-nabivki-tatu-kishinev"
-              src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-videos/process-nabivki-tatu-kishinev.mp4`}
+              src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/process-nabivki-tatu-kishinev_ghvst5.mp4'}
             />
           </div>
           <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
@@ -39,7 +39,7 @@ export const AdvantagesSection = async () => {
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayOnView
               title="seans-tatu-ot-nachala-do-konca"
-              src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-videos/seans-tatu-ot-nachala-do-konca.mp4`}
+              src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/seans-tatu-ot-nachala-do-konca_hxoex5.mp4'}
             />
           </div>
         </div>

@@ -1,8 +1,8 @@
 export const cardsImages = [
-  'public/homepage-services/icon-01-80x80.webp',
-  'public/homepage-services/icon-02-80x80.webp',
-  'public/homepage-services/icon-03-80x80.webp',
-  'public/homepage-services/icon-04-80x80.webp',
-  'public/homepage-services/icon-05-80x80.webp',
-  'public/homepage-services/icon-06-80x80.webp'
+  '/homePage/services-section/ikonka-tatu-mashinka.webp',
+  '/homePage/services-section/ikonka-pirsing.webp',
+  '/homePage/services-section/ikonka-igli-dlya-tatu.webp',
+  '/homePage/services-section/ikonka-eskiz-tatu.webp',
+  '/homePage/services-section/ikonka-permanent-tatu.webp',
+  '/homePage/services-section/ikonka-plastyr.webp'
 ]

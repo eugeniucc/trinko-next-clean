@@ -40,7 +40,7 @@ const HeroSlider = () => {
       >
         <SwiperSlide>
           <HeroSlide
-            imageSrc={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-hero-slider/1.webp`}
+            imageSrc={'/homePage/hero-section/tatu-cvety-i-zmeya-na-noge.webp'}
             imageAlt="тату цветы и змея в Кишиневе"
             title="firstCard"
             text="firstCard"
@@ -52,7 +52,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-hero-slider/2.webp`}
+            imageSrc={'/homePage/hero-section/tatu-nadpis-i-cvety-na-pleche.webp'}
             imageAlt="тату цветы и надпись в Кишиневе"
             title="secondCard"
             text="secondCard"
@@ -64,7 +64,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/homepage-hero-slider/3.webp`}
+            imageSrc={'/homePage/hero-section/tatu-cvetov-na-predpleche.webp'}
             imageAlt="тату цветы на руке в Кишиневе"
             title="thirdCard"
             text="thirdCard"

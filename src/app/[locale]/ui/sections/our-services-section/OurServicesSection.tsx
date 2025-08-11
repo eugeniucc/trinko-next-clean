@@ -27,10 +27,10 @@ export const OurServicesSection = async () => {
                 className="group relative -mb-[1px] -ml-[1px] flex flex-col items-center gap-4 border border-gray-200 p-6 text-center"
               >
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}${cardsImages[i]}`}
+                  src={`${cardsImages[i]}`}
                   width={80}
                   height={80}
-                  alt="Тату атрибуты"
+                  alt={card.title}
                   className="h-18 w-18 duration-300 group-hover:-translate-y-1 group-hover:rotate-15"
                 />
                 <h2 className="text-lg font-bold">{card.title}</h2>

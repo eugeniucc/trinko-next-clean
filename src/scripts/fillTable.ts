@@ -3,15 +3,16 @@ import 'dotenv/config'
 import { prisma } from '@/lib/prisma'
 
 const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_KEY!)
-const bucket = 'portfolio'
+const bucket = 'homepage-sketches'
 
 const getAllFileNames = async () => {
   const { data, error } = await supabase.storage.from(bucket).list('', { limit: 100 })
+
   if (error) {
     return []
   }
 
-  const fileNames = data.map((file) => file.name)
+  const fileNames = data.filter((x) => !x.name.startsWith('.')).map((file) => file.name)
   console.log(fileNames)
   return fileNames
 }
@@ -25,7 +26,7 @@ const main = async () => {
     alt: name
   }))
 
-  const result = await prisma.portfolio.createMany({
+  const result = await prisma.homepageSketches.createMany({
     data: fullUrls,
     skipDuplicates: true
   })
