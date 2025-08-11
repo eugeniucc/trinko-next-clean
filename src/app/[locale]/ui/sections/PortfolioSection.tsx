@@ -32,7 +32,9 @@ export const PortfolioSection = async () => {
           <Lightbox gallery="home-portfolio">
             <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
               {portfolioImages.items.map((image) => {
-                const full = `${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}${image.url}`
+                const full = `${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/${image.url}`
+
+                console.log(full)
                 return (
                   <a
                     key={image.id}
