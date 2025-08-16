@@ -117,6 +117,16 @@
       "ariaLabel": "Portfolio of TrinkoTattoo studio in Chisinau: tattoos, piercings, and artists' sketches",
       "linkLabel": "View larger photo",
       "link": "View all photos"
+    },
+    "locationSection": {
+      "title": "Tattoo studio in Chisinau on the map",
+      "text": "Our tattoo studio is located in the center of Chisinau. On the map below you can easily find the studio's location and build a convenient route.",
+      "appointment": "Visits are available strictly by appointment only.",
+      "description": "If you have difficulty finding us — contact us and we will be happy to guide you.",
+      "ariaLabel": "Tattoo studio location in Chisinau. Find us on the map and plan your route"
+    },
+    "footer": {
+      "terms": "Terms and conditions"
     }
   },
   "aboutPage": {

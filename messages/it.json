@@ -117,6 +117,16 @@
       "ariaLabel": "Portfolio dello studio TrinkoTattoo a Chisinau: tatuaggi, piercing e schizzi degli artisti",
       "linkLabel": "Apri la foto in grande",
       "link": "Vedi tutte le foto"
+    },
+    "locationSection": {
+      "title": "Studio di tatuaggi a Chisinau sulla mappa",
+      "text": "Il nostro studio di tatuaggi si trova nel centro di Chisinau. Nella mappa qui sotto puoi trovare facilmente la posizione dello studio e creare un percorso comodo.",
+      "appointment": "Le visite si effettuano esclusivamente su appuntamento.",
+      "description": "Se hai difficoltà a trovarci — contattaci e saremo felici di indicarti la strada.",
+      "ariaLabel": "Posizione dello studio di tatuaggi a Chisinau. Trovaci sulla mappa e pianifica il tuo percorso"
+    },
+    "footer": {
+      "terms": "Termini e condizioni"
     }
   },
   "aboutPage": {

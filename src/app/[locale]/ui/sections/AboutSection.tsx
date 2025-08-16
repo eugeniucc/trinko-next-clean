@@ -12,7 +12,7 @@ export const AboutSection = async () => {
     <CustomSectionAria className={'relative'} aria={t('ariaLabel')}>
       <div className="pointer-events-none absolute inset-0 bg-black/50"></div>
       <Image
-        src="/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp"
+        src="/images/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp"
         width={1920}
         height={1080}
         alt="Мастер делает татуировку в салоне TrinkoTattoo"

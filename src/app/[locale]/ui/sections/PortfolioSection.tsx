@@ -34,7 +34,6 @@ export const PortfolioSection = async () => {
               {portfolioImages.items.map((image) => {
                 const full = `${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/${image.url}`
 
-                console.log(full)
                 return (
                   <a
                     key={image.id}

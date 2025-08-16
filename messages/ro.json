@@ -117,6 +117,16 @@
       "ariaLabel": "Portofoliul studioului TrinkoTattoo din Chișinău: tatuaje, piercinguri și schițe ale artiștilor",
       "linkLabel": "Deschide fotografia mărită",
       "link": "Vezi toate fotografiile"
+    },
+    "locationSection": {
+      "title": "Salon de tatuaje în Chișinău pe hartă",
+      "text": "Salonul nostru de tatuaje se află în centrul Chișinăului. Pe harta de mai jos poți găsi ușor locația studioului și să îți creezi un traseu convenabil.",
+      "appointment": "Programările se fac exclusiv în baza unei rezervări prealabile.",
+      "description": "Dacă întâmpini dificultăți în a ne găsi — contactează-ne și te vom ghida cu plăcere.",
+      "ariaLabel": "Locația salonului de tatuaje în Chișinău. Găsește-ne pe hartă și planifică-ți traseul"
+    },
+    "footer": {
+      "terms": "Termeni și condiții"
     }
   },
   "aboutPage": {

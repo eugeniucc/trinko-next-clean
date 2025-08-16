@@ -7,6 +7,7 @@ import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
 import { jsonLd } from '../jsonLd'
 import ClientWrapper from './ClientWrapper'
+import FooterMenu from './ui/footer/FooterMenu'
 import HeaderMenu from './ui/header/HeaderMenu'
 
 const roboto = Roboto({
@@ -57,6 +58,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider>
           <HeaderMenu />
           <ClientWrapper>{children}</ClientWrapper>
+          <FooterMenu />
         </NextIntlClientProvider>
       </body>
     </html>

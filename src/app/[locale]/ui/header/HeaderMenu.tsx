@@ -7,7 +7,7 @@ import MobileMenu from './MobileMenu'
 export default function HeaderMenu() {
   return (
     <HeaderScrollWrapper>
-      <header className="">
+      <header>
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Logo />
           <div className="flex items-center gap-6 md:gap-10">

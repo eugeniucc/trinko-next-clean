@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { Container } from '@/components/custom/Container'
 import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
 
 type Props = {
-  imageSrc: string
+  imageSrc: StaticImageData
   imageAlt: string
   priority: boolean
   title: string
@@ -24,6 +24,8 @@ export const HeroSlide = ({ ...props }: Props) => {
         fill
         priority={props.priority}
         className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
+        placeholder="blur"
+        sizes="100vw"
       />
       <div className="pointer-events-none absolute inset-0 z-10 bg-black/50" />
       <Container className="relative z-20 flex min-h-screen items-center justify-center">
