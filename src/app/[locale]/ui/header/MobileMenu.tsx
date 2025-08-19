@@ -10,7 +10,7 @@ export default async function MobileMenu() {
   const burgerAria = tSpeed('burgerMenu')
 
   return (
-    <div className="flex items-center md:hidden">
+    <div className="flex items-center lg:hidden">
       <Sheet>
         <SheetTrigger aria-label={burgerAria}>
           <Menu className="text-red-500" />

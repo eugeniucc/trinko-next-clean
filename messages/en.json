@@ -24,8 +24,9 @@
   "homePage": {
     "header": {
       "links": [
-        { "label": "About", "href": "/about" },
-        { "label": "Services", "href": "/services" },
+        { "label": "Permanent Makeup", "href": "/permanent" },
+        { "label": "Tattoo", "href": "/tattoo" },
+        { "label": "Piercing", "href": "/piercing" },
         { "label": "Gallery", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
         { "label": "Course", "href": "/course" },
@@ -125,11 +126,36 @@
       "description": "If you have difficulty finding us — contact us and we will be happy to guide you.",
       "ariaLabel": "Tattoo studio location in Chisinau. Find us on the map and plan your route"
     },
+    "contactsSection": {
+      "title": "Book a tattoo, piercing or permanent makeup in Chisinau",
+      "text": "We work by appointment only. Choose a convenient time and contact us — our artists will help bring any tattoo idea to life, perform professional piercing or flawless permanent makeup. Individual approach, safety and comfort are guaranteed.",
+      "location": {
+        "title": "Location",
+        "address": "Albișoara St. 4, Atrium Mall",
+        "text": "We work exclusively by appointment. You will receive detailed instructions on how to find us after confirming your booking."
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "time": "Daily from",
+        "text": "By appointment only; if necessary, we can arrange night sessions."
+      },
+      "contacts": {
+        "title": "Contacts",
+        "text": "Available on Telegram, WhatsApp and Viber for consultations and bookings."
+      },
+      "social": "Visit our pages",
+      "ariaLabel": "Contact information and booking details for TrinkoTattoo studio in Chisinau"
+    },
     "footer": {
       "terms": "Terms and conditions"
     }
   },
-  "aboutPage": {
-    "title": "aboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPageaboutPage"
+  "permanentPage": {
+    "pm": {
+      "serviceType": "Permanent makeup for eyebrows, lips and eyelids in Chisinau",
+      "offerBrows": "Permanent eyebrow makeup (powder shading)",
+      "offerLips": "Permanent lip makeup (watercolor technique)",
+      "offerEyes": "Permanent eyeliner / lash enhancement"
+    }
   }
 }

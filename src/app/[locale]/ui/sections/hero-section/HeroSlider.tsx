@@ -10,9 +10,6 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import thirdImage from '@/assets/homePage/hero-section/tatu-cvetov-na-predpleche.webp'
-import firstImage from '@/assets/homePage/hero-section/tatu-cvety-i-zmeya-na-noge.webp'
-import secondImage from '@/assets/homePage/hero-section/tatu-nadpis-i-cvety-na-pleche.webp'
 import { Container } from '@/components/custom/Container'
 import { HeroSlide } from './HeroSlide'
 
@@ -24,7 +21,7 @@ const HeroSlider = () => {
       <Swiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         slidesPerView={1}
-        autoplay={{ delay: 1500 }}
+        autoplay={{ delay: 3500 }}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         loop
@@ -43,7 +40,7 @@ const HeroSlider = () => {
       >
         <SwiperSlide>
           <HeroSlide
-            imageSrc={firstImage}
+            imageSrc="/images/homePage/hero-section/tatu-cvety-i-zmeya-na-noge.webp"
             imageAlt="тату цветы и змея в Кишиневе"
             title="firstCard"
             text="firstCard"
@@ -55,7 +52,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc={secondImage}
+            imageSrc="/images/homePage/hero-section/tatu-nadpis-i-cvety-na-pleche.webp"
             imageAlt="тату цветы и надпись в Кишиневе"
             title="secondCard"
             text="secondCard"
@@ -67,7 +64,7 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc={thirdImage}
+            imageSrc="/images/homePage/hero-section/tatu-cvetov-na-predpleche.webp"
             imageAlt="тату цветы на руке в Кишиневе"
             title="thirdCard"
             text="thirdCard"

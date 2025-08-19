@@ -24,8 +24,9 @@
   "homePage": {
     "header": {
       "links": [
-        { "label": "Despre", "href": "/about" },
-        { "label": "Servicii", "href": "/services" },
+        { "label": "Machiaj Permanent", "href": "/permanent" },
+        { "label": "Tatuaj", "href": "/tattoo" },
+        { "label": "Piercing", "href": "/piercing" },
         { "label": "Galerie", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
         { "label": "Curs", "href": "/course" },
@@ -125,11 +126,36 @@
       "description": "Dacă întâmpini dificultăți în a ne găsi — contactează-ne și te vom ghida cu plăcere.",
       "ariaLabel": "Locația salonului de tatuaje în Chișinău. Găsește-ne pe hartă și planifică-ți traseul"
     },
+    "contactsSection": {
+      "title": "Programează-te pentru tatuaj, piercing sau machiaj permanent la Chișinău",
+      "text": "Lucrăm doar pe bază de programare. Alege ora convenabilă și contactează-ne — maeștrii noștri te vor ajuta să îți realizezi orice idee de tatuaj, vor efectua piercing profesionist sau machiaj permanent impecabil. Abordare individuală, siguranță și confort garantate.",
+      "location": {
+        "title": "Locație",
+        "address": "Str. Albișoara 4, Atrium Mall",
+        "text": "Lucrăm exclusiv pe bază de programare. Vei primi instrucțiuni detaliate despre cum să ne găsești după confirmarea programării."
+      },
+      "workingHours": {
+        "title": "Program",
+        "time": "Zilnic de la",
+        "text": "Doar pe bază de programare; dacă este necesar, putem organiza ședințe pe timpul nopții."
+      },
+      "contacts": {
+        "title": "Contacte",
+        "text": "Disponibili pe Telegram, WhatsApp și Viber pentru consultații și programări."
+      },
+      "social": "Vizitează paginile noastre",
+      "ariaLabel": "Informații de contact și programări pentru studioul TrinkoTattoo din Chișinău"
+    },
     "footer": {
       "terms": "Termeni și condiții"
     }
   },
-  "aboutPage": {
-    "title": "paginaDespre paginaDespre paginaDespre paginaDespre paginaDespre"
+  "permanentPage": {
+    "pm": {
+      "serviceType": "Machiaj permanent pentru sprâncene, buze și pleoape în Chișinău",
+      "offerBrows": "Machiaj permanent sprâncene (tehnica pudrată)",
+      "offerLips": "Machiaj permanent buze (tehnica acvarelă)",
+      "offerEyes": "Machiaj permanent pleoape / contur ochi / infraciliar"
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { ContactsSection } from '@/shared/ContactsSection'
 import { AboutSection } from './ui/sections/AboutSection'
 import { AdvantagesSection } from './ui/sections/AdvantagesSection'
 import { LocationSection } from './ui/sections/LocationSection'
@@ -15,6 +16,7 @@ export default function Home() {
       <SketchesSection />
       <AdvantagesSection />
       <PortfolioSection />
+      <ContactsSection />
       <LocationSection />
     </main>
   )

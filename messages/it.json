@@ -24,8 +24,9 @@
   "homePage": {
     "header": {
       "links": [
-        { "label": "Chi siamo", "href": "/about" },
-        { "label": "Servizi", "href": "/services" },
+        { "label": "Trucco Permanente", "href": "/permanent" },
+        { "label": "Tatuaggio", "href": "/tattoo" },
+        { "label": "Piercing", "href": "/piercing" },
         { "label": "Galleria", "href": "/gallery" },
         { "label": "Blog", "href": "/blog" },
         { "label": "Corso", "href": "/course" },
@@ -125,11 +126,36 @@
       "description": "Se hai difficoltà a trovarci — contattaci e saremo felici di indicarti la strada.",
       "ariaLabel": "Posizione dello studio di tatuaggi a Chisinau. Trovaci sulla mappa e pianifica il tuo percorso"
     },
+    "contactsSection": {
+      "title": "Prenota un tatuaggio, piercing o trucco permanente a Chisinau",
+      "text": "Lavoriamo solo su appuntamento. Scegli l’orario più comodo e contattaci — i nostri artisti realizzeranno qualsiasi idea di tatuaggio, eseguiranno piercing professionali o trucco permanente impeccabile. Approccio individuale, sicurezza e comfort garantiti.",
+      "location": {
+        "title": "Posizione",
+        "address": "Via Albișoara 4, Atrium Mall",
+        "text": "Lavoriamo esclusivamente su appuntamento. Dopo la conferma riceverai istruzioni dettagliate su come trovarci."
+      },
+      "workingHours": {
+        "title": "Orari di lavoro",
+        "time": "Tutti i giorni dalle",
+        "text": "Solo su appuntamento; se necessario, possiamo organizzare sessioni notturne."
+      },
+      "contacts": {
+        "title": "Contatti",
+        "text": "Disponibili su Telegram, WhatsApp e Viber per consulenze e prenotazioni."
+      },
+      "social": "Visita le nostre pagine",
+      "ariaLabel": "Informazioni di contatto e prenotazioni per lo studio TrinkoTattoo a Chisinau"
+    },
     "footer": {
       "terms": "Termini e condizioni"
     }
   },
-  "aboutPage": {
-    "title": "paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni paginaInformazioni"
+  "permanentPage": {
+    "pm": {
+      "serviceType": "Trucco permanente per sopracciglia, labbra e palpebre a Chisinau",
+      "offerBrows": "Trucco permanente sopracciglia (ombreggiatura in polvere)",
+      "offerLips": "Trucco permanente labbra (tecnica acquerello)",
+      "offerEyes": "Trucco permanente occhi / infracigliare"
+    }
   }
 }

@@ -3,8 +3,8 @@
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { usePathname } from 'next/navigation'
 import { ReactNode, useLayoutEffect } from 'react'
-import { LazyGTM } from './LazyGTM'
-import { LazyJivoChat } from './LazyJivoChat'
+import { LazyGTM } from './seo/LazyGTM'
+import { LazyJivoChat } from './seo/LazyJivoChat'
 
 export default function ClientWrapper({ children }: { children: ReactNode }) {
   const pathname = usePathname()
