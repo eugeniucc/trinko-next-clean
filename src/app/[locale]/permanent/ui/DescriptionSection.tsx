@@ -1,12 +1,18 @@
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
+import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
 import { PickmeLink } from './PickmeLink'
 
 export const DescriptionSection = () => {
   return (
     <CustomSectionAria aria="Описание перманентного макияжа" className="bg-zinc-900 py-20">
       <Container>
-        <div className="mx-auto max-w-4xl space-y-8 text-center">
+        <FramerMotionContainer
+          className="mx-auto max-w-4xl space-y-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          duration={0.5}
+        >
           <div className="flex flex-col gap-10 text-zinc-200">
             <h2 className="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-3xl font-bold text-transparent">
               Перманентный макияж в Кишинёве — брови, губы и стрелки
@@ -41,7 +47,7 @@ export const DescriptionSection = () => {
 
             <PickmeLink text="Записаться на консультацию" />
           </div>
-        </div>
+        </FramerMotionContainer>
       </Container>
     </CustomSectionAria>
   )

@@ -2,7 +2,6 @@
   "seo": {
     "title": "TrinkoTattoo - Studio di Tatuaggi Professionale a Chisinau",
     "description": "TrinkoTattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
-    "keywords": "studio di tatuaggi, tatuaggio, tatuaggi, Chisinau, TrinkoTattoo, salone di tatuaggi, tatuaggi Chisinau, studi di tatuaggi a Chisinau, artisti di tatuaggi professionisti, migliori tatuatori a Chisinau, tatuaggi unici",
     "openGraphTitle": "TrinkoTattoo - Tatuaggi Professionali a Chisinau",
     "openGraphDescription": "Il miglior studio di tatuaggi a Chisinau. Tatuaggi unici realizzati da professionisti.",
     "twitterTitle": "TrinkoTattoo - I Migliori Tatuaggi a Chisinau",
@@ -156,6 +155,72 @@
       "offerBrows": "Trucco permanente sopracciglia (ombreggiatura in polvere)",
       "offerLips": "Trucco permanente labbra (tecnica acquerello)",
       "offerEyes": "Trucco permanente occhi / infracigliare"
+    },
+    "serviceSection": {
+      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio TrinkoTattoo",
+      "text": "Il nostro studio di tatuaggi a Chișinău offre trucco permanente professionale per le donne che vogliono apparire sempre curate. Usiamo tecniche moderne: sopracciglia in polvere, labbra acquerello e eyeliner infracigliare. La procedura è indolore, sicura e offre un risultato naturale da 1,5 a 3 anni.",
+      "services": [
+        {
+          "badge": "Sopracciglia",
+          "title": "Sopracciglia in polvere",
+          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
+          "subtitle": "Vantaggi del trucco permanente professionale:",
+          "list": [
+            "Effetto naturale di sfumatura senza linee marcate",
+            "Aumento visivo della densità delle sopracciglia",
+            "Correzione della forma e delle asimmetrie",
+            "Risultato duraturo da 1,5 a 3 anni",
+            "Adatto a tutti i tipi di pelle"
+          ],
+          "priceTitle": "Prezzo:",
+          "price": "da 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Guarigione:",
+          "heal": "7-10 giorni",
+          "button": "Prenota la procedura"
+        },
+        {
+          "badge": "Sopracciglia",
+          "title": "Sopracciglia in polvere",
+          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
+          "subtitle": "Vantaggi del trucco permanente professionale:",
+          "list": [
+            "Effetto naturale di sfumatura senza linee marcate",
+            "Aumento visivo della densità delle sopracciglia",
+            "Correzione della forma e delle asimmetrie",
+            "Risultato duraturo da 1,5 a 3 anni",
+            "Adatto a tutti i tipi di pelle"
+          ],
+          "priceTitle": "Prezzo:",
+          "price": "da 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Guarigione:",
+          "heal": "7-10 giorni",
+          "button": "Prenota la procedura"
+        },
+        {
+          "badge": "Sopracciglia",
+          "title": "Sopracciglia in polvere",
+          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
+          "subtitle": "Vantaggi del trucco permanente professionale:",
+          "list": [
+            "Effetto naturale di sfumatura senza linee marcate",
+            "Aumento visivo della densità delle sopracciglia",
+            "Correzione della forma e delle asimmetrie",
+            "Risultato duraturo da 1,5 a 3 anni",
+            "Adatto a tutti i tipi di pelle"
+          ],
+          "priceTitle": "Prezzo:",
+          "price": "da 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Guarigione:",
+          "heal": "7-10 giorni",
+          "button": "Prenota la procedura"
+        }
+      ]
     }
   }
 }

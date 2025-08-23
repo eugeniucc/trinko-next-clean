@@ -2,7 +2,6 @@
   "seo": {
     "title": "TrinkoTattoo - Studio de Tatuaje Profesional în Chișinău",
     "description": "TrinkoTattoo este cel mai bun studio de tatuaje din Chișinău. Designuri unice, artiști profesioniști și lucrări de calitate înaltă.",
-    "keywords": "studio de tatuaje, tatuaj, tatuaje, Chișinău, TrinkoTattoo, salon de tatuaje, tatuaje Chișinău, studiouri de tatuaje în Chișinău, artiști tatuatori profesioniști, cei mai buni tatuatori din Chișinău, tatuaje unice",
     "openGraphTitle": "TrinkoTattoo - Tatuaje Profesionale în Chișinău",
     "openGraphDescription": "Cel mai bun studio de tatuaje din Chișinău. Tatuaje unice realizate de profesioniști.",
     "twitterTitle": "TrinkoTattoo - Cele Mai Bune Tatuaje din Chișinău",
@@ -156,6 +155,72 @@
       "offerBrows": "Machiaj permanent sprâncene (tehnica pudrată)",
       "offerLips": "Machiaj permanent buze (tehnica acvarelă)",
       "offerEyes": "Machiaj permanent pleoape / contur ochi / infraciliar"
+    },
+    "serviceSection": {
+      "title": "Machiaj permanent la Chișinău — sprâncene, buze și eyeliner la studioul TrinkoTattoo",
+      "text": "Studioul nostru de tatuaje din Chișinău oferă machiaj permanent profesional pentru femeile care doresc să arate mereu îngrijite. Folosim tehnici moderne: sprâncene pudrate, buze acuarelă și eyeliner intercilial. Procedura este nedureroasă, sigură și oferă un rezultat natural timp de 1,5–3 ani.",
+      "services": [
+        {
+          "badge": "Sprâncene",
+          "title": "Sprâncene pudrate",
+          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
+          "subtitle": "Avantajele machiajului permanent profesional:",
+          "list": [
+            "Efect natural de umbrire fără linii dure",
+            "Creșterea vizuală a densității sprâncenelor",
+            "Corectarea formei și asimetriei",
+            "Rezultat de lungă durată 1,5–3 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "de la 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Vindecare:",
+          "heal": "7-10 zile",
+          "button": "Programează-te"
+        },
+        {
+          "badge": "Sprâncene",
+          "title": "Sprâncene pudrate",
+          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
+          "subtitle": "Avantajele machiajului permanent profesional:",
+          "list": [
+            "Efect natural de umbrire fără linii dure",
+            "Creșterea vizuală a densității sprâncenelor",
+            "Corectarea formei și asimetriei",
+            "Rezultat de lungă durată 1,5–3 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "de la 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Vindecare:",
+          "heal": "7-10 zile",
+          "button": "Programează-te"
+        },
+        {
+          "badge": "Sprâncene",
+          "title": "Sprâncene pudrate",
+          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
+          "subtitle": "Avantajele machiajului permanent profesional:",
+          "list": [
+            "Efect natural de umbrire fără linii dure",
+            "Creșterea vizuală a densității sprâncenelor",
+            "Corectarea formei și asimetriei",
+            "Rezultat de lungă durată 1,5–3 ani",
+            "Potrivit pentru toate tipurile de piele"
+          ],
+          "priceTitle": "Preț:",
+          "price": "de la 2500 MDL",
+          "timeTitle": "Durata:",
+          "time": "2-3 ore",
+          "healTitle": "Vindecare:",
+          "heal": "7-10 zile",
+          "button": "Programează-te"
+        }
+      ]
     }
   }
 }

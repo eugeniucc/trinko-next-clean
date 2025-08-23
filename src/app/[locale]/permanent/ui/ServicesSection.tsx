@@ -1,49 +1,33 @@
+import { useTranslations } from 'next-intl'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
+import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { PermanentCardProps } from '../types/permanent.types'
 import { ProductCard } from './ProductCard'
 
-const list = [
-  'Естественный эффект напыления без четких линий',
-  'Визуальное увеличение густоты бровей',
-  'Коррекция формы и асимметрии',
-  'Долговременный результат 1.5-3 года',
-  'Подходит для всех типов кожи'
-]
-
 export const ServicesSection = () => {
+  const t = useTranslations('permanentPage.serviceSection')
+
+  const list = t.raw('services') as PermanentCardProps[]
+
   return (
     <CustomSectionAria className="bg-zinc-900 pb-20" aria="Наши услуги перманентного макияжа">
-      <Container>
-        <div className="flex flex-col gap-20">
-          <h3 className="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-center text-2xl font-bold text-transparent">
-            Наши услуги перманентного макияжа
-          </h3>
-          <div className="grid grid-cols-1 gap-15 lg:grid-cols-2 xl:grid-cols-3">
-            <ProductCard
-              badge="Брови"
-              title="Пудровые брови"
-              text=" Создание эффекта легкой тени для идеальной формы и густоты. Естественный результат, который выглядит как профессионально выполненный
-              макияж каждый день."
-              description="Преимущества профессионального перманентного макияжа:"
-              list={list}
-            />
-            <ProductCard
-              badge="Брови"
-              title="Пудровые брови"
-              text=" Создание эффекта легкой тени для идеальной формы и густоты. Естественный результат, который выглядит как профессионально выполненный
-              макияж каждый день."
-              description="Преимущества профессионального перманентного макияжа:"
-              list={list}
-            />
-            <ProductCard
-              badge="Брови"
-              title="Пудровые брови"
-              text=" Создание эффекта легкой тени для идеальной формы и густоты. Естественный результат, который выглядит как профессионально выполненный
-              макияж каждый день."
-              description="Преимущества профессионального перманентного макияжа:"
-              list={list}
-            />
-          </div>
+      <Container className="flex flex-col gap-20">
+        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+          <h2 className="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-center text-2xl font-bold text-transparent">
+            Перманентный макияж в Кишинёве — брови, губы и стрелки в студии TrinkoTattoo
+          </h2>
+          <p className="mx-auto max-w-3xl text-center text-zinc-400">
+            Наша тату-студия в Кишинёве предлагает профессиональный перманентный макияж для женщин, которые хотят всегда выглядеть ухоженно. Мы
+            используем современные техники: пудровые брови, акварельные губы и межресничные стрелки. Процедура безболезненная, безопасная и даёт
+            естественный результат на 1.5–3 года.
+          </p>
+        </FramerMotionContainer>
+
+        <div className="grid grid-cols-1 gap-15 md:grid-cols-2 xl:grid-cols-3">
+          {list.map((item, i) => (
+            <ProductCard key={i} item={item} />
+          ))}
         </div>
       </Container>
     </CustomSectionAria>

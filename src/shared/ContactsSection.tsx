@@ -9,8 +9,8 @@ export const ContactsSection = () => {
 
   return (
     <CustomSectionAria className="bg-zinc-900 pb-20" aria={t('ariaLabel')}>
-      <Container className="flex flex-col items-center gap-6">
-        <FramerMotionContainer className="flex flex-col gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+      <Container className="flex flex-col items-center gap-20">
+        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="xl:3xl text-center text-2xl break-words text-white 2xl:text-5xl">{t('title')}</h2>
           <p className="mx-auto max-w-2xl text-center text-white">{t('text')}</p>
         </FramerMotionContainer>
@@ -55,12 +55,12 @@ export const ContactsSection = () => {
             <div className="mt-8 border-t border-zinc-700 pt-6">
               <p className="mb-4 text-xl font-semibold text-white">{t('social')}</p>
 
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-col flex-wrap gap-6 sm:flex-row">
                 <a
                   href="https://www.instagram.com/trinko_tattoo/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
                   <Instagram className="h-5 w-5" />
                   <span>Instagram</span>
@@ -69,7 +69,7 @@ export const ContactsSection = () => {
                   href="https://facebook.com/trinkotattoo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
                   <Facebook className="h-5 w-5" />
 
@@ -79,7 +79,7 @@ export const ContactsSection = () => {
                   href="https://t.me/Trinkonfox"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
                   <Send className="h-5 w-5" />
                   <span>Telegram</span>
@@ -88,7 +88,7 @@ export const ContactsSection = () => {
                   href="https://wa.me/37360833389"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
                   <MessageCircleMore className="h-5 w-5" />
                   <span>WhatsApp</span>
@@ -97,7 +97,7 @@ export const ContactsSection = () => {
                   href="viber://chat?number=%2B37360833389"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
                   <MessageCircleHeart className="h-5 w-5" />
                   <span>Viber</span>

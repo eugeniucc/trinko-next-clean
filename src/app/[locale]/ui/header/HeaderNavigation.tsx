@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import NavigationLink from './NavigationLink'
 
 export default async function HeaderNavigation() {
   const locale = await getLocale()
@@ -9,15 +9,7 @@ export default async function HeaderNavigation() {
 
   return (
     <nav className="hidden items-center gap-12 lg:flex lg:gap-20">
-      <ul className="flex items-center gap-6 lg:gap-8">
-        {links.map((link, i) => (
-          <li key={i}>
-            <Link className="text-white transition-colors duration-300 hover:text-red-500" href={`/${locale}${link.href}`}>
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <NavigationLink locale={locale} links={links} />
     </nav>
   )
 }

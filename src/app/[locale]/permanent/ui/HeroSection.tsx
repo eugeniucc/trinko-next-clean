@@ -1,5 +1,6 @@
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
+import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
 import { PickmeLink } from './PickmeLink'
 
 export const HeroSection = () => {
@@ -15,7 +16,12 @@ export const HeroSection = () => {
 
       <Container className="relative z-2">
         <div className="flex flex-col gap-12 text-white">
-          <div className="flex flex-col items-center gap-6 text-center">
+          <FramerMotionContainer
+            className="flex flex-col items-center gap-6 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            duration={0.5}
+          >
             <h1 className="bg-gradient-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
               Перманентный макияж в Кишиневе
               <span className="block text-3xl sm:text-4xl lg:text-5xl">от мастера экстра-класса</span>
@@ -27,10 +33,15 @@ export const HeroSection = () => {
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
               <PickmeLink text="Записаться на консультацию" />
             </div>
-          </div>
+          </FramerMotionContainer>
 
           <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
-            <div className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm">
+            <FramerMotionContainer
+              className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              duration={0.5}
+            >
               <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-amber-500/20">
                 <span className="text-xl">👁️</span>
               </div>
@@ -39,9 +50,14 @@ export const HeroSection = () => {
                 Современное пудровое напыление с использованием сертифицированных пигментов. Естественный результат держится до 3 лет. Лучшие мастера
                 в Кишинёве.
               </p>
-            </div>
+            </FramerMotionContainer>
 
-            <div className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm">
+            <FramerMotionContainer
+              className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm"
+              initial={{ opacity: 0, y: 80 }}
+              animate={{ opacity: 1, y: 0 }}
+              duration={0.8}
+            >
               <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-rose-500/20">
                 <span className="text-xl">👄</span>
               </div>
@@ -50,9 +66,14 @@ export const HeroSection = () => {
                 Акварельная техника обеспечивает ровный тон и красивый контур без помады. Полная стерильность и европейские стандарты качества в нашем
                 салоне в Кишинёве.
               </p>
-            </div>
+            </FramerMotionContainer>
 
-            <div className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm">
+            <FramerMotionContainer
+              className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm"
+              initial={{ opacity: 0, y: 120 }}
+              animate={{ opacity: 1, y: 0 }}
+              duration={1}
+            >
               <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-purple-500/20">
                 <span className="text-xl">💎</span>
               </div>
@@ -61,7 +82,7 @@ export const HeroSection = () => {
                 Межресничное заполнение и эффект стрелки подчёркивают взгляд и экономят время. Надёжные мастера в Кишинёве (Молдова), стойкий и
                 безопасный результат.
               </p>
-            </div>
+            </FramerMotionContainer>
           </div>
         </div>
       </Container>

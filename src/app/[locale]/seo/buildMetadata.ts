@@ -1,15 +1,22 @@
-import type { Metadata } from 'next'
 import { getLocale, getTranslations } from 'next-intl/server'
+import { routing } from '@/i18n/routing'
 
-const LOCALES = ['ru', 'ro', 'en', 'uk', 'it'] as const
-const PATH = '/'
 const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN_URL
 
-export async function generateMetadata(): Promise<Metadata> {
+type Props = {
+  path?: string
+}
+
+export async function buildMetadata({ path }: Props) {
   const locale = await getLocale()
   const t = await getTranslations('seo')
 
-  const languages = Object.fromEntries(LOCALES.map((l) => [l, `${DOMAIN}/${l}${PATH}`]))
+  const pathProp = path ? `/${path}` : ''
+
+  const languages = Object.fromEntries(routing.locales.map((l) => [l, `${DOMAIN}/${l}${pathProp}`]))
+
+  const canonical = `${DOMAIN}/${locale}${pathProp}`
+  const ogUrl = canonical
 
   return {
     title: t('title'),
@@ -17,19 +24,19 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: 'index, follow',
 
     alternates: {
-      canonical: `${DOMAIN}/${locale}${PATH}`,
+      canonical,
       languages
     },
 
     openGraph: {
-      url: `${DOMAIN}/${locale}${PATH}`,
+      url: ogUrl,
       type: 'website',
       siteName: 'TrinkoTattoo',
       title: t('openGraphTitle'),
       description: t('openGraphDescription'),
       images: [`${DOMAIN}/logo/icon.png`],
       locale,
-      alternateLocale: LOCALES.filter((l) => l !== locale)
+      alternateLocale: routing.locales.filter((l) => l !== locale)
     },
 
     twitter: {

@@ -8,17 +8,15 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 type singleItem = {
-  items: {
-    url: string
-    alt: string
-  }
+  url: string
+  alt: string
 }
 
 type Props = {
-  items: singleItem[]
+  images: singleItem[]
 }
 
-export default function MultiSlider({ items }: Props) {
+export default function MultiSlider({ images }: Props) {
   return (
     <div className="w-full py-8">
       <Swiper
@@ -41,12 +39,12 @@ export default function MultiSlider({ items }: Props) {
         loop={true}
         speed={1200}
       >
-        {items.map((item, i) => (
+        {images.map((image, i) => (
           <SwiperSlide key={i} className="h-[380px]! w-[280px]! overflow-hidden rounded-xl md:h-[750px]! md:w-[550px]!">
             <div className="group relative h-full w-full">
               <Image
-                src={''}
-                alt={''}
+                src={image.url}
+                alt={image.alt}
                 width={650}
                 height={550}
                 className="h-full w-full object-cover brightness-90 transition-all duration-300 group-hover:brightness-110"

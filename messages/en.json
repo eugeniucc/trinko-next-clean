@@ -2,7 +2,6 @@
   "seo": {
     "title": "TrinkoTattoo - Professional Tattoo Studio in Chisinau",
     "description": "TrinkoTattoo is the best tattoo studio in Chisinau. Unique designs, professional artists, and high-quality work.",
-    "keywords": "tattoo studio, tattoo, tattooing, Chisinau, TrinkoTattoo, tattoo salon, tattoo, Chisinau, tattoo studios in Chisinau, professional tattoo artists, best tattoo artists in Chisinau, unique tattoos",
     "openGraphTitle": "TrinkoTattoo - Professional Tattoos in Chisinau",
     "openGraphDescription": "The best tattoo studio in Chisinau. Unique tattoos by professionals.",
     "twitterTitle": "TrinkoTattoo - Best Tattoos in Chisinau",
@@ -156,6 +155,83 @@
       "offerBrows": "Permanent eyebrow makeup (powder shading)",
       "offerLips": "Permanent lip makeup (watercolor technique)",
       "offerEyes": "Permanent eyeliner / lash enhancement"
+    },
+    "heroSection": {
+      "title": "",
+      "text": "",
+      "button": "",
+      "subtitles": [
+        {
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    "serviceSection": {
+      "title": "Permanent makeup in Chișinău — brows, lips and eyeliner at TrinkoTattoo studio",
+      "text": "Our tattoo studio in Chișinău offers professional permanent makeup for women who want to always look well-groomed. We use modern techniques: powder brows, watercolor lips and lash line eyeliner. The procedure is painless, safe and provides a natural result for 1.5–3 years.",
+      "services": [
+        {
+          "badge": "Brows",
+          "title": "Powder Brows",
+          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
+          "subtitle": "Advantages of professional permanent makeup:",
+          "list": [
+            "Natural shading effect without sharp lines",
+            "Visual increase in brow density",
+            "Correction of shape and asymmetry",
+            "Long-lasting result for 1.5–3 years",
+            "Suitable for all skin types"
+          ],
+          "priceTitle": "Price:",
+          "price": "from 2500 MDL",
+          "timeTitle": "Duration:",
+          "time": "2-3 hours",
+          "healTitle": "Healing:",
+          "heal": "7-10 days",
+          "button": "Book a procedure"
+        },
+        {
+          "badge": "Brows",
+          "title": "Powder Brows",
+          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
+          "subtitle": "Advantages of professional permanent makeup:",
+          "list": [
+            "Natural shading effect without sharp lines",
+            "Visual increase in brow density",
+            "Correction of shape and asymmetry",
+            "Long-lasting result for 1.5–3 years",
+            "Suitable for all skin types"
+          ],
+          "priceTitle": "Price:",
+          "price": "from 2500 MDL",
+          "timeTitle": "Duration:",
+          "time": "2-3 hours",
+          "healTitle": "Healing:",
+          "heal": "7-10 days",
+          "button": "Book a procedure"
+        },
+        {
+          "badge": "Brows",
+          "title": "Powder Brows",
+          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
+          "subtitle": "Advantages of professional permanent makeup:",
+          "list": [
+            "Natural shading effect without sharp lines",
+            "Visual increase in brow density",
+            "Correction of shape and asymmetry",
+            "Long-lasting result for 1.5–3 years",
+            "Suitable for all skin types"
+          ],
+          "priceTitle": "Price:",
+          "price": "from 2500 MDL",
+          "timeTitle": "Duration:",
+          "time": "2-3 hours",
+          "healTitle": "Healing:",
+          "heal": "7-10 days",
+          "button": "Book a procedure"
+        }
+      ]
     }
   }
 }

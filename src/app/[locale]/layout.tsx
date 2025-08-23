@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { Locale, NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
@@ -6,6 +7,7 @@ import Script from 'next/script'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
 import ClientWrapper from './ClientWrapper'
+import { buildMetadata } from './seo/buildMetadata'
 import { jsonLd } from './seo/jsonLd'
 import FooterMenu from './ui/footer/FooterMenu'
 import HeaderMenu from './ui/header/HeaderMenu'
@@ -22,7 +24,11 @@ const montserrat = Montserrat({
   subsets: ['latin']
 })
 
-export { generateMetadata } from './generateMetadata'
+export async function generateMetadata(): Promise<Metadata> {
+  return buildMetadata({
+    path: ''
+  })
+}
 
 type LayoutProps = {
   children: ReactNode

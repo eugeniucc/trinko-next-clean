@@ -1,9 +1,16 @@
 import Script from 'next/script'
+import { buildMetadata } from '../seo/buildMetadata'
 import { pmJsonLd } from './seo/pmJsonLd'
 import { DescriptionSection } from './ui/DescriptionSection'
 import { HeroSection } from './ui/HeroSection'
 import { ServicesSection } from './ui/ServicesSection'
 import { ShowOffSection } from './ui/ShowOffSection'
+
+export async function generateMetadata() {
+  return buildMetadata({
+    path: 'permanent'
+  })
+}
 
 export default async function PermanentPage() {
   const jsonLd = await pmJsonLd()
