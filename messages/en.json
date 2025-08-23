@@ -157,81 +157,121 @@
       "offerEyes": "Permanent eyeliner / lash enhancement"
     },
     "heroSection": {
-      "title": "",
-      "text": "",
-      "button": "",
+      "title": "Permanent makeup in Chișinău",
+      "titleExtend": "by a top-class master",
+      "text": "Enhance your natural beauty with professional permanent makeup. We specialize in the most popular techniques: powder brows, watercolor lip tattoo and elegant lash line eyeliner.",
+      "button": "Book a consultation",
       "subtitles": [
         {
-          "title": "",
-          "text": ""
+          "badge": "💎",
+          "title": "Permanent eyebrow makeup in Chișinău",
+          "text": "Modern powder shading with certified pigments. The natural result lasts up to 3 years. The best masters in Chișinău."
+        },
+        {
+          "badge": "👄",
+          "title": "Permanent lip makeup in Chișinău",
+          "text": "The watercolor technique provides an even tone and a beautiful contour without lipstick. Full sterility and European quality standards in our salon in Chișinău."
+        },
+        {
+          "badge": "👁️",
+          "title": "Permanent eye makeup and eyeliner in Chișinău",
+          "text": "Lash line filling and eyeliner effect emphasize the look and save time. Reliable masters in Chișinău (Moldova), long-lasting and safe result."
         }
-      ]
+      ],
+      "ariaLabel": "Permanent makeup in Chișinău — TrinkoTattoo studio"
+    },
+    "descriptionSection": {
+      "ariaLabel": "Description of permanent makeup procedure in Chișinău",
+      "title": "Permanent makeup in Chișinău - brows, lips and eyeliner",
+      "text": "Permanent makeup (tattooing) is a modern cosmetic procedure that creates long-lasting and natural-looking makeup for 1.5 to 3 years. Forget about the daily routine with pencils and lipsticks.",
+      "button": "Book a consultation",
+      "labels": [
+        { "badge": "✨", "text": "Wake up beautiful and save time every morning" },
+        { "badge": "🏊‍♀️", "text": "Confidence in any situation: sports, pool, beach" },
+        { "badge": "🎨", "text": "Perfect shape and shade for your appearance type" },
+        { "badge": "💯", "text": "We highlight natural features, not mask them" }
+      ],
+      "subtitle": "Permanent makeup and eyeliner tattoo in Chișinău",
+      "extraText": "Permanent makeup helps save time and look flawless every day. We offer transparent prices and guarantee quality work. Book a consultation online or by phone to find out which type of tattooing suits you best.",
+      "secondButton": "Book a consultation"
     },
     "serviceSection": {
+      "ariaLabel": "Our permanent makeup services",
       "title": "Permanent makeup in Chișinău — brows, lips and eyeliner at TrinkoTattoo studio",
       "text": "Our tattoo studio in Chișinău offers professional permanent makeup for women who want to always look well-groomed. We use modern techniques: powder brows, watercolor lips and lash line eyeliner. The procedure is painless, safe and provides a natural result for 1.5–3 years.",
       "services": [
         {
           "badge": "Brows",
           "title": "Powder Brows",
-          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
+          "text": "Creating the effect of a soft shadow for perfect shape and density. A natural result that looks like professional makeup every day.",
           "subtitle": "Advantages of professional permanent makeup:",
           "list": [
-            "Natural shading effect without sharp lines",
-            "Visual increase in brow density",
+            "Natural shading effect without harsh lines",
+            "Visually increases brow density",
             "Correction of shape and asymmetry",
             "Long-lasting result for 1.5–3 years",
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 2500 MDL",
+          "price": "from 900 MDL",
           "timeTitle": "Duration:",
-          "time": "2-3 hours",
+          "time": "40 min – 1 hour",
           "healTitle": "Healing:",
-          "heal": "7-10 days",
-          "button": "Book a procedure"
+          "heal": "7–10 days",
+          "correctionTitle": "Correction:",
+          "correction": "after 3 weeks (same price and time)",
+          "button": "Book an appointment"
         },
         {
-          "badge": "Brows",
-          "title": "Powder Brows",
-          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
-          "subtitle": "Advantages of professional permanent makeup:",
+          "badge": "Lips",
+          "title": "Lip Permanent Makeup",
+          "text": "Creating a soft watercolor effect or clear contour as desired. Options include: contour, contour with shading, full fill, or light powder effect. The result – natural, well-groomed, and expressive lips every day.",
+          "subtitle": "Advantages:",
           "list": [
-            "Natural shading effect without sharp lines",
-            "Visual increase in brow density",
-            "Correction of shape and asymmetry",
+            "Natural effect from soft to intense",
+            "Enhancement of shape and symmetry",
+            "Visual increase in volume",
             "Long-lasting result for 1.5–3 years",
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 2500 MDL",
+          "price": "from 900 MDL",
           "timeTitle": "Duration:",
-          "time": "2-3 hours",
+          "time": "40 min – 1 hour",
           "healTitle": "Healing:",
-          "heal": "7-10 days",
-          "button": "Book a procedure"
+          "heal": "7–10 days",
+          "correctionTitle": "Correction:",
+          "correction": "after 3 weeks (same price and time)",
+          "button": "Book an appointment"
         },
         {
-          "badge": "Brows",
-          "title": "Powder Brows",
-          "text": "Creating the effect of a light shadow for the perfect shape and density. A natural result that looks like professionally applied makeup every day.",
-          "subtitle": "Advantages of professional permanent makeup:",
+          "badge": "Eyes",
+          "title": "Permanent Eye Makeup",
+          "text": "Options: classic eyeliner, lash line enhancement, or eyeliner with soft shading. Accentuates the expressiveness of the eyes and creates the effect of neat daily makeup.",
+          "subtitle": "Advantages:",
           "list": [
-            "Natural shading effect without sharp lines",
-            "Visual increase in brow density",
-            "Correction of shape and asymmetry",
-            "Long-lasting result for 1.5–3 years",
+            "Natural or expressive result",
+            "Visually increases lash density",
+            "Correction of eye shape",
+            "Long-lasting result for 2–5 years",
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 2500 MDL",
+          "price": "from 900 MDL",
           "timeTitle": "Duration:",
-          "time": "2-3 hours",
+          "time": "20 min – 40 min",
           "healTitle": "Healing:",
-          "heal": "7-10 days",
-          "button": "Book a procedure"
+          "heal": "7–10 days",
+          "correctionTitle": "Correction:",
+          "correction": "after 3 weeks (same price and time)",
+          "button": "Book an appointment"
         }
       ]
+    },
+    "showOffSection": {
+      "ariaLabel": "Our works: tattoos, piercing and permanent makeup in Chișinău",
+      "title": "Our works: tattoos, piercing and permanent makeup in Chișinău",
+      "text": "TrinkoTattoo studio is a team of masters with many years of experience. We create unique tattoos, perform professional piercing and provide modern permanent makeup: powder brows, watercolor lips and lash line enhancement. Our portfolio demonstrates the quality of work, sterility and attention to detail."
     }
   }
 }

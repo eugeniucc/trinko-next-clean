@@ -156,71 +156,122 @@
       "offerLips": "Machiaj permanent buze (tehnica acvarelă)",
       "offerEyes": "Machiaj permanent pleoape / contur ochi / infraciliar"
     },
+    "heroSection": {
+      "title": "Machiaj permanent la Chișinău",
+      "titleExtend": "realizat de un maestru de top",
+      "text": "Evidențiază-ți frumusețea naturală cu ajutorul machiajului permanent profesional. Suntem specializați în cele mai solicitate tehnici: sprâncene pudrate, tatuaj acuarelă pentru buze și eyeliner delicat între gene.",
+      "button": "Programează o consultație",
+      "subtitles": [
+        {
+          "badge": "💎",
+          "title": "Machiaj permanent sprâncene la Chișinău",
+          "text": "Tehnică modernă de pudrare cu pigmenți certificați. Rezultatul natural durează până la 3 ani. Cei mai buni maeștri din Chișinău."
+        },
+        {
+          "badge": "👄",
+          "title": "Machiaj permanent buze la Chișinău",
+          "text": "Tehnica acuarelă oferă un ton uniform și un contur frumos fără ruj. Sterilitate completă și standarde europene de calitate în salonul nostru din Chișinău."
+        },
+        {
+          "badge": "👁️",
+          "title": "Machiaj permanent ochi și eyeliner la Chișinău",
+          "text": "Umplerea liniei genelor și efectul de eyeliner evidențiază privirea și economisesc timp. Maeștri de încredere la Chișinău (Moldova), rezultat sigur și de lungă durată."
+        }
+      ],
+      "ariaLabel": "Machiaj permanent la Chișinău — studioul TrinkoTattoo"
+    },
+    "descriptionSection": {
+      "ariaLabel": "Descrierea procedurii de machiaj permanent la Chișinău",
+      "title": "Machiaj permanent la Chișinău - sprâncene, buze și eyeliner",
+      "text": "Machiajul permanent (tatuajul) este o procedură cosmetică modernă care permite obținerea unui machiaj rezistent și natural timp de 1,5–3 ani. Uită de rutina zilnică cu creioane și rujuri.",
+      "button": "Programează o consultație",
+      "labels": [
+        { "badge": "✨", "text": "Trezește-te deja frumoasă și economisește timp în fiecare dimineață" },
+        { "badge": "🏊‍♀️", "text": "Încredere în orice situație: sport, piscină, plajă" },
+        { "badge": "🎨", "text": "Formă și nuanță perfectă pentru tipul tău de frumusețe" },
+        { "badge": "💯", "text": "Evidențiem trăsăturile naturale, nu le mascăm" }
+      ],
+      "subtitle": "Machiaj permanent și tatuaj pentru ochi la Chișinău",
+      "extraText": "Machiajul permanent te ajută să economisești timp și să arăți impecabil în fiecare zi. Oferim prețuri transparente și garantăm calitatea lucrării. Programează o consultație online sau telefonic și află ce tip de tatuaj ți se potrivește cel mai bine.",
+      "secondButton": "Programează o consultație"
+    },
     "serviceSection": {
+      "ariaLabel": "Serviciile noastre de machiaj permanent",
       "title": "Machiaj permanent la Chișinău — sprâncene, buze și eyeliner la studioul TrinkoTattoo",
       "text": "Studioul nostru de tatuaje din Chișinău oferă machiaj permanent profesional pentru femeile care doresc să arate mereu îngrijite. Folosim tehnici moderne: sprâncene pudrate, buze acuarelă și eyeliner intercilial. Procedura este nedureroasă, sigură și oferă un rezultat natural timp de 1,5–3 ani.",
       "services": [
         {
           "badge": "Sprâncene",
           "title": "Sprâncene pudrate",
-          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
+          "text": "Crearea unui efect de umbră delicată pentru o formă și densitate perfecte. Rezultat natural care arată ca un machiaj profesional zi de zi.",
           "subtitle": "Avantajele machiajului permanent profesional:",
           "list": [
-            "Efect natural de umbrire fără linii dure",
-            "Creșterea vizuală a densității sprâncenelor",
+            "Efect de estompare natural fără linii dure",
+            "Crește vizual densitatea sprâncenelor",
             "Corectarea formei și asimetriei",
             "Rezultat de lungă durată 1,5–3 ani",
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 2500 MDL",
+          "price": "de la 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "40 min – 1 oră",
           "healTitle": "Vindecare:",
-          "heal": "7-10 zile",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         },
         {
-          "badge": "Sprâncene",
-          "title": "Sprâncene pudrate",
-          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
-          "subtitle": "Avantajele machiajului permanent profesional:",
+          "badge": "Buze",
+          "title": "Machiaj permanent buze",
+          "text": "Crearea unui efect acvarelă delicat sau a unui contur definit, după dorință. Opțiuni: contur, contur cu estompare, umplere completă sau efect pudrat. Rezultat – buze naturale, îngrijite și expresive zi de zi.",
+          "subtitle": "Avantaje:",
           "list": [
-            "Efect natural de umbrire fără linii dure",
-            "Creșterea vizuală a densității sprâncenelor",
-            "Corectarea formei și asimetriei",
+            "Efect natural, de la delicat la intens",
+            "Evidențierea formei și simetriei",
+            "Creșterea vizuală a volumului",
             "Rezultat de lungă durată 1,5–3 ani",
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 2500 MDL",
+          "price": "de la 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "40 min – 1 oră",
           "healTitle": "Vindecare:",
-          "heal": "7-10 zile",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         },
         {
-          "badge": "Sprâncene",
-          "title": "Sprâncene pudrate",
-          "text": "Crearea efectului unei umbre ușoare pentru o formă și o densitate perfecte. Rezultat natural care arată ca un machiaj profesional în fiecare zi.",
-          "subtitle": "Avantajele machiajului permanent profesional:",
+          "badge": "Pleope",
+          "title": "Machiaj permanent ochi",
+          "text": "Opțiuni: linie clasică de tuș, spațiu între gene sau linie cu estompare ușoară. Evidențiază expresivitatea privirii și creează efectul de machiaj îngrijit în fiecare zi.",
+          "subtitle": "Avantaje:",
           "list": [
-            "Efect natural de umbrire fără linii dure",
-            "Creșterea vizuală a densității sprâncenelor",
-            "Corectarea formei și asimetriei",
-            "Rezultat de lungă durată 1,5–3 ani",
+            "Rezultat natural sau expresiv",
+            "Crește vizual densitatea genelor",
+            "Corectarea formei ochilor",
+            "Rezultat de lungă durată 2–5 ani",
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 2500 MDL",
+          "price": "de la 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "20 min – 40 min",
           "healTitle": "Vindecare:",
-          "heal": "7-10 zile",
+          "heal": "7–10 zile",
+          "correctionTitle": "Corecție:",
+          "correction": "după 3 săptămâni (același preț și timp)",
           "button": "Programează-te"
         }
       ]
+    },
+    "showOffSection": {
+      "ariaLabel": "Lucrările noastre: tatuaje, piercing și machiaj permanent la Chișinău",
+      "title": "Lucrările noastre: tatuaje, piercing și machiaj permanent la Chișinău",
+      "text": "Studioul TrinkoTattoo este o echipă de maeștri cu mulți ani de experiență. Creăm tatuaje unice, realizăm piercinguri profesionale și oferim machiaj permanent modern: sprâncene pudrate, buze acuarelă și contur intercilial. Portofoliul nostru demonstrează calitatea lucrării, sterilitatea și atenția la detalii."
     }
   }
 }

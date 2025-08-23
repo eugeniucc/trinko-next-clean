@@ -156,71 +156,122 @@
       "offerLips": "Trucco permanente labbra (tecnica acquerello)",
       "offerEyes": "Trucco permanente occhi / infracigliare"
     },
+    "heroSection": {
+      "title": "Trucco permanente a Chișinău",
+      "titleExtend": "da un maestro di classe extra",
+      "text": "Esalta la tua bellezza naturale con il trucco permanente professionale. Siamo specializzati nelle tecniche più richieste: sopracciglia in polvere, tatuaggio labbra acquerello ed elegante eyeliner infracigliare.",
+      "button": "Prenota una consulenza",
+      "subtitles": [
+        {
+          "badge": "💎",
+          "title": "Trucco permanente sopracciglia a Chișinău",
+          "text": "Ombreggiatura in polvere moderna con pigmenti certificati. Risultato naturale che dura fino a 3 anni. I migliori maestri a Chișinău."
+        },
+        {
+          "badge": "👄",
+          "title": "Trucco permanente labbra a Chișinău",
+          "text": "La tecnica acquerello garantisce un tono uniforme e un contorno perfetto senza rossetto. Massima sterilità e standard di qualità europei nel nostro salone a Chișinău."
+        },
+        {
+          "badge": "👁️",
+          "title": "Trucco permanente occhi ed eyeliner a Chișinău",
+          "text": "Riempimento infracigliare ed effetto eyeliner che esaltano lo sguardo e fanno risparmiare tempo. Maestri affidabili a Chișinău (Moldavia), risultato sicuro e duraturo."
+        }
+      ],
+      "ariaLabel": "Trucco permanente a Chișinău — studio TrinkoTattoo"
+    },
+    "descriptionSection": {
+      "ariaLabel": "Descrizione della procedura di trucco permanente a Chișinău",
+      "title": "Trucco permanente a Chișinău - sopracciglia, labbra ed eyeliner",
+      "text": "Il trucco permanente (tatuaggio) è una procedura cosmetica moderna che permette di ottenere un make-up duraturo e naturale per 1,5–3 anni. Dimentica la routine quotidiana con matite e rossetti.",
+      "button": "Prenota una consulenza",
+      "labels": [
+        { "badge": "✨", "text": "Svegliati già bella e risparmia tempo ogni mattina" },
+        { "badge": "🏊‍♀️", "text": "Sicurezza in ogni situazione: sport, piscina, spiaggia" },
+        { "badge": "🎨", "text": "Forma e tonalità perfette per il tuo tipo di viso" },
+        { "badge": "💯", "text": "Esaltiamo i tratti naturali, non li mascheriamo" }
+      ],
+      "subtitle": "Trucco permanente ed eyeliner tattoo a Chișinău",
+      "extraText": "Il trucco permanente ti permette di risparmiare tempo e di apparire impeccabile ogni giorno. Offriamo prezzi trasparenti e garantiamo la qualità del lavoro. Prenota una consulenza online o per telefono e scopri quale tipo di tatuaggio è più adatto a te.",
+      "secondButton": "Prenota una consulenza"
+    },
     "serviceSection": {
+      "ariaLabel": "I nostri servizi di trucco permanente",
       "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio TrinkoTattoo",
       "text": "Il nostro studio di tatuaggi a Chișinău offre trucco permanente professionale per le donne che vogliono apparire sempre curate. Usiamo tecniche moderne: sopracciglia in polvere, labbra acquerello e eyeliner infracigliare. La procedura è indolore, sicura e offre un risultato naturale da 1,5 a 3 anni.",
       "services": [
         {
           "badge": "Sopracciglia",
-          "title": "Sopracciglia in polvere",
-          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
+          "title": "Sopracciglia effetto polvere",
+          "text": "Creazione di un effetto ombra leggero per una forma e densità perfette. Risultato naturale che sembra un trucco professionale ogni giorno.",
           "subtitle": "Vantaggi del trucco permanente professionale:",
           "list": [
-            "Effetto naturale di sfumatura senza linee marcate",
-            "Aumento visivo della densità delle sopracciglia",
-            "Correzione della forma e delle asimmetrie",
-            "Risultato duraturo da 1,5 a 3 anni",
+            "Effetto sfumato naturale senza linee marcate",
+            "Aumenta visivamente la densità delle sopracciglia",
+            "Correzione di forma e asimmetria",
+            "Risultato duraturo 1,5–3 anni",
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 2500 MDL",
+          "price": "da 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "40 min – 1 ora",
           "healTitle": "Guarigione:",
-          "heal": "7-10 giorni",
-          "button": "Prenota la procedura"
+          "heal": "7–10 giorni",
+          "correctionTitle": "Correzione:",
+          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
+          "button": "Prenota un appuntamento"
         },
         {
-          "badge": "Sopracciglia",
-          "title": "Sopracciglia in polvere",
-          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
-          "subtitle": "Vantaggi del trucco permanente professionale:",
+          "badge": "Labbra",
+          "title": "Trucco permanente labbra",
+          "text": "Creazione di un delicato effetto acquerello o di un contorno definito, a scelta. Opzioni: contorno, contorno sfumato, riempimento completo o leggero effetto polvere. Risultato – labbra naturali, curate ed espressive ogni giorno.",
+          "subtitle": "Vantaggi:",
           "list": [
-            "Effetto naturale di sfumatura senza linee marcate",
-            "Aumento visivo della densità delle sopracciglia",
-            "Correzione della forma e delle asimmetrie",
-            "Risultato duraturo da 1,5 a 3 anni",
+            "Effetto naturale da delicato a intenso",
+            "Valorizzazione della forma e simmetria",
+            "Aumento visivo del volume",
+            "Risultato duraturo 1,5–3 anni",
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 2500 MDL",
+          "price": "da 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "40 min – 1 ora",
           "healTitle": "Guarigione:",
-          "heal": "7-10 giorni",
-          "button": "Prenota la procedura"
+          "heal": "7–10 giorni",
+          "correctionTitle": "Correzione:",
+          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
+          "button": "Prenota un appuntamento"
         },
         {
-          "badge": "Sopracciglia",
-          "title": "Sopracciglia in polvere",
-          "text": "Creazione dell’effetto ombreggiato leggero per una forma e una densità perfette. Un risultato naturale che sembra un trucco professionale ogni giorno.",
-          "subtitle": "Vantaggi del trucco permanente professionale:",
+          "badge": "Occhi",
+          "title": "Trucco permanente occhi",
+          "text": "Opzioni: eyeliner classico, infracigliare o eyeliner con sfumatura leggera. Sottolinea l’espressività dello sguardo e crea un effetto di trucco curato ogni giorno.",
+          "subtitle": "Vantaggi:",
           "list": [
-            "Effetto naturale di sfumatura senza linee marcate",
-            "Aumento visivo della densità delle sopracciglia",
-            "Correzione della forma e delle asimmetrie",
-            "Risultato duraturo da 1,5 a 3 anni",
+            "Risultato naturale o intenso",
+            "Aumenta visivamente la densità delle ciglia",
+            "Correzione della forma degli occhi",
+            "Risultato duraturo 2–5 anni",
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 2500 MDL",
+          "price": "da 900 MDL",
           "timeTitle": "Durata:",
-          "time": "2-3 ore",
+          "time": "20 min – 40 min",
           "healTitle": "Guarigione:",
-          "heal": "7-10 giorni",
-          "button": "Prenota la procedura"
+          "heal": "7–10 giorni",
+          "correctionTitle": "Correzione:",
+          "correction": "dopo 3 settimane (stesso prezzo e tempo)",
+          "button": "Prenota un appuntamento"
         }
       ]
+    },
+    "showOffSection": {
+      "ariaLabel": "I nostri lavori: tatuaggi, piercing e trucco permanente a Chișinău",
+      "title": "I nostri lavori: tatuaggi, piercing e trucco permanente a Chișinău",
+      "text": "Lo studio TrinkoTattoo è un team di maestri con molti anni di esperienza. Creiamo tatuaggi unici, realizziamo piercing professionali e offriamo trucco permanente moderno: sopracciglia sfumate, labbra acquerello e eyeliner infracigliare. Il nostro portfolio dimostra la qualità del lavoro, la sterilità e l'attenzione ai dettagli."
     }
   }
 }

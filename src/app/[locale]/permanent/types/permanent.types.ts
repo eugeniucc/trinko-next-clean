@@ -10,5 +10,7 @@ export type PermanentCardProps = {
   time: string
   healTitle: string
   heal: string
+  correctionTitle: string
+  correction: string
   button: string
 }

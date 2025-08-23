@@ -11,20 +11,14 @@ export const ServicesSection = () => {
   const list = t.raw('services') as PermanentCardProps[]
 
   return (
-    <CustomSectionAria className="bg-zinc-900 pb-20" aria="Наши услуги перманентного макияжа">
+    <CustomSectionAria className="bg-zinc-900 pb-20" aria={t('ariaLabel')}>
       <Container className="flex flex-col gap-20">
         <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
-          <h2 className="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-center text-2xl font-bold text-transparent">
-            Перманентный макияж в Кишинёве — брови, губы и стрелки в студии TrinkoTattoo
-          </h2>
-          <p className="mx-auto max-w-3xl text-center text-zinc-400">
-            Наша тату-студия в Кишинёве предлагает профессиональный перманентный макияж для женщин, которые хотят всегда выглядеть ухоженно. Мы
-            используем современные техники: пудровые брови, акварельные губы и межресничные стрелки. Процедура безболезненная, безопасная и даёт
-            естественный результат на 1.5–3 года.
-          </p>
+          <h2 className="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-center text-2xl font-bold text-transparent">{t('title')}</h2>
+          <p className="mx-auto max-w-3xl text-center text-zinc-400">{t('text')}</p>
         </FramerMotionContainer>
 
-        <div className="grid grid-cols-1 gap-15 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid h-full grid-cols-1 gap-15 md:grid-cols-2 xl:grid-cols-3">
           {list.map((item, i) => (
             <ProductCard key={i} item={item} />
           ))}
