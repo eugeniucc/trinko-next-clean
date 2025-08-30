@@ -11,7 +11,8 @@
     "prisma:migrate:supabase": "prisma migrate dev --schema=prisma/supabase.schema.prisma",
     "prisma:generate:neon": "prisma generate --schema=prisma/neon.schema.prisma",
     "prisma:migrate:neon": "prisma migrate dev --schema=prisma/neon.schema.prisma",
-    "prisma:generate:all": "npm run prisma:generate:supabase && npm run prisma:generate:neon"
+    "prisma:generate:all": "npm run prisma:generate:supabase && npm run prisma:generate:neon",
+    "postinstall": "npm run prisma:generate:all"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.4.5",
