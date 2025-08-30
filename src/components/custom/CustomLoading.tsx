@@ -9,7 +9,7 @@ type Props = {
 export const CustomLoading = ({ className }: Props) => {
   return (
     <Container className={cn('flex h-full min-h-[50dvh] w-full items-center justify-center bg-transparent', className || '')}>
-      <Image className="size-40 animate-spin" src="/logo/icon.png" alt="тату салон в Кишиневе TrinkoTattoo" width={160} height={160} />
+      <Image className="animate-spin" src="/logo/logo.png" alt="тату салон в Кишиневе OblivionTattoo" width={64} height={91} />
     </Container>
   )
 }

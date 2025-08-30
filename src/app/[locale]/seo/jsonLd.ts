@@ -4,10 +4,10 @@ export const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
   '@id': `${domain}/#org`,
-  name: 'Trinko Tattoo',
+  name: 'OblivionTattoo',
   url: domain,
-  logo: `${domain}/logo/icon.png`,
-  image: `${domain}/logo/icon.png`,
+  logo: `${domain}/logo/logo.png`,
+  image: `${domain}/logo/logo.png`,
   telephone: '+37379146506',
   contactPoint: {
     '@type': 'ContactPoint',

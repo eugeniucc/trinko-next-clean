@@ -47,12 +47,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="/logo/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/logo/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/logo/favicon-96x96.png" type="image/png" sizes="96x96" />
-        <link rel="icon" href="/logo/icon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo/apple-touch-icon.png" />
-        <link rel="manifest" href="/logo/manifest.json" />
+        <link rel="icon" href="/logo/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo/apple-touch-logo.png" />
+        <link rel="manifest" href="/manifest.json" />
         <Script
           id="organization-jsonld"
           type="application/ld+json"

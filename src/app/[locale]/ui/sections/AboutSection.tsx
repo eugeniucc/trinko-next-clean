@@ -15,7 +15,7 @@ export const AboutSection = async () => {
         src="/images/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp"
         width={1920}
         height={1080}
-        alt="Мастер делает татуировку в салоне TrinkoTattoo"
+        alt="Мастер делает татуировку в салоне OblivionTattoo"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
       />
       <Container className="relative z-1 flex min-h-screen flex-col justify-center">

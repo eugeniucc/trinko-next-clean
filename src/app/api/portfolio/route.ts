@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { supabaseDb } from '@/lib/prisma-supabase'
 
 export const revalidate = 3600
 
@@ -12,14 +12,14 @@ export async function GET(req: Request) {
   const skip = (page - 1) * limit
 
   const [items, total] = await Promise.all([
-    prisma.portfolio.findMany({
+    supabaseDb.portfolio.findMany({
       orderBy: {
         id: 'asc'
       },
       skip,
       take: limit
     }),
-    prisma.portfolio.count()
+    supabaseDb.portfolio.count()
   ])
 
   return NextResponse.json(

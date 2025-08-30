@@ -5,7 +5,7 @@ import { routing } from './i18n/routing'
 
 const intlMiddleware = createMiddleware(routing)
 
-const ALLOWED_HOSTS = new Set(['trinkotattoo.ink', 'www.trinkotattoo.ink', 'localhost:3000', 'trinko-next-clean.vercel.app'])
+const ALLOWED_HOSTS = new Set(['obliviontattoo.xyz', 'www.obliviontattoo.xyz', 'localhost:3000', 'trinko-next-clean.vercel.app'])
 
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname

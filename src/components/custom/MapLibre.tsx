@@ -9,8 +9,6 @@ export default function Map3D() {
 
   useEffect(() => {
     if (!ref.current) return
-    // voyager
-    // outdoor-v2
     const map = new MapLibreMap({
       container: ref.current,
       style: `https://api.maptiler.com/maps/voyager/style.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`,
@@ -59,7 +57,7 @@ export default function Map3D() {
 
       const el = document.createElement('a')
       el.href =
-        'https://www.google.com/maps/place/TrinkoTattoo/@47.007031,28.8301878,14z/data=!4m17!1m10!4m9!1m4!2m2!1d28.8456704!2d46.9956968!4e1!1m3!2m2!1d28.85585!2d47.0148!3m5!1s0x40c97dfa3f2aeca3:0x506cbca590704cdd!8m2!3d47.0147268!4d28.8557773!16s%2Fg%2F11y98yqlk9?entry=ttu'
+        'https://www.google.com/maps/place/Oblivion+Tattoo/@47.0152922,28.8552417,18z/data=!4m6!3m5!1s0x40c97d9e976ff8b9:0x377bd476e7ac7a94!8m2!3d47.015286!4d28.855885!16s%2Fg%2F11xvjt6q7_?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D'
       el.target = '_blank'
       el.rel = 'noopener noreferrer'
       el.style.display = 'flex'
@@ -69,13 +67,11 @@ export default function Map3D() {
       el.style.textDecoration = 'none'
 
       const logo = document.createElement('div')
-      logo.style.backgroundImage = `url('/logo/icon.png')`
-      logo.style.width = '75px'
-      logo.style.height = '75px'
+      logo.style.backgroundImage = `url('/logo/logo.png')`
+      logo.style.width = '64px'
+      logo.style.height = '91px'
       logo.style.backgroundSize = 'contain'
       logo.style.backgroundRepeat = 'no-repeat'
-      logo.style.borderRadius = '50%'
-      logo.style.boxShadow = '0 0 5px rgba(0,0,0,0.5)'
 
       el.appendChild(logo)
 

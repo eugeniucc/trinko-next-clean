@@ -1,11 +1,11 @@
 {
   "seo": {
-    "title": "TrinkoTattoo - Studio di Tatuaggi Professionale a Chisinau",
-    "description": "TrinkoTattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
-    "openGraphTitle": "TrinkoTattoo - Tatuaggi Professionali a Chisinau",
+    "title": "OblivionTattoo - Studio di Tatuaggi Professionale a Chisinau",
+    "description": "OblivionTattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
+    "openGraphTitle": "OblivionTattoo - Tatuaggi Professionali a Chisinau",
     "openGraphDescription": "Il miglior studio di tatuaggi a Chisinau. Tatuaggi unici realizzati da professionisti.",
-    "twitterTitle": "TrinkoTattoo - I Migliori Tatuaggi a Chisinau",
-    "twitterDescription": "Studio TrinkoTattoo - artisti professionisti e design unici."
+    "twitterTitle": "OblivionTattoo - I Migliori Tatuaggi a Chisinau",
+    "twitterDescription": "Studio OblivionTattoo - artisti professionisti e design unici."
   },
   "notFound": {
     "title": "Pagina non trovata",
@@ -53,14 +53,14 @@
         "thirdCard": {
           "title": "Crescita e Apprendimento",
           "text": "TI INSEGNEREMO",
-          "description": "Vuoi diventare un artista? La formazione presso Trinkotattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
+          "description": "Vuoi diventare un artista? La formazione presso OblivionTattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
           "button": "Prenota Ora"
         }
       },
       "ariaLabel": "Sezione introduttiva con punti salienti su tatuaggi, formazione e piercing"
     },
     "ourServicesSection": {
-      "mainTitle": "Studio di tatuaggi a Chisinau TrinkoTattoo: Tatuaggi professionali, piercing e trucco permanente.",
+      "mainTitle": "Studio di tatuaggi a Chisinau OblivionTattoo: Tatuaggi professionali, piercing e trucco permanente.",
       "title": "I nostri servizi di tatuaggi a Chişinău",
       "description": "Il nostro studio di tatuaggi a Chişinău offre una vasta gamma di servizi — dai tatuaggi e piercing alla copertura di vecchi tatuaggi e trucco permanente. I nostri tatuatori esperti garantiscono qualità, sterilità e un approccio personalizzato.",
       "cards": [
@@ -89,14 +89,14 @@
           "description": "Rinfreschiamo il colore e la forma dei tatuaggi nel nostro studio a Chişinău."
         }
       ],
-      "ariaLabel": "Panoramica dei servizi di tatuaggi, piercing e trucco permanente presso TrinkoTattoo a Chisinau"
+      "ariaLabel": "Panoramica dei servizi di tatuaggi, piercing e trucco permanente presso OblivionTattoo a Chisinau"
     },
     "aboutSection": {
       "title": "Qualche parola sul nostro studio di tatuaggi a Chisinau",
       "text": "Studio di tatuaggi a Chisinau con un team di professionisti esperti. Offriamo tatuaggi a Chisinau, piercing, copertura di tatuaggi e cicatrici, trucco permanente.",
       "description": "I nostri artisti con anni di esperienza creano disegni unici in base all'anatomia e alle preferenze del cliente. Lavoriamo in un ambiente sterile e sicuro.",
       "button": "Prenota ora",
-      "ariaLabel": "Chi siamo — studio di tatuaggi TrinkoTattoo a Chisinau con tatuaggi, piercing e trucco permanente"
+      "ariaLabel": "Chi siamo — studio di tatuaggi OblivionTattoo a Chisinau con tatuaggi, piercing e trucco permanente"
     },
     "sketchesSection": {
       "title": "Bozze di Tatuaggi a Chisinau",
@@ -105,16 +105,16 @@
     },
     "advantagesSection": {
       "text": "I nostri vantaggi",
-      "title": "Perché scegliere Trinkotattoo — Studio di Tatuaggi a Chisinau",
-      "description": "Trinkotattoo è un team di professionisti, ciascuno esperto nel proprio campo: tatuaggi, piercing o trucco permanente. Non ci limitiamo al lavoro tecnico — offriamo un approccio personalizzato per garantire che il risultato rispecchi il tuo stile e le tue aspettative.",
+      "title": "Perché scegliere OblivionTattoo — Studio di Tatuaggi a Chisinau",
+      "description": "OblivionTattoo è un team di professionisti, ciascuno esperto nel proprio campo: tatuaggi, piercing o trucco permanente. Non ci limitiamo al lavoro tecnico — offriamo un approccio personalizzato per garantire che il risultato rispecchi il tuo stile e le tue aspettative.",
       "extra": "Ogni nostro specialista ha anni di esperienza e continua a formarsi per apprendere le tecniche e i metodi più moderni. Rispettiamo rigorosamente gli standard di sterilità e utilizziamo solo materiali affidabili.",
       "more_text": "Offriamo condizioni trasparenti, prezzi onesti e una sincera attenzione ai dettagli. Prima di iniziare, discutiamo sempre il disegno, le fasi del lavoro e la cura successiva, così da farti sentire sicuro in ogni momento.",
-      "ariaLabel": "Vantaggi dello studio TrinkoTattoo a Chisinau: qualità, esperienza e approccio personalizzato"
+      "ariaLabel": "Vantaggi dello studio OblivionTattoo a Chisinau: qualità, esperienza e approccio personalizzato"
     },
     "portfolioSection": {
-      "title": "Portfolio dei tatuatori a Chisinau - TrinkoTattoo",
+      "title": "Portfolio dei tatuatori a Chisinau - OblivionTattoo",
       "text": "Qui puoi vedere i veri lavori dei nostri artisti. Tatuaggi, piercing, coperture e schizzi — tutto realizzato con attenzione ai dettagli e in condizioni sterili. Siamo orgogliosi della qualità di ogni lavoro.",
-      "ariaLabel": "Portfolio dello studio TrinkoTattoo a Chisinau: tatuaggi, piercing e schizzi degli artisti",
+      "ariaLabel": "Portfolio dello studio OblivionTattoo a Chisinau: tatuaggi, piercing e schizzi degli artisti",
       "linkLabel": "Apri la foto in grande",
       "link": "Vedi tutte le foto"
     },
@@ -143,7 +143,7 @@
         "text": "Disponibili su Telegram, WhatsApp e Viber per consulenze e prenotazioni."
       },
       "social": "Visita le nostre pagine",
-      "ariaLabel": "Informazioni di contatto e prenotazioni per lo studio TrinkoTattoo a Chisinau"
+      "ariaLabel": "Informazioni di contatto e prenotazioni per lo studio OblivionTattoo a Chisinau"
     },
     "footer": {
       "terms": "Termini e condizioni"
@@ -178,7 +178,7 @@
           "text": "Riempimento infracigliare ed effetto eyeliner che esaltano lo sguardo e fanno risparmiare tempo. Maestri affidabili a Chișinău (Moldavia), risultato sicuro e duraturo."
         }
       ],
-      "ariaLabel": "Trucco permanente a Chișinău — studio TrinkoTattoo"
+      "ariaLabel": "Trucco permanente a Chișinău — studio OblivionTattoo"
     },
     "descriptionSection": {
       "ariaLabel": "Descrizione della procedura di trucco permanente a Chișinău",
@@ -197,7 +197,7 @@
     },
     "serviceSection": {
       "ariaLabel": "I nostri servizi di trucco permanente",
-      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio TrinkoTattoo",
+      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio OblivionTattoo",
       "text": "Il nostro studio di tatuaggi a Chișinău offre trucco permanente professionale per le donne che vogliono apparire sempre curate. Usiamo tecniche moderne: sopracciglia in polvere, labbra acquerello e eyeliner infracigliare. La procedura è indolore, sicura e offre un risultato naturale da 1,5 a 3 anni.",
       "services": [
         {
@@ -271,7 +271,15 @@
     "showOffSection": {
       "ariaLabel": "I nostri lavori: tatuaggi, piercing e trucco permanente a Chișinău",
       "title": "I nostri lavori: tatuaggi, piercing e trucco permanente a Chișinău",
-      "text": "Lo studio TrinkoTattoo è un team di maestri con molti anni di esperienza. Creiamo tatuaggi unici, realizziamo piercing professionali e offriamo trucco permanente moderno: sopracciglia sfumate, labbra acquerello e eyeliner infracigliare. Il nostro portfolio dimostra la qualità del lavoro, la sterilità e l'attenzione ai dettagli."
+      "text": "Lo studio OblivionTattoo è un team di maestri con molti anni di esperienza. Creiamo tatuaggi unici, realizziamo piercing professionali e offriamo trucco permanente moderno: sopracciglia sfumate, labbra acquerello e eyeliner infracigliare. Il nostro portfolio dimostra la qualità del lavoro, la sterilità e l'attenzione ai dettagli."
+    }
+  },
+  "tattooPage": {
+    "tattoo": {
+      "serviceType": "Tatuaggio artistico a Chisinau",
+      "offerSmall": "Tatuaggio piccolo (fino a 5 cm)",
+      "offerMedium": "Tatuaggio medio (fino a 15 cm)",
+      "offerLarge": "Tatuaggio grande (da 20 cm in su)"
     }
   }
 }

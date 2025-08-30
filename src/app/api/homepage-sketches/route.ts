@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { supabaseDb } from '@/lib/prisma-supabase'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export async function GET() {
-  const data = await prisma.homepageSketches.findMany({
+  const data = await supabaseDb.homepageSketches.findMany({
     orderBy: {
       id: 'asc'
     }

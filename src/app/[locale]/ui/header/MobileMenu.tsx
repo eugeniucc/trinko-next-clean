@@ -18,7 +18,7 @@ export default async function MobileMenu() {
         <SheetContent className="w-[300px] sm:w-[540px]" side="left">
           <SheetHeader>
             <SheetTitle>
-              <span className="mb-12 text-red-500">Trinko Tattoo</span>
+              <span className="mb-12 text-red-500">OblivionTattoo</span>
             </SheetTitle>
             <SheetDescription>{t('headerMobile.description')}</SheetDescription>
             <nav className="flex flex-col gap-4 py-6">

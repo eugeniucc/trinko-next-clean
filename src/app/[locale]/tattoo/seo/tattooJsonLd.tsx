@@ -1,10 +1,10 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 
-export const pmJsonLd = async () => {
-  const t = await getTranslations('permanentPage.pm')
+export const tattooJsonLd = async () => {
+  const t = await getTranslations('tattooPage.tattoo')
   const locale = await getLocale()
   const domain = process.env.NEXT_PUBLIC_DOMAIN_URL
-  const pageUrl = `${domain}/${locale}/permanent`
+  const pageUrl = `${domain}/${locale}/tattoo`
 
   return {
     '@context': 'https://schema.org',
@@ -29,24 +29,24 @@ export const pmJsonLd = async () => {
     offers: [
       {
         '@type': 'Offer',
-        name: t('offerBrows'),
-        price: '1800',
+        name: t('offerSmall'),
+        price: '500',
         priceCurrency: 'MDL',
         availability: 'https://schema.org/InStock',
         url: pageUrl
       },
       {
         '@type': 'Offer',
-        name: t('offerLips'),
-        price: '2000',
+        name: t('offerMedium'),
+        price: '1500',
         priceCurrency: 'MDL',
         availability: 'https://schema.org/InStock',
         url: pageUrl
       },
       {
         '@type': 'Offer',
-        name: t('offerEyes'),
-        price: '1600',
+        name: t('offerLarge'),
+        price: '3000',
         priceCurrency: 'MDL',
         availability: 'https://schema.org/InStock',
         url: pageUrl

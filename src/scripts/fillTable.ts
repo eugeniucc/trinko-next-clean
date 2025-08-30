@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import 'dotenv/config'
-import { prisma } from '@/lib/prisma'
+import { supabaseDb } from '@/lib/prisma-supabase'
 
 const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_KEY!)
 const bucket = 'homepage-sketches'
@@ -26,7 +26,7 @@ const main = async () => {
     alt: name
   }))
 
-  const result = await prisma.homepageSketches.createMany({
+  const result = await supabaseDb.homepageSketches.createMany({
     data: fullUrls,
     skipDuplicates: true
   })
@@ -36,4 +36,4 @@ const main = async () => {
 
 main()
   .catch(console.error)
-  .finally(async () => await prisma.$disconnect())
+  .finally(async () => await supabaseDb.$disconnect())

@@ -31,7 +31,7 @@ export async function buildMetadata({ path }: Props) {
     openGraph: {
       url: ogUrl,
       type: 'website',
-      siteName: 'TrinkoTattoo',
+      siteName: 'OblivionTattoo',
       title: t('openGraphTitle'),
       description: t('openGraphDescription'),
       images: [`${DOMAIN}/logo/icon.png`],

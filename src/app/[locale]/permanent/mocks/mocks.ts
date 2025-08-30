@@ -1,7 +1,7 @@
 export const SliderImages = [
   {
     url: '/images/permanentPage/permanent-tattoo-kishynev.webp',
-    alt: 'Пудровые брови — естественный эффект в студии TrinkoTattoo'
+    alt: 'Пудровые брови — естественный эффект в студии OblivionTattoo'
   },
   {
     url: '/images/permanentPage/permanent-tattoo-kishynev.webp',
@@ -21,7 +21,7 @@ export const SliderImages = [
   },
   {
     url: '/images/permanentPage/permanent-tattoo-kishynev.webp',
-    alt: 'Процедура перманентного макияжа в салоне TrinkoTattoo'
+    alt: 'Процедура перманентного макияжа в салоне OblivionTattoo'
   },
   {
     url: '/images/permanentPage/permanent-tattoo-kishynev.webp',
@@ -33,6 +33,6 @@ export const SliderImages = [
   },
   {
     url: '/images/permanentPage/permanent-tattoo-kishynev.webp',
-    alt: 'TrinkoTattoo — студия перманентного макияжа в Кишинёве'
+    alt: 'OblivionTattoo — студия перманентного макияжа в Кишинёве'
   }
 ]

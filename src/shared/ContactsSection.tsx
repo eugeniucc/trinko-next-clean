@@ -66,7 +66,7 @@ export const ContactsSection = () => {
                   <span>Instagram</span>
                 </a>
                 <a
-                  href="https://facebook.com/trinkotattoo"
+                  href="https://facebook.com/OblivionTattoo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
