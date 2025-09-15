@@ -10,6 +10,7 @@ export default function ClientWrapper({ children }: { children: ReactNode }) {
   const pathname = usePathname()
 
   useLayoutEffect(() => {
+    if (location.hash) return
     window.scrollTo(0, 0)
   }, [pathname])
 

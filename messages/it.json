@@ -280,6 +280,132 @@
       "offerSmall": "Tatuaggio piccolo (fino a 5 cm)",
       "offerMedium": "Tatuaggio medio (fino a 15 cm)",
       "offerLarge": "Tatuaggio grande (da 20 cm in su)"
+    },
+    "heroSection": {
+      "ariaLabel": "I nostri lavori: tatuaggi artistici, correzione e design di tatuaggi a Chișinău",
+      "title": "Tatuaggi a Chișinău: tatuaggi a colori e in bianco e nero, correzione, cover-up e design del tatuaggio",
+      "subtitle": "Studio di tatuaggi a Chișinău: artisti, prezzi e tatuaggi in Moldavia",
+      "heroCards": [
+        {
+          "title": "Tatuaggi per uomini e donne",
+          "text": "Nel nostro studio di tatuaggi a Chișinău puoi realizzare tatuaggi artistici di qualsiasi stile e dimensione. Lavoriamo in condizioni sterili, usiamo solo materiali monouso e garantiamo un'elevata qualità del lavoro dei nostri artisti.",
+          "list": [
+            "Ampia scelta di stili: realismo, minimalismo, grafica/linework, tatuaggi a colori e in bianco e nero",
+            "Bozze personalizzate in base alle tue idee",
+            "Sicurezza e sterilità: aghi monouso e inchiostri certificati",
+            "Tatuaggi per uomini e donne — dai mini ai progetti grandi"
+          ],
+          "button": "Prenota un appuntamento"
+        },
+        {
+          "title": "Aggiornamento e correzione del tatuaggio",
+          "text": "Se il tuo tatuaggio ha perso brillantezza o necessita di correzioni, offriamo aggiornamenti professionali e cover-up di lavori vecchi. I nostri artisti sceglieranno la soluzione adatta e renderanno di nuovo il tatuaggio bello ed espressivo.",
+          "list": [
+            "Correzione di tatuaggi sbiaditi o di bassa qualità",
+            "Cover-up di lavori vecchi con bozze moderne",
+            "Aggiunta di dettagli e miglioramento dei colori",
+            "Approccio individuale a ogni caso"
+          ],
+          "button": "Richiedi un preventivo"
+        },
+        {
+          "title": "Design del tatuaggio",
+          "text": "Creiamo bozze uniche che riflettono il tuo carattere e il tuo stile. Ogni design è sviluppato individualmente — dall'idea al disegno finale — per rendere il tuo tatuaggio davvero speciale.",
+          "list": [
+            "Bozze personalizzate dai tuoi riferimenti e idee",
+            "Sviluppo nei stili popolari: realismo, grafica/linework, minimalismo e altro",
+            "Scelta di forma e posizionamento in base alle caratteristiche del corpo",
+            "Collaborazione artista–cliente per un risultato perfetto"
+          ],
+          "button": "Discuti il design"
+        }
+      ]
+    },
+    "servicesSection": {
+      "ariaLabel": "Servizi dello studio di tatuaggi a Chișinău: tatuaggi artistici, correzioni, cover-up e design",
+      "title": "Servizi dello studio di tatuaggi a Chișinău — tatuaggi artistici, correzioni/cover-up e design personalizzato",
+      "description": "Realizziamo tatuaggi a colori e black & grey nei principali stili: realismo, minimalismo, grafica/linework. Ti aiutiamo con l’idea e il design, rinfreschiamo e copriamo con cura i lavori vecchi. Lavoriamo in condizioni sterili con aghi monouso e inchiostri certificati.",
+      "usp": [
+        "Stili: realismo, minimalismo, grafica/linework, colore/black & grey",
+        "Bozze personalizzate dai tuoi riferimenti",
+        "Correzione e cover-up di tatuaggi vecchi",
+        "Sterilità: strumenti monouso, inchiostri affidabili",
+        "Consulenza prima della prenotazione e aftercare"
+      ],
+      "cta": "Prenota ora",
+      "servicesCards": [
+        {
+          "title": "Tatuaggio black & grey",
+          "size": "5–10 cm",
+          "price": "400–1300 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Tatuaggio a colori",
+          "size": "5–10 cm",
+          "price": "500–1500 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Tatuaggio black & grey",
+          "size": "10–20 cm",
+          "price": "900–3500 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Tatuaggio a colori",
+          "size": "10–20 cm",
+          "price": "1000–4000 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Design del bozzetto",
+          "text": "Bozzetto personalizzato in base alle tue idee e ai tuoi riferimenti: stile, composizione e posizionamento.",
+          "price": "gratuito",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Acconto obbligatorio",
+          "text": "L’acconto è incluso nel prezzo del tatuaggio e conferma la prenotazione. In caso di cancellazione non è rimborsabile.",
+          "price": "300 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Cover-up / correzione del tatuaggio",
+          "text": "Cover-up professionali e correzioni di tatuaggi sbiaditi o non riusciti. Valutazione da foto e in consulenza.",
+          "price": "da 600 lei",
+          "button": "Prenota ora"
+        },
+        {
+          "title": "Bozzetto per cover-up",
+          "text": "Bozzetto su misura per il cover-up: consideriamo il tatuaggio esistente, densità, contrasto e dimensioni.",
+          "price": "gratuito",
+          "button": "Prenota ora"
+        }
+      ]
+    },
+    "aboutSection": {
+      "ariaLabel": "Informazioni sullo studio: tatuaggi professionali a Chișinău",
+      "title": "Studio di tatuaggi professionale a Chișinău",
+      "paragraphs": [
+        "Creiamo tatuaggi unici di qualsiasi complessità da oltre 10 anni. Il nostro team di artisti professionisti realizzerà con cura la tua idea.",
+        "Siamo specializzati in tatuaggi a colori e black & grey, nel rinnovo di lavori vecchi, nei cover-up di tatuaggi non riusciti e nello sviluppo di design personalizzati.",
+        "Lavoriamo in condizioni sterili: solo aghi monouso e inchiostri certificati, rispetto delle norme igieniche e indicazioni dettagliate per l’aftercare."
+      ],
+      "advantagesTitle": "I nostri vantaggi:",
+      "advantages": [
+        "Artisti esperti con un portfolio di oltre 1.000 lavori",
+        "Materiali monouso sterili e inchiostri affidabili",
+        "Approccio individuale per ogni cliente",
+        "Consulenza gratuita e bozzetto di base",
+        "Garanzia sui lavori eseguiti"
+      ]
+    },
+    "latestTattooSection": {
+      "ariaLabel": "Portfolio di tatuaggi: lavori recenti degli artisti a Chișinău",
+      "title": "Portfolio di tatuaggi a Chișinău lavori recenti degli artisti",
+      "description": "Qui trovi i lavori recenti del nostro studio: dai piccoli bozzetti minimalisti ai progetti di grandi dimensioni. Tutti i tatuaggi sono realizzati con aghi monouso e inchiostri certificati. Clicca sulla foto per aprirla a schermo intero.",
+      "cta": "Guarda tutte le foto"
     }
   }
 }

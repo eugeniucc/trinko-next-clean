@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 type LayoutProps = {
   children: ReactNode
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {

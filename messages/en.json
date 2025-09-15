@@ -280,6 +280,132 @@
       "offerSmall": "Small tattoo (up to 5 cm)",
       "offerMedium": "Medium tattoo (up to 15 cm)",
       "offerLarge": "Large tattoo (from 20 cm and above)"
+    },
+    "heroSection": {
+      "ariaLabel": "Our works: artistic tattoos, tattoo correction and design in Chisinau",
+      "title": "Tattoos in Chisinau: color and black-and-white tattoos, correction, cover-ups and tattoo design",
+      "subtitle": "Tattoo salon in Chisinau: artists, prices and tattoos in Moldova",
+      "heroCards": [
+        {
+          "title": "Tattoos for men and women",
+          "text": "At our tattoo studio in Chisinau you can get artistic tattoos in any style and size. We work in sterile conditions, use only single-use materials and guarantee high-quality craftsmanship.",
+          "list": [
+            "Wide range of styles: realism, minimalism, linework/graphic, color and black-and-white tattoos",
+            "Custom designs based on your ideas",
+            "Safety and sterility: single-use needles and certified inks",
+            "Tattoos for men and women — from mini to large projects"
+          ],
+          "button": "Book an appointment"
+        },
+        {
+          "title": "Tattoo refresh and correction",
+          "text": "If your tattoo has faded or needs fixing, we offer professional refresh and cover-ups of old work. Our artists will find the right solution and make your tattoo beautiful and expressive again.",
+          "list": [
+            "Correction of faded or low-quality tattoos",
+            "Cover-ups of old pieces with modern designs",
+            "Adding details and improving color",
+            "Individual approach to every case"
+          ],
+          "button": "Get a quote"
+        },
+        {
+          "title": "Tattoo design",
+          "text": "We create unique tattoo designs that reflect your character and style. Each design is developed individually — from idea to final drawing — so your tattoo is truly special.",
+          "list": [
+            "Personal designs based on your ideas and references",
+            "Design in popular styles: realism, linework/graphic, minimalism and more",
+            "Choosing placement and size to suit your body",
+            "Artist–client collaboration for the perfect result"
+          ],
+          "button": "Discuss a design"
+        }
+      ]
+    },
+    "servicesSection": {
+      "ariaLabel": "Tattoo salon services in Chisinau: artistic tattoos, correction, cover-ups and design",
+      "title": "Tattoo studio services in Chisinau — artistic tattoos, correction/cover-ups and custom design",
+      "description": "We create color and black & grey tattoos in popular styles: realism, minimalism, graphic/linework. We help with the idea and design, carefully refresh and cover up old pieces. We work in sterile conditions with single-use needles and certified inks.",
+      "usp": [
+        "Styles: realism, minimalism, graphic/linework, color/black & grey",
+        "Custom designs based on your references",
+        "Correction and cover-up of old tattoos",
+        "Sterility: single-use tools, trusted inks",
+        "Pre-booking consultation and aftercare"
+      ],
+      "cta": "Book now",
+      "servicesCards": [
+        {
+          "title": "Black & grey tattoo",
+          "size": "5–10 cm",
+          "price": "400–1300 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Color tattoo",
+          "size": "5–10 cm",
+          "price": "500–1500 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Black & grey tattoo",
+          "size": "10–20 cm",
+          "price": "900–3500 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Color tattoo",
+          "size": "10–20 cm",
+          "price": "1000–4000 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Design sketch",
+          "text": "A custom sketch based on your ideas and references: style, composition and placement.",
+          "price": "free",
+          "button": "Book now"
+        },
+        {
+          "title": "Mandatory deposit",
+          "text": "The deposit is part of the tattoo price and confirms your booking. In case of cancellation, it is non-refundable.",
+          "price": "300 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Cover-up / tattoo correction",
+          "text": "Professional cover-ups and correction of faded or unsuccessful tattoos. Assessment by photo and during consultation.",
+          "price": "from 600 lei",
+          "button": "Book now"
+        },
+        {
+          "title": "Cover-up design sketch",
+          "text": "A sketch tailored to the specific cover-up: we consider the old tattoo, density, contrast and size.",
+          "price": "free",
+          "button": "Book now"
+        }
+      ]
+    },
+    "aboutSection": {
+      "ariaLabel": "About the studio: professional tattoos in Chisinau",
+      "title": "Professional tattoo studio in Chisinau",
+      "paragraphs": [
+        "We have been creating unique tattoos of any complexity for over 10 years. Our team of professional artists will carefully bring your idea to life.",
+        "We specialize in color and black & grey tattoos, refreshing old pieces, cover-ups of unsuccessful tattoos, and custom design development.",
+        "We work in sterile conditions: only single-use needles and certified inks, compliance with hygiene standards, and detailed aftercare."
+      ],
+      "advantagesTitle": "Our advantages:",
+      "advantages": [
+        "Experienced artists with a portfolio of 1,000+ works",
+        "Sterile single-use materials and trusted inks",
+        "Individual approach to every client",
+        "Free consultation and basic sketch",
+        "Guarantee on all completed work"
+      ]
+    },
+    "latestTattooSection": {
+      "ariaLabel": "Tattoo portfolio: recent works by artists in Chisinau",
+      "title": "Tattoo portfolio in Chisinau recent works by our artists",
+      "description": "Here you’ll find our studio’s recent works: from small minimalist sketches to large projects. All tattoos are done with single-use needles and certified inks. Click a photo to view it in full size.",
+      "cta": "View all photos"
     }
   }
 }

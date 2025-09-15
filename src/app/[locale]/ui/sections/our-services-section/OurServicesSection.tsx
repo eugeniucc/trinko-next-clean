@@ -32,6 +32,7 @@ export const OurServicesSection = async () => {
                   height={80}
                   alt={card.title}
                   className="h-18 w-18 duration-300 group-hover:-translate-y-1 group-hover:rotate-15"
+                  unoptimized
                 />
                 <h2 className="text-lg font-bold">{card.title}</h2>
                 <p className="min-h-10">{card.description}</p>

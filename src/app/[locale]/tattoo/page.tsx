@@ -1,7 +1,10 @@
 import Script from 'next/script'
 import { buildMetadata } from '../seo/buildMetadata'
 import { tattooJsonLd } from './seo/tattooJsonLd'
+import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
+import { LatestTattoo } from './ui/LatestTattoo'
+import { ServicesSection } from './ui/ServicesSection'
 
 export async function generateMetadata() {
   return buildMetadata({
@@ -15,6 +18,9 @@ export default async function TattooPage() {
   return (
     <main className="flex flex-col">
       <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <LatestTattoo />
       <Script
         id="tattoo-jsonld"
         type="application/ld+json"

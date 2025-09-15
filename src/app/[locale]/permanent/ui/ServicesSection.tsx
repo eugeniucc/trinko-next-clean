@@ -2,10 +2,15 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
 import { PermanentCardProps } from '../types/permanent.types'
 import { ProductCard } from './ProductCard'
 
-export const ServicesSection = () => {
+type Props = {
+  cardsImg: SinglePhoto[]
+}
+
+export const ServicesSection = ({ cardsImg }: Props) => {
   const t = useTranslations('permanentPage.serviceSection')
 
   const list = t.raw('services') as PermanentCardProps[]
@@ -20,7 +25,7 @@ export const ServicesSection = () => {
 
         <div className="grid h-full grid-cols-1 gap-15 md:grid-cols-2 xl:grid-cols-3">
           {list.map((item, i) => (
-            <ProductCard key={i} item={item} />
+            <ProductCard key={i} item={item} img={cardsImg[i % cardsImg.length]} />
           ))}
         </div>
       </Container>

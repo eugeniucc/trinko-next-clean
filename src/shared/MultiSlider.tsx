@@ -6,17 +6,12 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-type singleItem = {
-  url: string
-  alt: string
-}
+import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
 
 type Props = {
-  images: singleItem[]
+  sliderImg?: SinglePhoto[]
 }
-
-export default function MultiSlider({ images }: Props) {
+export default function MultiSlider({ sliderImg }: Props) {
   return (
     <div className="w-full py-8">
       <Swiper
@@ -39,12 +34,12 @@ export default function MultiSlider({ images }: Props) {
         loop={true}
         speed={1200}
       >
-        {images.map((image, i) => (
+        {sliderImg?.map((image, i) => (
           <SwiperSlide key={i} className="h-[380px]! w-[280px]! overflow-hidden rounded-xl md:h-[750px]! md:w-[550px]!">
             <div className="group relative h-full w-full">
               <Image
                 src={image.url}
-                alt={image.alt}
+                alt={image.pathname}
                 width={650}
                 height={550}
                 className="h-full w-full object-cover brightness-90 transition-all duration-300 group-hover:brightness-110"

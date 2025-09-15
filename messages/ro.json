@@ -280,6 +280,132 @@
       "offerSmall": "Tatuaj mic (până la 5 cm)",
       "offerMedium": "Tatuaj mediu (până la 15 cm)",
       "offerLarge": "Tatuaj mare (de la 20 cm în sus)"
+    },
+    "heroSection": {
+      "ariaLabel": "Lucrările noastre: tatuaje artistice, corecție și design de tatuaje în Chișinău",
+      "title": "Tatuaje în Chișinău: tatuaje color și alb-negru, corecție, acoperire (cover-up) și design de tatuaje",
+      "subtitle": "Salon de tatuaje Chișinău: artiști, prețuri și tatuaje în Moldova",
+      "heroCards": [
+        {
+          "title": "Tatuaje pentru bărbați și femei",
+          "text": "În studioul nostru de tatuaje din Chișinău poți realiza tatuaje artistice în orice stil și dimensiune. Lucrăm în condiții sterile, folosim doar materiale de unică folosință și garantăm măiestrie de înaltă calitate.",
+          "list": [
+            "Gamă largă de stiluri: realism, minimalism, grafică/linework, tatuaje color și alb-negru",
+            "Schițe personalizate după ideile tale",
+            "Siguranță și sterilitate: ace de unică folosință și cerneluri certificate",
+            "Tatuaje pentru bărbați și femei — de la mini până la proiecte mari"
+          ],
+          "button": "Programează-te"
+        },
+        {
+          "title": "Reîmprospătare și corecție de tatuaje",
+          "text": "Dacă tatuajul tău s-a estompat sau necesită corecții, oferim reîmprospătare profesională și cover-up al lucrărilor vechi. Artiștii noștri vor găsi soluția potrivită și vor reda frumusețea și expresivitatea tatuajului.",
+          "list": [
+            "Corecția tatuajelor estompate sau de calitate slabă",
+            "Cover-up al lucrărilor vechi cu schițe moderne",
+            "Adăugarea detaliilor și îmbunătățirea culorii",
+            "Abordare individuală pentru fiecare caz"
+          ],
+          "button": "Cere o ofertă"
+        },
+        {
+          "title": "Design de tatuaje",
+          "text": "Creăm schițe unice care îți reflectă caracterul și stilul. Fiecare design este dezvoltat individual — de la idee la desenul final — pentru ca tatuajul tău să fie cu adevărat special.",
+          "list": [
+            "Schițe personalizate pe baza ideilor și referințelor tale",
+            "Dezvoltare în stiluri populare: realism, grafică/linework, minimalism și altele",
+            "Alegerea formei și a poziționării în funcție de corp",
+            "Colaborare artist–client pentru un rezultat perfect"
+          ],
+          "button": "Discută designul"
+        }
+      ]
+    },
+    "servicesSection": {
+      "ariaLabel": "Servicii ale salonului de tatuaje din Chișinău: tatuaje artistice, corecții, cover-up și design",
+      "title": "Serviciile salonului de tatuaje din Chișinău — tatuaje artistice, corecții/cover-up și design de schițe",
+      "description": "Realizăm tatuaje color și black & grey în stiluri populare: realism, minimalism, grafică/linework. Te ajutăm cu ideea și designul, reîmprospătăm și acoperim cu grijă lucrările vechi. Lucrăm în condiții sterile, cu ace de unică folosință și cerneluri certificate.",
+      "usp": [
+        "Stiluri: realism, minimalism, grafică/linework, color/black & grey",
+        "Schițe personalizate după referințele tale",
+        "Corecție și cover-up pentru tatuaje vechi",
+        "Sterilitate: instrumente de unică folosință, cerneluri sigure",
+        "Consultație înainte de programare și îngrijire post-procedură"
+      ],
+      "cta": "Programează-te",
+      "servicesCards": [
+        {
+          "title": "Tatuaj black & grey",
+          "size": "5–10 cm",
+          "price": "400–1300 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj color",
+          "size": "5–10 cm",
+          "price": "500–1500 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj black & grey",
+          "size": "10–20 cm",
+          "price": "900–3500 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Tatuaj color",
+          "size": "10–20 cm",
+          "price": "1000–4000 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Design de schiță",
+          "text": "Schiță personalizată după ideile și referințele tale: stil, compoziție și amplasare.",
+          "price": "gratuit",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Avans obligatoriu la comandă",
+          "text": "Avansul este inclus în prețul tatuajului și confirmă programarea. În caz de anulare, nu se rambursează.",
+          "price": "300 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Cover-up / corecție tatuaj",
+          "text": "Cover-up profesional și corectarea tatuajelor decolorate sau nereușite. Evaluare după foto și la consultație.",
+          "price": "de la 600 lei",
+          "button": "Programează-te"
+        },
+        {
+          "title": "Schiță pentru cover-up",
+          "text": "Schiță adaptată pentru cover-up: ținem cont de tatuajul vechi, densitate, contrast și dimensiune.",
+          "price": "gratuit",
+          "button": "Programează-te"
+        }
+      ]
+    },
+    "aboutSection": {
+      "ariaLabel": "Despre studio: tatuaje profesionale în Chișinău",
+      "title": "Studio de tatuaje profesionist în Chișinău",
+      "paragraphs": [
+        "Creăm tatuaje unice de orice complexitate de peste 10 ani. Echipa noastră de artiști profesioniști îți va aduce ideea la viață cu grijă.",
+        "Suntem specializați în tatuaje color și black & grey, reîmprospătarea lucrărilor vechi, cover-up pentru tatuaje nereușite și dezvoltarea designului personalizat.",
+        "Lucrăm în condiții sterile: doar ace de unică folosință și cerneluri certificate, respectarea normelor de igienă și îngrijire detaliată după procedură."
+      ],
+      "advantagesTitle": "Avantajele noastre:",
+      "advantages": [
+        "Artiști experimentați cu un portofoliu de 1000+ lucrări",
+        "Materiale sterile de unică folosință și cerneluri de încredere",
+        "Abordare individuală pentru fiecare client",
+        "Consultație gratuită și schiță de bază",
+        "Garanție pentru lucrările efectuate"
+      ]
+    },
+    "latestTattooSection": {
+      "ariaLabel": "Portofoliu de tatuaje: lucrări recente ale artiștilor din Chișinău",
+      "title": "Portofoliu de tatuaje în Chișinău lucrări recente ale artiștilor",
+      "description": "Aici sunt adunate lucrările recente ale studioului nostru: de la schițe minimaliste mici până la proiecte mari. Toate tatuajele sunt realizate cu ace de unică folosință și cerneluri certificate. Apasă pe fotografie pentru a o mări.",
+      "cta": "Vezi toate fotografiile"
     }
   }
 }

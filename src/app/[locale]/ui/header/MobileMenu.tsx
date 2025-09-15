@@ -21,7 +21,7 @@ export default async function MobileMenu() {
               <span className="mb-12 text-red-500">OblivionTattoo</span>
             </SheetTitle>
             <SheetDescription>{t('headerMobile.description')}</SheetDescription>
-            <nav className="flex flex-col gap-4 py-6">
+            <nav className="flex flex-col gap-2">
               {links.map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link href={link.href} className="relative pb-1 transition-colors duration-300 hover:text-red-500">
@@ -30,7 +30,7 @@ export default async function MobileMenu() {
                 </SheetClose>
               ))}
             </nav>
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-4">
                 <a className="flex items-center gap-2 duration-200 hover:text-red-500" href="tel:+37379146506" rel="noopener noreferrer">
                   <PhoneOutgoing className="h-5 w-5" />

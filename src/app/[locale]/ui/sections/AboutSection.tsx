@@ -17,6 +17,7 @@ export const AboutSection = async () => {
         height={1080}
         alt="Мастер делает татуировку в салоне OblivionTattoo"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
+        unoptimized
       />
       <Container className="relative z-1 flex min-h-screen flex-col justify-center">
         <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>

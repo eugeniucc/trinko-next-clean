@@ -4,10 +4,14 @@ import { Container } from '@/components/custom/Container'
 import { CustomLoading } from '@/components/custom/CustomLoading'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { SliderImages } from '../mocks/mocks'
 
-export const ShowOffSection = () => {
+type Props = {
+  sliderImg?: SinglePhoto[]
+}
+
+export const ShowOffSection = ({ sliderImg }: Props) => {
   const DynamicSlider = dynamic(() => import('@/shared/MultiSlider'), { loading: () => <CustomLoading /> })
 
   const t = useTranslations('permanentPage.showOffSection')
@@ -20,7 +24,7 @@ export const ShowOffSection = () => {
           <p className="mx-auto max-w-3xl text-center text-zinc-400">{t('text')}</p>
         </FramerMotionContainer>
 
-        <DynamicSlider images={SliderImages} />
+        <DynamicSlider sliderImg={sliderImg} />
 
         <ContactsSection />
       </Container>

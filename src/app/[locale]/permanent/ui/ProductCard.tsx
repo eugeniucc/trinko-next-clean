@@ -1,22 +1,21 @@
 import Image from 'next/image'
+import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
 import { PermanentCardProps } from '../types/permanent.types'
 import { PickmeLink } from './PickmeLink'
 
 type Props = {
   item: PermanentCardProps
+  img?: SinglePhoto
 }
 
-export const ProductCard = ({ item }: Props) => {
+export const ProductCard = ({ item, img }: Props) => {
+  const fileName = img?.pathname.split('/').pop()
+  const alt = fileName?.replace('.webp', '').replace(/-/g, ' ')
+
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
       <div className="relative aspect-[4/3] flex-shrink-0">
-        <Image
-          src={'/images/permanentPage/permanent-tattoo-kishynev.webp'}
-          alt="Placeholder"
-          width={500}
-          height={500}
-          className="h-full w-full object-cover"
-        />
+        {img && <Image src={img.url} alt={alt ?? ''} width={500} height={500} className="h-full w-full object-cover" unoptimized />}
         <div className="absolute top-4 left-4">
           <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
         </div>
