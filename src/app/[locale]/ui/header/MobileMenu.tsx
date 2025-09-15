@@ -1,13 +1,27 @@
-import { Instagram, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+'use client'
 
-export default async function MobileMenu() {
-  const [t, tSpeed] = await Promise.all([getTranslations('homePage'), getTranslations('pageSpeedLabel')])
+import { Instagram, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
+import { useLocale, useTranslations } from 'next-intl'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { cn } from '@/lib/utils'
+
+export default function MobileMenu() {
+  const t = useTranslations('homePage')
+  const tSpeed = useTranslations('pageSpeedLabel')
 
   const links = t.raw('header.links') as { label: string; href: string }[]
   const burgerAria = tSpeed('burgerMenu')
+
+  const locale = useLocale()
+  const pathname = usePathname()
+
+  const withLocale = (href: string) => (href.startsWith('/') ? `/${locale}${href}` : href)
+  const isActive = (href: string) => {
+    const full = withLocale(href)
+    return pathname === full || pathname.startsWith(full + '/')
+  }
 
   return (
     <div className="flex items-center lg:hidden">
@@ -24,7 +38,13 @@ export default async function MobileMenu() {
             <nav className="flex flex-col gap-2">
               {links.map((link) => (
                 <SheetClose key={link.href} asChild>
-                  <Link href={link.href} className="relative pb-1 transition-colors duration-300 hover:text-red-500">
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      'transition-colors duration-300',
+                      isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-red-500'
+                    )}
+                  >
                     {link.label}
                   </Link>
                 </SheetClose>

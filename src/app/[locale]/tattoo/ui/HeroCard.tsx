@@ -11,7 +11,7 @@ type Props = {
 }
 export const HeroCard = ({ item, img, Icon }: Props) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex h-full flex-col">
       <div className="h-48 overflow-hidden rounded-t-lg">
         <Image
           className="h-auto w-full object-cover object-center"

@@ -11,7 +11,7 @@ type Props = {
 
 export const ServiceCard = (props: Props) => {
   return (
-    <div className="flex flex-col justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4">
+    <div className="flex h-full flex-col justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4">
       <div className="flex h-full flex-col justify-between gap-4">
         <h3 className="text-2xl font-bold break-all text-gray-900 dark:text-white">{props.title}</h3>
         {props.size && (

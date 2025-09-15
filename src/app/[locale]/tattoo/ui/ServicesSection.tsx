@@ -34,13 +34,13 @@ export const ServicesSection = async () => {
           </div>
         </FramerMotionContainer>
 
-        <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {list.map((item, i) => (
-              <ServiceCard key={i} {...item} />
-            ))}
-          </div>
-        </FramerMotionContainer>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          {list.map((item, i) => (
+            <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+              <ServiceCard {...item} />
+            </FramerMotionContainer>
+          ))}
+        </div>
       </Container>
     </CustomSectionAria>
   )
