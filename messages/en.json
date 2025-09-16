@@ -66,27 +66,33 @@
       "cards": [
         {
           "title": "Tattoos in Chisinau",
-          "description": "High-quality tattoos of any complexity in our Chisinau tattoo studio."
+          "description": "High-quality tattoos of any complexity in our Chisinau tattoo studio.",
+          "href": "/tattoo"
         },
         {
           "title": "Piercing in Chisinau",
-          "description": "Needle piercing with full sterility and jewelry selection in Chisinau."
+          "description": "Needle piercing with full sterility and jewelry selection in Chisinau.",
+          "href": "/piercing"
         },
         {
           "title": "Tattoo and Scar Cover-Up",
-          "description": "Professional cover-up of old tattoos and scars in our tattoo studio."
+          "description": "Professional cover-up of old tattoos and scars in our tattoo studio.",
+          "href": "/tattoo"
         },
         {
           "title": "Tattoo Design",
-          "description": "Custom sketches tailored to each client's anatomy."
+          "description": "Custom sketches tailored to each client's anatomy.",
+          "href": "/tattoo"
         },
         {
           "title": "Permanent Makeup in Chisinau",
-          "description": "Long-lasting makeup by certified artists in our Chisinau tattoo studio."
+          "description": "Long-lasting makeup by certified artists in our Chisinau tattoo studio.",
+          "href": "/permanent"
         },
         {
           "title": "Tattoo Correction",
-          "description": "We refresh the color and shape of tattoos in our Chisinau studio."
+          "description": "We refresh the color and shape of tattoos in our Chisinau studio.",
+          "href": "/tattoo"
         }
       ],
       "ariaLabel": "Overview of tattoo, piercing, and permanent makeup services at OblivionTattoo in Chisinau"
@@ -406,6 +412,157 @@
       "title": "Tattoo portfolio in Chisinau recent works by our artists",
       "description": "Here you’ll find our studio’s recent works: from small minimalist sketches to large projects. All tattoos are done with single-use needles and certified inks. Click a photo to view it in full size.",
       "cta": "View all photos"
+    }
+  },
+  "piercingPage": {
+    "piercing": {
+      "serviceType": "Piercing in Chisinau: earlobe, helix, tragus, septum and navel",
+      "offerLobe": "Earlobe piercing",
+      "offerHelix": "Helix piercing (outer rim)",
+      "offerTragus": "Tragus piercing",
+      "offerSeptum": "Septum piercing",
+      "offerNavel": "Navel (belly button) piercing"
+    },
+    "heroSection": {
+      "ariaLabel": "Piercing in Chisinau, Oblivion Tattoo studio",
+      "title": "Professional Piercing in Chisinau – Oblivion Tattoo Studio",
+      "text": "Safe piercings, sterile instruments and quality jewelry. 8+ years of experience in body modification. Individual approach for every client in central Chisinau.",
+      "firstCard": {
+        "title": "All types of piercings – from classic to extreme",
+        "text": "Ear, nose, tongue, navel and intimate piercing. We use only titanium and surgical-grade steel jewelry of the highest quality. Single-use needles and professional equipment."
+      },
+      "secondCard": {
+        "title": "Safety and sterility – our priority in Chisinau",
+        "text": "We follow all sanitary standards and use an autoclave for instrument sterilization. Detailed aftercare consultation. Guaranteed quality and safety of the procedure."
+      },
+      "thirdCard": {
+        "title": "Experienced piercers and premium jewelry in the city center",
+        "text": "Certified piercers with many years of practice. A wide selection of jewelry from leading global brands. Individual jewelry fitting tailored to the client’s anatomy."
+      }
+    },
+    "aboutSection": {
+      "ariaLabel": "About the piercing studio in Chisinau — Oblivion Tattoo",
+      "title": "About the Oblivion Tattoo piercing studio in Chisinau",
+      "lead": "For over 10 years, we’ve been a leading body-modification studio in Moldova. Our team of certified piercers has performed thousands of procedures, from simple ear piercings to complex anatomical projects. We are proud of our reputation as the safest and most professional piercing studio in Chisinau.",
+      "whyTitle": "Why clients choose us for piercing in Chisinau?",
+      "why": [
+        {
+          "icon": "shield",
+          "title": "100% sterility",
+          "text": "We use a Class B autoclave, single-use needles, and follow all medical protocols. Every instrument undergoes a full sterilization cycle."
+        },
+        {
+          "icon": "award",
+          "title": "Certified piercers",
+          "text": "Our piercers hold international certifications and regularly train in new techniques and safety practices."
+        },
+        {
+          "icon": "sparkles",
+          "title": "Premium jewelry",
+          "text": "We work only with Grade 1 titanium, 316L surgical steel, and 14–18k gold. Jewelry from leading global brands: Anatometal, BVLA, Neometal."
+        }
+      ],
+      "catalogTitle": "All types of piercing in one studio",
+      "catalog": [
+        {
+          "category": "Ear piercing",
+          "description": "From classic piercings to complex compositions",
+          "services": ["Earlobe", "Helix", "Tragus", "Conch", "Industrial", "Daith"]
+        },
+        {
+          "category": "Facial piercing",
+          "description": "Safely accentuating individuality",
+          "services": ["Nose", "Septum", "Bridge", "Lips", "Tongue", "Eyebrow"]
+        },
+        {
+          "category": "Body piercing",
+          "description": "Intimate areas handled with special care",
+          "services": ["Navel", "Nipples", "Surface", "Microdermals", "Intimate"]
+        }
+      ],
+      "processTitle": "Our process: safety first",
+      "process": [
+        { "step": "1", "title": "Consultation", "description": "We discuss anatomy and choose optimal placement and jewelry." },
+        { "step": "2", "title": "Preparation", "description": "Sterilizing the workstation and unsealing new instruments." },
+        { "step": "3", "title": "Piercing", "description": "Fast and precise using professional needles." },
+        { "step": "4", "title": "Aftercare", "description": "Detailed aftercare instructions and free follow-up consultations." }
+      ]
+    },
+    "pricingSection": {
+      "ariaLabel": "Piercing prices in Chisinau — Oblivion Tattoo",
+      "title": "Piercing Prices in Chisinau",
+      "description": "Transparent pricing, quality materials, and professional work. The price includes the piercing and a basic surgical steel jewelry piece.",
+      "badges": {
+        "quality": "Quality guarantee",
+        "onlineBooking": "Online booking"
+      },
+      "categories": [
+        {
+          "title": "Ear piercing",
+          "icon": "👂",
+          "services": [
+            { "name": "Earlobe (Lobe)", "price": 100 },
+            { "name": "Helix (upper cartilage)", "price": 150 },
+            { "name": "Forward Helix", "price": 150 },
+            { "name": "Tragus", "price": 150 },
+            { "name": "Anti-Tragus", "price": 150 },
+            { "name": "Conch", "price": 150 },
+            { "name": "Daith", "price": 150 },
+            { "name": "Rook", "price": 150 },
+            { "name": "Snug", "price": 150 },
+            { "name": "Orbital (2 piercings)", "price": 300 },
+            { "name": "Industrial (2 piercings)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Facial piercing",
+          "icon": "👃",
+          "services": [
+            { "name": "Eyebrow", "price": 250 },
+            { "name": "Nostril (side of nose)", "price": 150 },
+            { "name": "Septum", "price": 250 },
+            { "name": "Bridge (nasal bridge)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Lip piercing",
+          "icon": "👄",
+          "services": [
+            { "name": "Labret (single)", "price": 150 },
+            { "name": "Monroe / Madonna", "price": 150 },
+            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Snake bites (2 piercings)", "price": 300 },
+            { "name": "Spider bites (2 piercings)", "price": 300 },
+            { "name": "Angel bites (2 piercings)", "price": 300 },
+            { "name": "Dolphin bites (2 piercings)", "price": 300 },
+            { "name": "Cyber bites (upper + lower)", "price": 300 },
+            { "name": "Shark bites (4 piercings)", "price": 600 }
+          ]
+        },
+        {
+          "title": "Other types of piercing",
+          "icon": "✨",
+          "services": [
+            { "name": "Tongue", "price": 250 },
+            { "name": "Navel", "price": 300 }
+          ]
+        }
+      ],
+      "includesTitle": "What’s included in the piercing price?",
+      "includes": ["Consultation with the piercer", "Sterile instruments", "Basic jewelry", "Aftercare instructions"],
+      "includesNote": "* Premium jewelry made of titanium, gold, or with stones is charged separately",
+      "buttons": {
+        "book": "Book"
+      },
+      "labels": {
+        "currency": "lei",
+        "includesBaseJewelry": "Includes basic jewelry"
+      }
+    },
+    "latestPiercingSection": {
+      "ariaLabel": "Piercing portfolio: latest works by our artists in Chisinau",
+      "title": "Latest Piercing Works in Chisinau — Oblivion Tattoo",
+      "description": "Here we publish recent photos of our artists’ work: ear piercings (lobe, helix, tragus, conch, daith), nose (nostril, septum), lips (labret, medusa, monroe), tongue, and navel. All piercings are performed under sterile conditions with single-use needles and titanium/surgical steel jewelry. Tap an image to view it in full size."
     }
   }
 }

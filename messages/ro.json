@@ -66,27 +66,33 @@
       "cards": [
         {
           "title": "Tatuaje în Chișinău",
-          "description": "Tatuaje de înaltă calitate, de orice complexitate, în salonul nostru din Chișinău."
+          "description": "Tatuaje de înaltă calitate, de orice complexitate, în salonul nostru din Chișinău.",
+          "href": "/tattoo"
         },
         {
           "title": "Piercing în Chișinău",
-          "description": "Piercing cu ac în condiții sterile și selecția bijuteriilor în Chișinău."
+          "description": "Piercing cu ac în condiții sterile și selecția bijuteriilor în Chișinău.",
+          "href": "/piercing"
         },
         {
           "title": "Acoperire tatuaje și cicatrici",
-          "description": "Acoperim profesionist tatuaje vechi și cicatrici în salonul nostru de tatuaje."
+          "description": "Acoperim profesionist tatuaje vechi și cicatrici în salonul nostru de tatuaje.",
+          "href": "/tattoo"
         },
         {
           "title": "Design de tatuaje",
-          "description": "Crearea de schițe individuale ținând cont de anatomia clientului."
+          "description": "Crearea de schițe individuale ținând cont de anatomia clientului.",
+          "href": "/tattoo"
         },
         {
           "title": "Machiaj permanent în Chișinău",
-          "description": "Machiaj de lungă durată realizat de artiști certificați în salonul nostru din Chișinău."
+          "description": "Machiaj de lungă durată realizat de artiști certificați în salonul nostru din Chișinău.",
+          "href": "/permanent"
         },
         {
           "title": "Corectarea tatuajelor",
-          "description": "Împrospătăm culoarea și forma tatuajelor în salonul nostru din Chișinău."
+          "description": "Împrospătăm culoarea și forma tatuajelor în salonul nostru din Chișinău.",
+          "href": "/tattoo"
         }
       ],
       "ariaLabel": "Prezentare generală a serviciilor de tatuaje, piercing și machiaj permanent la OblivionTattoo în Chișinău"
@@ -406,6 +412,157 @@
       "title": "Portofoliu de tatuaje în Chișinău lucrări recente ale artiștilor",
       "description": "Aici sunt adunate lucrările recente ale studioului nostru: de la schițe minimaliste mici până la proiecte mari. Toate tatuajele sunt realizate cu ace de unică folosință și cerneluri certificate. Apasă pe fotografie pentru a o mări.",
       "cta": "Vezi toate fotografiile"
+    }
+  },
+  "piercingPage": {
+    "piercing": {
+      "serviceType": "Piercing în Chișinău: lobul urechii, helix, tragus, septum și buric",
+      "offerLobe": "Piercing lob ureche",
+      "offerHelix": "Piercing helix (marginea externă)",
+      "offerTragus": "Piercing tragus",
+      "offerSeptum": "Piercing sept",
+      "offerNavel": "Piercing buric"
+    },
+    "heroSection": {
+      "ariaLabel": "Piercing în Chișinău, studio Oblivion Tattoo",
+      "title": "Piercing profesional în Chișinău – Studio Oblivion Tattoo",
+      "text": "Perforări sigure, instrumente sterile și bijuterii de calitate. Peste 8 ani de experiență în body-modification. Abordare individuală pentru fiecare client în centrul Chișinăului.",
+      "firstCard": {
+        "title": "Toate tipurile de piercing – de la clasic la extrem",
+        "text": "Piercing la urechi, nas, limbă, buric și piercing intim. Folosim doar bijuterii din titan și oțel chirurgical de cea mai înaltă calitate. Ace de unică folosință și echipament profesional."
+      },
+      "secondCard": {
+        "title": "Siguranța și sterilitatea – prioritatea noastră în Chișinău",
+        "text": "Respectăm toate normele sanitare și sterilizăm instrumentele în autoclav. Consultație detaliată privind îngrijirea. Garanție a calității și siguranței procedurii."
+      },
+      "thirdCard": {
+        "title": "Maeștri cu experiență și bijuterii premium în centrul orașului",
+        "text": "PircERI certificați cu mulți ani de experiență. Gama largă de bijuterii de la producători de top. Alegere individuală în funcție de anatomia clientului."
+      }
+    },
+    "aboutSection": {
+      "ariaLabel": "Despre studioul de piercing din Chișinău — Oblivion Tattoo",
+      "title": "Despre studioul de piercing Oblivion Tattoo din Chișinău",
+      "lead": "De peste 10 ani suntem un studio de top în body modification din Republica Moldova. Echipa noastră de pierceri certificați a realizat mii de proceduri, de la perforarea simplă a urechilor până la proiecte anatomice complexe. Suntem mândri de reputația noastră de cel mai sigur și profesionist studio de piercing din Chișinău.",
+      "whyTitle": "De ce suntem aleși pentru piercing în Chișinău?",
+      "why": [
+        {
+          "icon": "shield",
+          "title": "Sterilitate 100%",
+          "text": "Folosim autoclava de clasă B, ace de unică folosință și respectăm toate protocoalele medicale. Fiecare instrument trece printr-un ciclu complet de sterilizare."
+        },
+        {
+          "icon": "award",
+          "title": "Pierceri certificați",
+          "text": "Piercerii noștri au certificări internaționale și se perfecționează constant în tehnici noi și practici de siguranță."
+        },
+        {
+          "icon": "sparkles",
+          "title": "Bijuterii premium",
+          "text": "Lucrăm doar cu titan Grade 1, oțel chirurgical 316L și aur 14–18k. Bijuterii de la branduri de top: Anatometal, BVLA, Neometal."
+        }
+      ],
+      "catalogTitle": "Toate tipurile de piercing într-un singur studio",
+      "catalog": [
+        {
+          "category": "Piercing urechi",
+          "description": "De la perforări clasice la compoziții complexe",
+          "services": ["Lob", "Helix", "Tragus", "Conch", "Industrial", "Daith"]
+        },
+        {
+          "category": "Piercing facial",
+          "description": "Evidențiem individualitatea în siguranță",
+          "services": ["Nas", "Septum", "Bridge", "Buze", "Limbă", "Sprânceană"]
+        },
+        {
+          "category": "Piercing corporal",
+          "description": "Zone intime tratate cu deosebită delicatețe",
+          "services": ["Buric", "Sâni", "Surface", "Microdermale", "Intim"]
+        }
+      ],
+      "processTitle": "Procesul nostru: siguranța pe primul loc",
+      "process": [
+        { "step": "1", "title": "Consultație", "description": "Discutăm anatomia și alegem poziționarea și bijuteriile optime." },
+        { "step": "2", "title": "Pregătire", "description": "Sterilizarea postului de lucru și desigilarea instrumentelor noi." },
+        { "step": "3", "title": "Perforare", "description": "Rapid și precis, cu ace profesionale." },
+        { "step": "4", "title": "Îngrijire", "description": "Instrucțiuni detaliate de aftercare și consultații gratuite ulterior." }
+      ]
+    },
+    "pricingSection": {
+      "ariaLabel": "Prețuri pentru piercing în Chișinău — Oblivion Tattoo",
+      "title": "Prețuri pentru piercing în Chișinău",
+      "description": "Prețuri transparente, materiale de calitate și lucru profesionist. Prețul include perforarea și o bijuterie de bază din oțel chirurgical.",
+      "badges": {
+        "quality": "Garanție de calitate",
+        "onlineBooking": "Programare online"
+      },
+      "categories": [
+        {
+          "title": "Piercing urechi",
+          "icon": "👂",
+          "services": [
+            { "name": "Lob (lobul urechii)", "price": 100 },
+            { "name": "Helix (cartilaj superior)", "price": 150 },
+            { "name": "Forward Helix", "price": 150 },
+            { "name": "Tragus", "price": 150 },
+            { "name": "Anti-Tragus", "price": 150 },
+            { "name": "Conch", "price": 150 },
+            { "name": "Daith", "price": 150 },
+            { "name": "Rook", "price": 150 },
+            { "name": "Snug", "price": 150 },
+            { "name": "Orbital (2 perforații)", "price": 300 },
+            { "name": "Industrial (2 perforații)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Piercing facial",
+          "icon": "👃",
+          "services": [
+            { "name": "Sprânceană", "price": 250 },
+            { "name": "Nostril (aripa nasului)", "price": 150 },
+            { "name": "Septum", "price": 250 },
+            { "name": "Bridge (puntea nazală)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Piercing buze",
+          "icon": "👄",
+          "services": [
+            { "name": "Labret (1 perforație)", "price": 150 },
+            { "name": "Monroe / Madonna", "price": 150 },
+            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Snake bites (2 perforații)", "price": 300 },
+            { "name": "Spider bites (2 perforații)", "price": 300 },
+            { "name": "Angel bites (2 perforații)", "price": 300 },
+            { "name": "Dolphin bites (2 perforații)", "price": 300 },
+            { "name": "Cyber bites (sus + jos)", "price": 300 },
+            { "name": "Shark bites (4 perforații)", "price": 600 }
+          ]
+        },
+        {
+          "title": "Alte tipuri de piercing",
+          "icon": "✨",
+          "services": [
+            { "name": "Limbă", "price": 250 },
+            { "name": "Buric", "price": 300 }
+          ]
+        }
+      ],
+      "includesTitle": "Ce este inclus în prețul piercingului?",
+      "includes": ["Consultația cu piercerul", "Instrumente sterile", "Bijuterie de bază", "Instrucțiuni de îngrijire"],
+      "includesNote": "* Bijuteriile premium din titan, aur sau cu pietre se achită separat",
+      "buttons": {
+        "book": "Programează-te"
+      },
+      "labels": {
+        "currency": "lei",
+        "includesBaseJewelry": "Include bijuterie de bază"
+      }
+    },
+    "latestPiercingSection": {
+      "ariaLabel": "Portofoliu de piercing: lucrări recente ale maeștrilor în Chișinău",
+      "title": "Lucrări recente de piercing în Chișinău — Oblivion Tattoo",
+      "description": "Aici publicăm fotografii recente ale lucrărilor noastre: piercing urechi (lob, helix, tragus, conch, daith), nas (nostril, sept), buze (labret, medusa, monroe), limbă și buric. Toate perforațiile sunt realizate în condiții sterile, cu ace de unică folosință și bijuterii din titan/oțel chirurgical. Atinge imaginea pentru a o mări."
     }
   }
 }

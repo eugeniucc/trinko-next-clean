@@ -1,13 +1,32 @@
+import Script from 'next/script'
+import { buildMetadata } from '../seo/buildMetadata'
+import { piercingJsonLd } from './seo/piercingJsonLd'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
+import { LatestPiercingSection } from './ui/LatestPiercingSection'
 import { PricingSection } from './ui/PricingSection'
 
-export default function PiercingPage() {
+export async function generateMetadata() {
+  return buildMetadata({
+    path: 'piercing'
+  })
+}
+
+export default async function PiercingPage() {
+  const jsonLd = await piercingJsonLd()
+
   return (
     <main className="flex flex-col">
       <HeroSection />
       <AboutSection />
+      <LatestPiercingSection />
       <PricingSection />
+      <Script
+        id="piercing-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </main>
   )
 }

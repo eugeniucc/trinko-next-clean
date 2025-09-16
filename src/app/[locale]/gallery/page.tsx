@@ -1,3 +1,11 @@
+import { ContactsSection } from '@/shared/ContactsSection'
+import { HeroSection } from './ui/HeroSection'
+
 export default function Gallery() {
-  return <div>Gallery</div>
+  return (
+    <main className="flex flex-col">
+      <HeroSection />
+      <ContactsSection />
+    </main>
+  )
 }

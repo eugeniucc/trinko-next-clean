@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 
-export const tattooJsonLd = async () => {
+export const galleryJsonLd = async () => {
   const t = await getTranslations('tattooPage.tattoo')
   const locale = await getLocale()
   const domain = process.env.NEXT_PUBLIC_DOMAIN_URL

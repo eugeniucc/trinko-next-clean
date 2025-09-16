@@ -13,6 +13,7 @@ export const OurServicesSection = async () => {
   const cardsArray = t.raw('cards') as {
     title: string
     description: string
+    href: string
   }[]
 
   return (
@@ -23,7 +24,7 @@ export const OurServicesSection = async () => {
           {cardsArray.map((card, i) => (
             <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
               <Link
-                href="services"
+                href={card.href}
                 className="group relative -mb-[1px] -ml-[1px] flex flex-col items-center gap-4 border border-gray-200 p-6 text-center"
               >
                 <Image

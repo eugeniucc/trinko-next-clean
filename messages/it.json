@@ -66,27 +66,33 @@
       "cards": [
         {
           "title": "Tatuaggi a Chişinău",
-          "description": "Tatuaggi di alta qualità di qualsiasi complessità nel nostro studio di tatuaggi a Chişinău."
+          "description": "Tatuaggi di alta qualità di qualsiasi complessità nel nostro studio di tatuaggi a Chişinău.",
+          "href": "/tattoo"
         },
         {
           "title": "Piercing a Chişinău",
-          "description": "Piercing con ago eseguito in condizioni sterili e selezione dei gioielli a Chişinău."
+          "description": "Piercing con ago eseguito in condizioni sterili e selezione dei gioielli a Chişinău.",
+          "href": "/piercing"
         },
         {
           "title": "Copertura di tatuaggi e cicatrici",
-          "description": "Copriamo professionalmente vecchi tatuaggi e cicatrici nel nostro studio."
+          "description": "Copriamo professionalmente vecchi tatuaggi e cicatrici nel nostro studio.",
+          "href": "/tattoo"
         },
         {
           "title": "Design di tatuaggi",
-          "description": "Creazione di bozzetti personalizzati in base alle caratteristiche anatomiche del cliente."
+          "description": "Creazione di bozzetti personalizzati in base alle caratteristiche anatomiche del cliente.",
+          "href": "/tattoo"
         },
         {
           "title": "Trucco permanente a Chişinău",
-          "description": "Trucco duraturo eseguito da artisti certificati nel nostro studio di tatuaggi."
+          "description": "Trucco duraturo eseguito da artisti certificati nel nostro studio di tatuaggi.",
+          "href": "/permanent"
         },
         {
           "title": "Correzione tatuaggi",
-          "description": "Rinfreschiamo il colore e la forma dei tatuaggi nel nostro studio a Chişinău."
+          "description": "Rinfreschiamo il colore e la forma dei tatuaggi nel nostro studio a Chişinău.",
+          "href": "/tattoo"
         }
       ],
       "ariaLabel": "Panoramica dei servizi di tatuaggi, piercing e trucco permanente presso OblivionTattoo a Chisinau"
@@ -406,6 +412,157 @@
       "title": "Portfolio di tatuaggi a Chișinău lavori recenti degli artisti",
       "description": "Qui trovi i lavori recenti del nostro studio: dai piccoli bozzetti minimalisti ai progetti di grandi dimensioni. Tutti i tatuaggi sono realizzati con aghi monouso e inchiostri certificati. Clicca sulla foto per aprirla a schermo intero.",
       "cta": "Guarda tutte le foto"
+    }
+  },
+  "piercingPage": {
+    "piercing": {
+      "serviceType": "Piercing a Chișinău: lobo, helix, tragus, septum e ombelico",
+      "offerLobe": "Piercing al lobo",
+      "offerHelix": "Piercing helix (bordo esterno)",
+      "offerTragus": "Piercing tragus",
+      "offerSeptum": "Piercing al septum",
+      "offerNavel": "Piercing all'ombelico"
+    },
+    "heroSection": {
+      "ariaLabel": "Piercing a Chișinău, studio Oblivion Tattoo",
+      "title": "Piercing professionale a Chișinău – Studio Oblivion Tattoo",
+      "text": "Fori sicuri, strumenti sterili e gioielli di qualità. Oltre 8 anni di esperienza nelle body modification. Approccio individuale per ogni cliente nel centro di Chișinău.",
+      "firstCard": {
+        "title": "Tutti i tipi di piercing – dal classico agli estremi",
+        "text": "Piercing a orecchio, naso, lingua, ombelico e piercing intimo. Usiamo solo gioielli in titanio e acciaio chirurgico di altissima qualità. Aghi monouso e attrezzatura professionale."
+      },
+      "secondCard": {
+        "title": "Sicurezza e sterilità – la nostra priorità a Chișinău",
+        "text": "Rispettiamo tutte le norme igienico-sanitarie e sterilizziamo gli strumenti in autoclave. Consulenza dettagliata per la cura post-procedura. Garanzia di qualità e sicurezza."
+      },
+      "thirdCard": {
+        "title": "Piercer esperti e gioielli premium nel centro città",
+        "text": "Piercer certificati con anni di esperienza. Ampia selezione di gioielli dei principali produttori mondiali. Scelta individuale dei gioielli in base all’anatomia del cliente."
+      }
+    },
+    "aboutSection": {
+      "ariaLabel": "Informazioni sullo studio di piercing a Chișinău — Oblivion Tattoo",
+      "title": "Sul nostro studio di piercing Oblivion Tattoo a Chișinău",
+      "lead": "Da oltre 10 anni siamo uno dei principali studi di body modification in Moldavia. Il nostro team di piercer certificati ha eseguito migliaia di procedure, dai semplici fori alle orecchie fino a progetti anatomici complessi. Siamo orgogliosi della nostra reputazione di studio di piercing più sicuro e professionale a Chișinău.",
+      "whyTitle": "Perché sceglierci per il piercing a Chișinău?",
+      "why": [
+        {
+          "icon": "shield",
+          "title": "Sterilità al 100%",
+          "text": "Usiamo un’autoclave di classe B, aghi monouso e rispettiamo tutti i protocolli medici. Ogni strumento passa un ciclo completo di sterilizzazione."
+        },
+        {
+          "icon": "award",
+          "title": "Piercer certificati",
+          "text": "I nostri piercer hanno certificazioni internazionali e si aggiornano regolarmente su nuove tecniche e pratiche di sicurezza."
+        },
+        {
+          "icon": "sparkles",
+          "title": "Gioielli premium",
+          "text": "Lavoriamo solo con titanio Grade 1, acciaio chirurgico 316L e oro 14–18k. Gioielli dei principali brand: Anatometal, BVLA, Neometal."
+        }
+      ],
+      "catalogTitle": "Tutti i tipi di piercing in un unico studio",
+      "catalog": [
+        {
+          "category": "Piercing all’orecchio",
+          "description": "Dai fori classici alle composizioni complesse",
+          "services": ["Lobo", "Helix", "Trago", "Conch", "Industrial", "Daith"]
+        },
+        {
+          "category": "Piercing del viso",
+          "description": "Valorizziamo l’individualità in sicurezza",
+          "services": ["Naso", "Septum", "Bridge", "Labbra", "Lingua", "Sopracciglio"]
+        },
+        {
+          "category": "Piercing del corpo",
+          "description": "Zone intime trattate con particolare delicatezza",
+          "services": ["Ombelico", "Capezzoli", "Surface", "Microdermal", "Intimo"]
+        }
+      ],
+      "processTitle": "Il nostro processo: la sicurezza prima di tutto",
+      "process": [
+        { "step": "1", "title": "Consultazione", "description": "Analizziamo l’anatomia e scegliamo posizionamento e gioielli ottimali." },
+        { "step": "2", "title": "Preparazione", "description": "Sterilizzazione della postazione e apertura di strumenti nuovi." },
+        { "step": "3", "title": "Perforazione", "description": "Rapida e precisa con aghi professionali." },
+        { "step": "4", "title": "Cura", "description": "Istruzioni dettagliate per l’aftercare e consulenze gratuite." }
+      ]
+    },
+    "pricingSection": {
+      "ariaLabel": "Prezzi piercing a Chișinău — Oblivion Tattoo",
+      "title": "Prezzi per il piercing a Chișinău",
+      "description": "Prezzi trasparenti, materiali di qualità e lavoro professionale. Il prezzo include il foro e un gioiello base in acciaio chirurgico.",
+      "badges": {
+        "quality": "Garanzia di qualità",
+        "onlineBooking": "Prenotazione online"
+      },
+      "categories": [
+        {
+          "title": "Piercing all’orecchio",
+          "icon": "👂",
+          "services": [
+            { "name": "Lobo (earlobe)", "price": 100 },
+            { "name": "Helix (cartilagine superiore)", "price": 150 },
+            { "name": "Forward Helix", "price": 150 },
+            { "name": "Tragus", "price": 150 },
+            { "name": "Antitragus", "price": 150 },
+            { "name": "Conch", "price": 150 },
+            { "name": "Daith", "price": 150 },
+            { "name": "Rook", "price": 150 },
+            { "name": "Snug", "price": 150 },
+            { "name": "Orbital (2 fori)", "price": 300 },
+            { "name": "Industrial (2 fori)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Piercing del viso",
+          "icon": "👃",
+          "services": [
+            { "name": "Sopracciglio", "price": 250 },
+            { "name": "Nostril (ala del naso)", "price": 150 },
+            { "name": "Septum", "price": 250 },
+            { "name": "Bridge (dorso del naso)", "price": 350 }
+          ]
+        },
+        {
+          "title": "Piercing alle labbra",
+          "icon": "👄",
+          "services": [
+            { "name": "Labret (1 foro)", "price": 150 },
+            { "name": "Monroe / Madonna", "price": 150 },
+            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Snake bites (2 fori)", "price": 300 },
+            { "name": "Spider bites (2 fori)", "price": 300 },
+            { "name": "Angel bites (2 fori)", "price": 300 },
+            { "name": "Dolphin bites (2 fori)", "price": 300 },
+            { "name": "Cyber bites (superiore + inferiore)", "price": 300 },
+            { "name": "Shark bites (4 fori)", "price": 600 }
+          ]
+        },
+        {
+          "title": "Altri tipi di piercing",
+          "icon": "✨",
+          "services": [
+            { "name": "Lingua", "price": 250 },
+            { "name": "Ombelico", "price": 300 }
+          ]
+        }
+      ],
+      "includesTitle": "Cosa è incluso nel prezzo del piercing?",
+      "includes": ["Consultazione con il piercer", "Strumenti sterili", "Gioiello base", "Istruzioni per la cura"],
+      "includesNote": "* I gioielli premium in titanio, oro o con pietre si pagano a parte",
+      "buttons": {
+        "book": "Prenota"
+      },
+      "labels": {
+        "currency": "lei",
+        "includesBaseJewelry": "Include gioiello base"
+      }
+    },
+    "latestPiercingSection": {
+      "ariaLabel": "Portfolio piercing: ultimi lavori dei nostri artisti a Chișinău",
+      "title": "Ultimi lavori di piercing a Chișinău — Oblivion Tattoo",
+      "description": "Qui pubblichiamo le foto recenti dei lavori dei nostri artisti: piercing all’orecchio (lobo, helix, tragus, conch, daith), naso (nostril, septum), labbra (labret, medusa, monroe), lingua e ombelico. Tutti i piercing vengono eseguiti in condizioni sterili con aghi monouso e gioielli in titanio/acciaio chirurgico. Tocca l’immagine per aprirla a schermo intero."
     }
   }
 }
