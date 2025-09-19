@@ -39,7 +39,7 @@ export default function MobileMenu() {
               {links.map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link
-                    href={link.href}
+                    href={withLocale(link.href)}
                     className={cn(
                       'transition-colors duration-300',
                       isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-red-500'
