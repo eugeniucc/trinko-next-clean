@@ -34,7 +34,7 @@ export async function buildMetadata({ path }: Props) {
       siteName: 'OblivionTattoo',
       title: t('openGraphTitle'),
       description: t('openGraphDescription'),
-      images: [`${DOMAIN}/logo/icon.png`],
+      images: [`${DOMAIN}/logo/logo.png`],
       locale,
       alternateLocale: routing.locales.filter((l) => l !== locale)
     },
@@ -43,7 +43,7 @@ export async function buildMetadata({ path }: Props) {
       card: 'summary_large_image',
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: [`${DOMAIN}/logo/icon.png`]
+      images: [`${DOMAIN}/logo/logo.png`]
     }
   }
 }
