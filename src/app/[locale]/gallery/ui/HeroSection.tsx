@@ -9,6 +9,7 @@ import { Container } from '@/components/custom/Container'
 import { CustomLoading } from '@/components/custom/CustomLoading'
 import { CustomPagination } from '@/components/custom/CustomPagination'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
+import { CustomSkeletonLoader } from '@/components/custom/CustomSkeletonLoader'
 import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
 import { getPortfolioImages } from '@/features/portfolio-images/api/portfolio-images.api'
 import { LatestGalleryCard } from './LatestGalleryCard'
@@ -37,7 +38,7 @@ export function HeroSection({ initialPage, limit }: Props) {
   const t = useTranslations('galleryPage')
 
   return (
-    <CustomSectionAria aria="HeroSection" className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
+    <CustomSectionAria aria={t('ariaLabel')} className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
       <Container className="flex flex-col gap-10">
         <FramerMotionContainer
           className="flex flex-col gap-6 text-center"
@@ -53,7 +54,7 @@ export function HeroSection({ initialPage, limit }: Props) {
         <Lightbox gallery="gallery-portfolio">
           <div id="gallery-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {isLoading
-              ? [...Array(limit)].map((_, i) => <CustomLoading className="min-h-[400px]" key={i} />)
+              ? [...Array(limit)].map((_, i) => <CustomSkeletonLoader className="h-[400px]" key={i} />)
               : data?.items.map((photo, i) => (
                   <FramerMotionContainer key={`${photo.url}-${i}`} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
                     <LatestGalleryCard src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/${photo.url}`} alt={photo.alt} />

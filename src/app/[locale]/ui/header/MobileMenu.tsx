@@ -23,6 +23,8 @@ export default function MobileMenu() {
     return pathname === full || pathname.startsWith(full + '/')
   }
 
+  const filteredLinks = links.filter((l) => !(locale !== 'ru' && l.href.startsWith('/blog')))
+
   return (
     <div className="flex items-center lg:hidden">
       <Sheet>
@@ -30,13 +32,13 @@ export default function MobileMenu() {
           <Menu className="text-red-500" />
         </SheetTrigger>
         <SheetContent className="w-[300px] sm:w-[540px]" side="left">
-          <SheetHeader>
+          <SheetHeader className="gap-4">
             <SheetTitle>
               <span className="mb-12 text-red-500">OblivionTattoo</span>
             </SheetTitle>
             <SheetDescription>{t('headerMobile.description')}</SheetDescription>
-            <nav className="flex flex-col gap-2">
-              {links.map((link) => (
+            <nav className="flex flex-col gap-4">
+              {filteredLinks.map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link
                     href={withLocale(link.href)}

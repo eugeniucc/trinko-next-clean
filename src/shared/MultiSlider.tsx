@@ -42,6 +42,7 @@ export default function MultiSlider({ sliderImg }: Props) {
                 alt={image.pathname}
                 width={650}
                 height={550}
+                unoptimized
                 className="h-full w-full object-cover brightness-90 transition-all duration-300 group-hover:brightness-110"
                 priority={i === 0}
               />

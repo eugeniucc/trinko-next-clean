@@ -61,11 +61,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         />
       </head>
       <body className={`${roboto.variable} ${montserrat.variable} `}>
-        <NextIntlClientProvider>
-          <HeaderMenu />
-          <ClientWrapper>{children}</ClientWrapper>
-          <FooterMenu />
-        </NextIntlClientProvider>
+        <ClientWrapper>
+          <NextIntlClientProvider>
+            <HeaderMenu />
+            {children}
+            <FooterMenu />
+          </NextIntlClientProvider>
+        </ClientWrapper>
       </body>
     </html>
   )

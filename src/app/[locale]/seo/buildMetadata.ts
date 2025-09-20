@@ -1,22 +1,22 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 
-const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN_URL
+const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN_URL!
 
-type Props = {
-  path?: string
-}
+type Props = { path?: string }
 
 export async function buildMetadata({ path }: Props) {
-  const locale = await getLocale()
-  const t = await getTranslations('seo')
-
+  const current = await getLocale()
   const pathProp = path ? `/${path}` : ''
 
-  const languages = Object.fromEntries(routing.locales.map((l) => [l, `${DOMAIN}/${l}${pathProp}`]))
+  const isBlog = !!path && /^blog(\/|$)/.test(path)
+  const canonicalLocale = isBlog ? 'ru' : current
+  const locales = isBlog ? (['ru'] as const) : routing.locales
 
-  const canonical = `${DOMAIN}/${locale}${pathProp}`
-  const ogUrl = canonical
+  const t = await getTranslations('seo')
+
+  const canonical = `${DOMAIN}/${canonicalLocale}${pathProp}`
+  const languages = Object.fromEntries(locales.map((l) => [l, `${DOMAIN}/${l}${pathProp}`]))
 
   return {
     title: t('title'),
@@ -29,14 +29,14 @@ export async function buildMetadata({ path }: Props) {
     },
 
     openGraph: {
-      url: ogUrl,
+      url: canonical,
       type: 'website',
       siteName: 'OblivionTattoo',
       title: t('openGraphTitle'),
       description: t('openGraphDescription'),
       images: [`${DOMAIN}/logo/logo.png`],
-      locale,
-      alternateLocale: routing.locales.filter((l) => l !== locale)
+      locale: canonicalLocale,
+      alternateLocale: locales.filter((l) => l !== canonicalLocale)
     },
 
     twitter: {

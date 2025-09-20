@@ -20,6 +20,7 @@ export const HeroCard = ({ item, img, Icon }: Props) => {
           width={400}
           height={192}
           priority
+          unoptimized
         />
       </div>
       <div className="flex h-full flex-col justify-between gap-6 rounded-b-lg bg-zinc-800 p-4">

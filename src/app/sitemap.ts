@@ -5,7 +5,7 @@ const LOCALES = ['ru', 'ro', 'en', 'uk', 'it']
 const MAIN_LOCALE = 'ru'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ['/permanent', '/tattoo', '/piercing', '/course', '/gallery', '/blog', '/contacts']
+  const paths = ['/permanent', '/tattoo', '/piercing', '/course', '/gallery', '/contacts']
 
   return [
     ...LOCALES.map((locale) => ({
@@ -22,6 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly' as const,
         priority: 0.8
       }))
-    )
+    ),
+
+    {
+      url: `${DOMAIN}/ru/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8
+    }
   ]
 }
