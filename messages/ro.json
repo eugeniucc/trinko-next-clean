@@ -20,6 +20,15 @@
       "nextSlide": "Slide următor"
     }
   },
+  "breadcrumbs": {
+    "home": "Acasă",
+    "tattoo": "Tatuaje",
+    "piercing": "Piercinguri",
+    "gallery": "Galerie",
+    "contacts": "Contacte",
+    "course": "Cursuri",
+    "permanent": "Machiaj semipermanent"
+  },
   "homePage": {
     "header": {
       "links": [
@@ -574,5 +583,155 @@
     "title": "Galeria de tatuaje Oblivion Tattoo",
     "subtitle": "Lucrări recente ale maeștrilor noștri din Chișinău",
     "text": "Am adunat cele mai bune fotografii cu tatuaje din diferite stiluri: de la minimalism la realism. Derulează mai jos pentru a te inspira și a alege o idee pentru viitorul tău tatuaj."
+  },
+  "contactsPage": {
+    "ariaLabel": "Contacte ale studioului Oblivion Tattoo din Chișinău",
+    "hero": {
+      "title": "Contacte studio de tatuaje în Chișinău",
+      "subtitle": "Tatuaje profesionale în inima Moldovei",
+      "paragraphs": [
+        "Bine ați venit la studioul nostru de tatuaje din Chișinău! Ne aflăm chiar în inima capitalei Moldovei și oferim servicii profesionale de tatuaj la cea mai înaltă calitate.",
+        "Artiștii noștri experimentați creează lucrări unice pe piele, folosind doar materiale certificate și respectând toate normele sanitare."
+      ]
+    },
+    "features": [
+      {
+        "title": "Amplasare convenabilă",
+        "text": "Ușor de ajuns cu transportul public, aproape de centrul Chișinăului"
+      },
+      {
+        "title": "Program flexibil",
+        "text": "Deschiși 7 zile din 7; programări în prealabil"
+      },
+      {
+        "title": "Abordare individuală",
+        "text": "Fiecare tatuaj este creat ținând cont de dorințele și particularitățile tale"
+      }
+    ],
+    "cta": {
+      "lead": "Cauți cel mai bun studio de tatuaje în Chișinău? Contactează-ne chiar acum!",
+      "appointment": "Programează o consultație",
+      "portfolio": "Vezi portofoliul"
+    },
+    "seoLine": "Studio de tatuaje în Chișinău, Moldova | Tatuaj artistic | Artiști profesioniști | Condiții sterile | Designuri personalizate | Acoperire tatuaje vechi | Consultații pentru îngrijire"
+  },
+  "coursesPage": {
+    "ariaLabel": "Secțiune introductivă: cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
+    "seo": {
+      "pageTitle": "Cursuri de tatuaj, machiaj permanent și piercing în Chișinău",
+      "titleTattooPM": "Curs: Tatuaj / Machiaj permanent",
+      "descriptionTattooPM": "Formare intensivă la Chișinău: bază teoretică solidă și practică sigură pe modele reale, sub îndrumarea unui maestru. Condiții sterile, echipamente profesionale, certificare la final.",
+      "titlePiercing": "Curs: Piercing",
+      "descriptionPiercing": "Start rapid în profesie: tehnici de piercing, igienă, anatomie și practică pe modele. Siguranță, sterilitate și suport după formare."
+    },
+    "hero": {
+      "title": "Curs de tatuaj la Chișinău, machiaj permanent și curs de piercing formare profesională în salon",
+      "lead": "Dacă vrei să stăpânești o profesie creativă și căutată, înscrie-te la cursul de tatuaj din Chișinău, la formarea în machiaj permanent și la cursul de piercing din Chișinău. Toate cursurile sunt potrivite atât pentru începători, cât și pentru maeștri care doresc să-și perfecționeze abilitățile."
+    },
+    "overview": {
+      "title": "Prezentarea cursului",
+      "paragraphs": [
+        "Cursurile noastre oferă o pregătire complexă la Chișinău, oferindu-ți o bază teoretică solidă și abilități practice sigure.",
+        "Din prima zi lucrezi cu modele reale sub îndrumarea unui maestru experimentat. Instruirea are loc în salon, cu echipamente profesionale."
+      ]
+    },
+    "curriculum": {
+      "title": "Programul cursului",
+      "items": [
+        "Bazele sterilității și igienei",
+        "Tipuri de instrumente și utilizarea lor (ace, cartușe, mașini etc.)",
+        "Alegerea zonei și lucrul cu anatomia corpului",
+        "Construirea schiței sau a formelor (în funcție de direcție)",
+        "Lucrul cu culorile și alegerea nuanțelor",
+        "Practică pe modele încă din primele lecții",
+        "Îngrijire post-procedură și recomandări pentru vindecare",
+        "Greșeli frecvente și cum pot fi evitate",
+        "Comunicarea cu clienții și crearea unei atmosfere confortabile",
+        "Foto și video ale lucrărilor pentru portofoliu",
+        "Certificare la finalul cursului",
+        "Diplomă ce poate fi pregătită pentru recunoaștere în alte țări europene"
+      ]
+    },
+    "details": {
+      "title": "Detalii despre curs",
+      "tattooPM": {
+        "title": "Tatuaj / Machiaj permanent",
+        "bullets": [
+          "7 zile: 1 zi teorie, 6 zile practică pe modele",
+          "Program flexibil — zilele și orele sunt alese de cursant",
+          "Toate materialele și echipamentele incluse",
+          "Diplomă în română și engleză; alte limbi la cerere"
+        ]
+      },
+      "piercing": {
+        "title": "Piercing",
+        "bullets": [
+          "3 zile: 1 zi teorie, 2 zile practică",
+          "Practică pe modele, program flexibil",
+          "Toate instrumentele și bijuteriile sunt asigurate de salon",
+          "Diplomă în două limbi; alte limbi disponibile la cerere"
+        ]
+      }
+    },
+    "types": {
+      "title": "Tipuri de cursuri",
+      "tattoo": {
+        "title": "Curs de tatuaj Chișinău",
+        "text": "Include teorie și practică pe modele: vei învăța contur, umbre, umplere și culoare, precum și sterilitate, echipamente și particularitățile pielii."
+      },
+      "permanent": {
+        "title": "Curs de machiaj permanent",
+        "text": "Acoperă sprâncene, buze și eyeliner; alegerea formelor, teoria culorilor și lucrul cu anestezia."
+      },
+      "piercing": {
+        "title": "Curs de piercing Chișinău",
+        "text": "Formare intensivă în tehnica de perforare, igienă și practică pe modele sub supravegherea unui maestru experimentat."
+      }
+    },
+    "certificateSection": {
+      "ariaLabel": "Secțiunea certificatelor și a prețurilor cursurilor",
+      "certificates": {
+        "title": "Certificate și diplome",
+        "paragraphs": [
+          "La finalul cursului, fiecare student primește o diplomă și un certificat oficiale care atestă absolvirea.",
+          "Implicit, documentele sunt emise în două limbi — română și engleză — ceea ce permite utilizarea lor atât în Republica Moldova, cât și în afara țării.",
+          "La cerere, studentul poate solicita eliberarea unei diplome suplimentare într-o altă limbă — de exemplu germană, italiană, franceză etc.",
+          "Diploma este codificată și recunoscută în majoritatea țărilor europene, ceea ce deschide oportunități suplimentare de lucru în străinătate."
+        ],
+        "images": {
+          "alt1": "Sigla OblivionTattoo",
+          "alt2": "Sigla OblivionTattoo"
+        }
+      },
+      "pricing": {
+        "title": "Prețurile cursurilor de tatuaj în Chișinău",
+        "tattooPM": {
+          "title": "Tatuaj și machiaj permanent",
+          "priceLabel": "Preț",
+          "price": "€450 (fiecare curs)",
+          "bullets": [
+            "Teorie și practică de la zero",
+            "Lucru cu echipamente profesionale",
+            "Metode proprii și secretele meseriei",
+            "Suport după formare",
+            "Eliberarea certificatului"
+          ],
+          "cta": "Înscrie-te"
+        },
+        "piercing": {
+          "title": "Piercing",
+          "priceLabel": "Preț",
+          "price": "€300",
+          "bullets": [
+            "Instruire în tehnici de piercing sigure",
+            "Analiza particularităților anatomice",
+            "Igienă și sterilizarea instrumentelor",
+            "Practică pe modele",
+            "Consultații după curs"
+          ],
+          "cta": "Înscrie-te"
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,3 @@
-import Script from 'next/script'
 import { buildMetadata } from '../seo/buildMetadata'
 import { tattooJsonLd } from './seo/tattooJsonLd'
 import { AboutSection } from './ui/AboutSection'
@@ -21,12 +20,7 @@ export default async function TattooPage() {
       <ServicesSection />
       <AboutSection />
       <LatestTattoo />
-      <Script
-        id="tattoo-jsonld"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script id="tattoo-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>
   )
 }

@@ -7,7 +7,7 @@ import { HeroSection } from './ui/sections/hero-section/HeroSection'
 import { OurServicesSection } from './ui/sections/our-services-section/OurServicesSection'
 import { SketchesSection } from './ui/sections/sketches-section/SketchesSection'
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex flex-col">
       <HeroSection />

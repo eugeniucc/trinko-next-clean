@@ -1,5 +1,4 @@
 import { HydrationBoundary, QueryClient, dehydrate } from '@tanstack/react-query'
-import Script from 'next/script'
 import { getPortfolioImages } from '@/features/portfolio-images/api/portfolio-images.api'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { buildMetadata } from '../seo/buildMetadata'
@@ -36,12 +35,7 @@ export default async function Gallery({ searchParams }: { searchParams: Promise<
         <HeroSection initialPage={page} limit={limit} />
       </HydrationBoundary>
       <ContactsSection />
-      <Script
-        id="gallery-jsonld"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script id="gallery-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>
   )
 }

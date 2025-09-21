@@ -3,7 +3,6 @@ import { Locale, NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
 import { notFound } from 'next/navigation'
-import Script from 'next/script'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
 import ClientWrapper from './ClientWrapper'
@@ -44,6 +43,8 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   setRequestLocale(locale)
 
+  const jsonLdLayout = await jsonLd()
+
   return (
     <html lang={locale}>
       <head>
@@ -53,12 +54,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <link rel="icon" href="/logo/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo/apple-touch-logo.png" />
         <link rel="manifest" href="/manifest.json" />
-        <Script
-          id="organization-jsonld"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script id="organization-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLayout) }} />
       </head>
       <body className={`${roboto.variable} ${montserrat.variable} `}>
         <ClientWrapper>

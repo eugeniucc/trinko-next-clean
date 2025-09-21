@@ -1,5 +1,4 @@
 import parse from 'html-react-parser'
-import Script from 'next/script'
 import { Container } from '@/components/custom/Container'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { getBlogSinglePost } from '@/features/blog/api/blog.api'
@@ -19,14 +18,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           {parse(post.content)}
         </Container>
       </CustomSectionAria>
-      {jsonLd && (
-        <Script
-          id="article-jsonld"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      )}
+      {jsonLd && <script id="article-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
     </main>
   )
 }

@@ -7,17 +7,22 @@ import { CustomInView } from '@/components/custom/CustomInView'
 import { CustomLoading } from '@/components/custom/CustomLoading'
 import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
 import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { cn } from '@/lib/utils'
 
 const Map = dynamic(() => import('@/components/custom/MapLibre'), {
   ssr: false,
   loading: () => <CustomLoading />
 })
 
-export const LocationSection = () => {
+interface Props {
+  className?: string
+}
+
+export const LocationSection = ({ className }: Props) => {
   const t = useTranslations('homePage.locationSection')
 
   return (
-    <CustomSectionAria className="pt-20" aria={t('ariaLabel')}>
+    <CustomSectionAria className={cn('pt-20', className)} aria={t('ariaLabel')}>
       <Container>
         <FramerMotionContainer className="flex flex-col gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="text-center text-4xl">{t('title')}</h2>
