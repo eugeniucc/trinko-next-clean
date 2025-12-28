@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('tattooPage.aboutSection')
@@ -10,7 +9,7 @@ export const AboutSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900">
-      <Container className="pb-20">
+      <div className="container pb-20">
         <FramerMotionContainer
           className="grid grid-cols-1 items-center gap-12 xl:grid-cols-2"
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +34,7 @@ export const AboutSection = async () => {
             </ul>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

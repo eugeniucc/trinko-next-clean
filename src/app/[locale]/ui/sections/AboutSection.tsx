@@ -1,9 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { Container } from '@/components/custom/Container'
-import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('homePage.aboutSection')
@@ -19,7 +18,7 @@ export const AboutSection = async () => {
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
         unoptimized
       />
-      <Container className="relative z-1 flex min-h-screen flex-col justify-center">
+      <div className="relative z-1 container flex min-h-screen flex-col justify-center">
         <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <div className="ml-auto flex max-w-2xl flex-col gap-4">
             <h2 id="about-section-title" className="text-3xl font-bold text-white">
@@ -30,7 +29,7 @@ export const AboutSection = async () => {
             <CustomLinkAppointment text={t('button')} />
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

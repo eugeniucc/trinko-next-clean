@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { ServiceCard } from './ServiceCard'
 
 export const ServicesSection = async () => {
@@ -19,7 +18,7 @@ export const ServicesSection = async () => {
 
   return (
     <CustomSectionAria aria="services" className="bg-zinc-900">
-      <Container className="flex flex-col gap-12 py-20">
+      <div className="container flex flex-col gap-12 py-20">
         <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-center text-3xl font-bold text-white">{t('title')}</h2>
@@ -41,7 +40,7 @@ export const ServicesSection = async () => {
             </FramerMotionContainer>
           ))}
         </div>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

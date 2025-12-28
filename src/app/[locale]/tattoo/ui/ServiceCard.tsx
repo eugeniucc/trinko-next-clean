@@ -1,5 +1,5 @@
 import { TrendingUp } from 'lucide-react'
-import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
+import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
 
 type Props = {
   title: string

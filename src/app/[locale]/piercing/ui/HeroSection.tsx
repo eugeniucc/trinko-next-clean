@@ -1,15 +1,14 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const HeroSection = async () => {
   const t = await getTranslations('piercingPage.heroSection')
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30 2xl:py-0">
-      <Container className="flex flex-col items-center gap-10">
+      <div className="container flex flex-col items-center gap-10">
         <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h1 className="text-center text-3xl font-bold break-all text-white sm:text-4xl">{t('title')}</h1>
           <p className="mx-auto max-w-5xl text-center text-xl break-all text-gray-200">{t('text')}</p>
@@ -22,7 +21,6 @@ export const HeroSection = async () => {
               alt="Профессиональный пирсинг в студии Oblivion Tattoo Кишинев"
               width={400}
               height={400}
-              unoptimized
               priority
               className="col-span-1 h-full w-full rounded-lg"
             />
@@ -51,7 +49,7 @@ export const HeroSection = async () => {
             </div>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

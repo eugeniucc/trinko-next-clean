@@ -2,14 +2,13 @@
 
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
-import { Container } from '@/components/custom/Container'
-import { CustomInView } from '@/components/custom/CustomInView'
-import { CustomLoading } from '@/components/custom/CustomLoading'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomInView } from '@/app/ui/CustomInView'
+import { CustomLoading } from '@/app/ui/CustomLoading'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cn } from '@/lib/utils'
 
-const Map = dynamic(() => import('@/components/custom/MapLibre'), {
+const Map = dynamic(() => import('@/app/ui/MapLibre'), {
   ssr: false,
   loading: () => <CustomLoading />
 })
@@ -23,7 +22,7 @@ export const LocationSection = ({ className }: Props) => {
 
   return (
     <CustomSectionAria className={cn('pt-20', className)} aria={t('ariaLabel')}>
-      <Container>
+      <div className="container">
         <FramerMotionContainer className="flex flex-col gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="text-center text-4xl">{t('title')}</h2>
           <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-4 text-center">
@@ -32,7 +31,7 @@ export const LocationSection = ({ className }: Props) => {
             <p>{t('description')}</p>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
 
       <CustomInView minHeight={400} rootMargin="200px">
         <Map />

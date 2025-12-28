@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { PickmeLink } from './PickmeLink'
 
 export const HeroSection = () => {
@@ -15,7 +14,7 @@ export const HeroSection = () => {
 
   return (
     <CustomSectionAria
-      className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 py-30 2xl:py-0"
+      className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-zinc-900 via-zinc-800 to-zinc-900 py-30 2xl:py-0"
       aria={t('ariaLabel')}
     >
       <div className="absolute inset-0 overflow-hidden">
@@ -23,7 +22,7 @@ export const HeroSection = () => {
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-rose-500/30 blur-3xl"></div>
       </div>
 
-      <Container className="relative z-2">
+      <div className="relative z-2 container">
         <div className="flex flex-col gap-12 text-white">
           <FramerMotionContainer
             className="flex flex-col items-center gap-6 text-center"
@@ -31,7 +30,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             duration={0.5}
           >
-            <h1 className="bg-gradient-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
+            <h1 className="bg-linear-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
               {t('title')}
               <span className="block text-3xl sm:text-4xl lg:text-5xl">{t('titleExtend')}</span>
             </h1>
@@ -59,7 +58,7 @@ export const HeroSection = () => {
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

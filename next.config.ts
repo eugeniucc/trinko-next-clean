@@ -13,18 +13,8 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'weekgblszaodxieblpuz.supabase.co',
         pathname: '/storage/v1/object/public/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'rfteyxmbnzlyfsgz.public.blob.vercel-storage.com',
-        pathname: '/**'
       }
     ]
-  },
-  webpack(config, { dev, isServer }) {
-    config.infrastructureLogging = { level: 'error' }
-    if (dev && !isServer) config.devtool = false
-    return config
   }
 }
 
@@ -33,6 +23,10 @@ export default withSentryConfig(withAnalyzer(withNextIntl(nextConfig)), {
   project: 'javascript-nextjs',
   silent: true,
   widenClientFileUpload: true,
-  disableLogger: true,
-  automaticVercelMonitors: true
+  webpack: {
+    treeshake: {
+      removeDebugLogging: true
+    },
+    automaticVercelMonitors: true
+  }
 })

@@ -12,8 +12,8 @@ export const jsonLd = async () => {
       '@id': `${domain}/#org`,
       name: 'OblivionTattoo',
       url: domain,
-      logo: `${domain}/logo/logo.png`,
-      image: `${domain}/logo/logo.png`,
+      logo: `${domain}/logo.svg`,
+      image: `${domain}/logo.svg`,
       telephone: '+37379146506',
       contactPoint: {
         '@type': 'ContactPoint',

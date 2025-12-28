@@ -2,9 +2,8 @@ import { SquareArrowOutUpRight } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cardsImages } from './mocks/mocks'
 
 export const OurServicesSection = async () => {
@@ -18,7 +17,7 @@ export const OurServicesSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')}>
-      <Container className="flex flex-col gap-20 py-20">
+      <div className="container flex flex-col gap-20 py-20">
         <h1 className="xl:3xl text-center text-2xl break-words 2xl:text-5xl">{t('mainTitle')}</h1>
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
@@ -42,7 +41,7 @@ export const OurServicesSection = async () => {
             </FramerMotionContainer>
           ))}
         </div>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

@@ -1,15 +1,14 @@
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { AutoPlayOnView } from '@/components/custom/CustomVideoLoadingInView'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { AutoPlayOnView } from '@/app/ui/CustomVideoLoadingInView'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const AdvantagesSection = async () => {
   const t = await getTranslations('homePage.advantagesSection')
 
   return (
     <CustomSectionAria aria={t('title')}>
-      <Container className="grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
+      <div className="gri container grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
           <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
             <p className="text-4xl lg:text-6xl">{t('text')}</p>
@@ -43,7 +42,7 @@ export const AdvantagesSection = async () => {
             />
           </div>
         </div>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

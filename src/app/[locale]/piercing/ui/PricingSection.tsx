@@ -1,9 +1,8 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 type Service = { name: string; price: number; hasBase?: boolean }
 type Category = { title: string; icon: string; services: Service[] }
@@ -16,7 +15,7 @@ export const PricingSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="relative bg-zinc-900">
-      <Container className="flex flex-col gap-10 sm:gap-15">
+      <div className="container flex flex-col gap-10 sm:gap-15">
         <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
           <h2 className="text-4xl font-bold text-white">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-xl text-white">{t('description')}</p>
@@ -91,7 +90,7 @@ export const PricingSection = async () => {
 
           <p className="text-white">{t('includesNote')}</p>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

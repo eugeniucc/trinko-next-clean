@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model SketchPortfolioImage {
+  id        Int      @id @default(autoincrement())
+  title     String
+  url       String
+  alt       String
+  createdAt DateTime @default(now())
+}
+
+model PortfolioImage {
+  id        Int      @id @default(autoincrement())
+  title     String
+  url       String
+  alt       String
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id        Int      @id @default(autoincrement())
+  title     String
+  slug      String   @unique
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

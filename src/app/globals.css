@@ -127,6 +127,9 @@
   body {
     @apply text-foreground;
   }
+  .container {
+    @apply mx-auto px-4;
+  }
 }
 
 h1,
@@ -160,30 +163,6 @@ button {
   100% {
     width: 0%;
   }
-}
-
-/* HERO SLIDER */
-
-.custom-hero-bullet {
-  width: 10px;
-  height: 10px;
-  @apply bg-white;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.custom-hero-bullet-active {
-  @apply bg-primary;
-}
-
-.custom-hero-bullet:hover {
-  @apply bg-primary;
-}
-
-.custom-hero-pagination {
-  display: flex;
-  align-items: center;
 }
 
 /* SCROLLBAR */

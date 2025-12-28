@@ -11,7 +11,7 @@ export default async function NotFound() {
         <div className="flex flex-col items-center justify-center gap-6">
           <div className="flex items-center justify-center gap-4">
             <p className="text-9xl font-bold text-white">4</p>
-            <Image src="/logo/logo.png" alt="Логотип OblivionTattoo" width={120} height={120} />
+            <Image src="/logo.svg" alt="Логотип OblivionTattoo" width={120} height={120} unoptimized />
             <p className="text-9xl font-bold text-white">4</p>
           </div>
           <h1 className="text-4xl font-bold">{t('title')}</h1>

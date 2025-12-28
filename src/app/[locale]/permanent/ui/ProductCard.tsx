@@ -1,38 +1,31 @@
-import Image from 'next/image'
-import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
 import { PermanentCardProps } from '../types/permanent.types'
 import { PickmeLink } from './PickmeLink'
 
 type Props = {
   item: PermanentCardProps
-  img?: SinglePhoto
 }
 
-export const ProductCard = ({ item, img }: Props) => {
-  const fileName = img?.pathname.split('/').pop()
-  const alt = fileName?.replace('.webp', '').replace(/-/g, ' ')
-
+export const ProductCard = ({ item }: Props) => {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
-      <div className="relative aspect-[4/3] flex-shrink-0">
-        {img && <Image src={img.url} alt={alt ?? ''} width={500} height={500} className="h-full w-full object-cover" unoptimized />}
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
+      <div className="relative aspect-4/3 shrink-0">
         <div className="absolute top-4 left-4">
           <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
         </div>
       </div>
 
-      <div className="flex flex-grow flex-col gap-6 p-4 sm:p-6">
-        <div className="flex flex-grow flex-col gap-4">
+      <div className="flex grow flex-col gap-6 p-4 sm:p-6">
+        <div className="flex grow flex-col gap-4">
           <h3 className="text-xl font-bold text-white transition-colors group-hover:text-rose-100">{item.title}</h3>
           <p className="text-sm leading-relaxed text-zinc-300">{item.text}</p>
         </div>
 
-        <div className="flex flex-grow flex-col gap-4">
+        <div className="flex grow flex-col gap-4">
           <h4 className="text-sm font-semibold text-white">{item.subtitle}</h4>
           <ul className="flex flex-col gap-1">
             {item.list.map((text, i) => (
               <li key={i} className="flex items-start gap-2 text-zinc-400">
-                <span className="mt-0.5 flex-shrink-0 text-rose-300">•</span>
+                <span className="mt-0.5 shrink-0 text-rose-300">•</span>
                 <span>{text}</span>
               </li>
             ))}

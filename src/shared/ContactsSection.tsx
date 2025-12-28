@@ -1,17 +1,16 @@
 import { Clock, Facebook, Instagram, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const ContactsSection = () => {
   const t = useTranslations('homePage.contactsSection')
 
   return (
     <CustomSectionAria className="bg-zinc-900 pb-20" aria={t('ariaLabel')}>
-      <Container className="flex flex-col items-center gap-20">
+      <div className="container flex flex-col items-center gap-20">
         <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
-          <h2 className="xl:3xl text-center text-2xl break-words text-white 2xl:text-5xl">{t('title')}</h2>
+          <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
           <p className="mx-auto max-w-2xl text-center text-white">{t('text')}</p>
         </FramerMotionContainer>
 
@@ -20,7 +19,7 @@ export const ContactsSection = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 h-6 w-6 flex-shrink-0 text-red-600" />
+                  <MapPin className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('location.title')}</p>
                     <p className="text-lg text-white">{t('location.address')}</p>
@@ -29,7 +28,7 @@ export const ContactsSection = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Clock className="mt-1 h-6 w-6 flex-shrink-0 text-red-600" />
+                  <Clock className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('workingHours.title')}</p>
                     <p className="text-lg text-white">{t('workingHours.time')} 10:00 - 20:30</p>
@@ -40,7 +39,7 @@ export const ContactsSection = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <Phone className="mt-1 h-6 w-6 flex-shrink-0 text-red-600" />
+                  <Phone className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('contacts.title')}</p>
                     <a href="tel:+37379146506" className="text-white">
@@ -106,7 +105,7 @@ export const ContactsSection = () => {
             </div>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

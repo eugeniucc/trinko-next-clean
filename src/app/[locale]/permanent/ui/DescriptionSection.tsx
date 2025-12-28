@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { PickmeLink } from './PickmeLink'
 
 export const DescriptionSection = () => {
@@ -14,7 +13,7 @@ export const DescriptionSection = () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900 py-20">
-      <Container>
+      <div className="container">
         <FramerMotionContainer
           className="mx-auto max-w-4xl space-y-8 text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +42,7 @@ export const DescriptionSection = () => {
             <PickmeLink text={t('secondButton')} />
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

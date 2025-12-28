@@ -13,10 +13,11 @@ export default function Logo() {
   return (
     <Link href={`/${locale}`}>
       <Image
-        src={pathname === `/${locale}/permanent` ? '/logo/logo-pickme.png' : `/logo/logo.png`}
+        src={pathname === `/${locale}/permanent` ? '/logo-pickme.webp' : `/logo.svg`}
         alt="Тату салон в Кишиневе OblivionTattoo"
         width={64}
         height={91}
+        unoptimized
         priority
       />
     </Link>

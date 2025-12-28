@@ -1,41 +1,24 @@
-import { HydrationBoundary, QueryClient, dehydrate } from '@tanstack/react-query'
-import { getPortfolioImages } from '@/features/portfolio-images/api/portfolio-images.api'
+import { getPortfolioService } from '@/lib/portfolio/portfolio.service'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { buildMetadata } from '../seo/buildMetadata'
-import { galleryJsonLd } from './seo/galleryJsonLd'
 import { HeroSection } from './ui/HeroSection'
 
-interface Search {
-  page?: string
+interface GalleryProps {
+  searchParams: {
+    page?: string
+  }
 }
 
-export async function generateMetadata() {
-  return buildMetadata({
-    path: 'gallery'
-  })
-}
-
-export default async function Gallery({ searchParams }: { searchParams: Promise<Search> }) {
-  const rawParams = await searchParams
-  const raw = Number(rawParams?.page ?? 1)
-  const page = raw
+export default async function Gallery({ searchParams }: GalleryProps) {
+  const params = await searchParams
+  const currentPage = Math.max(1, Number(params.page ?? 1))
   const limit = 8
 
-  const queryClient = new QueryClient()
-  await queryClient.prefetchQuery({
-    queryKey: ['portfolio', page, limit],
-    queryFn: () => getPortfolioImages({ page, limit })
-  })
-
-  const jsonLd = await galleryJsonLd()
+  const data = await getPortfolioService({ page: currentPage, limit })
 
   return (
     <main className="flex flex-col">
-      <HydrationBoundary state={dehydrate(queryClient)}>
-        <HeroSection initialPage={page} limit={limit} />
-      </HydrationBoundary>
+      <HeroSection initialData={data} page={currentPage} limit={limit} />
       <ContactsSection />
-      <script id="gallery-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>
   )
 }

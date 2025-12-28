@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const HeroSection = async () => {
   const t = await getTranslations('coursesPage')
@@ -13,7 +12,7 @@ export const HeroSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30 pb-20">
-      <Container className="flex flex-col gap-10">
+      <div className="container flex flex-col gap-10">
         <FramerMotionContainer
           className="flex flex-col gap-6 text-white"
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +84,7 @@ export const HeroSection = async () => {
             </div>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

@@ -6,7 +6,8 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { HomePageSketchesResponse } from '@/features/home-sketches-slider/types/homepage-sketches.types'
+import { HomePageSketchesResponse } from '@/features/sketches/types/sketches.types'
+import { SUPABASE_S3_URL } from '@/lib/config'
 
 type Props = {
   items: HomePageSketchesResponse[]
@@ -36,10 +37,10 @@ export default function SketchesSlider({ items }: Props) {
         speed={1200}
       >
         {items.map((item, i) => (
-          <SwiperSlide key={i} className="h-[380px]! w-[280px]! overflow-hidden rounded-xl md:h-[750px]! md:w-[550px]!">
+          <SwiperSlide key={i} className="h-95! w-70! overflow-hidden rounded-xl md:h-187.5! md:w-137.5!">
             <div className="group relative h-full w-full">
               <Image
-                src={`${process.env.NEXT_PUBLIC_SUPABASE_URL_S3}public/${item.url}`}
+                src={`${SUPABASE_S3_URL}public/${item.url}`}
                 alt={item.alt}
                 width={650}
                 height={550}
@@ -47,7 +48,7 @@ export default function SketchesSlider({ items }: Props) {
                 unoptimized
                 priority={i === 0}
               />
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 flex items-end bg-linear-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="translate-y-4 text-xl font-bold text-white transition-transform duration-300 group-hover:translate-y-0">
                   {item.title}
                 </h3>

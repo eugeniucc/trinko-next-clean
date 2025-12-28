@@ -1,8 +1,7 @@
 import { Award, Shield, Sparkles } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { Container } from '@/components/custom/Container'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 type WhyItem = { icon: 'shield' | 'award' | 'sparkles'; title: string; text: string }
 type CatalogItem = { category: string; description: string; services: string[] }
@@ -23,7 +22,7 @@ export const AboutSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900 pb-20">
-      <Container className="flex flex-col gap-10 sm:gap-15">
+      <div className="container flex flex-col gap-10 sm:gap-15">
         <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
           <h2 className="text-4xl font-bold break-words text-white">{t('title')}</h2>
           <p className="mx-auto max-w-5xl text-xl leading-relaxed text-white">{t('lead')}</p>
@@ -89,7 +88,7 @@ export const AboutSection = async () => {
             ))}
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

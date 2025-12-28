@@ -10,7 +10,6 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Container } from '@/components/custom/Container'
 import { HeroSlide } from './HeroSlide'
 
 const HeroSlider = () => {
@@ -75,19 +74,20 @@ const HeroSlider = () => {
         </SwiperSlide>
       </Swiper>
 
-      <Container className="relative">
+      <div className="relative container">
         <div className="absolute bottom-4 left-4 z-2 flex items-center gap-4">
-          <div className="flex gap-6">
+          <div className="flex items-center gap-6">
             <button aria-label={t('previousSlide')} className="custom-hero-prev text-white">
               <ChevronLeft size={20} />
             </button>
-            <div className="custom-hero-pagination flex gap-6"></div>
+            <div className="custom-hero-pagination flex gap-6 [&>.swiper-pagination-bullet]:w-10! [&>.swiper-pagination-bullet]:bg-white [&>.swiper-pagination-bullet-active]:bg-red-500!" />
+
             <button aria-label={t('nextSlide')} className="custom-hero-next text-white">
               <ChevronRight size={20} />
             </button>
           </div>
         </div>
-      </Container>
+      </div>
     </>
   )
 }

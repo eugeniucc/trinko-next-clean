@@ -1,7 +1,7 @@
 import { LucideIcon } from 'lucide-react'
 import Image from 'next/image'
-import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
-import { SinglePhoto } from '@/features/permanentpage-photo/types/permanentpage-photo.types'
+import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
+import { SinglePhoto } from '@/features/permanent/types/permanent.types'
 import { HeroCardProps } from '../types/tattoo.types'
 
 type Props = {

@@ -1,9 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { Container } from '@/components/custom/Container'
-import { CustomLinkAppointment } from '@/components/custom/CustomLinkAppointment'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const CertificateSection = async () => {
   const t = await getTranslations('coursesPage.certificateSection')
@@ -14,7 +13,7 @@ export const CertificateSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900 pb-20">
-      <Container>
+      <div className="container">
         <FramerMotionContainer className="flex flex-col gap-6 pb-20" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="text-3xl font-bold text-white">{t('certificates.title')}</h2>
           <div className="my-4 h-px w-full bg-gray-700" />
@@ -25,8 +24,8 @@ export const CertificateSection = async () => {
               ))}
             </div>
             <div className="flex flex-col items-center gap-4 xl:flex-row">
-              <Image className="xl:h-full xl:w-full" src="/logo/logo.png" alt={t('certificates.images.alt1')} width={64} height={91} />
-              <Image className="xl:h-full xl:w-full" src="/logo/logo.png" alt={t('certificates.images.alt2')} width={64} height={91} />
+              <Image className="xl:h-full xl:w-full" src="/logo.svg" unoptimized alt={t('certificates.images.alt1')} width={64} height={91} />
+              <Image className="xl:h-full xl:w-full" src="/logo.svg" unoptimized alt={t('certificates.images.alt2')} width={64} height={91} />
             </div>
           </div>
         </FramerMotionContainer>
@@ -66,7 +65,7 @@ export const CertificateSection = async () => {
             </div>
           </div>
         </FramerMotionContainer>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }

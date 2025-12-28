@@ -1,12 +1,11 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { Container } from '@/components/custom/Container'
-import { CustomLoading } from '@/components/custom/CustomLoading'
-import { CustomSectionAria } from '@/components/custom/CustomSectionAria'
-import { FramerMotionContainer } from '@/components/custom/FramerMotionContainer'
+import { CustomLoading } from '@/app/ui/CustomLoading'
+import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
+import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { LatestPiercingCard } from './LatestPiercingCard'
 
-const Lightbox = dynamic(() => import('@/components/custom/Lightbox'), {
+const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
   loading: () => <CustomLoading />
 })
 
@@ -34,7 +33,7 @@ export const LatestPiercingSection = async () => {
 
   return (
     <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900">
-      <Container className="flex flex-col gap-12 pb-20">
+      <div className="container flex flex-col gap-12 pb-20">
         <FramerMotionContainer
           className="flex flex-col items-center gap-4 text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +59,7 @@ export const LatestPiercingSection = async () => {
             ))}
           </div>
         </Lightbox>
-      </Container>
+      </div>
     </CustomSectionAria>
   )
 }
