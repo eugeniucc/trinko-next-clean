@@ -217,7 +217,7 @@
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "40 min – 1 ora",
           "healTitle": "Guarigione:",
@@ -239,7 +239,7 @@
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "40 min – 1 ora",
           "healTitle": "Guarigione:",
@@ -261,7 +261,7 @@
             "Adatto a tutti i tipi di pelle"
           ],
           "priceTitle": "Prezzo:",
-          "price": "da 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "20 min – 40 min",
           "healTitle": "Guarigione:",
@@ -421,16 +421,16 @@
       "title": "Piercing professionale a Chișinău – Studio Oblivion Tattoo",
       "text": "Fori sicuri, strumenti sterili e gioielli di qualità. Oltre 8 anni di esperienza nelle body modification. Approccio individuale per ogni cliente nel centro di Chișinău.",
       "firstCard": {
-        "title": "Tutti i tipi di piercing – dal classico agli estremi",
-        "text": "Piercing a orecchio, naso, lingua, ombelico e piercing intimo. Usiamo solo gioielli in titanio e acciaio chirurgico di altissima qualità. Aghi monouso e attrezzatura professionale."
+        "title": "Diversi tipi di piercing – dai classici ai più popolari",
+        "text": "Piercing a orecchie, naso, labbra, lingua e ombelico. Utilizziamo gioielli in metallo chirurgico di alta qualità. Aghi sterili monouso e attrezzature professionali."
       },
       "secondCard": {
         "title": "Sicurezza e sterilità – la nostra priorità a Chișinău",
         "text": "Rispettiamo tutte le norme igienico-sanitarie e sterilizziamo gli strumenti in autoclave. Consulenza dettagliata per la cura post-procedura. Garanzia di qualità e sicurezza."
       },
       "thirdCard": {
-        "title": "Piercer esperti e gioielli premium nel centro città",
-        "text": "Piercer certificati con anni di esperienza. Ampia selezione di gioielli dei principali produttori mondiali. Scelta individuale dei gioielli in base all’anatomia del cliente."
+        "title": "Piercer esperti nel centro di Chișinău",
+        "text": "Selezione personalizzata dei gioielli in base all’anatomia e al tipo di piercing. Dopo la completa guarigione, sostituzione gratuita con il tuo gioiello da parte del piercer."
       }
     },
     "aboutSection": {
@@ -450,8 +450,8 @@
         },
         {
           "icon": "sparkles",
-          "title": "Gioielli premium",
-          "text": "Lavoriamo solo con titanio Grade 1, acciaio chirurgico 316L e oro 14–18k. Gioielli dei principali brand: Anatometal, BVLA, Neometal."
+          "title": "Nessun costo nascosto",
+          "text": "Il gioiello è incluso nel prezzo del piercing e viene applicato direttamente durante la procedura. Paghi per il risultato finale, non per singole voci del listino."
         }
       ],
       "catalogTitle": "Tutti i tipi di piercing in un unico studio",
@@ -464,12 +464,12 @@
         {
           "category": "Piercing del viso",
           "description": "Valorizziamo l’individualità in sicurezza",
-          "services": ["Naso", "Septum", "Bridge", "Labbra", "Lingua", "Sopracciglio"]
+          "services": ["Naso", "Septum", "Labbra", "Lingua", "Sopracciglio"]
         },
         {
           "category": "Piercing del corpo",
           "description": "Zone intime trattate con particolare delicatezza",
-          "services": ["Ombelico", "Capezzoli", "Surface", "Microdermal", "Intimo"]
+          "services": ["Ombelico", "Capezzoli"]
         }
       ],
       "processTitle": "Il nostro processo: la sicurezza prima di tutto",
@@ -511,8 +511,7 @@
           "services": [
             { "name": "Sopracciglio", "price": 250 },
             { "name": "Nostril (ala del naso)", "price": 150 },
-            { "name": "Septum", "price": 250 },
-            { "name": "Bridge (dorso del naso)", "price": 350 }
+            { "name": "Septum", "price": 250 }
           ]
         },
         {
@@ -540,8 +539,8 @@
         }
       ],
       "includesTitle": "Cosa è incluso nel prezzo del piercing?",
-      "includes": ["Consultazione con il piercer", "Strumenti sterili", "Gioiello base", "Istruzioni per la cura"],
-      "includesNote": "* I gioielli premium in titanio, oro o con pietre si pagano a parte",
+      "includes": ["Consulenza con il piercer", "Strumenti sterili monouso", "Gioiello base", "Istruzioni dettagliate per la cura"],
+      "includesNote": "* Il gioiello in acciaio medicale è incluso nel prezzo. La sostituzione del gioiello dopo la completa guarigione è gratuita.",
       "buttons": {
         "book": "Prenota"
       },

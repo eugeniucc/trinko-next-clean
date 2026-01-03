@@ -217,7 +217,7 @@
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Duration:",
           "time": "40 min – 1 hour",
           "healTitle": "Healing:",
@@ -239,7 +239,7 @@
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Duration:",
           "time": "40 min – 1 hour",
           "healTitle": "Healing:",
@@ -261,7 +261,7 @@
             "Suitable for all skin types"
           ],
           "priceTitle": "Price:",
-          "price": "from 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Duration:",
           "time": "20 min – 40 min",
           "healTitle": "Healing:",
@@ -421,16 +421,16 @@
       "title": "Professional Piercing in Chisinau – Oblivion Tattoo Studio",
       "text": "Safe piercings, sterile instruments and quality jewelry. 8+ years of experience in body modification. Individual approach for every client in central Chisinau.",
       "firstCard": {
-        "title": "All types of piercings – from classic to extreme",
-        "text": "Ear, nose, tongue, navel and intimate piercing. We use only titanium and surgical-grade steel jewelry of the highest quality. Single-use needles and professional equipment."
+        "title": "Different types of piercing – from classic to popular styles",
+        "text": "Ear, nose, lip, tongue, and navel piercings. We use high-quality surgical metal jewelry. Sterile single-use needles and professional equipment."
       },
       "secondCard": {
         "title": "Safety and sterility – our priority in Chisinau",
         "text": "We follow all sanitary standards and use an autoclave for instrument sterilization. Detailed aftercare consultation. Guaranteed quality and safety of the procedure."
       },
       "thirdCard": {
-        "title": "Experienced piercers and premium jewelry in the city center",
-        "text": "Certified piercers with many years of practice. A wide selection of jewelry from leading global brands. Individual jewelry fitting tailored to the client’s anatomy."
+        "title": "Experienced piercers in the center of Chișinău",
+        "text": "Individual jewelry selection based on anatomy and piercing type. After complete healing, free replacement with your own jewelry by the piercer."
       }
     },
     "aboutSection": {
@@ -450,8 +450,8 @@
         },
         {
           "icon": "sparkles",
-          "title": "Premium jewelry",
-          "text": "We work only with Grade 1 titanium, 316L surgical steel, and 14–18k gold. Jewelry from leading global brands: Anatometal, BVLA, Neometal."
+          "title": "No hidden fees",
+          "text": "The jewelry is included in the piercing price and is installed during the procedure. You pay for the final result, not for separate items on the price list."
         }
       ],
       "catalogTitle": "All types of piercing in one studio",
@@ -464,12 +464,12 @@
         {
           "category": "Facial piercing",
           "description": "Safely accentuating individuality",
-          "services": ["Nose", "Septum", "Bridge", "Lips", "Tongue", "Eyebrow"]
+          "services": ["Nose", "Septum", "Lips", "Tongue", "Eyebrow"]
         },
         {
           "category": "Body piercing",
           "description": "Intimate areas handled with special care",
-          "services": ["Navel", "Nipples", "Surface", "Microdermals", "Intimate"]
+          "services": ["Navel", "Nipples"]
         }
       ],
       "processTitle": "Our process: safety first",
@@ -511,8 +511,7 @@
           "services": [
             { "name": "Eyebrow", "price": 250 },
             { "name": "Nostril (side of nose)", "price": 150 },
-            { "name": "Septum", "price": 250 },
-            { "name": "Bridge (nasal bridge)", "price": 350 }
+            { "name": "Septum", "price": 250 }
           ]
         },
         {
@@ -540,8 +539,8 @@
         }
       ],
       "includesTitle": "What’s included in the piercing price?",
-      "includes": ["Consultation with the piercer", "Sterile instruments", "Basic jewelry", "Aftercare instructions"],
-      "includesNote": "* Premium jewelry made of titanium, gold, or with stones is charged separately",
+      "includes": ["Consultation with the piercer", "Sterile single-use instruments", "Basic jewelry", "Detailed aftercare instructions"],
+      "includesNote": "* Jewelry made of medical-grade steel is included in the price. Jewelry replacement after full healing is free of charge.",
       "buttons": {
         "book": "Book"
       },

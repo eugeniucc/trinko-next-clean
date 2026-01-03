@@ -1,11 +1,19 @@
 import { MetadataRoute } from 'next'
 import { BASE_URL } from '@/lib/config'
+import prisma from '@/lib/prisma'
 
 const LOCALES = ['ru', 'ro', 'uk', 'it', 'en']
 const MAIN_LOCALE = 'ru'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const paths = ['/permanent', '/tattoo', '/piercing', '/course', '/gallery', '/contacts']
+
+  const posts = await prisma.blogPost.findMany({
+    select: {
+      slug: true,
+      updatedAt: true
+    }
+  })
 
   return [
     ...LOCALES.map((locale) => ({
@@ -29,6 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8
-    }
+    },
+
+    ...posts.map((post) => ({
+      url: `${BASE_URL}/ru/blog/${post.slug}`,
+      lastModified: post.updatedAt,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7
+    }))
   ]
 }

@@ -217,7 +217,7 @@
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "40 min – 1 oră",
           "healTitle": "Vindecare:",
@@ -239,7 +239,7 @@
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "40 min – 1 oră",
           "healTitle": "Vindecare:",
@@ -261,7 +261,7 @@
             "Potrivit pentru toate tipurile de piele"
           ],
           "priceTitle": "Preț:",
-          "price": "de la 900 MDL",
+          "price": "900 MDL",
           "timeTitle": "Durata:",
           "time": "20 min – 40 min",
           "healTitle": "Vindecare:",
@@ -420,16 +420,16 @@
       "title": "Piercing profesional în Chișinău – Studio Oblivion Tattoo",
       "text": "Perforări sigure, instrumente sterile și bijuterii de calitate. Peste 8 ani de experiență în body-modification. Abordare individuală pentru fiecare client în centrul Chișinăului.",
       "firstCard": {
-        "title": "Toate tipurile de piercing – de la clasic la extrem",
-        "text": "Piercing la urechi, nas, limbă, buric și piercing intim. Folosim doar bijuterii din titan și oțel chirurgical de cea mai înaltă calitate. Ace de unică folosință și echipament profesional."
+        "title": "Diferite tipuri de piercing – de la clasice la cele mai populare",
+        "text": "Piercing pentru urechi, nas, buze, limbă și buric. Folosim bijuterii din metal chirurgical de cea mai bună calitate. Ace sterile de unică folosință și echipamente profesionale."
       },
       "secondCard": {
         "title": "Siguranța și sterilitatea – prioritatea noastră în Chișinău",
         "text": "Respectăm toate normele sanitare și sterilizăm instrumentele în autoclav. Consultație detaliată privind îngrijirea. Garanție a calității și siguranței procedurii."
       },
       "thirdCard": {
-        "title": "Maeștri cu experiență și bijuterii premium în centrul orașului",
-        "text": "PircERI certificați cu mulți ani de experiență. Gama largă de bijuterii de la producători de top. Alegere individuală în funcție de anatomia clientului."
+        "title": "Pierceri cu experiență în centrul Chișinăului",
+        "text": "Selecție individuală a bijuteriei în funcție de anatomie și tipul de piercing. După vindecarea completă, schimb gratuit cu bijuteria ta realizat de specialist."
       }
     },
     "aboutSection": {
@@ -449,8 +449,8 @@
         },
         {
           "icon": "sparkles",
-          "title": "Bijuterii premium",
-          "text": "Lucrăm doar cu titan Grade 1, oțel chirurgical 316L și aur 14–18k. Bijuterii de la branduri de top: Anatometal, BVLA, Neometal."
+          "title": "Fără costuri ascunse",
+          "text": "Bijuteria este inclusă în prețul piercingului și este montată direct în timpul procedurii. Plătești pentru rezultatul final, nu pentru poziții separate din listă."
         }
       ],
       "catalogTitle": "Toate tipurile de piercing într-un singur studio",
@@ -463,12 +463,12 @@
         {
           "category": "Piercing facial",
           "description": "Evidențiem individualitatea în siguranță",
-          "services": ["Nas", "Septum", "Bridge", "Buze", "Limbă", "Sprânceană"]
+          "services": ["Nas", "Septum", "Buze", "Limbă", "Sprânceană"]
         },
         {
           "category": "Piercing corporal",
           "description": "Zone intime tratate cu deosebită delicatețe",
-          "services": ["Buric", "Sâni", "Surface", "Microdermale", "Intim"]
+          "services": ["Buric", "Sâni"]
         }
       ],
       "processTitle": "Procesul nostru: siguranța pe primul loc",
@@ -510,8 +510,7 @@
           "services": [
             { "name": "Sprânceană", "price": 250 },
             { "name": "Nostril (aripa nasului)", "price": 150 },
-            { "name": "Septum", "price": 250 },
-            { "name": "Bridge (puntea nazală)", "price": 350 }
+            { "name": "Septum", "price": 250 }
           ]
         },
         {
@@ -539,8 +538,13 @@
         }
       ],
       "includesTitle": "Ce este inclus în prețul piercingului?",
-      "includes": ["Consultația cu piercerul", "Instrumente sterile", "Bijuterie de bază", "Instrucțiuni de îngrijire"],
-      "includesNote": "* Bijuteriile premium din titan, aur sau cu pietre se achită separat",
+      "includes": [
+        "Consultație cu specialistul",
+        "Instrumente sterile de unică folosință",
+        "Bijuterie de bază",
+        "Instrucțiuni detaliate de îngrijire"
+      ],
+      "includesNote": "* Bijuteria din oțel medical este inclusă în preț. Schimbarea bijuteriei după vindecarea completă este gratuită.",
       "buttons": {
         "book": "Programează-te"
       },
