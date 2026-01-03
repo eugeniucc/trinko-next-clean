@@ -2,7 +2,6 @@ import { SquareArrowOutUpRight } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cardsImages } from './mocks/mocks'
 
@@ -16,16 +15,13 @@ export const OurServicesSection = async () => {
   }[]
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')}>
+    <section>
       <div className="container flex flex-col gap-20 py-20">
-        <h1 className="xl:3xl text-center text-2xl break-words 2xl:text-5xl">{t('mainTitle')}</h1>
+        <h1 className="xl:3xl wrap-break-words text-center text-2xl 2xl:text-5xl">{t('mainTitle')}</h1>
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
             <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
-              <Link
-                href={card.href}
-                className="group relative -mb-[1px] -ml-[1px] flex flex-col items-center gap-4 border border-gray-200 p-6 text-center"
-              >
+              <Link href={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
                 <Image
                   src={`${cardsImages[i]}`}
                   width={80}
@@ -42,6 +38,6 @@ export const OurServicesSection = async () => {
           ))}
         </div>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

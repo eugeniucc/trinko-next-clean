@@ -1,34 +1,35 @@
+import { ImageType } from '@/generated/prisma/client'
 import prisma from '../prisma'
-import { PortfolioImagesResponse } from './portfolio.types'
+import { ImagesResponse } from './image.types'
 
-type GetPortfolioParams = {
+type GetImagesParams = {
   page: number
   limit: number
+  type?: ImageType
 }
 
-export async function getPortfolioService({ page, limit }: GetPortfolioParams): Promise<PortfolioImagesResponse> {
+export async function getImagesService({ page, limit, type }: GetImagesParams): Promise<ImagesResponse> {
   const safePage = Number.isFinite(page) && page > 0 ? page : 1
   const safeLimit = Number.isFinite(limit) && limit > 0 ? limit : 9
 
   const skip = (safePage - 1) * safeLimit
 
+  const where = type ? { type } : undefined
+
   const [items, total] = await Promise.all([
-    prisma.portfolio.findMany({
+    prisma.image.findMany({
+      where,
       orderBy: { id: 'asc' },
       skip,
       take: safeLimit
     }),
-    prisma.portfolio.count()
+    prisma.image.count({
+      where
+    })
   ])
 
   return {
-    items: items.map((item) => ({
-      id: item.id,
-      title: item.title,
-      url: item.url,
-      alt: item.alt,
-      createdAt: item.createdAt.toISOString()
-    })),
+    items,
     total,
     page: safePage,
     totalPages: Math.ceil(total / safeLimit)

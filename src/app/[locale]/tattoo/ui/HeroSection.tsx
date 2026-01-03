@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { heroCardsIcons } from '../mocks/mocks'
 import { HeroCard } from './HeroCard'
@@ -10,7 +9,7 @@ export const HeroSection = async () => {
   const raw = t.raw('heroSection.heroCards') as { title: string; text: string; list: string[]; button: string }[]
 
   return (
-    <CustomSectionAria aria={t('heroSection.ariaLabel')} className="flex flex-col gap-10 bg-zinc-900">
+    <section className="flex flex-col gap-10 bg-zinc-900">
       <div className="container flex min-h-screen flex-col items-center justify-center gap-10 pt-30">
         <FramerMotionContainer className="flex flex-col gap-6" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h1 className="text-center text-3xl font-bold text-white sm:text-4xl">{t('heroSection.title')}</h1>
@@ -25,6 +24,6 @@ export const HeroSection = async () => {
           ))}
         </div>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

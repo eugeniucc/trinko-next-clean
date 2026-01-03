@@ -65,8 +65,7 @@
           "description": "Want to become an artist? Training at OblivionTattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
           "button": "Book Now"
         }
-      },
-      "ariaLabel": "Intro section with tattoo, training, and piercing highlights"
+      }
     },
     "ourServicesSection": {
       "mainTitle": "Tattoo Studio in Chisinau OblivionTattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
@@ -103,33 +102,28 @@
           "description": "We refresh the color and shape of tattoos in our Chisinau studio.",
           "href": "/tattoo"
         }
-      ],
-      "ariaLabel": "Overview of tattoo, piercing, and permanent makeup services at OblivionTattoo in Chisinau"
+      ]
     },
     "aboutSection": {
       "title": "A few words about our tattoo studio in Chisinau",
       "text": "Tattoo studio in Chisinau with an experienced team of professionals. We offer tattoos in Chisinau, piercings, tattoo and scar cover-ups, and permanent makeup.",
       "description": "Our artists with years of experience create unique designs tailored to the client’s anatomy and preferences. We work in a sterile and safe environment.",
-      "button": "Book now",
-      "ariaLabel": "About OblivionTattoo — tattoo studio in Chisinau offering tattoos, piercings, and permanent makeup"
+      "button": "Book now"
     },
     "sketchesSection": {
       "title": "Tattoo Sketches in Chisinau",
-      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo.",
-      "ariaLabel": "Tattoo sketch gallery in Chisinau with custom designs and artist examples"
+      "description": "We create custom tattoo sketches in Chisinau, tailored to your ideas and body features. In our gallery, you can see examples of our artists' work and get inspired for your future tattoo."
     },
     "advantagesSection": {
       "text": "Our Advantages",
       "title": "Why People Choose OblivionTattoo — Tattoo Studio in Chisinau",
       "description": "OblivionTattoo is a team of artists, each an expert in their field: tattoos, piercings, or permanent makeup. We don’t just do the job — we provide a personalized approach for every client to ensure the result matches your style and expectations.",
       "extra": "Each of our specialists has years of experience and continually improves their skills by mastering modern techniques and approaches. We strictly follow hygiene standards and use only trusted materials.",
-      "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage.",
-      "ariaLabel": "Advantages of OblivionTattoo studio in Chisinau: quality, experience, and personalized approach"
+      "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage."
     },
     "portfolioSection": {
       "title": "Portfolio of tattoo artists in Chisinau - OblivionTattoo",
       "text": "Here you can see real works by our artists. Tattoos, piercings, cover-ups, and sketches — all created with attention to detail and in sterile conditions. We are proud of the quality of each work.",
-      "ariaLabel": "Portfolio of OblivionTattoo studio in Chisinau: tattoos, piercings, and artists' sketches",
       "linkLabel": "View larger photo",
       "link": "View all photos"
     },
@@ -137,8 +131,7 @@
       "title": "Tattoo studio in Chisinau on the map",
       "text": "Our tattoo studio is located in the center of Chisinau. On the map below you can easily find the studio's location and build a convenient route.",
       "appointment": "Visits are available strictly by appointment only.",
-      "description": "If you have difficulty finding us — contact us and we will be happy to guide you.",
-      "ariaLabel": "Tattoo studio location in Chisinau. Find us on the map and plan your route"
+      "description": "If you have difficulty finding us — contact us and we will be happy to guide you."
     },
     "contactsSection": {
       "title": "Book a tattoo, piercing or permanent makeup in Chisinau",
@@ -157,8 +150,7 @@
         "title": "Contacts",
         "text": "Available on Telegram, WhatsApp and Viber for consultations and bookings."
       },
-      "social": "Visit our pages",
-      "ariaLabel": "Contact information and booking details for OblivionTattoo studio in Chisinau"
+      "social": "Visit our pages"
     },
     "footer": {
       "terms": "Terms and conditions"
@@ -192,11 +184,9 @@
           "title": "Permanent eye makeup and eyeliner in Chișinău",
           "text": "Lash line filling and eyeliner effect emphasize the look and save time. Reliable masters in Chișinău (Moldova), long-lasting and safe result."
         }
-      ],
-      "ariaLabel": "Permanent makeup in Chișinău — OblivionTattoo studio"
+      ]
     },
     "descriptionSection": {
-      "ariaLabel": "Description of permanent makeup procedure in Chișinău",
       "title": "Permanent makeup in Chișinău - brows, lips and eyeliner",
       "text": "Permanent makeup (tattooing) is a modern cosmetic procedure that creates long-lasting and natural-looking makeup for 1.5 to 3 years. Forget about the daily routine with pencils and lipsticks.",
       "button": "Book a consultation",
@@ -211,7 +201,6 @@
       "secondButton": "Book a consultation"
     },
     "serviceSection": {
-      "ariaLabel": "Our permanent makeup services",
       "title": "Permanent makeup in Chișinău — brows, lips and eyeliner at OblivionTattoo studio",
       "text": "Our tattoo studio in Chișinău offers professional permanent makeup for women who want to always look well-groomed. We use modern techniques: powder brows, watercolor lips and lash line eyeliner. The procedure is painless, safe and provides a natural result for 1.5–3 years.",
       "services": [
@@ -283,10 +272,10 @@
         }
       ]
     },
-    "showOffSection": {
-      "ariaLabel": "Our works: tattoos, piercing and permanent makeup in Chișinău",
-      "title": "Our works: tattoos, piercing and permanent makeup in Chișinău",
-      "text": "OblivionTattoo studio is a team of masters with many years of experience. We create unique tattoos, perform professional piercing and provide modern permanent makeup: powder brows, watercolor lips and lash line enhancement. Our portfolio demonstrates the quality of work, sterility and attention to detail."
+    "gallerySection": {
+      "title": "Permanent Makeup Gallery in Chișinău",
+      "text": "The gallery features real works by the artists of the OblivionTattoo studio: permanent makeup for eyebrows, lips, and lash lines. All procedures are performed with consideration for individual features, facial structure, and the desired result.",
+      "extraText": "We work in Chișinău, use modern permanent makeup techniques, and pay special attention to precision, natural results, and safety."
     }
   },
   "tattooPage": {
@@ -297,7 +286,6 @@
       "offerLarge": "Large tattoo (from 20 cm and above)"
     },
     "heroSection": {
-      "ariaLabel": "Our works: artistic tattoos, tattoo correction and design in Chisinau",
       "title": "Tattoos in Chisinau: color and black-and-white tattoos, correction, cover-ups and tattoo design",
       "subtitle": "Tattoo salon in Chisinau: artists, prices and tattoos in Moldova",
       "heroCards": [
@@ -337,7 +325,6 @@
       ]
     },
     "servicesSection": {
-      "ariaLabel": "Tattoo salon services in Chisinau: artistic tattoos, correction, cover-ups and design",
       "title": "Tattoo studio services in Chisinau — artistic tattoos, correction/cover-ups and custom design",
       "description": "We create color and black & grey tattoos in popular styles: realism, minimalism, graphic/linework. We help with the idea and design, carefully refresh and cover up old pieces. We work in sterile conditions with single-use needles and certified inks.",
       "usp": [
@@ -400,7 +387,6 @@
       ]
     },
     "aboutSection": {
-      "ariaLabel": "About the studio: professional tattoos in Chisinau",
       "title": "Professional tattoo studio in Chisinau",
       "paragraphs": [
         "We have been creating unique tattoos of any complexity for over 10 years. Our team of professional artists will carefully bring your idea to life.",
@@ -417,7 +403,6 @@
       ]
     },
     "latestTattooSection": {
-      "ariaLabel": "Tattoo portfolio: recent works by artists in Chisinau",
       "title": "Tattoo portfolio in Chisinau recent works by our artists",
       "description": "Here you’ll find our studio’s recent works: from small minimalist sketches to large projects. All tattoos are done with single-use needles and certified inks. Click a photo to view it in full size.",
       "cta": "View all photos"
@@ -433,7 +418,6 @@
       "offerNavel": "Navel (belly button) piercing"
     },
     "heroSection": {
-      "ariaLabel": "Piercing in Chisinau, Oblivion Tattoo studio",
       "title": "Professional Piercing in Chisinau – Oblivion Tattoo Studio",
       "text": "Safe piercings, sterile instruments and quality jewelry. 8+ years of experience in body modification. Individual approach for every client in central Chisinau.",
       "firstCard": {
@@ -450,7 +434,6 @@
       }
     },
     "aboutSection": {
-      "ariaLabel": "About the piercing studio in Chisinau — Oblivion Tattoo",
       "title": "About the Oblivion Tattoo piercing studio in Chisinau",
       "lead": "For over 10 years, we’ve been a leading body-modification studio in Moldova. Our team of certified piercers has performed thousands of procedures, from simple ear piercings to complex anatomical projects. We are proud of our reputation as the safest and most professional piercing studio in Chisinau.",
       "whyTitle": "Why clients choose us for piercing in Chisinau?",
@@ -498,7 +481,6 @@
       ]
     },
     "pricingSection": {
-      "ariaLabel": "Piercing prices in Chisinau — Oblivion Tattoo",
       "title": "Piercing Prices in Chisinau",
       "description": "Transparent pricing, quality materials, and professional work. The price includes the piercing and a basic surgical steel jewelry piece.",
       "badges": {
@@ -569,13 +551,11 @@
       }
     },
     "latestPiercingSection": {
-      "ariaLabel": "Piercing portfolio: latest works by our artists in Chisinau",
       "title": "Latest Piercing Works in Chisinau — Oblivion Tattoo",
       "description": "Here we publish recent photos of our artists’ work: ear piercings (lobe, helix, tragus, conch, daith), nose (nostril, septum), lips (labret, medusa, monroe), tongue, and navel. All piercings are performed under sterile conditions with single-use needles and titanium/surgical steel jewelry. Tap an image to view it in full size."
     }
   },
   "galleryPage": {
-    "ariaLabel": "Oblivion Tattoo Gallery",
     "seo": {
       "title": "Tattoo Gallery — Oblivion Tattoo in Chisinau",
       "description": "Portfolio of professional tattoos from Oblivion Tattoo studio in Chisinau: minimalism, realism, and other styles. Check out the latest works of our artists."
@@ -585,7 +565,6 @@
     "text": "We have collected the best photos of tattoos in various styles: from minimalism to realism. Scroll below to get inspired and choose an idea for your future tattoo."
   },
   "contactsPage": {
-    "ariaLabel": "Contacts of the Oblivion Tattoo studio in Chișinău",
     "hero": {
       "title": "Tattoo studio contacts in Chișinău",
       "subtitle": "Professional tattooing in the heart of Moldova",
@@ -616,7 +595,6 @@
     "seoLine": "Tattoo studio in Chișinău, Moldova | Artistic tattooing | Professional artists | Sterile conditions | Custom designs | Cover-ups | Aftercare consultations"
   },
   "coursesPage": {
-    "ariaLabel": "Intro section: tattoo, permanent makeup, and piercing courses in Chișinău",
     "seo": {
       "pageTitle": "Tattoo, Permanent Makeup, and Piercing Courses in Chișinău",
       "titleTattooPM": "Course: Tattoo / Permanent Makeup",
@@ -689,7 +667,6 @@
       }
     },
     "certificateSection": {
-      "ariaLabel": "Certificates and course pricing section",
       "certificates": {
         "title": "Certificates and Diplomas",
         "paragraphs": [

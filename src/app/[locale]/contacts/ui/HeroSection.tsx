@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
 import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const HeroSection = async () => {
@@ -12,7 +11,7 @@ export const HeroSection = async () => {
   const features = t.raw('features') as { title: string; text: string }[]
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30 pb-20">
+    <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30 pb-20">
       <div className="container flex flex-col items-center gap-8 text-center">
         <FramerMotionContainer
           className="flex flex-col items-center gap-8 text-center"
@@ -47,7 +46,7 @@ export const HeroSection = async () => {
         >
           <div className="flex w-full flex-col gap-6 text-center">
             <p className="text-zinc-300">{t('cta.lead')}</p>
-            <div className="mx-auto flex w-full max-w-[450px] flex-col gap-4">
+            <div className="mx-auto flex w-full max-w-112.5 flex-col gap-4">
               <CustomLinkAppointment className="w-full" text={t('cta.appointment')} />
               <CustomLinkRouter className="w-full border border-gray-500 bg-transparent text-white" href="/gallery" text={t('cta.portfolio')} />
             </div>
@@ -58,6 +57,6 @@ export const HeroSection = async () => {
           </div>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

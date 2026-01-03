@@ -34,7 +34,7 @@ export const LangSwitcher = () => {
     <Select value={locale} onValueChange={handleLanguageChange} disabled={isPending}>
       <SelectTrigger
         aria-label={t('translationButton')}
-        className="flex w-fit min-w-[120px] items-center gap-2 bg-transparent text-white [&>svg]:text-white!"
+        className="flex w-fit min-w-30 items-center gap-2 bg-transparent text-white [&>svg]:text-white!"
       >
         <Languages className="text-white" size={16} />
         <SelectValue placeholder="Language" />

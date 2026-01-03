@@ -1,13 +1,17 @@
-export interface BlogPost {
-  id: number
-  title: string
-  slug: string
-  content: string
-  createdAt: string
-}
+import { Prisma } from '@/generated/prisma/client'
 
-export interface BlogPostResponse {
-  items: BlogPost[]
+export type BlogPostListItem = Prisma.BlogPostGetPayload<{
+  select: {
+    id: true
+    title: true
+    slug: true
+    content: true
+    createdAt: true
+  }
+}>
+
+export type GetBlogPostResult = {
+  items: BlogPostListItem[]
   total: number
   page: number
   totalPages: number

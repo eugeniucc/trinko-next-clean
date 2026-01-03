@@ -1,38 +1,26 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
 import { CustomLoading } from '@/app/ui/CustomLoading'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { ImageType } from '@/generated/prisma/client'
+import { getImagesService } from '@/lib/image/image.service'
 import { LatestPiercingCard } from './LatestPiercingCard'
-
-const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
-  loading: () => <CustomLoading />
-})
 
 export const LatestPiercingSection = async () => {
   const t = await getTranslations('piercingPage.latestPiercingSection')
 
-  const photos = [
-    {
-      url: '/piercing.webp',
-      alt: '/piercing.webp'
-    },
-    {
-      url: '/piercing.webp',
-      alt: '/piercing.webp'
-    },
-    {
-      url: '/piercing.webp',
-      alt: '/piercing.webp'
-    },
-    {
-      url: '/piercing.webp',
-      alt: '/piercing.webp'
-    }
-  ]
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
+    loading: () => <CustomLoading />
+  })
+
+  const images = await getImagesService({
+    page: 1,
+    limit: 8,
+    type: ImageType.PIERCING
+  })
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900">
+    <section className="bg-zinc-900">
       <div className="container flex flex-col gap-12 pb-20">
         <FramerMotionContainer
           className="flex flex-col items-center gap-4 text-center"
@@ -46,7 +34,7 @@ export const LatestPiercingSection = async () => {
 
         <Lightbox gallery="piercing-portfolio">
           <div id="piercing-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {photos.map((photo, i) => (
+            {images.items.map((photo, i) => (
               <FramerMotionContainer
                 key={i}
                 className="flex flex-col gap-12"
@@ -60,6 +48,6 @@ export const LatestPiercingSection = async () => {
           </div>
         </Lightbox>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

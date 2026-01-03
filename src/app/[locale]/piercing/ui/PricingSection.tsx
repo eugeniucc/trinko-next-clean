@@ -1,7 +1,6 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 type Service = { name: string; price: number; hasBase?: boolean }
@@ -14,7 +13,7 @@ export const PricingSection = async () => {
   const includes = t.raw('includes') as string[]
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="relative bg-zinc-900">
+    <section className="relative bg-zinc-900">
       <div className="container flex flex-col gap-10 sm:gap-15">
         <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
           <h2 className="text-4xl font-bold text-white">{t('title')}</h2>
@@ -91,6 +90,6 @@ export const PricingSection = async () => {
           <p className="text-white">{t('includesNote')}</p>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

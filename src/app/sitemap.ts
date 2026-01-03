@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
+import { BASE_URL } from '@/lib/config'
 
-const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN_URL!
-const LOCALES = ['ru', 'ro', 'en', 'uk', 'it']
+const LOCALES = ['ru', 'ro', 'uk', 'it', 'en']
 const MAIN_LOCALE = 'ru'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...LOCALES.map((locale) => ({
-      url: `${DOMAIN}/${locale}/`,
+      url: `${BASE_URL}/${locale}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: locale === MAIN_LOCALE ? 1.0 : 0.9
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     ...paths.flatMap((path) =>
       LOCALES.map((locale) => ({
-        url: `${DOMAIN}/${locale}${path}`,
+        url: `${BASE_URL}/${locale}${path}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
 
     {
-      url: `${DOMAIN}/ru/blog`,
+      url: `${BASE_URL}/ru/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8

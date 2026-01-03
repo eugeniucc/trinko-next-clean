@@ -1,9 +1,8 @@
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
 
 export default function GalleryLoading() {
   return (
-    <CustomSectionAria aria="Галерея загружается" className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
+    <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
       <div className="container flex flex-col gap-10">
         <div className="flex flex-col gap-6 text-center">
           <div className="mx-auto h-10 w-3/4 animate-pulse rounded bg-zinc-800" />
@@ -26,6 +25,6 @@ export default function GalleryLoading() {
           ))}
         </div>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

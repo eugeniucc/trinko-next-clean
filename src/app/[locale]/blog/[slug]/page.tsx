@@ -1,23 +1,29 @@
 import parse from 'html-react-parser'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
-import { getBlogSinglePost } from '@/features/blog/api/blog.api'
-import { buildBlogPostJsonLd } from '../seo/buildBlogPostJsonLd'
+import { notFound } from 'next/navigation'
+import { getBlogPostBySlug } from '@/lib/blog/blog.service'
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+type Props = {
+  params: Promise<{ slug: string }>
+}
+
+export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
 
-  const post = await getBlogSinglePost(slug)
+  const post = await getBlogPostBySlug(slug)
 
-  const jsonLd = buildBlogPostJsonLd(post, 'ru')
+  if (!post) {
+    notFound()
+  }
 
   return (
     <main className="flex flex-col">
-      <CustomSectionAria aria="Блог Oblivion Tattoo" className="flex min-h-screen items-center justify-center bg-zinc-900 pt-30">
-        <div className="container text-white [&>article]:text-white [&>article>a]:text-red-500 [&>article>a]:underline [&>article>a]:transition-colors [&>article>a]:hover:text-red-500 [&>article>blockquote]:mb-6 [&>article>blockquote]:rounded-r [&>article>blockquote]:border-l-4 [&>article>blockquote]:border-red-500 [&>article>blockquote]:bg-zinc-800/50 [&>article>blockquote]:py-2 [&>article>blockquote]:pl-6 [&>article>blockquote]:text-white [&>article>blockquote]:italic [&>article>code]:rounded [&>article>code]:bg-zinc-800 [&>article>code]:px-2 [&>article>code]:py-1 [&>article>code]:text-sm [&>article>code]:text-red-500 [&>article>em]:text-red-500 [&>article>em]:italic [&>article>h1]:mb-6 [&>article>h1]:text-3xl [&>article>h1]:leading-tight [&>article>h1]:font-bold [&>article>h1]:text-white [&>article>h1]:md:text-4xl [&>article>h2]:mt-8 [&>article>h2]:mb-4 [&>article>h2]:border-b [&>article>h2]:border-red-500/30 [&>article>h2]:pb-2 [&>article>h2]:text-2xl [&>article>h2]:font-semibold [&>article>h2]:text-red-500 [&>article>h2]:md:text-3xl [&>article>h3]:mt-6 [&>article>h3]:mb-3 [&>article>h3]:text-xl [&>article>h3]:font-medium [&>article>h3]:text-red-500 [&>article>h3]:md:text-2xl [&>article>h4]:mt-4 [&>article>h4]:mb-2 [&>article>h4]:text-lg [&>article>h4]:font-medium [&>article>h4]:text-red-500 [&>article>h4]:md:text-xl [&>article>hr]:my-8 [&>article>hr]:border-zinc-700 [&>article>img]:mb-6 [&>article>img]:h-auto [&>article>img]:max-w-full [&>article>img]:rounded-lg [&>article>img]:shadow-lg [&>article>li]:text-base [&>article>li]:leading-relaxed [&>article>li]:text-white [&>article>li]:md:text-lg [&>article>ol]:mb-6 [&>article>ol]:list-decimal [&>article>ol]:space-y-2 [&>article>ol]:pl-6 [&>article>ol]:text-white [&>article>p]:mb-4 [&>article>p]:text-base [&>article>p]:leading-relaxed [&>article>p]:text-white [&>article>p]:md:text-lg [&>article>pre]:mb-6 [&>article>pre]:overflow-x-auto [&>article>pre]:rounded-lg [&>article>pre]:bg-zinc-800 [&>article>pre]:p-4 [&>article>pre]:text-white [&>article>strong]:font-semibold [&>article>strong]:text-red-500 [&>article>ul]:mb-6 [&>article>ul]:list-disc [&>article>ul]:space-y-2 [&>article>ul]:pl-6 [&>article>ul]:text-white">
-          {parse(post.content)}
-        </div>
-      </CustomSectionAria>
-      {jsonLd && <script id="article-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
+      {post && (
+        <section className="flex min-h-screen items-center justify-center bg-zinc-900 pt-30">
+          <div className="container text-white [&>article]:mx-auto [&>article]:max-w-none [&>article]:px-0 [&>article_h1]:mb-6 [&>article_h1]:text-3xl [&>article_h1]:font-bold [&>article_h1]:tracking-tight [&>article_h1]:text-white [&>article_h1]:md:text-4xl [&>article_h2]:mt-8 [&>article_h2]:mb-4 [&>article_h2]:border-b [&>article_h2]:border-gray-700 [&>article_h2]:pb-2 [&>article_h2]:text-2xl [&>article_h2]:font-bold [&>article_h2]:text-white [&>article_h2]:md:text-3xl [&>article_h3]:mt-6 [&>article_h3]:mb-3 [&>article_h3]:text-xl [&>article_h3]:font-semibold [&>article_h3]:text-gray-200 [&>article_h3]:md:text-2xl [&>article_li]:pl-1 [&>article_li]:leading-relaxed [&>article_li]:text-gray-300 [&>article_li>strong]:text-white [&>article_ol]:mb-4 [&>article_ol]:list-decimal [&>article_ol]:space-y-2 [&>article_ol]:pl-5 [&>article_p]:mb-4 [&>article_p]:text-base [&>article_p]:leading-relaxed [&>article_p]:text-gray-300 [&>article_p]:md:text-lg [&>article_section]:mb-8 [&>article_strong]:font-bold [&>article_strong]:text-white [&>article_ul]:mb-4 [&>article_ul]:list-disc [&>article_ul]:space-y-2 [&>article_ul]:pl-5 [&>article>div]:mb-8 [&>article>div:last-child]:mt-10 [&>article>div:last-child]:border-t [&>article>div:last-child]:border-gray-800 [&>article>div:last-child]:pt-6 [&>article>div>p]:text-lg [&>article>div>p]:text-gray-300 [&>article>div>p]:italic [&>article>div>p]:md:text-xl">
+            {parse(post.content)}
+          </div>
+        </section>
+      )}
     </main>
   )
 }

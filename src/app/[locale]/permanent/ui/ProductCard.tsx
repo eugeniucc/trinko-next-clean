@@ -1,17 +1,27 @@
+import Image from 'next/image'
 import { PermanentCardProps } from '../types/permanent.types'
 import { PickmeLink } from './PickmeLink'
 
 type Props = {
   item: PermanentCardProps
+  image: string
 }
 
-export const ProductCard = ({ item }: Props) => {
+export const ProductCard = ({ item, image }: Props) => {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
-      <div className="relative aspect-4/3 shrink-0">
+      <div className="relative aspect-4/3 h-100 shrink-0">
         <div className="absolute top-4 left-4">
           <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
         </div>
+        <Image
+          className="object-cover"
+          src={image}
+          fill
+          sizes=" (max-width: 640px) 100vw,
+    (max-width: 1024px) 50vw,"
+          alt={item.title}
+        />
       </div>
 
       <div className="flex grow flex-col gap-6 p-4 sm:p-6">

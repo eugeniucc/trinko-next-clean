@@ -6,11 +6,11 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { HomePageSketchesResponse } from '@/features/sketches/types/sketches.types'
 import { SUPABASE_S3_URL } from '@/lib/config'
+import { SingleImage } from '@/lib/image/image.types'
 
 type Props = {
-  items: HomePageSketchesResponse[]
+  items: SingleImage[]
 }
 
 export default function SketchesSlider({ items }: Props) {
@@ -40,7 +40,7 @@ export default function SketchesSlider({ items }: Props) {
           <SwiperSlide key={i} className="h-95! w-70! overflow-hidden rounded-xl md:h-187.5! md:w-137.5!">
             <div className="group relative h-full w-full">
               <Image
-                src={`${SUPABASE_S3_URL}public/${item.url}`}
+                src={`${SUPABASE_S3_URL}/${item.url}`}
                 alt={item.alt}
                 width={650}
                 height={550}

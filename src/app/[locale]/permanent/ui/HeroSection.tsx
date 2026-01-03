@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { PickmeLink } from './PickmeLink'
 
@@ -13,9 +12,9 @@ export const HeroSection = () => {
   }[]
 
   return (
-    <CustomSectionAria
+    <section
       className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-zinc-900 via-zinc-800 to-zinc-900 py-30 2xl:py-0"
-      aria={t('ariaLabel')}
+      
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-rose-500/30 blur-3xl"></div>
@@ -59,6 +58,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

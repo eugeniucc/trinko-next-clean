@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const AboutSection = async () => {
@@ -8,7 +7,7 @@ export const AboutSection = async () => {
   const advantages = t.raw('advantages') as string[]
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900">
+    <section className="bg-zinc-900">
       <div className="container pb-20">
         <FramerMotionContainer
           className="grid grid-cols-1 items-center gap-12 xl:grid-cols-2"
@@ -17,7 +16,7 @@ export const AboutSection = async () => {
           duration={0.5}
         >
           <div className="flex flex-col gap-6">
-            <h2 className="text-3xl font-bold break-words text-white">{t('title')}</h2>
+            <h2 className="text-3xl font-bold wrap-break-word text-white">{t('title')}</h2>
             <div className="flex flex-col gap-4 text-lg leading-relaxed text-zinc-300">
               {paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
@@ -35,6 +34,6 @@ export const AboutSection = async () => {
           </div>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

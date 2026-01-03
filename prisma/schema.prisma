@@ -4,22 +4,24 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider  = "postgresql"
 }
 
-model SketchPortfolioImage {
-  id        Int      @id @default(autoincrement())
-  title     String
-  url       String
-  alt       String
-  createdAt DateTime @default(now())
+enum ImageType {
+  PORTFOLIO
+  SKETCH
+  PERMANENT
+  PIERCING
 }
 
-model PortfolioImage {
-  id        Int      @id @default(autoincrement())
-  title     String
-  url       String
-  alt       String
+model Image {
+  id    Int    @id @default(autoincrement())
+  title String
+  url   String @unique
+  alt   String
+
+  type ImageType
+
   createdAt DateTime @default(now())
 }
 

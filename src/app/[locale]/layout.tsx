@@ -1,16 +1,15 @@
-// app/[locale]/layout.tsx
 import { Metadata } from 'next'
 import { Locale, NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
 import { notFound } from 'next/navigation'
-import Script from 'next/script'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
-import ClientProviders from './ClientProviders'
-import { buildMetadata } from './seo/buildMetadata'
-import { jsonLd } from './seo/jsonLd'
+import { BASE_URL } from '@/lib/config'
+import { baseMetadata } from '@/lib/seo/seo-seed'
+import { GoogleAnalytics } from './seo/GoogleAnalytics'
+import { LazyJivoChat } from './seo/LazyJivoChat'
 import FooterMenu from './ui/footer/FooterMenu'
 import HeaderMenu from './ui/header/HeaderMenu'
 
@@ -26,10 +25,16 @@ const montserrat = Montserrat({
   subsets: ['latin']
 })
 
-export async function generateMetadata(): Promise<Metadata> {
-  return buildMetadata({
-    path: ''
-  })
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params
+
+  return {
+    ...baseMetadata,
+
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`
+    }
+  }
 }
 
 type LayoutProps = {
@@ -46,21 +51,18 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   setRequestLocale(locale)
 
-  const jsonLdLayout = await jsonLd()
-
   return (
     <html lang={locale}>
       <body className={`${roboto.variable} ${montserrat.variable}`}>
         <NuqsAdapter>
-          <ClientProviders>
-            <NextIntlClientProvider>
-              <HeaderMenu />
-              {children}
-              <FooterMenu />
-            </NextIntlClientProvider>
-          </ClientProviders>
+          <NextIntlClientProvider>
+            <HeaderMenu />
+            {children}
+            <FooterMenu />
+          </NextIntlClientProvider>
         </NuqsAdapter>
-        <Script id="organization-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLayout) }} />
+        <GoogleAnalytics />
+        <LazyJivoChat />
       </body>
     </html>
   )

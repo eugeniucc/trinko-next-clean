@@ -1,13 +1,12 @@
 import { Clock, Facebook, Instagram, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const ContactsSection = () => {
   const t = useTranslations('homePage.contactsSection')
 
   return (
-    <CustomSectionAria className="bg-zinc-900 pb-20" aria={t('ariaLabel')}>
+    <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col items-center gap-20">
         <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
@@ -106,6 +105,6 @@ export const ContactsSection = () => {
           </div>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

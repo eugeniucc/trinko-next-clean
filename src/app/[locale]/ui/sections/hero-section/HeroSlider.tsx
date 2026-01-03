@@ -31,9 +31,7 @@ const HeroSlider = () => {
         }}
         pagination={{
           el: '.custom-hero-pagination',
-          clickable: true,
-          bulletClass: 'custom-hero-bullet',
-          bulletActiveClass: 'custom-hero-bullet-active'
+          clickable: true
         }}
         className="h-screen w-full"
       >
@@ -80,7 +78,7 @@ const HeroSlider = () => {
             <button aria-label={t('previousSlide')} className="custom-hero-prev text-white">
               <ChevronLeft size={20} />
             </button>
-            <div className="custom-hero-pagination flex gap-6 [&>.swiper-pagination-bullet]:w-10! [&>.swiper-pagination-bullet]:bg-white [&>.swiper-pagination-bullet-active]:bg-red-500!" />
+            <div className="custom-hero-pagination flex! items-center! gap-6! [&>.swiper-pagination-bullet]:size-3! [&>.swiper-pagination-bullet]:bg-white! [&>.swiper-pagination-bullet]:opacity-100! [&>.swiper-pagination-bullet-active]:bg-red-500!" />
 
             <button aria-label={t('nextSlide')} className="custom-hero-next text-white">
               <ChevronRight size={20} />

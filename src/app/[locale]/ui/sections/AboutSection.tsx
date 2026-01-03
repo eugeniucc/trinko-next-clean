@@ -1,14 +1,13 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('homePage.aboutSection')
 
   return (
-    <CustomSectionAria className={'relative'} aria={t('ariaLabel')}>
+    <section className="relative">
       <div className="pointer-events-none absolute inset-0 bg-black/50"></div>
       <Image
         src="/images/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp"
@@ -30,6 +29,6 @@ export const AboutSection = async () => {
           </div>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

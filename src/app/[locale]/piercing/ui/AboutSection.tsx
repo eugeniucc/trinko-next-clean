@@ -1,6 +1,5 @@
 import { Award, Shield, Sparkles } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 
 type WhyItem = { icon: 'shield' | 'award' | 'sparkles'; title: string; text: string }
@@ -21,10 +20,10 @@ export const AboutSection = async () => {
   const process = t.raw('process') as ProcessItem[]
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="bg-zinc-900 pb-20">
+    <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col gap-10 sm:gap-15">
         <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
-          <h2 className="text-4xl font-bold break-words text-white">{t('title')}</h2>
+          <h2 className="text-4xl font-bold wrap-break-word text-white">{t('title')}</h2>
           <p className="mx-auto max-w-5xl text-xl leading-relaxed text-white">{t('lead')}</p>
         </FramerMotionContainer>
 
@@ -75,7 +74,7 @@ export const AboutSection = async () => {
           animate={{ opacity: 1, y: 0 }}
           duration={0.6}
         >
-          <h3 className="text-center text-3xl font-bold break-words">{t('processTitle')}</h3>
+          <h3 className="text-center text-3xl font-bold wrap-break-word">{t('processTitle')}</h3>
           <div className="grid gap-6 md:grid-cols-4">
             {process.map((step, i) => (
               <div key={i} className="flex flex-col gap-4 text-center">
@@ -89,6 +88,6 @@ export const AboutSection = async () => {
           </div>
         </FramerMotionContainer>
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

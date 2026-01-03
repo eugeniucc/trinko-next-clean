@@ -1,29 +1,15 @@
 import { LucideIcon } from 'lucide-react'
-import Image from 'next/image'
 import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { SinglePhoto } from '@/features/permanent/types/permanent.types'
 import { HeroCardProps } from '../types/tattoo.types'
 
 type Props = {
   item: HeroCardProps
   Icon: LucideIcon
-  img?: SinglePhoto
 }
-export const HeroCard = ({ item, img, Icon }: Props) => {
+export const HeroCard = ({ item, Icon }: Props) => {
   return (
     <div className="flex h-full flex-col">
-      <div className="h-48 overflow-hidden rounded-t-lg">
-        <Image
-          className="h-auto w-full object-cover object-center"
-          src={img?.url ?? '/images/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp'}
-          alt={img?.pathname ?? 'tattoo-1'}
-          width={400}
-          height={192}
-          priority
-          unoptimized
-        />
-      </div>
-      <div className="flex h-full flex-col justify-between gap-6 rounded-b-lg bg-zinc-800 p-4">
+      <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-zinc-800 p-4">
         <div className="flex items-center gap-3">
           <div className="flex items-center justify-center rounded-full bg-red-500 p-2">
             <Icon className="size-8 shrink-0 text-white" strokeWidth={2} />

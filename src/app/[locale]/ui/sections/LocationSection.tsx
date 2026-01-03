@@ -4,13 +4,12 @@ import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { CustomInView } from '@/app/ui/CustomInView'
 import { CustomLoading } from '@/app/ui/CustomLoading'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cn } from '@/lib/utils'
 
 const Map = dynamic(() => import('@/app/ui/MapLibre'), {
-  ssr: false,
-  loading: () => <CustomLoading />
+  loading: () => <CustomLoading />,
+  ssr: false
 })
 
 interface Props {
@@ -21,7 +20,7 @@ export const LocationSection = ({ className }: Props) => {
   const t = useTranslations('homePage.locationSection')
 
   return (
-    <CustomSectionAria className={cn('pt-20', className)} aria={t('ariaLabel')}>
+    <section className={cn('pt-20', className)}>
       <div className="container">
         <FramerMotionContainer className="flex flex-col gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <h2 className="text-center text-4xl">{t('title')}</h2>
@@ -36,6 +35,6 @@ export const LocationSection = ({ className }: Props) => {
       <CustomInView minHeight={400} rootMargin="200px">
         <Map />
       </CustomInView>
-    </CustomSectionAria>
+    </section>
   )
 }

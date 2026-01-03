@@ -12,7 +12,7 @@ export const PickmeLink = ({ ...props }: Props) => {
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        'mx-auto w-fit rounded-full bg-gradient-to-r from-rose-500 to-pink-500 px-4 py-3 text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-8',
+        'mx-auto w-fit rounded-full bg-linear-to-r from-rose-500 to-pink-500 px-4 py-3 text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-8',
         props.className
       )}
     >

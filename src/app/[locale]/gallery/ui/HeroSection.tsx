@@ -5,20 +5,14 @@ import dynamic from 'next/dynamic'
 import { parseAsInteger, useQueryState } from 'nuqs'
 import { CustomLoading } from '@/app/ui/CustomLoading'
 import { CustomPagination } from '@/app/ui/CustomPagination'
-import { CustomSectionAria } from '@/app/ui/CustomSectionAria'
 import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { SUPABASE_S3_URL } from '@/lib/config'
-import { PortfolioImagesResponse } from '@/lib/portfolio/portfolio.types'
+import { ImagesResponse } from '@/lib/image/image.types'
 import { LatestGalleryCard } from './LatestGalleryCard'
 
-const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
-  loading: () => <CustomLoading />,
-  ssr: false
-})
-
 type Props = {
-  initialData: PortfolioImagesResponse
+  initialData: ImagesResponse
   limit: number
   page: number
 }
@@ -27,6 +21,10 @@ export function HeroSection({ initialData, limit, page }: Props) {
   const t = useTranslations('galleryPage')
 
   const [, setPage] = useQueryState('page', parseAsInteger.withDefault(1))
+
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
+    loading: () => <CustomLoading />
+  })
 
   const totalPages = initialData.totalPages
   const images = initialData.items
@@ -38,7 +36,7 @@ export function HeroSection({ initialData, limit, page }: Props) {
   }
 
   return (
-    <CustomSectionAria aria={t('ariaLabel')} className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
+    <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30">
       <div className="container flex flex-col gap-10">
         <FramerMotionContainer
           className="flex flex-col gap-6 text-center"
@@ -57,7 +55,7 @@ export function HeroSection({ initialData, limit, page }: Props) {
               ? [...Array(limit)].map((_, i) => <CustomSkeletonLoader className="h-100" key={i} />)
               : images.map((photo) => (
                   <FramerMotionContainer key={photo.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
-                    <LatestGalleryCard src={`${SUPABASE_S3_URL}public/${photo.url}`} alt={photo.alt} />
+                    <LatestGalleryCard src={`${SUPABASE_S3_URL}/${photo.url}`} alt={photo.alt} />
                   </FramerMotionContainer>
                 ))}
           </div>
@@ -65,6 +63,6 @@ export function HeroSection({ initialData, limit, page }: Props) {
 
         {totalPages > 1 && <CustomPagination page={page} totalPages={totalPages} onPageChange={handlePageChange} />}
       </div>
-    </CustomSectionAria>
+    </section>
   )
 }

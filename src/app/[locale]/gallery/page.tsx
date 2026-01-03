@@ -1,11 +1,11 @@
-import { getPortfolioService } from '@/lib/portfolio/portfolio.service'
+import { getImagesService } from '@/lib/image/image.service'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { HeroSection } from './ui/HeroSection'
 
 interface GalleryProps {
-  searchParams: {
+  searchParams: Promise<{
     page?: string
-  }
+  }>
 }
 
 export default async function Gallery({ searchParams }: GalleryProps) {
@@ -13,10 +13,10 @@ export default async function Gallery({ searchParams }: GalleryProps) {
   const currentPage = Math.max(1, Number(params.page ?? 1))
   const limit = 8
 
-  const data = await getPortfolioService({ page: currentPage, limit })
+  const data = await getImagesService({ page: currentPage, limit })
 
   return (
-    <main className="flex flex-col">
+    <main className="flex min-h-screen flex-col">
       <HeroSection initialData={data} page={currentPage} limit={limit} />
       <ContactsSection />
     </main>

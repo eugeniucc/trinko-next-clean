@@ -25,18 +25,23 @@ export default function MobileMenu() {
 
   const filteredLinks = links.filter((l) => !(locale !== 'ru' && l.href.startsWith('/blog')))
 
+  const acctualYear = new Date().getFullYear()
+
   return (
     <div className="flex items-center lg:hidden">
       <Sheet>
         <SheetTrigger aria-label={burgerAria}>
           <Menu className="text-red-500" />
         </SheetTrigger>
-        <SheetContent className="w-[300px] sm:w-[540px]" side="left">
-          <SheetHeader className="gap-4">
+        <SheetContent className="flex h-full flex-col p-0" side="left">
+          <SheetHeader className="gap-4 px-6 pt-6">
             <SheetTitle>
               <span className="mb-12 text-red-500">OblivionTattoo</span>
             </SheetTitle>
             <SheetDescription>{t('headerMobile.description')}</SheetDescription>
+          </SheetHeader>
+
+          <div className="flex-1 overflow-y-auto px-6 py-4">
             <nav className="flex flex-col gap-4">
               {filteredLinks.map((link) => (
                 <SheetClose key={link.href} asChild>
@@ -52,50 +57,64 @@ export default function MobileMenu() {
                 </SheetClose>
               ))}
             </nav>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-4">
-                <a className="flex items-center gap-2 duration-200 hover:text-red-500" href="tel:+37379146506" rel="noopener noreferrer">
-                  <PhoneOutgoing className="h-5 w-5" />
-                  <p>+37379146506</p>
+          </div>
+
+          <div className="border-t border-gray-200 px-6 py-4">
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <a
+                  className="flex items-center justify-center gap-2 text-lg font-medium text-black duration-200 hover:text-red-500"
+                  href="tel:+37379146506"
+                  rel="noopener noreferrer"
+                >
+                  <PhoneOutgoing className="size-5 shrink-0" />
+                  <span>+373 79 146 506</span>
                 </a>
-                <p>{t('headerMobile.workingHours')}</p>
+                <p className="text-center text-sm text-gray-600">{t('headerMobile.workingHours')}</p>
               </div>
-              <div className="flex flex-col gap-4">
+
+              <div className="grid grid-cols-2 gap-3">
                 <a
                   href="https://www.instagram.com/trinko_tattoo/"
                   target="_blank"
-                  className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
                   rel="noopener noreferrer"
                 >
-                  Instagram <Instagram className="h-5 w-5" />
+                  <Instagram className="size-5 shrink-0" />
+                  <span className="text-sm">Instagram</span>
                 </a>
                 <a
                   href="https://t.me/Trinkonfox"
                   target="_blank"
-                  className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-blue-50 hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
-                  Telegram <Send className="h-5 w-5" />
+                  <Send className="size-5 shrink-0" />
+                  <span className="text-sm">Telegram</span>
                 </a>
                 <a
                   href="https://wa.me/37360833389"
                   target="_blank"
-                  className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-green-50 hover:text-green-500"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp <MessageCircleMore className="h-5 w-5" />
+                  <MessageCircleMore className="size-5 shrink-0" />
+                  <span className="text-sm">WhatsApp</span>
                 </a>
                 <a
                   href="viber://chat?number=%2B37360833389"
                   target="_blank"
-                  className="flex items-center gap-2 duration-200 hover:text-red-500"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-purple-50 hover:text-purple-500"
                   rel="noopener noreferrer"
                 >
-                  Viber <MessageCircleHeart className="h-5 w-5" />
+                  <MessageCircleHeart className="size-5 shrink-0" />
+                  <span className="text-sm">Viber</span>
                 </a>
               </div>
+
+              <p className="text-center text-xs text-gray-500">Oblivion Tattoo Studio © {acctualYear}</p>
             </div>
-          </SheetHeader>
+          </div>
         </SheetContent>
       </Sheet>
     </div>
