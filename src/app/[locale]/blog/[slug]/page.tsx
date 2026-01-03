@@ -2,8 +2,13 @@ import parse from 'html-react-parser'
 import { notFound } from 'next/navigation'
 import { getBlogPostBySlug } from '@/lib/blog/blog.service'
 
+export const dynamic = 'force-dynamic'
+
 type Props = {
-  params: Promise<{ slug: string }>
+  params: Promise<{
+    locale: string
+    slug: string
+  }>
 }
 
 export default async function BlogPostPage({ params }: Props) {

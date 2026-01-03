@@ -6,7 +6,6 @@ import { notFound } from 'next/navigation'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
-import { BASE_URL } from '@/lib/config'
 import { baseMetadata } from '@/lib/seo/seo-seed'
 import { GoogleAnalytics } from './seo/GoogleAnalytics'
 import { LazyJivoChat } from './seo/LazyJivoChat'
@@ -25,16 +24,8 @@ const montserrat = Montserrat({
   subsets: ['latin']
 })
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
-  const { locale } = await params
-
-  return {
-    ...baseMetadata,
-
-    alternates: {
-      canonical: `${BASE_URL}/${locale}`
-    }
-  }
+export const metadata: Metadata = {
+  ...baseMetadata
 }
 
 type LayoutProps = {
