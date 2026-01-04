@@ -8,10 +8,7 @@ export function buildCoursesJsonLd() {
     name: 'Tattoo, permanent makeup and piercing courses',
     description: 'Professional offline courses in tattooing, permanent makeup and piercing with theory and hands-on practice.',
     provider: {
-      '@type': 'TattooParlor',
-      '@id': `${BASE_URL}/#tattoo-parlor`,
-      name: 'Oblivion Tattoo',
-      url: BASE_URL
+      '@id': `${BASE_URL}/#tattoo-parlor`
     },
 
     hasCourseInstance: [

@@ -8,10 +8,7 @@ export function buildPermanentMakeupServiceJsonLd() {
     name: 'Permanent eyeliner makeup',
     description: 'Professional permanent eyeliner makeup including classic liner, lash line enhancement, and soft shading techniques.',
     provider: {
-      '@type': 'TattooParlor',
-      '@id': `${BASE_URL}/#tattoo-parlor`,
-      name: 'Oblivion Tattoo',
-      url: BASE_URL
+      '@id': `${BASE_URL}/#tattoo-parlor`
     },
     areaServed: {
       '@type': 'City',

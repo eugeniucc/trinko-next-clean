@@ -14,7 +14,7 @@ export function buildBlogPostJsonLd({ title, slug, createdAt }: BlogPostJsonLdPr
     headline: title,
     description: title,
     url: `${BASE_URL}/blog/${slug}`,
-    image: ['http://localhost:3000/logo.png'],
+    image: [`${BASE_URL}/logo.png`],
     datePublished: createdAt,
     author: {
       '@type': 'Organization',

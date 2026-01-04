@@ -9,9 +9,7 @@ export function buildGalleryJsonLd() {
     description: 'Gallery of real tattoo works created by artists at Oblivion Tattoo studio.',
     url: `${BASE_URL}/gallery`,
     creator: {
-      '@type': 'TattooParlor',
-      '@id': `${BASE_URL}/#tattoo-parlor`,
-      name: 'Oblivion Tattoo'
+      '@id': `${BASE_URL}/#tattoo-parlor`
     }
   }
 }

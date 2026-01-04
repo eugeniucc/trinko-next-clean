@@ -8,10 +8,7 @@ export function buildPiercingServiceJsonLd() {
     name: 'Body piercing services',
     description: 'Professional body piercing services using sterile single-use instruments and certified jewelry.',
     provider: {
-      '@type': 'TattooParlor',
-      '@id': `${BASE_URL}/#tattoo-parlor`,
-      name: 'Oblivion Tattoo',
-      url: BASE_URL
+      '@id': `${BASE_URL}/#tattoo-parlor`
     },
     areaServed: {
       '@type': 'City',

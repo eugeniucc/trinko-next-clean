@@ -8,9 +8,7 @@ export function buildTattooServiceJsonLd() {
     name: 'Tattoo services',
     description: 'Professional black-and-grey and color tattoo services with custom designs.',
     provider: {
-      '@type': 'TattooParlor',
-      '@id': `${BASE_URL}/#tattoo-parlor`,
-      name: 'Oblivion Tattoo'
+      '@id': `${BASE_URL}/#tattoo-parlor`
     },
     areaServed: {
       '@type': 'City',
