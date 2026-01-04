@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
+  provider = "postgresql"
 }
 
 enum ImageType {
@@ -15,12 +15,13 @@ enum ImageType {
 }
 
 model Image {
-  id    Int    @id @default(autoincrement())
+  id    Int       @id @default(autoincrement())
   title String
-  url   String @unique
+  url   String    @unique
   alt   String
+  type  ImageType
 
-  type ImageType
+  order Int @default(0)
 
   createdAt DateTime @default(now())
 }

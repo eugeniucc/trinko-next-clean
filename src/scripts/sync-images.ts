@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma'
 const supabase = createClient(process.env.SUPABASE_S3_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
 
 async function main() {
-  const bucket = 'Piercing'
+  const bucket = 'Portfolio'
 
   const { data, error } = await supabase.storage.from(bucket).list('', { limit: 1000, sortBy: { column: 'name', order: 'asc' } })
 
@@ -25,7 +25,7 @@ async function main() {
         title: file.name.replace(/\.[^.]+$/, ''),
         alt: file.name,
         url: path,
-        type: ImageType.PIERCING
+        type: ImageType.PORTFOLIO
       }
     })
   }

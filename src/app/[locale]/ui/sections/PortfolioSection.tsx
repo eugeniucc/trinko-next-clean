@@ -42,7 +42,7 @@ export const PortfolioSection = async () => {
                     data-pswp-height={1600}
                     aria-label={`${t('linkLabel')} ${image.alt}`}
                   >
-                    <Image className="h-full w-full rounded-md object-cover" src={full} width={450} height={400} alt={image.alt} unoptimized />
+                    <Image className="h-full w-full rounded-md object-cover" src={full} width={450} height={400} alt={image.alt} />
                     <Expand className="absolute top-1/2 left-1/2 size-20 -translate-x-1/2 -translate-y-1/2 text-white" />
                   </a>
                 )

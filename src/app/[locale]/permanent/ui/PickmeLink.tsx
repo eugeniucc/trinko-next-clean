@@ -8,7 +8,7 @@ type Props = {
 export const PickmeLink = ({ ...props }: Props) => {
   return (
     <a
-      href="https://t.me/Trinkonfox"
+      href="https://t.me/TrinkoTattoo"
       target="_blank"
       rel="noopener noreferrer"
       className={cn(

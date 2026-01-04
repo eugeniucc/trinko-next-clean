@@ -20,7 +20,7 @@ export const BlogCard = ({ item }: Props) => {
 
   return (
     <div className="flex flex-col gap-6 rounded-md border border-gray-200 p-4">
-      <Image className="mx-auto" width={64} height={91} src="/logo.svg" alt="Oblivion Tattoo Logo" unoptimized />
+      <Image className="mx-auto" width={64} height={91} src="/logo.svg" alt="Logo Oblivion Tattoo" unoptimized />
       <h3 className="line-clamp-2 text-2xl font-bold text-white">{item.title}</h3>
 
       <div className="line-clamp-6 text-white">{contentWithoutH1}</div>

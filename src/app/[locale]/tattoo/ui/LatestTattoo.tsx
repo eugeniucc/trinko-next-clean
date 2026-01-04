@@ -32,7 +32,7 @@ export const LatestTattoo = async () => {
           <p className="max-w-3xl text-zinc-300">{t('description')}</p>
         </FramerMotionContainer>
         <Lightbox gallery="home-portfolio">
-          <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
             {images.items.map((photo, i) => (
               <FramerMotionContainer
                 key={i}

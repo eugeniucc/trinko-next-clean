@@ -1,11 +1,11 @@
 {
   "seo": {
-    "title": "OblivionTattoo - Studio de Tatuaje Profesional în Chișinău",
-    "description": "OblivionTattoo este cel mai bun studio de tatuaje din Chișinău. Designuri unice, artiști profesioniști și lucrări de calitate înaltă.",
-    "openGraphTitle": "OblivionTattoo - Tatuaje Profesionale în Chișinău",
+    "title": "Oblivion Tattoo - Studio de Tatuaje Profesional în Chișinău",
+    "description": "Oblivion Tattoo este cel mai bun studio de tatuaje din Chișinău. Designuri unice, artiști profesioniști și lucrări de calitate înaltă.",
+    "openGraphTitle": "Oblivion Tattoo - Tatuaje Profesionale în Chișinău",
     "openGraphDescription": "Cel mai bun studio de tatuaje din Chișinău. Tatuaje unice realizate de profesioniști.",
-    "twitterTitle": "OblivionTattoo - Cele Mai Bune Tatuaje din Chișinău",
-    "twitterDescription": "Studio OblivionTattoo - artiști profesioniști și designuri unice."
+    "twitterTitle": "Oblivion Tattoo - Cele Mai Bune Tatuaje din Chișinău",
+    "twitterDescription": "Studio Oblivion Tattoo - artiști profesioniști și designuri unice."
   },
   "notFound": {
     "title": "Pagina nu a fost găsită",
@@ -43,6 +43,7 @@
     },
     "headerMobile": {
       "description": "Navighează prin meniu pentru a explora serviciile noastre.",
+      "appointment": "Tatuajele se efectuează doar pe bază de programare.",
       "workingHours": "Program: L-D: 10:00 - 20:00"
     },
     "heroSection": {
@@ -62,13 +63,13 @@
         "thirdCard": {
           "title": "Creștere și Învățare",
           "text": "TE ÎNVĂȚĂM TOTUL",
-          "description": "Vrei să devii artist? Instruirea la OblivionTattoo include practică pe modele reale, program flexibil, instructori cu experiență și diplomă recunoscută internațional. Obții nu doar cunoștințe, ci o profesie.",
+          "description": "Vrei să devii artist? Instruirea la Oblivion Tattoo include practică pe modele reale, program flexibil, instructori cu experiență și diplomă recunoscută internațional. Obții nu doar cunoștințe, ci o profesie.",
           "button": "Programează-te"
         }
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Salon de tatuaje în Chișinău OblivionTattoo: Tatuaje profesionale, piercing și machiaj permanent.",
+      "mainTitle": "Salon de tatuaje în Chișinău Oblivion Tattoo: Tatuaje profesionale, piercing și machiaj permanent.",
       "title": "Serviciile noastre de tatuaje în Chișinău",
       "description": "Salonul nostru de tatuaje din Chișinău oferă o gamă largă de servicii — de la tatuaje și piercing până la acoperirea tatuajelor vechi și machiaj permanent. Tatuatorii noștri experimentați din Chișinău garantează calitate, sterilitate și o abordare individuală.",
       "cards": [
@@ -116,13 +117,13 @@
     },
     "advantagesSection": {
       "text": "Avantajele noastre",
-      "title": "De ce aleg oamenii OblivionTattoo — Salon de Tatuaje în Chișinău",
-      "description": "OblivionTattoo este o echipă de artiști, fiecare specializat în domeniul său: tatuaje, piercing sau machiaj permanent. Nu facem doar o lucrare — oferim o abordare personalizată pentru ca rezultatul să se potrivească stilului și așteptărilor tale.",
+      "title": "De ce aleg oamenii Oblivion Tattoo — Salon de Tatuaje în Chișinău",
+      "description": "Oblivion Tattoo este o echipă de artiști, fiecare specializat în domeniul său: tatuaje, piercing sau machiaj permanent. Nu facem doar o lucrare — oferim o abordare personalizată pentru ca rezultatul să se potrivească stilului și așteptărilor tale.",
       "extra": "Fiecare specialist are ani de experiență și își perfecționează constant abilitățile, învățând tehnici și metode moderne. Respectăm cu strictețe standardele de sterilitate și folosim doar materiale verificate.",
       "more_text": "Oferim condiții transparente, prețuri corecte și atenție sinceră la detalii. Înainte de a începe lucrul, discutăm întotdeauna schița, etapele și îngrijirea ulterioară, pentru ca tu să te simți încrezător în fiecare pas."
     },
     "portfolioSection": {
-      "title": "Portofoliul artiștilor tatuatori din Chișinău - OblivionTattoo",
+      "title": "Portofoliul artiștilor tatuatori din Chișinău - Oblivion Tattoo",
       "text": "Aici puteți vedea lucrările reale ale artiștilor noștri. Tatuaje, piercinguri, acoperiri și schițe — toate realizate cu atenție la detalii și în condiții sterile. Suntem mândri de calitatea fiecărei lucrări.",
       "linkLabel": "Deschide fotografia mărită",
       "link": "Vezi toate fotografiile"
@@ -201,7 +202,7 @@
       "secondButton": "Programează o consultație"
     },
     "serviceSection": {
-      "title": "Machiaj permanent la Chișinău — sprâncene, buze și eyeliner la studioul OblivionTattoo",
+      "title": "Machiaj permanent la Chișinău — sprâncene, buze și eyeliner la studioul Oblivion Tattoo",
       "text": "Studioul nostru de tatuaje din Chișinău oferă machiaj permanent profesional pentru femeile care doresc să arate mereu îngrijite. Folosim tehnici moderne: sprâncene pudrate, buze acuarelă și eyeliner intercilial. Procedura este nedureroasă, sigură și oferă un rezultat natural timp de 1,5–3 ani.",
       "services": [
         {
@@ -272,9 +273,10 @@
         }
       ]
     },
-    "showOffSection": {
-      "title": "Lucrările noastre: tatuaje, piercing și machiaj permanent la Chișinău",
-      "text": "Studioul OblivionTattoo este o echipă de maeștri cu mulți ani de experiență. Creăm tatuaje unice, realizăm piercinguri profesionale și oferim machiaj permanent modern: sprâncene pudrate, buze acuarelă și contur intercilial. Portofoliul nostru demonstrează calitatea lucrării, sterilitatea și atenția la detalii."
+    "gallerySection": {
+      "title": "Galerie de machiaj permanent în Chișinău",
+      "text": "Galeria prezintă lucrări reale realizate de artiștii studioului Oblivion Tattoo: machiaj permanent pentru sprâncene, buze și conturul genelor. Toate procedurile sunt efectuate ținând cont de trăsăturile individuale, structura feței și rezultatul dorit.",
+      "extraText": "Lucrăm în Chișinău, folosim tehnici moderne de machiaj permanent și acordăm o atenție deosebită preciziei, rezultatelor naturale și siguranței."
     }
   },
   "tattooPage": {
@@ -679,8 +681,8 @@
           "Diploma este codificată și recunoscută în majoritatea țărilor europene, ceea ce deschide oportunități suplimentare de lucru în străinătate."
         ],
         "images": {
-          "alt1": "Sigla OblivionTattoo",
-          "alt2": "Sigla OblivionTattoo"
+          "alt1": "Sigla Oblivion Tattoo",
+          "alt2": "Sigla Oblivion Tattoo"
         }
       },
       "pricing": {

@@ -11,7 +11,7 @@ export const ProductCard = ({ item, image }: Props) => {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-rose-500/20 via-rose-500/10 to-transparent backdrop-blur-sm transition-all hover:shadow-xl hover:shadow-rose-500/20">
       <div className="relative aspect-4/3 h-100 shrink-0">
-        <div className="absolute top-4 left-4">
+        <div className="absolute top-4 left-4 z-2">
           <span className="flex items-center rounded-full bg-black/30 px-3 py-1 font-medium text-white backdrop-blur-sm">✨ {item.badge}</span>
         </div>
         <Image

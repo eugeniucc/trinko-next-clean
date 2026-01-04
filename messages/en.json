@@ -1,11 +1,11 @@
 {
   "seo": {
-    "title": "OblivionTattoo - Professional Tattoo Studio in Chisinau",
-    "description": "OblivionTattoo is the best tattoo studio in Chisinau. Unique designs, professional artists, and high-quality work.",
-    "openGraphTitle": "OblivionTattoo - Professional Tattoos in Chisinau",
+    "title": "Oblivion Tattoo - Professional Tattoo Studio in Chisinau",
+    "description": "Oblivion Tattoo is the best tattoo studio in Chisinau. Unique designs, professional artists, and high-quality work.",
+    "openGraphTitle": "Oblivion Tattoo - Professional Tattoos in Chisinau",
     "openGraphDescription": "The best tattoo studio in Chisinau. Unique tattoos by professionals.",
-    "twitterTitle": "OblivionTattoo - Best Tattoos in Chisinau",
-    "twitterDescription": "OblivionTattoo studio - professional artists and unique designs."
+    "twitterTitle": "Oblivion Tattoo - Best Tattoos in Chisinau",
+    "twitterDescription": "Oblivion Tattoo studio - professional artists and unique designs."
   },
   "notFound": {
     "title": "Page not found",
@@ -43,6 +43,7 @@
     },
     "headerMobile": {
       "description": "Navigate through the menu to explore our services.",
+      "appointment": "Tattoo services are available by appointment only.",
       "workingHours": "Opening Hours: Mn-Sun: 10 am-8 pm"
     },
     "heroSection": {
@@ -62,13 +63,13 @@
         "thirdCard": {
           "title": "Growth and Learning",
           "text": "WE’LL TEACH YOU",
-          "description": "Want to become an artist? Training at OblivionTattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
+          "description": "Want to become an artist? Training at Oblivion Tattoo includes hands-on practice on models, a flexible schedule, experienced instructors, and an internationally recognized diploma. Gain not just knowledge, but a profession.",
           "button": "Book Now"
         }
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Tattoo Studio in Chisinau OblivionTattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
+      "mainTitle": "Tattoo Studio in Chisinau Oblivion Tattoo: Professional Tattoos, Piercing, and Permanent Makeup.",
       "title": "Our Tattoo Services in Chisinau",
       "description": "Our tattoo studio in Chisinau offers a wide range of services — from tattoos and piercings to cover-ups and permanent makeup. Experienced tattoo artists in Chisinau guarantee quality, sterility, and a personalized approach.",
       "cards": [
@@ -116,13 +117,13 @@
     },
     "advantagesSection": {
       "text": "Our Advantages",
-      "title": "Why People Choose OblivionTattoo — Tattoo Studio in Chisinau",
-      "description": "OblivionTattoo is a team of artists, each an expert in their field: tattoos, piercings, or permanent makeup. We don’t just do the job — we provide a personalized approach for every client to ensure the result matches your style and expectations.",
+      "title": "Why People Choose Oblivion Tattoo — Tattoo Studio in Chisinau",
+      "description": "Oblivion Tattoo is a team of artists, each an expert in their field: tattoos, piercings, or permanent makeup. We don’t just do the job — we provide a personalized approach for every client to ensure the result matches your style and expectations.",
       "extra": "Each of our specialists has years of experience and continually improves their skills by mastering modern techniques and approaches. We strictly follow hygiene standards and use only trusted materials.",
       "more_text": "We offer transparent conditions, fair prices, and genuine attention to detail. Before starting any work, we always discuss the sketch, steps, and aftercare to make you feel confident at every stage."
     },
     "portfolioSection": {
-      "title": "Portfolio of tattoo artists in Chisinau - OblivionTattoo",
+      "title": "Portfolio of tattoo artists in Chisinau - Oblivion Tattoo",
       "text": "Here you can see real works by our artists. Tattoos, piercings, cover-ups, and sketches — all created with attention to detail and in sterile conditions. We are proud of the quality of each work.",
       "linkLabel": "View larger photo",
       "link": "View all photos"
@@ -201,7 +202,7 @@
       "secondButton": "Book a consultation"
     },
     "serviceSection": {
-      "title": "Permanent makeup in Chișinău — brows, lips and eyeliner at OblivionTattoo studio",
+      "title": "Permanent makeup in Chișinău — brows, lips and eyeliner at Oblivion Tattoo studio",
       "text": "Our tattoo studio in Chișinău offers professional permanent makeup for women who want to always look well-groomed. We use modern techniques: powder brows, watercolor lips and lash line eyeliner. The procedure is painless, safe and provides a natural result for 1.5–3 years.",
       "services": [
         {
@@ -274,7 +275,7 @@
     },
     "gallerySection": {
       "title": "Permanent Makeup Gallery in Chișinău",
-      "text": "The gallery features real works by the artists of the OblivionTattoo studio: permanent makeup for eyebrows, lips, and lash lines. All procedures are performed with consideration for individual features, facial structure, and the desired result.",
+      "text": "The gallery features real works by the artists of the Oblivion Tattoo studio: permanent makeup for eyebrows, lips, and lash lines. All procedures are performed with consideration for individual features, facial structure, and the desired result.",
       "extraText": "We work in Chișinău, use modern permanent makeup techniques, and pay special attention to precision, natural results, and safety."
     }
   },
@@ -675,8 +676,8 @@
           "The diploma is coded and recognized in most European countries, which opens up additional opportunities for working abroad."
         ],
         "images": {
-          "alt1": "OblivionTattoo logo",
-          "alt2": "OblivionTattoo logo"
+          "alt1": "Oblivion Tattoo logo",
+          "alt2": "Oblivion Tattoo logo"
         }
       },
       "pricing": {

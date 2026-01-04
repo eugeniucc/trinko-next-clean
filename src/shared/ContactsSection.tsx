@@ -60,44 +60,44 @@ export const ContactsSection = () => {
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="size-5 shrink-0" />
                   <span>Instagram</span>
                 </a>
                 <a
-                  href="https://facebook.com/OblivionTattoo"
+                  href="https://facebook.com/Oblivion Tattoo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="size-5 shrink-0" />
 
                   <span>Facebook</span>
                 </a>
                 <a
-                  href="https://t.me/Trinkonfox"
+                  href="https://t.me/TrinkoTattoo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <Send className="h-5 w-5" />
+                  <Send className="size-5 shrink-0" />
                   <span>Telegram</span>
                 </a>
                 <a
-                  href="https://wa.me/37360833389"
+                  href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <MessageCircleMore className="h-5 w-5" />
+                  <MessageCircleMore className="size-5 shrink-0" />
                   <span>WhatsApp</span>
                 </a>
                 <a
-                  href="viber://chat?number=%2B37360833389"
+                  href="viber://chat?number=%2B37379146506"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
+                  className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600 md:hidden"
                 >
-                  <MessageCircleHeart className="h-5 w-5" />
+                  <MessageCircleHeart className="size-5 shrink-0" />
                   <span>Viber</span>
                 </a>
               </div>

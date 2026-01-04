@@ -14,7 +14,7 @@ export default function Logo() {
     <Link href={`/${locale}`}>
       <Image
         src={pathname === `/${locale}/permanent` ? '/logo-pickme.svg' : `/logo.svg`}
-        alt="Тату салон в Кишиневе OblivionTattoo"
+        alt="Тату салон в Кишиневе Oblivion Tattoo"
         width={64}
         height={91}
         unoptimized

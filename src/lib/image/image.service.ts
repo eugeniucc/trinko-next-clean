@@ -19,7 +19,7 @@ export async function getImagesService({ page, limit, type }: GetImagesParams): 
   const [items, total] = await Promise.all([
     prisma.image.findMany({
       where,
-      orderBy: { id: 'asc' },
+      orderBy: { order: 'asc' },
       skip,
       take: safeLimit
     }),

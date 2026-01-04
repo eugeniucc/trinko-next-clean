@@ -10,12 +10,11 @@ export const AboutSection = async () => {
     <section className="relative">
       <div className="pointer-events-none absolute inset-0 bg-black/50"></div>
       <Image
-        src="/images/homePage/about-section/tatu-2-lastochki-na-pleche-kishinev.webp"
+        src="/images/homePage/about-section/about-1.webp"
         width={1920}
         height={1080}
-        alt="Мастер делает татуировку в салоне OblivionTattoo"
+        alt="тату ласточки на спине"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
-        unoptimized
       />
       <div className="relative z-1 container flex min-h-screen flex-col justify-center">
         <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>

@@ -37,8 +37,8 @@ const HeroSlider = () => {
       >
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/homePage/hero-section/tatu-cvety-i-zmeya-na-noge.webp"
-            imageAlt="тату цветы и змея в Кишиневе"
+            imageSrc="/images/homePage/hero-section/hero-1.webp"
+            imageAlt="тату катана и рыбы кои на предплечье"
             title="firstCard"
             text="firstCard"
             description="firstCard"
@@ -49,8 +49,8 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/homePage/hero-section/tatu-nadpis-i-cvety-na-pleche.webp"
-            imageAlt="тату цветы и надпись в Кишиневе"
+            imageSrc="/images/homePage/hero-section/hero-2.webp"
+            imageAlt="тату цветы и змея на ноге"
             title="secondCard"
             text="secondCard"
             description="secondCard"
@@ -61,8 +61,8 @@ const HeroSlider = () => {
 
         <SwiperSlide>
           <HeroSlide
-            imageSrc="/images/homePage/hero-section/tatu-cvetov-na-predpleche.webp"
-            imageAlt="тату цветы на руке в Кишиневе"
+            imageSrc="/images/homePage/hero-section/hero-3.webp"
+            imageAlt="тату цветы и бабочки на плече"
             title="thirdCard"
             text="thirdCard"
             description="thirdCard"

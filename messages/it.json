@@ -1,11 +1,11 @@
 {
   "seo": {
-    "title": "OblivionTattoo - Studio di Tatuaggi Professionale a Chisinau",
-    "description": "OblivionTattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
-    "openGraphTitle": "OblivionTattoo - Tatuaggi Professionali a Chisinau",
+    "title": "Oblivion Tattoo - Studio di Tatuaggi Professionale a Chisinau",
+    "description": "Oblivion Tattoo è il miglior studio di tatuaggi a Chisinau. Design unici, artisti professionisti e lavori di alta qualità.",
+    "openGraphTitle": "Oblivion Tattoo - Tatuaggi Professionali a Chisinau",
     "openGraphDescription": "Il miglior studio di tatuaggi a Chisinau. Tatuaggi unici realizzati da professionisti.",
-    "twitterTitle": "OblivionTattoo - I Migliori Tatuaggi a Chisinau",
-    "twitterDescription": "Studio OblivionTattoo - artisti professionisti e design unici."
+    "twitterTitle": "Oblivion Tattoo - I Migliori Tatuaggi a Chisinau",
+    "twitterDescription": "Studio Oblivion Tattoo - artisti professionisti e design unici."
   },
   "notFound": {
     "title": "Pagina non trovata",
@@ -43,6 +43,7 @@
     },
     "headerMobile": {
       "description": "Naviga nel menu per scoprire i nostri servizi.",
+      "appointment": "I tatuaggi sono disponibili solo su appuntamento",
       "workingHours": "Orari di apertura: Lun-Dom: 10:00–20:00"
     },
     "heroSection": {
@@ -62,13 +63,13 @@
         "thirdCard": {
           "title": "Crescita e Apprendimento",
           "text": "TI INSEGNEREMO",
-          "description": "Vuoi diventare un artista? La formazione presso OblivionTattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
+          "description": "Vuoi diventare un artista? La formazione presso Oblivion Tattoo include pratica su modelli reali, orario flessibile, istruttori esperti e un diploma riconosciuto a livello internazionale. Ottieni non solo conoscenza, ma una professione.",
           "button": "Prenota Ora"
         }
       }
     },
     "ourServicesSection": {
-      "mainTitle": "Studio di tatuaggi a Chisinau OblivionTattoo: Tatuaggi professionali, piercing e trucco permanente.",
+      "mainTitle": "Studio di tatuaggi a Chisinau Oblivion Tattoo: Tatuaggi professionali, piercing e trucco permanente.",
       "title": "I nostri servizi di tatuaggi a Chişinău",
       "description": "Il nostro studio di tatuaggi a Chişinău offre una vasta gamma di servizi — dai tatuaggi e piercing alla copertura di vecchi tatuaggi e trucco permanente. I nostri tatuatori esperti garantiscono qualità, sterilità e un approccio personalizzato.",
       "cards": [
@@ -116,13 +117,13 @@
     },
     "advantagesSection": {
       "text": "I nostri vantaggi",
-      "title": "Perché scegliere OblivionTattoo — Studio di Tatuaggi a Chisinau",
-      "description": "OblivionTattoo è un team di professionisti, ciascuno esperto nel proprio campo: tatuaggi, piercing o trucco permanente. Non ci limitiamo al lavoro tecnico — offriamo un approccio personalizzato per garantire che il risultato rispecchi il tuo stile e le tue aspettative.",
+      "title": "Perché scegliere Oblivion Tattoo — Studio di Tatuaggi a Chisinau",
+      "description": "Oblivion Tattoo è un team di professionisti, ciascuno esperto nel proprio campo: tatuaggi, piercing o trucco permanente. Non ci limitiamo al lavoro tecnico — offriamo un approccio personalizzato per garantire che il risultato rispecchi il tuo stile e le tue aspettative.",
       "extra": "Ogni nostro specialista ha anni di esperienza e continua a formarsi per apprendere le tecniche e i metodi più moderni. Rispettiamo rigorosamente gli standard di sterilità e utilizziamo solo materiali affidabili.",
       "more_text": "Offriamo condizioni trasparenti, prezzi onesti e una sincera attenzione ai dettagli. Prima di iniziare, discutiamo sempre il disegno, le fasi del lavoro e la cura successiva, così da farti sentire sicuro in ogni momento."
     },
     "portfolioSection": {
-      "title": "Portfolio dei tatuatori a Chisinau - OblivionTattoo",
+      "title": "Portfolio dei tatuatori a Chisinau - Oblivion Tattoo",
       "text": "Qui puoi vedere i veri lavori dei nostri artisti. Tatuaggi, piercing, coperture e schizzi — tutto realizzato con attenzione ai dettagli e in condizioni sterili. Siamo orgogliosi della qualità di ogni lavoro.",
       "linkLabel": "Apri la foto in grande",
       "link": "Vedi tutte le foto"
@@ -201,7 +202,7 @@
       "secondButton": "Prenota una consulenza"
     },
     "serviceSection": {
-      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio OblivionTattoo",
+      "title": "Trucco permanente a Chișinău — sopracciglia, labbra e eyeliner nello studio Oblivion Tattoo",
       "text": "Il nostro studio di tatuaggi a Chișinău offre trucco permanente professionale per le donne che vogliono apparire sempre curate. Usiamo tecniche moderne: sopracciglia in polvere, labbra acquerello e eyeliner infracigliare. La procedura è indolore, sicura e offre un risultato naturale da 1,5 a 3 anni.",
       "services": [
         {
@@ -274,7 +275,7 @@
     },
     "gallerySection": {
       "title": "Galleria di Trucco Permanente a Chișinău",
-      "text": "La galleria presenta lavori reali dei professionisti dello studio OblivionTattoo: trucco permanente per sopracciglia, labbra e infracigliare. Tutte le procedure vengono eseguite tenendo conto delle caratteristiche individuali, della forma del viso e del risultato desiderato.",
+      "text": "La galleria presenta lavori reali dei professionisti dello studio Oblivion Tattoo: trucco permanente per sopracciglia, labbra e infracigliare. Tutte le procedure vengono eseguite tenendo conto delle caratteristiche individuali, della forma del viso e del risultato desiderato.",
       "extraText": "Operiamo a Chișinău, utilizziamo tecniche moderne di trucco permanente e prestiamo particolare attenzione alla precisione, alla naturalezza e alla sicurezza."
     }
   },
@@ -675,8 +676,8 @@
           "Il diploma è codificato ed è riconosciuto nella maggior parte dei paesi europei, offrendo ulteriori opportunità di lavoro all’estero."
         ],
         "images": {
-          "alt1": "Logo OblivionTattoo",
-          "alt2": "Logo OblivionTattoo"
+          "alt1": "Logo Oblivion Tattoo",
+          "alt2": "Logo Oblivion Tattoo"
         }
       },
       "pricing": {

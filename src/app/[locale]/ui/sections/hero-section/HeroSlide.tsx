@@ -21,7 +21,6 @@ export const HeroSlide = ({ ...props }: Props) => {
         src={props.imageSrc}
         alt={props.imageAlt}
         fill
-        unoptimized
         priority={props.priority}
         className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
         sizes="100vw"

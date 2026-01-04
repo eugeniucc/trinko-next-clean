@@ -17,7 +17,7 @@ export const HeroSection = async () => {
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <Image
               src="/piercing.webp"
-              alt="Профессиональный пирсинг в студии Oblivion Tattoo Кишинев"
+              alt="виды пирсинга - прокол уха, прокол носа, прокол языка"
               width={400}
               height={400}
               priority
