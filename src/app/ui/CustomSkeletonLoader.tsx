@@ -8,7 +8,7 @@ type SkeletonLoaderProps = {
 export const CustomSkeletonLoader = ({ className }: SkeletonLoaderProps) => {
   return (
     <div className={cn('flex w-full animate-pulse items-center justify-center rounded-md bg-neutral-400', className || '')}>
-      <Image src="/logo.svg" alt="тату салон в Кишиневе Oblivion Tattoo" width={64} height={91} unoptimized />
+      <Image src="/logo.svg" alt="Logo Oblivion Tattoo" width={64} height={91} unoptimized />
     </div>
   )
 }

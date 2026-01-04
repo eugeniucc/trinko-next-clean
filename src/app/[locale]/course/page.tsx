@@ -1,5 +1,6 @@
 import { ContactsSection } from '@/shared/ContactsSection'
 import { withSeo } from '../seo/withSeo'
+import { buildCoursesJsonLd } from './seo/course-json'
 import { CertificateSection } from './ui/CertificateSection'
 import { HeroSection } from './ui/HeroSection'
 
@@ -11,6 +12,13 @@ export default async function Course() {
       <HeroSection />
       <CertificateSection />
       <ContactsSection />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildCoursesJsonLd())
+        }}
+      />
     </main>
   )
 }

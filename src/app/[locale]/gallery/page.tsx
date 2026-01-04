@@ -1,6 +1,7 @@
 import { getImagesService } from '@/lib/image/image.service'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { withSeo } from '../seo/withSeo'
+import { buildGalleryJsonLd } from './seo/gallery-json'
 import { HeroSection } from './ui/HeroSection'
 
 export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
@@ -22,6 +23,13 @@ export default async function Gallery({ searchParams }: GalleryProps) {
     <main className="flex min-h-screen flex-col">
       <HeroSection initialData={data} page={currentPage} limit={limit} />
       <ContactsSection />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildGalleryJsonLd())
+        }}
+      />
     </main>
   )
 }

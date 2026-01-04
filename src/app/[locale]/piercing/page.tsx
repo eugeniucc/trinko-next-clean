@@ -1,4 +1,5 @@
 import { withSeo } from '../seo/withSeo'
+import { buildPiercingServiceJsonLd } from './seo/piercing-json'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
 import { LatestPiercingSection } from './ui/LatestPiercingSection'
@@ -13,6 +14,13 @@ export default async function PiercingPage() {
       <AboutSection />
       <LatestPiercingSection />
       <PricingSection />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildPiercingServiceJsonLd())
+        }}
+      />
     </main>
   )
 }

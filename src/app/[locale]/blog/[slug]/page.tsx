@@ -4,6 +4,7 @@ import { Locale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getBlogPostBySlug } from '@/lib/blog/blog.service'
 import { buildBlogPostMetadata } from './seo/buildBlogPostMetadata'
+import { buildBlogPostJsonLd } from './seo/post-json'
 
 export const dynamic = 'force-dynamic'
 
@@ -43,6 +44,19 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildBlogPostJsonLd({
+              title: post.title,
+              slug: post.slug,
+              createdAt: post.createdAt?.toISOString()
+            })
+          )
+        }}
+      />
     </main>
   )
 }
