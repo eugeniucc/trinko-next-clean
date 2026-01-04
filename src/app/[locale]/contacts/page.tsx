@@ -1,6 +1,9 @@
 import { ContactsSection } from '@/shared/ContactsSection'
+import { withSeo } from '../seo/withSeo'
 import { LocationSection } from '../ui/sections/LocationSection'
 import { HeroSection } from './ui/HeroSection'
+
+export const generateMetadata = withSeo('metadata.contactsPageMetadata', '/contacts')
 
 export default async function Contacts() {
   return (

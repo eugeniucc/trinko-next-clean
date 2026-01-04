@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { Locale, NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
@@ -6,7 +5,6 @@ import { notFound } from 'next/navigation'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
-import { baseMetadata } from '@/lib/seo/seo-seed'
 import { GoogleAnalytics } from './seo/GoogleAnalytics'
 import { LazyJivoChat } from './seo/LazyJivoChat'
 import FooterMenu from './ui/footer/FooterMenu'
@@ -23,10 +21,6 @@ const montserrat = Montserrat({
   weight: ['400', '700'],
   subsets: ['latin']
 })
-
-export const metadata: Metadata = {
-  ...baseMetadata
-}
 
 type LayoutProps = {
   children: ReactNode

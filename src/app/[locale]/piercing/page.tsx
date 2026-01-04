@@ -1,7 +1,10 @@
+import { withSeo } from '../seo/withSeo'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
 import { LatestPiercingSection } from './ui/LatestPiercingSection'
 import { PricingSection } from './ui/PricingSection'
+
+export const generateMetadata = withSeo('metadata.piercingPageMetadata', '/piercing')
 
 export default async function PiercingPage() {
   return (

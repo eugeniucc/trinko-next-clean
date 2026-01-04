@@ -1,6 +1,9 @@
 import { getImagesService } from '@/lib/image/image.service'
 import { ContactsSection } from '@/shared/ContactsSection'
+import { withSeo } from '../seo/withSeo'
 import { HeroSection } from './ui/HeroSection'
+
+export const generateMetadata = withSeo('metadata.galleryPageMetadata', '/gallery')
 
 interface GalleryProps {
   searchParams: Promise<{

@@ -1,8 +1,23 @@
 import parse from 'html-react-parser'
+import { Metadata } from 'next'
+import { Locale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getBlogPostBySlug } from '@/lib/blog/blog.service'
+import { buildBlogPostMetadata } from './seo/buildBlogPostMetadata'
 
 export const dynamic = 'force-dynamic'
+
+type MetadataProps = {
+  params: Promise<{
+    locale: Locale
+    slug: string
+  }>
+}
+
+export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
+  const { locale, slug } = await params
+  return buildBlogPostMetadata({ locale, slug })
+}
 
 type Props = {
   params: Promise<{

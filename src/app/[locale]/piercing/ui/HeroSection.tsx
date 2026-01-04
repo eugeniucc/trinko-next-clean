@@ -16,7 +16,7 @@ export const HeroSection = async () => {
         <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <Image
-              src="/piercing.webp"
+              src="/images/piercingPage/piercing.webp"
               alt="виды пирсинга - прокол уха, прокол носа, прокол языка"
               width={400}
               height={400}
