@@ -12,13 +12,20 @@ const BLOG_PATH_RE = new RegExp(`^/(?:${LOCALES})/blog(?:/|$)`)
 export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
 
+  if (pathname === '/') {
+    const url = req.nextUrl.clone()
+    url.pathname = `/${routing.defaultLocale}`
+    url.search = ''
+    return NextResponse.redirect(url, 301)
+  }
+
   if (BLOG_PATH_RE.test(pathname)) {
     const locale = pathname.split('/')[1]
     if (locale && locale !== BLOG_ONLY_LOCALE) {
       const url = req.nextUrl.clone()
       url.pathname = `/${locale}`
       url.search = ''
-      return NextResponse.redirect(url, 307)
+      return NextResponse.redirect(url, 301)
     }
   }
 
