@@ -21,8 +21,6 @@ export async function buildMetadata({ locale, namespace, path }: BuildMetadataOp
 
   const languages = Object.fromEntries(routing.locales.map((l) => [l, `${BASE_URL}/${l}${normalizedPath}`]))
 
-  languages['x-default'] = `${BASE_URL}/${routing.defaultLocale}${normalizedPath}`
-
   return {
     ...baseMetadata,
 
