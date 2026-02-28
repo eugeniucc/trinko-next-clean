@@ -12,7 +12,7 @@ export default function Map3D() {
     const map = new MapLibreMap({
       container: ref.current,
       style: `https://api.maptiler.com/maps/voyager/style.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`,
-      center: [28.8558081, 47.0146631],
+      center: [28.8473541, 47.0200287],
       zoom: 17,
       pitch: 45,
       bearing: -20
@@ -56,8 +56,7 @@ export default function Map3D() {
       )
 
       const el = document.createElement('a')
-      el.href =
-        'https://www.google.com/maps/place/Oblivion+Tattoo/@47.0152922,28.8552417,18z/data=!4m6!3m5!1s0x40c97d9e976ff8b9:0x377bd476e7ac7a94!8m2!3d47.015286!4d28.855885!16s%2Fg%2F11xvjt6q7_?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D'
+      el.href = 'https://maps.app.goo.gl/mwzBjfDHK3dASGUp7'
       el.target = '_blank'
       el.rel = 'noopener noreferrer'
       el.style.display = 'flex'
@@ -75,7 +74,7 @@ export default function Map3D() {
 
       el.appendChild(logo)
 
-      new Marker({ element: el }).setLngLat([28.85585, 47.0148]).addTo(map)
+      new Marker({ element: el }).setLngLat([28.8473541, 47.0200287]).addTo(map)
     })
 
     return () => map.remove()

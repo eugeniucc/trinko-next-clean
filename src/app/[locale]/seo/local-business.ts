@@ -22,7 +22,7 @@ export function buildLocalBusinessJsonLd() {
 
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'str. Albișoara 4, Atrium Shopping Center',
+      streetAddress: 'str. Tighina 65',
       addressLocality: 'Chișinău',
       addressRegion: 'Chișinău',
       postalCode: 'MD-2001',
