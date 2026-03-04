@@ -6,6 +6,7 @@ import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
 import { GoogleAnalytics } from './seo/GoogleAnalytics'
+import { GoogleTagManager } from './seo/GoogleTagManager'
 import { LazyJivoChat } from './seo/LazyJivoChat'
 import { buildOrganizationJsonLd } from './seo/organization'
 import FooterMenu from './ui/footer/FooterMenu'
@@ -46,6 +47,17 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html lang={locale}>
       <body className={`${roboto.variable} ${montserrat.variable}`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5M92WL6J"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
+        <GoogleTagManager />
+
         <NuqsAdapter>
           <NextIntlClientProvider>
             <HeaderMenu />
