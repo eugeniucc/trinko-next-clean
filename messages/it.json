@@ -101,6 +101,7 @@
     },
     "headerMobile": {
       "description": "Naviga nel menu per scoprire i nostri servizi.",
+      "home": "Home",
       "appointment": "I tatuaggi sono disponibili solo su appuntamento",
       "workingHours": "Orari di apertura: Lun-Dom: 10:00–20:00"
     },

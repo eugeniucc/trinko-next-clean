@@ -23,13 +23,15 @@ const montserrat = Montserrat({
   subsets: ['latin']
 })
 
-type LayoutProps = {
-  children: ReactNode
-  params: Promise<{ locale: Locale }>
-}
+export const revalidate = 5
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
+}
+
+type LayoutProps = {
+  children: ReactNode
+  params: Promise<{ locale: Locale }>
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {

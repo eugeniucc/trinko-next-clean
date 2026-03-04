@@ -43,6 +43,15 @@ export default function MobileMenu() {
 
           <div className="flex-1 overflow-y-auto px-6 py-4">
             <nav className="flex flex-col gap-4">
+              <SheetClose asChild>
+                <Link
+                  href={`/${locale}`}
+                  className={cn('transition-colors duration-300', pathname === `/${locale}` ? 'text-red-500' : 'text-black hover:text-red-500')}
+                >
+                  {t('headerMobile.home')}
+                </Link>
+              </SheetClose>
+
               {filteredLinks.map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link

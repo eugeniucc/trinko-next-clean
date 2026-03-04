@@ -101,6 +101,7 @@
     },
     "headerMobile": {
       "description": "Navighează prin meniu pentru a explora serviciile noastre.",
+      "home": "Acasă",
       "appointment": "Tatuajele se efectuează doar pe bază de programare.",
       "workingHours": "Program: L-D: 10:00 - 20:00"
     },
