@@ -14,12 +14,22 @@ type BuildMetadataOptions = {
 export async function buildMetadata({ locale, namespace, path }: BuildMetadataOptions): Promise<Metadata> {
   const t = await getTranslations(namespace)
 
-  const normalizedPath = path ? path.replace(/\/$/, '') : ''
-  const canonicalUrl = `${BASE_URL}/${locale}${normalizedPath}`
+  const normalizedPath = path && path !== '/' ? path.replace(/\/$/, '') : ''
+
+  const buildUrl = (locale: string) => {
+    const isDefault = locale === routing.defaultLocale
+    const localePart = isDefault ? '' : `/${locale}`
+
+    return `${BASE_URL}${localePart}${normalizedPath}` || BASE_URL
+  }
+
+  const canonicalUrl = buildUrl(locale)
+
+  const languages = Object.fromEntries(routing.locales.map((l) => [l, buildUrl(l)]))
+
+  languages['x-default'] = buildUrl(routing.defaultLocale)
 
   const ogImage = `${BASE_URL}/og_image.png`
-
-  const languages = Object.fromEntries(routing.locales.map((l) => [l, `${BASE_URL}/${l}${normalizedPath}`]))
 
   return {
     ...baseMetadata,
