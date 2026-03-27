@@ -11,6 +11,11 @@ type Props = {
 
 const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p)
 
+const getLocalizedPath = (locale: string, href: string) => {
+  if (locale === 'ru') return normalize(href)
+  return normalize(`/${locale}${href}`)
+}
+
 export default function NavigationLink({ locale, links }: Props) {
   const pathnameRaw = usePathname()
   const pathname = normalize(pathnameRaw)
@@ -20,14 +25,15 @@ export default function NavigationLink({ locale, links }: Props) {
       {links.map(({ label, href }) => {
         if (locale !== 'ru' && href.startsWith('/blog')) return null
 
-        const fullPath = normalize(`/${locale}${href}`)
+        const fullPath = getLocalizedPath(locale, href)
         const isPermanent = href === '/permanent'
+
         const isActive = pathname === fullPath || pathname.startsWith(fullPath + '/')
 
         return (
           <li key={href}>
             <Link
-              href={`/${locale}${href}`}
+              href={getLocalizedPath(locale, href)}
               className={cn(
                 'transition-colors duration-300',
                 isActive ? (isPermanent ? 'text-fuchsia-500' : 'text-red-500') : 'text-white hover:text-red-500'

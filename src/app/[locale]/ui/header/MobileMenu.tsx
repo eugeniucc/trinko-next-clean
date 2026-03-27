@@ -7,6 +7,10 @@ import { usePathname } from 'next/navigation'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 
+const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p)
+
+const defaultLocale = 'ru'
+
 export default function MobileMenu() {
   const t = useTranslations('homePage')
   const tSpeed = useTranslations('pageSpeedLabel')
@@ -15,9 +19,15 @@ export default function MobileMenu() {
   const burgerAria = tSpeed('burgerMenu')
 
   const locale = useLocale()
-  const pathname = usePathname()
 
-  const withLocale = (href: string) => (href.startsWith('/') ? `/${locale}${href}` : href)
+  const pathnameRaw = usePathname()
+  const pathname = normalize(pathnameRaw)
+
+  const withLocale = (href: string) => {
+    if (!href.startsWith('/')) return href
+    return locale === defaultLocale ? normalize(href) : normalize(`/${locale}${href}`)
+  }
+
   const isActive = (href: string) => {
     const full = withLocale(href)
     return pathname === full || pathname.startsWith(full + '/')
@@ -33,6 +43,7 @@ export default function MobileMenu() {
         <SheetTrigger aria-label={burgerAria}>
           <Menu className="text-red-500" />
         </SheetTrigger>
+
         <SheetContent className="flex h-full flex-col p-0" side="left">
           <SheetHeader className="gap-4 px-6 pt-6">
             <SheetTitle>
@@ -45,8 +56,11 @@ export default function MobileMenu() {
             <nav className="flex flex-col gap-4">
               <SheetClose asChild>
                 <Link
-                  href={`/${locale}`}
-                  className={cn('transition-colors duration-300', pathname === `/${locale}` ? 'text-red-500' : 'text-black hover:text-red-500')}
+                  href={locale === defaultLocale ? '/' : `/${locale}`}
+                  className={cn(
+                    'transition-colors duration-300',
+                    pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-red-500'
+                  )}
                 >
                   {t('headerMobile.home')}
                 </Link>
@@ -79,6 +93,7 @@ export default function MobileMenu() {
                   <PhoneOutgoing className="size-5 shrink-0" />
                   <span>+373 79 146 506</span>
                 </a>
+
                 <p className="text-center text-sm text-red-500">{t('headerMobile.appointment')}</p>
                 <p className="text-center text-sm text-gray-600">{t('headerMobile.workingHours')}</p>
               </div>
@@ -93,6 +108,7 @@ export default function MobileMenu() {
                   <Instagram className="size-5 shrink-0" />
                   <span className="text-sm">Instagram</span>
                 </a>
+
                 <a
                   href="https://t.me/TrinkoTattoo"
                   target="_blank"
@@ -102,6 +118,7 @@ export default function MobileMenu() {
                   <Send className="size-5 shrink-0" />
                   <span className="text-sm">Telegram</span>
                 </a>
+
                 <a
                   href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
                   target="_blank"
@@ -111,6 +128,7 @@ export default function MobileMenu() {
                   <MessageCircleMore className="size-5 shrink-0" />
                   <span className="text-sm">WhatsApp</span>
                 </a>
+
                 <a
                   href="viber://chat?number=%2B37379146506"
                   target="_blank"
