@@ -552,17 +552,17 @@
           "title": "Piercing all’orecchio",
           "icon": "👂",
           "services": [
-            { "name": "Lobo (earlobe)", "price": 100 },
-            { "name": "Helix (cartilagine superiore)", "price": 150 },
-            { "name": "Forward Helix", "price": 150 },
-            { "name": "Tragus", "price": 150 },
-            { "name": "Antitragus", "price": 150 },
-            { "name": "Conch", "price": 150 },
-            { "name": "Daith", "price": 150 },
-            { "name": "Rook", "price": 150 },
-            { "name": "Snug", "price": 150 },
-            { "name": "Orbital (2 fori)", "price": 300 },
-            { "name": "Industrial (2 fori)", "price": 350 }
+            { "name": "Lobo (earlobe)", "price": 150 },
+            { "name": "Helix (cartilagine superiore)", "price": 200 },
+            { "name": "Forward Helix", "price": 250 },
+            { "name": "Tragus", "price": 200 },
+            { "name": "Antitragus", "price": 200 },
+            { "name": "Conch", "price": 200 },
+            { "name": "Daith", "price": 250 },
+            { "name": "Rook", "price": 250 },
+            { "name": "Snug", "price": 250 },
+            { "name": "Orbital (2 fori)", "price": 250 },
+            { "name": "Industrial (2 fori)", "price": 300 }
           ]
         },
         {
@@ -570,7 +570,7 @@
           "icon": "👃",
           "services": [
             { "name": "Sopracciglio", "price": 250 },
-            { "name": "Nostril (ala del naso)", "price": 150 },
+            { "name": "Nostril (ala del naso)", "price": 200 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -578,9 +578,9 @@
           "title": "Piercing alle labbra",
           "icon": "👄",
           "services": [
-            { "name": "Labret (1 foro)", "price": 150 },
-            { "name": "Monroe / Madonna", "price": 150 },
-            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Labret (1 foro)", "price": 200 },
+            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 fori)", "price": 300 },
             { "name": "Spider bites (2 fori)", "price": 300 },
             { "name": "Angel bites (2 fori)", "price": 300 },

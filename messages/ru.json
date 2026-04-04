@@ -564,17 +564,17 @@
           "title": "Пирсинг ушей",
           "icon": "👂",
           "services": [
-            { "name": "Мочка (Lobe)", "price": 100 },
-            { "name": "Верхний хрящ (Helix)", "price": 150 },
-            { "name": "Forward Helix", "price": 150 },
-            { "name": "Tragus", "price": 150 },
-            { "name": "Anti-Tragus", "price": 150 },
-            { "name": "Conch", "price": 150 },
-            { "name": "Daith", "price": 150 },
-            { "name": "Rook", "price": 150 },
-            { "name": "Snug", "price": 150 },
-            { "name": "Орбитал (2 прокола)", "price": 300 },
-            { "name": "Industrial (2 прокола)", "price": 350 }
+            { "name": "Мочка (Lobe)", "price": 150 },
+            { "name": "Верхний хрящ (Helix)", "price": 200 },
+            { "name": "Forward Helix", "price": 250 },
+            { "name": "Tragus", "price": 200 },
+            { "name": "Anti-Tragus", "price": 200 },
+            { "name": "Conch", "price": 200 },
+            { "name": "Daith", "price": 250 },
+            { "name": "Rook", "price": 250 },
+            { "name": "Snug", "price": 250 },
+            { "name": "Орбитал (2 прокола)", "price": 250 },
+            { "name": "Industrial (2 прокола)", "price": 300 }
           ]
         },
         {
@@ -582,7 +582,7 @@
           "icon": "👃",
           "services": [
             { "name": "Бровь", "price": 250 },
-            { "name": "Нос крыло (nostril)", "price": 150 },
+            { "name": "Нос крыло (nostril)", "price": 200 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -590,9 +590,9 @@
           "title": "Пирсинг губ",
           "icon": "👄",
           "services": [
-            { "name": "Лабрет (1 прокол)", "price": 150 },
-            { "name": "Monroe / Madonna", "price": 150 },
-            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Лабрет (1 прокол)", "price": 200 },
+            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 прокола)", "price": 300 },
             { "name": "Spider bites (2 прокола)", "price": 300 },
             { "name": "Angel bites (2 прокола)", "price": 300 },

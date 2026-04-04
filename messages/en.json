@@ -552,17 +552,17 @@
           "title": "Ear piercing",
           "icon": "👂",
           "services": [
-            { "name": "Earlobe (Lobe)", "price": 100 },
-            { "name": "Helix (upper cartilage)", "price": 150 },
-            { "name": "Forward Helix", "price": 150 },
-            { "name": "Tragus", "price": 150 },
-            { "name": "Anti-Tragus", "price": 150 },
-            { "name": "Conch", "price": 150 },
-            { "name": "Daith", "price": 150 },
-            { "name": "Rook", "price": 150 },
-            { "name": "Snug", "price": 150 },
-            { "name": "Orbital (2 piercings)", "price": 300 },
-            { "name": "Industrial (2 piercings)", "price": 350 }
+            { "name": "Earlobe (Lobe)", "price": 150 },
+            { "name": "Helix (upper cartilage)", "price": 200 },
+            { "name": "Forward Helix", "price": 250 },
+            { "name": "Tragus", "price": 200 },
+            { "name": "Anti-Tragus", "price": 200 },
+            { "name": "Conch", "price": 200 },
+            { "name": "Daith", "price": 250 },
+            { "name": "Rook", "price": 250 },
+            { "name": "Snug", "price": 250 },
+            { "name": "Orbital (2 piercings)", "price": 250 },
+            { "name": "Industrial (2 piercings)", "price": 300 }
           ]
         },
         {
@@ -570,7 +570,7 @@
           "icon": "👃",
           "services": [
             { "name": "Eyebrow", "price": 250 },
-            { "name": "Nostril (side of nose)", "price": 150 },
+            { "name": "Nostril (side of nose)", "price": 200 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -578,9 +578,9 @@
           "title": "Lip piercing",
           "icon": "👄",
           "services": [
-            { "name": "Labret (single)", "price": 150 },
-            { "name": "Monroe / Madonna", "price": 150 },
-            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Labret (single)", "price": 200 },
+            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 piercings)", "price": 300 },
             { "name": "Spider bites (2 piercings)", "price": 300 },
             { "name": "Angel bites (2 piercings)", "price": 300 },

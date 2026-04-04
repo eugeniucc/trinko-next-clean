@@ -552,17 +552,17 @@
           "title": "Piercing urechi",
           "icon": "👂",
           "services": [
-            { "name": "Lob (lobul urechii)", "price": 100 },
-            { "name": "Helix (cartilaj superior)", "price": 150 },
-            { "name": "Forward Helix", "price": 150 },
-            { "name": "Tragus", "price": 150 },
-            { "name": "Anti-Tragus", "price": 150 },
-            { "name": "Conch", "price": 150 },
-            { "name": "Daith", "price": 150 },
-            { "name": "Rook", "price": 150 },
-            { "name": "Snug", "price": 150 },
-            { "name": "Orbital (2 perforații)", "price": 300 },
-            { "name": "Industrial (2 perforații)", "price": 350 }
+            { "name": "Lob (lobul urechii)", "price": 150 },
+            { "name": "Helix (cartilaj superior)", "price": 200 },
+            { "name": "Forward Helix", "price": 200 },
+            { "name": "Tragus", "price": 200 },
+            { "name": "Anti-Tragus", "price": 200 },
+            { "name": "Conch", "price": 200 },
+            { "name": "Daith", "price": 250 },
+            { "name": "Rook", "price": 250 },
+            { "name": "Snug", "price": 250 },
+            { "name": "Orbital (2 perforații)", "price": 250 },
+            { "name": "Industrial (2 perforații)", "price": 300 }
           ]
         },
         {
@@ -570,7 +570,7 @@
           "icon": "👃",
           "services": [
             { "name": "Sprânceană", "price": 250 },
-            { "name": "Nostril (aripa nasului)", "price": 150 },
+            { "name": "Nostril (aripa nasului)", "price": 200 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -578,9 +578,9 @@
           "title": "Piercing buze",
           "icon": "👄",
           "services": [
-            { "name": "Labret (1 perforație)", "price": 150 },
-            { "name": "Monroe / Madonna", "price": 150 },
-            { "name": "Medusa (philtrum)", "price": 150 },
+            { "name": "Labret (1 perforație)", "price": 200 },
+            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 perforații)", "price": 300 },
             { "name": "Spider bites (2 perforații)", "price": 300 },
             { "name": "Angel bites (2 perforații)", "price": 300 },
