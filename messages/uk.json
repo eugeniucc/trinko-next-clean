@@ -553,14 +553,15 @@
           "icon": "👂",
           "services": [
             { "name": "Мочка (Lobe)", "price": 150 },
+            { "name": "Флет", "price": 200 },
             { "name": "Хелікс (верхній хрящ)", "price": 200 },
             { "name": "Forward Helix", "price": 250 },
-            { "name": "Траґус", "price": 200 },
-            { "name": "Антитраґус", "price": 200 },
+            { "name": "Траґус", "price": 250 },
+            { "name": "Антитраґус", "price": 250 },
             { "name": "Conch", "price": 200 },
             { "name": "Daith", "price": 250 },
             { "name": "Rook", "price": 250 },
-            { "name": "Snug", "price": 250 },
+            { "name": "Snug", "price": 300 },
             { "name": "Орбітал (2 проколи)", "price": 250 },
             { "name": "Індастріал (2 проколи)", "price": 300 }
           ]
@@ -570,7 +571,8 @@
           "icon": "👃",
           "services": [
             { "name": "Брова", "price": 250 },
-            { "name": "Ніздря (nostril)", "price": 200 },
+            { "name": "Брідж (Bridge)", "price": 300 },
+            { "name": "Ніздря (nostril)", "price": 250 },
             { "name": "Септум", "price": 250 }
           ]
         },
@@ -579,7 +581,9 @@
           "icon": "👄",
           "services": [
             { "name": "Лабрет (1 прокол)", "price": 200 },
-            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Смайл (Smiley)", "price": 250 },
+            { "name": "Вертикальний лабрет", "price": 250 },
+            { "name": "Monroe / Madonna", "price": 250 },
             { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 проколи)", "price": 300 },
             { "name": "Spider bites (2 проколи)", "price": 300 },
@@ -594,7 +598,8 @@
           "icon": "✨",
           "services": [
             { "name": "Язик", "price": 250 },
-            { "name": "Пупок", "price": 300 }
+            { "name": "Пупок", "price": 300 },
+            { "name": "Пірсинг сосків (2 шт.)", "price": 600 }
           ]
         }
       ],

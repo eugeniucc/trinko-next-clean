@@ -13,11 +13,24 @@ export const LatestPiercingSection = async () => {
     loading: () => <CustomLoading />
   })
 
-  const images = await getImagesService({
-    page: 1,
-    limit: 8,
-    type: ImageType.PIERCING
-  })
+  const images = [
+    {
+      src: '/images/piercingPage/piercing-price-1.webp',
+      alt: 'test'
+    },
+    {
+      src: '/images/piercingPage/piercing-price-2.webp',
+      alt: 'test'
+    },
+    {
+      src: '/images/piercingPage/piercing-price-3.webp',
+      alt: 'test'
+    },
+    {
+      src: '/images/piercingPage/piercing-price-4.webp',
+      alt: 'test'
+    }
+  ]
 
   return (
     <section className="bg-zinc-900">
@@ -34,7 +47,7 @@ export const LatestPiercingSection = async () => {
 
         <Lightbox gallery="piercing-portfolio">
           <div id="piercing-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {images.items.map((photo, i) => (
+            {images.map((photo, i) => (
               <FramerMotionContainer
                 key={i}
                 className="flex flex-col gap-12"
@@ -42,7 +55,7 @@ export const LatestPiercingSection = async () => {
                 animate={{ opacity: 1, y: 0 }}
                 duration={0.5}
               >
-                <LatestPiercingCard src={photo.url} alt={photo.url} />
+                <LatestPiercingCard src={photo.src} alt={photo.alt} />
               </FramerMotionContainer>
             ))}
           </div>

@@ -553,14 +553,15 @@
           "icon": "👂",
           "services": [
             { "name": "Lobo (earlobe)", "price": 150 },
+            { "name": "Flat", "price": 200 },
             { "name": "Helix (cartilagine superiore)", "price": 200 },
             { "name": "Forward Helix", "price": 250 },
-            { "name": "Tragus", "price": 200 },
-            { "name": "Antitragus", "price": 200 },
+            { "name": "Tragus", "price": 250 },
+            { "name": "Antitragus", "price": 250 },
             { "name": "Conch", "price": 200 },
             { "name": "Daith", "price": 250 },
             { "name": "Rook", "price": 250 },
-            { "name": "Snug", "price": 250 },
+            { "name": "Snug", "price": 300 },
             { "name": "Orbital (2 fori)", "price": 250 },
             { "name": "Industrial (2 fori)", "price": 300 }
           ]
@@ -570,7 +571,8 @@
           "icon": "👃",
           "services": [
             { "name": "Sopracciglio", "price": 250 },
-            { "name": "Nostril (ala del naso)", "price": 200 },
+            { "name": "Bridge", "price": 300 },
+            { "name": "Nostril (ala del naso)", "price": 250 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -579,7 +581,9 @@
           "icon": "👄",
           "services": [
             { "name": "Labret (1 foro)", "price": 200 },
-            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Smiley", "price": 250 },
+            { "name": "Labret verticale", "price": 250 },
+            { "name": "Monroe / Madonna", "price": 250 },
             { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 fori)", "price": 300 },
             { "name": "Spider bites (2 fori)", "price": 300 },
@@ -594,7 +598,8 @@
           "icon": "✨",
           "services": [
             { "name": "Lingua", "price": 250 },
-            { "name": "Ombelico", "price": 300 }
+            { "name": "Ombelico", "price": 300 },
+            { "name": "Piercing ai capezzoli (coppia)", "price": 600 }
           ]
         }
       ],

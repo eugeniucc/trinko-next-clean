@@ -565,14 +565,15 @@
           "icon": "👂",
           "services": [
             { "name": "Мочка (Lobe)", "price": 150 },
+            { "name": "Флэт", "price": 200 },
             { "name": "Верхний хрящ (Helix)", "price": 200 },
             { "name": "Forward Helix", "price": 250 },
-            { "name": "Tragus", "price": 200 },
-            { "name": "Anti-Tragus", "price": 200 },
+            { "name": "Tragus", "price": 250 },
+            { "name": "Anti-Tragus", "price": 250 },
             { "name": "Conch", "price": 200 },
             { "name": "Daith", "price": 250 },
             { "name": "Rook", "price": 250 },
-            { "name": "Snug", "price": 250 },
+            { "name": "Snug", "price": 300 },
             { "name": "Орбитал (2 прокола)", "price": 250 },
             { "name": "Industrial (2 прокола)", "price": 300 }
           ]
@@ -582,7 +583,8 @@
           "icon": "👃",
           "services": [
             { "name": "Бровь", "price": 250 },
-            { "name": "Нос крыло (nostril)", "price": 200 },
+            { "name": "Бридж (Bridge)", "price": 300 },
+            { "name": "Нос крыло (nostril)", "price": 250 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -591,7 +593,9 @@
           "icon": "👄",
           "services": [
             { "name": "Лабрет (1 прокол)", "price": 200 },
-            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Смайл (Smiley)", "price": 250 },
+            { "name": "Вертикальный лабрет", "price": 250 },
+            { "name": "Monroe / Madonna", "price": 250 },
             { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 прокола)", "price": 300 },
             { "name": "Spider bites (2 прокола)", "price": 300 },
@@ -606,7 +610,8 @@
           "icon": "✨",
           "services": [
             { "name": "Язык", "price": 250 },
-            { "name": "Пупок", "price": 300 }
+            { "name": "Пупок", "price": 300 },
+            { "name": "Пирсинг сосков (2 шт.) ", "price": 600 }
           ]
         }
       ],

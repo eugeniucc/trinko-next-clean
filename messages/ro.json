@@ -553,14 +553,15 @@
           "icon": "👂",
           "services": [
             { "name": "Lob (lobul urechii)", "price": 150 },
+            { "name": "Flat", "price": 200 },
             { "name": "Helix (cartilaj superior)", "price": 200 },
             { "name": "Forward Helix", "price": 200 },
-            { "name": "Tragus", "price": 200 },
-            { "name": "Anti-Tragus", "price": 200 },
+            { "name": "Tragus", "price": 250 },
+            { "name": "Anti-Tragus", "price": 250 },
             { "name": "Conch", "price": 200 },
             { "name": "Daith", "price": 250 },
             { "name": "Rook", "price": 250 },
-            { "name": "Snug", "price": 250 },
+            { "name": "Snug", "price": 300 },
             { "name": "Orbital (2 perforații)", "price": 250 },
             { "name": "Industrial (2 perforații)", "price": 300 }
           ]
@@ -570,7 +571,8 @@
           "icon": "👃",
           "services": [
             { "name": "Sprânceană", "price": 250 },
-            { "name": "Nostril (aripa nasului)", "price": 200 },
+            { "name": "Bridge", "price": 300 },
+            { "name": "Nostril (aripa nasului)", "price": 250 },
             { "name": "Septum", "price": 250 }
           ]
         },
@@ -579,7 +581,9 @@
           "icon": "👄",
           "services": [
             { "name": "Labret (1 perforație)", "price": 200 },
-            { "name": "Monroe / Madonna", "price": 200 },
+            { "name": "Smiley", "price": 250 },
+            { "name": "Labret vertical", "price": 250 },
+            { "name": "Monroe / Madonna", "price": 250 },
             { "name": "Medusa (philtrum)", "price": 200 },
             { "name": "Snake bites (2 perforații)", "price": 300 },
             { "name": "Spider bites (2 perforații)", "price": 300 },
@@ -594,7 +598,8 @@
           "icon": "✨",
           "services": [
             { "name": "Limbă", "price": 250 },
-            { "name": "Buric", "price": 300 }
+            { "name": "Buric", "price": 300 },
+            { "name": "Piercing mameloane (2 buc.)", "price": 600 }
           ]
         }
       ],
