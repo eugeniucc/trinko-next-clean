@@ -1,9 +1,24 @@
 import Image from 'next/image'
-import { PermanentCardProps } from '../types/permanent.types'
-import { PickmeLink } from './PickmeLink'
+
+export type PermanentCardData = {
+  badge: string
+  title: string
+  text: string
+  subtitle: string
+  list: string[]
+  priceTitle: string
+  price: string
+  timeTitle: string
+  time: string
+  healTitle: string
+  heal: string
+  correctionTitle: string
+  correction: string
+  button: string
+}
 
 type Props = {
-  item: PermanentCardProps
+  item: PermanentCardData
   image: string
 }
 
@@ -62,7 +77,14 @@ export const ProductCard = ({ item, image }: Props) => {
           </div>
         </div>
 
-        <PickmeLink className="w-full px-2 text-center sm:px-4" text={item.button} />
+        <a
+          href="https://t.me/TrinkoTattoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto w-full rounded-full bg-linear-to-r from-rose-500 to-pink-500 px-2 py-3 text-center text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-4"
+        >
+          {item.button}
+        </a>
       </div>
     </article>
   )

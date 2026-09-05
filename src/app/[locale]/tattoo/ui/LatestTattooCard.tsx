@@ -1,6 +1,7 @@
 import { Expand } from 'lucide-react'
 import Image from 'next/image'
-import { SUPABASE_S3_URL } from '@/lib/config'
+
+const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
 type Props = {
   src: string
@@ -20,7 +21,7 @@ export const LatestTattooCard = (props: Props) => {
         sizes="(max-width: 640px) 100vw, (max-width: 1536px) 50vw, 25vw"
         alt={props.alt}
       />
-      <Expand className="absolute top-1/2 left-1/2 size-20 -translate-x-1/2 -translate-y-1/2 text-white" />
+      <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />
     </a>
   )
 }

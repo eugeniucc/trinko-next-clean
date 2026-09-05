@@ -1,9 +1,41 @@
-import { getTranslations } from 'next-intl/server'
-import { AutoPlayOnView } from '@/app/ui/CustomVideoLoadingInView'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+'use client'
 
-export const AdvantagesSection = async () => {
-  const t = await getTranslations('homePage.advantagesSection')
+import { useInView } from 'react-intersection-observer'
+import { useEffect, useRef } from 'react'
+import { useTranslations } from 'next-intl'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+
+type VideoProps = {
+  src: string
+  poster?: string
+  title: string
+}
+
+const AutoPlayVideo = ({ src, poster, title }: VideoProps) => {
+  const videoRef = useRef<HTMLVideoElement | null>(null)
+  const { ref, inView } = useInView({ threshold: 0.25 })
+
+  useEffect(() => {
+    if (!videoRef.current) return
+    if (inView) {
+      videoRef.current.preload = 'auto'
+      videoRef.current.play().catch(() => {})
+    } else {
+      videoRef.current.pause()
+    }
+  }, [inView])
+
+  return (
+    <div ref={ref} className="aspect-video overflow-hidden rounded-lg">
+      <video ref={videoRef} muted loop playsInline preload="none" poster={poster} title={title} aria-label={title} className="h-full w-full object-cover">
+        <source src={src} type="video/mp4" />
+      </video>
+    </div>
+  )
+}
+
+export const AdvantagesSection = () => {
+  const t = useTranslations('homePage.advantagesSection')
 
   return (
     <section>
@@ -15,7 +47,7 @@ export const AdvantagesSection = async () => {
             <p>{t('description')}</p>
           </FramerMotionContainer>
           <div className="aspect-video overflow-hidden rounded-lg">
-            <AutoPlayOnView
+            <AutoPlayVideo
               title="gotovaya-tatu-posle-seansa"
               src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/gotovaya-tatu-posle-seansa_a8bcjg.mp4'}
             />
@@ -26,7 +58,7 @@ export const AdvantagesSection = async () => {
         </div>
         <div className="flex flex-col gap-6">
           <div className="aspect-video overflow-hidden rounded-lg">
-            <AutoPlayOnView
+            <AutoPlayVideo
               title="process-nabivki-tatu-kishinev"
               src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/process-nabivki-tatu-kishinev_ghvst5.mp4'}
             />
@@ -35,7 +67,7 @@ export const AdvantagesSection = async () => {
             <p>{t('more_text')}</p>
           </FramerMotionContainer>
           <div className="aspect-video overflow-hidden rounded-lg">
-            <AutoPlayOnView
+            <AutoPlayVideo
               title="seans-tatu-ot-nachala-do-konca"
               src={'https://res.cloudinary.com/da3wbhyei/video/upload/v1754937202/seans-tatu-ot-nachala-do-konca_hxoex5.mp4'}
             />

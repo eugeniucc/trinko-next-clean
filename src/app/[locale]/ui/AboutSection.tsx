@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('homePage.aboutSection')
@@ -24,7 +23,14 @@ export const AboutSection = async () => {
             </h2>
             <h3 className="text-xl font-semibold text-white">{t('text')}</h3>
             <p className="text-base text-white">{t('description')}</p>
-            <CustomLinkAppointment text={t('button')} />
+            <a
+              href="https://t.me/TrinkoTattoo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+            >
+              {t('button')}
+            </a>
           </div>
         </FramerMotionContainer>
       </div>

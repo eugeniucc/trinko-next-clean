@@ -1,9 +1,14 @@
 import { LucideIcon } from 'lucide-react'
-import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { HeroCardProps } from '../types/tattoo.types'
+
+export type HeroCardData = {
+  title: string
+  text: string
+  list: string[]
+  button: string
+}
 
 type Props = {
-  item: HeroCardProps
+  item: HeroCardData
   Icon: LucideIcon
 }
 export const HeroCard = ({ item, Icon }: Props) => {
@@ -24,7 +29,9 @@ export const HeroCard = ({ item, Icon }: Props) => {
             ))}
           </ul>
         </div>
-        <CustomLinkAppointment className="w-full bg-red-500 text-center text-white hover:text-white" text={item.button} />
+        <a href="https://t.me/TrinkoTattoo" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
+          {item.button}
+        </a>
       </div>
     </div>
   )

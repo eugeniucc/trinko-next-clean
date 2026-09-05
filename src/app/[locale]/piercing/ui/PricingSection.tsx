@@ -1,7 +1,6 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type Service = { name: string; price: number; hasBase?: boolean }
 type Category = { title: string; icon: string; services: Service[] }
@@ -62,7 +61,14 @@ export const PricingSection = async () => {
                         <span className="text-white">{t('labels.currency')}</span>
                       </div>
 
-                      <CustomLinkAppointment className="w-full text-center sm:w-fit" text={t('buttons.book')} />
+                      <a
+                        href="https://t.me/TrinkoTattoo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"
+                      >
+                        {t('buttons.book')}
+                      </a>
                     </div>
                   </div>
                 ))}

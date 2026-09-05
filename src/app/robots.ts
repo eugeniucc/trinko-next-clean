@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { BASE_URL } from '@/lib/config'
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
 
 export default function robots(): MetadataRoute.Robots {
   return {

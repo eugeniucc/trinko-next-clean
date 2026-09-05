@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { CustomLinkAppointment } from '@/app/ui/CustomLinkAppointment'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const CertificateSection = async () => {
   const t = await getTranslations('coursesPage.certificateSection')
@@ -57,7 +56,14 @@ export const CertificateSection = async () => {
                   ))}
                 </ul>
               </div>
-              <CustomLinkAppointment className="w-full text-center sm:w-fit" text={t('pricing.tattooPM.cta')} />
+              <a
+                href="https://t.me/TrinkoTattoo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"
+              >
+                {t('pricing.tattooPM.cta')}
+              </a>
             </div>
 
             <div className="flex flex-col gap-6 rounded-lg bg-zinc-800 p-4 text-white">
@@ -72,7 +78,14 @@ export const CertificateSection = async () => {
                   ))}
                 </ul>
               </div>
-              <CustomLinkAppointment className="w-full text-center sm:w-fit" text={t('pricing.piercing.cta')} />
+              <a
+                href="https://t.me/TrinkoTattoo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"
+              >
+                {t('pricing.piercing.cta')}
+              </a>
             </div>
           </div>
         </FramerMotionContainer>

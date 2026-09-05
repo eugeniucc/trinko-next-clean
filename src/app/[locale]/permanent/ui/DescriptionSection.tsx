@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const DescriptionSection = () => {
   const t = useTranslations('permanentPage.descriptionSection')

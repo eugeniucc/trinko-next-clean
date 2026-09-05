@@ -1,12 +1,15 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { heroCardsIcons } from '../mocks/mocks'
-import { HeroCard } from './HeroCard'
+import type { LucideIcon } from 'lucide-react'
+import { Gem, PenTool, SprayCan } from 'lucide-react'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import { HeroCard, HeroCardData } from './HeroCard'
+
+const heroCardsIcons: LucideIcon[] = [Gem, PenTool, SprayCan]
 
 export const HeroSection = async () => {
   const t = await getTranslations('tattooPage')
 
-  const raw = t.raw('heroSection.heroCards') as { title: string; text: string; list: string[]; button: string }[]
+  const raw = t.raw('heroSection.heroCards') as HeroCardData[]
 
   return (
     <section className="flex flex-col gap-10 bg-zinc-900">

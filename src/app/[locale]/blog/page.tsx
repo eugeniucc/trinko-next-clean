@@ -1,7 +1,11 @@
 import { routing } from '@/i18n/routing'
+import dayjs from 'dayjs'
+import parse, { Element } from 'html-react-parser'
+import { Calendar } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { withSeo } from '@/lib/metadata'
 import prisma from '@/lib/prisma'
-import { HeroSection } from './ui/HeroSection'
 
 export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog', [routing.defaultLocale])
 
@@ -12,7 +16,52 @@ export default async function BlogPage() {
 
   return (
     <main className="flex flex-col">
-      <HeroSection initialData={blog} />
+      <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30">
+        <div className="container flex flex-col gap-10">
+          <div className="flex flex-col gap-6 text-white">
+            <h1 className="text-center text-3xl font-bold break-all text-white sm:text-4xl">Наш Блог: Актуальные Статьи и Глубокий Анализ</h1>
+            <p className="text-center text-xl break-all text-gray-200">
+              Добро пожаловать в блог, где мы делимся экспертными знаниями, последними новостями и подробными руководствами по всем аспектам. Мы стремимся предоставлять ценный контент, который поможет вам расти и развиваться.
+            </p>
+            <h2 className="text-center">Последние Публикации, Которые Вы Не Должны Пропустить</h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {blog.items.map((post) => {
+              const contentWithoutH1 = parse(post.content, {
+                replace(domNode) {
+                  if (domNode instanceof Element && domNode.name === 'h1') {
+                    return <></>
+                  }
+                }
+              })
+
+              return (
+                <article key={post.id} className="flex flex-col gap-6 rounded-md border border-gray-200 p-4">
+                  <Image className="mx-auto" width={64} height={91} src="/logo.svg" alt="Logo Oblivion Tattoo" unoptimized />
+                  <h3 className="line-clamp-2 text-2xl font-bold text-white">{post.title}</h3>
+                  <div className="line-clamp-6 text-white">{contentWithoutH1}</div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="size-5 shrink-0 text-red-500" />
+                    <span className="text-white">{dayjs(post.createdAt).format('DD.MM.YYYY')}</span>
+                  </div>
+                  <Link target="_blank" href={`/blog/${post.slug}`} className="w-full rounded-md bg-red-500 px-6 py-3 text-center font-bold text-white hover:text-white">
+                    Читать далее
+                  </Link>
+                </article>
+              )
+            })}
+          </div>
+
+          <div className="flex flex-col gap-6 text-white">
+            <h3 className="text-lg font-bold">Почему Наш Блог Полезен Для Вас?</h3>
+            <p>
+              Мы предлагаем уникальный контент, написанный экспертами, чтобы предоставить вам актуальную и проверенную информацию. Наши статьи помогут
+              вам.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

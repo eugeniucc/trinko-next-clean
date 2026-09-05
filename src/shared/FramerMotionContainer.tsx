@@ -14,7 +14,8 @@ type Props = {
 
 export const FramerMotionContainer = ({ ...props }: Props) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
+    rootMargin: '0px 0px -10% 0px',
     triggerOnce: true
   })
 
@@ -23,7 +24,7 @@ export const FramerMotionContainer = ({ ...props }: Props) => {
       ref={ref}
       className={props.className}
       initial={{ opacity: props.initial.opacity, y: props.initial.y }}
-      animate={inView ? { opacity: props.animate.opacity, y: props.animate.y } : {}}
+      animate={inView ? { opacity: props.animate.opacity, y: props.animate.y } : { opacity: props.initial.opacity, y: props.initial.y }}
       transition={{ duration: props.duration }}
     >
       {props.children}

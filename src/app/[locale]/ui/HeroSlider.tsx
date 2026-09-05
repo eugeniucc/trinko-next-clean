@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
@@ -10,7 +11,49 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { HeroSlide } from './HeroSlide'
+
+type SlideProps = {
+  imageSrc: string
+  imageAlt: string
+  priority: boolean
+  title: string
+  text: string
+  description: string
+  button: string
+}
+
+const HeroSlide = ({ imageSrc, imageAlt, priority, title, text, description, button }: SlideProps) => {
+  const t = useTranslations('homePage.heroSection.cards')
+
+  return (
+    <div className="relative min-h-screen w-full">
+      <Image
+        src={imageSrc}
+        alt={imageAlt}
+        fill
+        priority={priority}
+        className="absolute inset-0 -z-10 h-full w-full object-cover grayscale"
+        sizes="100vw"
+      />
+      <div className="pointer-events-none absolute inset-0 z-10 bg-black/50" />
+      <div className="relative z-20 container flex min-h-screen items-center justify-center">
+        <div className="flex w-full flex-col gap-6 text-white">
+          <p className="text-3xl font-bold md:text-5xl">{t(`${title}.title`)}</p>
+          <p className="text-2xl font-bold lg:text-8xl">{t(`${text}.text`)}</p>
+          <p className="max-w-3xl text-lg">{t(`${description}.description`)}</p>
+          <a
+            href="https://t.me/TrinkoTattoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+          >
+            {t(`${button}.button`)}
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const HeroSlider = () => {
   const t = useTranslations('pageSpeedLabel.homeSlider')

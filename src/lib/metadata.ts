@@ -3,7 +3,11 @@ import type { Locale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
-import { BASE_URL } from '@/lib/config'
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
+
+if (!BASE_URL) {
+  throw new Error('NEXT_PUBLIC_DOMAIN_URL is required')
+}
 import prisma from '@/lib/prisma'
 
 const baseMetadata: Metadata = {

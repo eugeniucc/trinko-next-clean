@@ -2,12 +2,12 @@
 
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
-import { CustomInView } from '@/app/ui/CustomInView'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cn } from '@/lib/utils'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import { Skeleton } from '@/components/ui/skeleton'
 
-const Map = dynamic(() => import('@/app/ui/MapLibre'), {
-  loading: () => <div className="h-100 w-full animate-pulse bg-zinc-800" aria-label="Loading map" />,
+const Map = dynamic(() => import('./MapLibre'), {
+  loading: () => <Skeleton className="h-100 w-full rounded-none bg-zinc-800" aria-label="Loading map" />,
   ssr: false
 })
 
@@ -31,9 +31,9 @@ export const LocationSection = ({ className }: Props) => {
         </FramerMotionContainer>
       </div>
 
-      <CustomInView minHeight={400} rootMargin="200px">
+      <div className="relative min-h-100 bg-zinc-800">
         <Map />
-      </CustomInView>
+      </div>
     </section>
   )
 }

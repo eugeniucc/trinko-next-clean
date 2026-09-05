@@ -2,17 +2,18 @@ import { Expand } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { SUPABASE_S3_URL } from '@/lib/config'
+import Link from 'next/link'
 import prisma from '@/lib/prisma'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+
+const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
 export const PortfolioSection = async () => {
   const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 6 })
 
   const t = await getTranslations('homePage.portfolioSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
+  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
 
   return (
     <section className="flex flex-col gap-10 bg-zinc-900">
@@ -42,13 +43,18 @@ export const PortfolioSection = async () => {
                     aria-label={`${t('linkLabel')} ${image.alt}`}
                   >
                     <Image className="h-full w-full rounded-md object-cover" src={full} width={450} height={400} alt={image.alt} />
-                    <Expand className="absolute top-1/2 left-1/2 size-20 -translate-x-1/2 -translate-y-1/2 text-white" />
+                    <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />
                   </a>
                 )
               })}
             </div>
           </Lightbox>
-          <CustomLinkRouter href="/gallery" text={t('link')} />
+          <Link
+            href="/gallery"
+            className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+          >
+            {t('link')}
+          </Link>
         </div>
       </div>
     </section>

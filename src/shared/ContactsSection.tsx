@@ -1,6 +1,6 @@
-import { Clock, Facebook, Instagram, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send } from 'lucide-react'
+import { Camera, Clock, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send, UsersRound } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const ContactsSection = () => {
   const t = useTranslations('homePage.contactsSection')
@@ -41,8 +41,8 @@ export const ContactsSection = () => {
                   <Phone className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('contacts.title')}</p>
-                    <a href="tel:+37379146506" className="text-white">
-                      <p className="text-lg text-white duration-200 hover:text-red-500">+373 79 146 506</p>
+                    <a href="tel:+37379146506" className="inline-block text-white">
+                      <span className="block text-lg text-white duration-200 hover:text-red-500">+373 79 146 506</span>
                     </a>
                     <p className="mt-1 text-sm text-zinc-400">{t('contacts.text')}</p>
                   </div>
@@ -60,7 +60,7 @@ export const ContactsSection = () => {
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <Instagram className="size-5 shrink-0" />
+                  <Camera className="size-5 shrink-0" />
                   <span>Instagram</span>
                 </a>
                 <a
@@ -69,7 +69,7 @@ export const ContactsSection = () => {
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
                 >
-                  <Facebook className="size-5 shrink-0" />
+                  <UsersRound className="size-5 shrink-0" />
 
                   <span>Facebook</span>
                 </a>

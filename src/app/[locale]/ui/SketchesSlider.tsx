@@ -6,7 +6,7 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { SUPABASE_S3_URL } from '@/lib/config'
+const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 import type { Image as ImageRecord } from '@/generated/prisma/client'
 
 type Props = {

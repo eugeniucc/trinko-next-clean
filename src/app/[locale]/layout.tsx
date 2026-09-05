@@ -1,16 +1,15 @@
-import { Locale, NextIntlClientProvider, hasLocale } from 'next-intl'
-import { setRequestLocale } from 'next-intl/server'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { Locale, hasLocale } from 'next-intl'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
 import { notFound } from 'next/navigation'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ReactNode } from 'react'
 import { routing } from '@/i18n/routing'
-import { GoogleTagManager } from '@/lib/GoogleTagManager'
 import { LazyJivoChat } from '@/lib/LazyJivoChat'
 import { buildLocalBusinessJsonLd } from '@/lib/jsonld'
 import FooterMenu from '@/widgets/footer/FooterMenu'
 import HeaderMenu from '@/widgets/header/HeaderMenu'
+import { Providers } from './providers'
 
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -23,8 +22,6 @@ const montserrat = Montserrat({
   weight: ['400', '700'],
   subsets: ['latin']
 })
-
-export const revalidate = 5
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -43,6 +40,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   }
 
   setRequestLocale(locale)
+  const messages = await getMessages()
 
   return (
     <html lang={locale}>
@@ -56,17 +54,15 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           />
         </noscript>
 
-        <GoogleTagManager />
-
-        <NuqsAdapter>
-          <NextIntlClientProvider>
-            <HeaderMenu />
-            {children}
-            <FooterMenu />
-          </NextIntlClientProvider>
-        </NuqsAdapter>
+        <Providers locale={locale} messages={messages}>
+          <HeaderMenu />
+          {children}
+          <FooterMenu />
+        </Providers>
 
         <GoogleAnalytics gaId="G-N2KV7LWE10" />
+        <GoogleTagManager gtmId="GTM-5M92WL6J" />
+
         <LazyJivoChat />
 
         <script

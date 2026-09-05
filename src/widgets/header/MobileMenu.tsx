@@ -1,6 +1,6 @@
 'use client'
 
-import { Instagram, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
+import { Camera, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -105,7 +105,7 @@ export default function MobileMenu() {
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
                   rel="noopener noreferrer"
                 >
-                  <Instagram className="size-5 shrink-0" />
+                  <Camera className="size-5 shrink-0" />
                   <span className="text-sm">Instagram</span>
                 </a>
 

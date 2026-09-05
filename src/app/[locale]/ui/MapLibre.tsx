@@ -1,8 +1,10 @@
 'use client'
 
-import { Map as MapLibreMap, Marker, NavigationControl } from 'maplibre-gl'
+import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useRef } from 'react'
+
+setWorkerUrl('/maplibre/maplibre-gl-worker.mjs')
 
 export default function Map3D() {
   const ref = useRef<HTMLDivElement>(null)
@@ -18,9 +20,14 @@ export default function Map3D() {
       bearing: -20
     })
 
+    map.on('error', (event) => {
+      console.error('MapLibre error:', event.error)
+    })
+
     map.addControl(new NavigationControl(), 'top-right')
 
     map.on('load', () => {
+      map.resize()
       map.addSource('terrain', {
         type: 'raster-dem',
         url: `https://api.maptiler.com/tiles/terrain-rgb/tiles.json?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
@@ -88,5 +95,5 @@ export default function Map3D() {
     return () => map.remove()
   }, [])
 
-  return <div ref={ref} className="h-125 w-full" />
+  return <div ref={ref} className="relative h-125 min-h-125 w-full" />
 }

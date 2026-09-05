@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
-import { BASE_URL } from '@/lib/config'
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
 
 const businessId = `${BASE_URL}/#tattoo-parlor`
 

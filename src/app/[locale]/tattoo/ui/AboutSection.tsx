@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const AboutSection = async () => {
   const t = await getTranslations('tattooPage.aboutSection')

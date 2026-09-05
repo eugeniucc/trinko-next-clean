@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import { ServiceCard } from './ServiceCard'
 
 export const ServicesSection = async () => {

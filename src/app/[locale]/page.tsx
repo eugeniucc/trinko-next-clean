@@ -1,19 +1,19 @@
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { AboutSection } from './ui/sections/AboutSection'
-import { AdvantagesSection } from './ui/sections/AdvantagesSection'
-import { LocationSection } from './ui/sections/LocationSection'
-import { PortfolioSection } from './ui/sections/PortfolioSection'
-import { HeroSection } from './ui/sections/hero-section/HeroSection'
-import { OurServicesSection } from './ui/sections/our-services-section/OurServicesSection'
-import { SketchesSection } from './ui/sections/sketches-section/SketchesSection'
+import { AboutSection } from './ui/AboutSection'
+import { AdvantagesSection } from './ui/AdvantagesSection'
+import HeroSlider from './ui/HeroSlider'
+import { LocationSection } from './ui/LocationSection'
+import { OurServicesSection } from './ui/OurServicesSection'
+import { PortfolioSection } from './ui/PortfolioSection'
+import { SketchesSection } from './ui/SketchesSection'
 
 export const generateMetadata = withSeo('metadata.homePageMetadata')
 
 export default async function Home() {
   return (
     <main className="flex flex-col">
-      <HeroSection />
+      <HeroSlider />
       <OurServicesSection />
       <AboutSection />
       <SketchesSection />

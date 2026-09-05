@@ -1,6 +1,6 @@
 import { Award, Shield, Sparkles } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type WhyItem = { icon: 'shield' | 'award' | 'sparkles'; title: string; text: string }
 type CatalogItem = { category: string; description: string; services: string[] }

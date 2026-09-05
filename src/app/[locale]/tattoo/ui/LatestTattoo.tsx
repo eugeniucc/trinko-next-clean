@@ -1,15 +1,15 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { ContactsSection } from '@/shared/ContactsSection'
-import { LatestTattooCard } from './LatestTattooCard'
+import Link from 'next/link'
 import prisma from '@/lib/prisma'
+import { ContactsSection } from '@/shared/ContactsSection'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import { LatestTattooCard } from './LatestTattooCard'
 
 export const LatestTattoo = async () => {
   const t = await getTranslations('tattooPage.latestTattooSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
+  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
 
   const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 8 })
 
@@ -40,7 +40,12 @@ export const LatestTattoo = async () => {
             ))}
           </div>
         </Lightbox>
-        <CustomLinkRouter href="/gallery" className="mx-auto block w-fit" text={t('cta')} />
+        <Link
+          href="/gallery"
+          className="mx-auto block w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+        >
+          {t('cta')}
+        </Link>
         <ContactsSection />
       </div>
     </section>

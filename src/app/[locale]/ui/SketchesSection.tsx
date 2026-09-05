@@ -1,14 +1,16 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { ImageType } from '@/generated/prisma/client'
 import prisma from '@/lib/prisma'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import { Skeleton } from '@/components/ui/skeleton'
 
 const SketchesSlider = dynamic(() => import('./SketchesSlider'), {
   loading: () => (
     <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-      {[...Array(3)].map((_, i) => <CustomSkeletonLoader className="h-95" key={i} />)}
+      {[...Array(3)].map((_, i) => (
+        <Skeleton className="h-95 w-full bg-zinc-800" key={i} />
+      ))}
     </div>
   )
 })

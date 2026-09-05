@@ -1,13 +1,13 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
+import Link from 'next/link'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import { LatestPiercingCard } from './LatestPiercingCard'
 
 export const LatestPiercingSection = async () => {
   const t = await getTranslations('piercingPage.latestPiercingSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
+  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
 
   const images = [
     {
@@ -56,7 +56,12 @@ export const LatestPiercingSection = async () => {
             ))}
           </div>
         </Lightbox>
-        <CustomLinkRouter href="/contacts" className="mx-auto" text={t('contactsLink')} />
+        <Link
+          href="/contacts"
+          className="mx-auto w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
+        >
+          {t('contactsLink')}
+        </Link>
       </div>
     </section>
   )

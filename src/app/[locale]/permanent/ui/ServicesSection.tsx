@@ -1,12 +1,11 @@
 import { useTranslations } from 'next-intl'
-import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { PermanentCardProps } from '../types/permanent.types'
-import { ProductCard } from './ProductCard'
+import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import { PermanentCardData, ProductCard } from './ProductCard'
 
 export const ServicesSection = () => {
   const t = useTranslations('permanentPage.serviceSection')
 
-  const list = t.raw('services') as PermanentCardProps[]
+  const list = t.raw('services') as PermanentCardData[]
 
   const images = [
     '/images/permanentPage/permanent-brovi-kishinev.webp',
