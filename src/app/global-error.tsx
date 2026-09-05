@@ -1,11 +1,9 @@
 'use client'
 
-import * as Sentry from '@sentry/nextjs'
 import { useEffect } from 'react'
 
 export default function GlobalError({ error }: { error: Error & { digest?: string } }) {
   useEffect(() => {
-    Sentry.captureException(error)
     console.error(error)
   }, [error])
 
@@ -17,7 +15,7 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
             <div className="flex flex-col gap-4">
               <h1 className="text-destructive text-4xl font-bold tracking-tight">Critical Error</h1>
               <p className="text-muted-foreground">
-                A serious error occurred. We have been notified and are working on a fix. Please try again later.
+                A serious error occurred. Please try again later.
               </p>
               {error.digest && <p className="text-muted-foreground text-sm">Error reference: {error.digest}</p>}
             </div>

@@ -1,4 +1,6 @@
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Locale, hasLocale } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
@@ -59,6 +61,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           {children}
           <FooterMenu />
         </Providers>
+
+        <Analytics />
+        <SpeedInsights />
 
         <GoogleAnalytics gaId="G-N2KV7LWE10" />
         <GoogleTagManager gtmId="GTM-5M92WL6J" />

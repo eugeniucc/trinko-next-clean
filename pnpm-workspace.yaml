@@ -1,7 +1,6 @@
 allowBuilds:
   '@parcel/watcher': true
   '@prisma/engines': true
-  '@sentry/cli': true
   '@swc/core': true
   esbuild: true
   prisma: true
@@ -10,7 +9,6 @@ allowBuilds:
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@prisma/engines'
-  - '@sentry/cli'
   - '@swc/core'
   - esbuild
   - prisma

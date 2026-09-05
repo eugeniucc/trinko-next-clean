@@ -1,4 +1,3 @@
-import { BlogCardSkeleton } from '@/app/[locale]/blog/ui/BlogCardSkeleton'
 import { Skeleton } from '@/components/ui/skeleton'
 
 export default function BlogLoading() {
@@ -14,7 +13,7 @@ export default function BlogLoading() {
           <Skeleton className="mx-auto h-6 w-2/3 bg-zinc-800" />
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {[...Array(6)].map((_, i) => <BlogCardSkeleton key={i} />)}
+          {[...Array(6)].map((_, i) => <Skeleton key={i} className="h-100 w-full border border-zinc-700 bg-zinc-800" />)}
         </div>
       </div>
     </section>
