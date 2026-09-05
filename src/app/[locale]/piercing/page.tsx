@@ -1,5 +1,5 @@
-import { withSeo } from '../seo/withSeo'
-import { buildPiercingServiceJsonLd } from './seo/piercing-json'
+import { buildPiercingServiceJsonLd } from '@/lib/jsonld'
+import { withSeo } from '@/lib/metadata'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
 import { LatestPiercingSection } from './ui/LatestPiercingSection'
@@ -7,7 +7,8 @@ import { PricingSection } from './ui/PricingSection'
 
 export const generateMetadata = withSeo('metadata.piercingPageMetadata', '/piercing')
 
-export default async function PiercingPage() {
+export default async function PiercingPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
   return (
     <main className="flex flex-col">
       <HeroSection />
@@ -18,7 +19,7 @@ export default async function PiercingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buildPiercingServiceJsonLd())
+          __html: JSON.stringify(await buildPiercingServiceJsonLd(locale))
         }}
       />
     </main>

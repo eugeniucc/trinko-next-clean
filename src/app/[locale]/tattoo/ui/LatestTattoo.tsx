@@ -1,23 +1,17 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
 import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { getImagesService } from '@/lib/image/image.service'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { LatestTattooCard } from './LatestTattooCard'
+import prisma from '@/lib/prisma'
 
 export const LatestTattoo = async () => {
   const t = await getTranslations('tattooPage.latestTattooSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
-    loading: () => <CustomLoading />
-  })
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
 
-  const images = await getImagesService({
-    page: 1,
-    limit: 8
-  })
+  const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 8 })
 
   return (
     <section className="bg-zinc-900">
@@ -33,15 +27,15 @@ export const LatestTattoo = async () => {
         </FramerMotionContainer>
         <Lightbox gallery="home-portfolio">
           <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-            {images.items.map((photo, i) => (
+            {images.map((photo) => (
               <FramerMotionContainer
-                key={i}
+                key={photo.id}
                 className="flex flex-col gap-12"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 duration={0.5}
               >
-                <LatestTattooCard src={photo.url} alt={photo.url} />
+                <LatestTattooCard src={photo.url} alt={photo.alt} />
               </FramerMotionContainer>
             ))}
           </div>

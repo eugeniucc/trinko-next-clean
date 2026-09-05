@@ -1,23 +1,18 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { ImageType } from '@/generated/prisma/client'
 import { SUPABASE_S3_URL } from '@/lib/config'
-import { getImagesService } from '@/lib/image/image.service'
+import { ImageType } from '@/generated/prisma/client'
 import { LatestGalleryCard } from '../../gallery/ui/LatestGalleryCard'
+import prisma from '@/lib/prisma'
 
 export const GallerySection = async () => {
   const t = await getTranslations('permanentPage.gallerySection')
 
-  const images = await getImagesService({
-    page: 1,
-    limit: 6,
-    type: ImageType.PERMANENT
-  })
+  const images = await prisma.image.findMany({ where: { type: ImageType.PERMANENT }, orderBy: { order: 'asc' }, take: 6 })
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), { loading: () => <CustomLoading /> })
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
 
   return (
     <section className="bg-zinc-900 pb-20">
@@ -30,9 +25,9 @@ export const GallerySection = async () => {
 
         <Lightbox gallery="gallery-permanent">
           <div id="gallery-permanent" className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-            {images.items.length === 0
+            {images.length === 0
               ? [...Array(6)].map((_, i) => <CustomSkeletonLoader className="h-100" key={i} />)
-              : images.items.map((photo) => (
+              : images.map((photo) => (
                   <FramerMotionContainer key={photo.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
                     <LatestGalleryCard src={`${SUPABASE_S3_URL}/${photo.url}`} alt={photo.alt} />
                   </FramerMotionContainer>

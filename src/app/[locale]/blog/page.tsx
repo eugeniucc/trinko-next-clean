@@ -1,11 +1,14 @@
-import { getBlogPosts } from '@/lib/blog/blog.service'
-import { withSeo } from '../seo/withSeo'
+import { routing } from '@/i18n/routing'
+import { withSeo } from '@/lib/metadata'
+import prisma from '@/lib/prisma'
 import { HeroSection } from './ui/HeroSection'
 
-export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog')
+export const generateMetadata = withSeo('metadata.blogPageMetadata', '/blog', [routing.defaultLocale])
 
 export default async function BlogPage() {
-  const blog = await getBlogPosts({ page: 1, limit: 9 })
+  const blog = {
+    items: await prisma.blogPost.findMany({ orderBy: { id: 'desc' }, take: 9 })
+  }
 
   return (
     <main className="flex flex-col">

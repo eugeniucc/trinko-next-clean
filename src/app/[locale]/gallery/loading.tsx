@@ -15,7 +15,7 @@ export default function GalleryLoading() {
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {[...Array(8)].map((_, i) => (
-            <CustomSkeletonLoader className="h-100" key={i} />
+            <CustomSkeletonLoader className="h-105" key={i} />
           ))}
         </div>
 

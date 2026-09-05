@@ -1,37 +1,41 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { useTransition } from 'react'
 import dynamic from 'next/dynamic'
 import { parseAsInteger, useQueryState } from 'nuqs'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { CustomPagination } from '@/app/ui/CustomPagination'
-import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { SUPABASE_S3_URL } from '@/lib/config'
-import { ImagesResponse } from '@/lib/image/image.types'
+import type { Image } from '@/generated/prisma/client'
+import { GalleryLoadingOverlay } from './GalleryLoadingOverlay'
 import { LatestGalleryCard } from './LatestGalleryCard'
 
 type Props = {
-  initialData: ImagesResponse
+  initialData: { items: Image[]; totalPages: number }
   limit: number
   page: number
 }
 
 export function HeroSection({ initialData, limit, page }: Props) {
   const t = useTranslations('galleryPage')
+  const [isPending, startTransition] = useTransition()
 
   const [, setPage] = useQueryState('page', parseAsInteger.withDefault(1))
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
-    loading: () => <CustomLoading />
-  })
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
 
   const totalPages = initialData.totalPages
   const images = initialData.items
+  const isLoading = isPending || images.length === 0
+  const imageSlots = [...images, ...Array(Math.max(0, limit - images.length)).fill(null)]
 
   function handlePageChange(nextPage: number) {
-    setPage(nextPage, {
-      shallow: false
+    startTransition(() => {
+      void setPage(nextPage, {
+        shallow: false,
+        scroll: false
+      })
     })
   }
 
@@ -50,14 +54,20 @@ export function HeroSection({ initialData, limit, page }: Props) {
         </FramerMotionContainer>
 
         <Lightbox gallery="gallery-portfolio">
-          <div id="gallery-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {images.length === 0
-              ? [...Array(limit)].map((_, i) => <CustomSkeletonLoader className="h-100" key={i} />)
-              : images.map((photo) => (
+          <div className="relative" aria-busy={isLoading}>
+            <div id="gallery-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {imageSlots.map((photo, i) =>
+                photo ? (
                   <FramerMotionContainer key={photo.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
                     <LatestGalleryCard src={`${SUPABASE_S3_URL}/${photo.url}`} alt={photo.alt} />
                   </FramerMotionContainer>
-                ))}
+                ) : (
+                  <div className="h-105" key={`empty-${i}`} />
+                )
+              )}
+            </div>
+
+            {isLoading && <GalleryLoadingOverlay />}
           </div>
         </Lightbox>
 

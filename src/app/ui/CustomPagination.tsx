@@ -58,7 +58,6 @@ export const CustomPagination = (props: Props) => {
               e.preventDefault()
               if (page > 1) {
                 onPageChange(page - 1)
-                window.scrollTo(0, 0)
               }
             }}
             aria-disabled={page === 1}
@@ -78,7 +77,6 @@ export const CustomPagination = (props: Props) => {
                 onClick={(e) => {
                   e.preventDefault()
                   onPageChange(p as number)
-                  window.scrollTo(0, 0)
                 }}
               >
                 {p}
@@ -95,7 +93,6 @@ export const CustomPagination = (props: Props) => {
               e.preventDefault()
               if (page < totalPages) {
                 onPageChange(page + 1)
-                window.scrollTo(0, 0)
               }
             }}
             aria-disabled={page === totalPages}

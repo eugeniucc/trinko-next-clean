@@ -1,6 +1,5 @@
+import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { buildLocalBusinessJsonLd } from './seo/local-business'
-import { withSeo } from './seo/withSeo'
 import { AboutSection } from './ui/sections/AboutSection'
 import { AdvantagesSection } from './ui/sections/AdvantagesSection'
 import { LocationSection } from './ui/sections/LocationSection'
@@ -22,13 +21,6 @@ export default async function Home() {
       <PortfolioSection />
       <ContactsSection />
       <LocationSection />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buildLocalBusinessJsonLd())
-        }}
-      />
     </main>
   )
 }

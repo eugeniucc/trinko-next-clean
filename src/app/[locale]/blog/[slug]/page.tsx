@@ -2,9 +2,9 @@ import parse from 'html-react-parser'
 import { Metadata } from 'next'
 import { Locale } from 'next-intl'
 import { notFound } from 'next/navigation'
-import { getBlogPostBySlug } from '@/lib/blog/blog.service'
-import { buildBlogPostMetadata } from './seo/buildBlogPostMetadata'
-import { buildBlogPostJsonLd } from './seo/post-json'
+import { buildBlogPostJsonLd } from '@/lib/jsonld'
+import { buildBlogPostMetadata } from '@/lib/metadata'
+import prisma from '@/lib/prisma'
 
 export const dynamic = 'force-dynamic'
 
@@ -22,14 +22,15 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
 
 type Props = {
   params: Promise<{
+    locale: Locale
     slug: string
   }>
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params
+  const { locale, slug } = await params
 
-  const post = await getBlogPostBySlug(slug)
+  const post = await prisma.blogPost.findUnique({ where: { slug: slug.toLowerCase() } })
 
   if (!post) {
     notFound()
@@ -52,7 +53,9 @@ export default async function BlogPostPage({ params }: Props) {
             buildBlogPostJsonLd({
               title: post.title,
               slug: post.slug,
-              createdAt: post.createdAt?.toISOString()
+              locale,
+              createdAt: post.createdAt.toISOString(),
+              updatedAt: post.updatedAt.toISOString()
             })
           )
         }}

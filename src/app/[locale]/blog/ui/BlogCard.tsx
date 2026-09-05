@@ -3,10 +3,10 @@ import parse, { Element } from 'html-react-parser'
 import { Calendar } from 'lucide-react'
 import Image from 'next/image'
 import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { BlogPostListItem } from '@/lib/blog/blog.types'
+import type { BlogPost } from '@/generated/prisma/client'
 
 interface Props {
-  item: BlogPostListItem
+  item: BlogPost
 }
 
 export const BlogCard = ({ item }: Props) => {

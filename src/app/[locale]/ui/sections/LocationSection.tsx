@@ -3,12 +3,11 @@
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { CustomInView } from '@/app/ui/CustomInView'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { cn } from '@/lib/utils'
 
 const Map = dynamic(() => import('@/app/ui/MapLibre'), {
-  loading: () => <CustomLoading />,
+  loading: () => <div className="h-100 w-full animate-pulse bg-zinc-800" aria-label="Loading map" />,
   ssr: false
 })
 

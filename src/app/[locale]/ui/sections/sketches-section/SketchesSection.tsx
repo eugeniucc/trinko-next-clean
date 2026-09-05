@@ -1,18 +1,20 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { CustomLoading } from '@/app/ui/CustomLoading'
+import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { ImageType } from '@/generated/prisma/client'
-import { getImagesService } from '@/lib/image/image.service'
+import prisma from '@/lib/prisma'
 
-const SketchesSlider = dynamic(() => import('./SketchesSlider'), { loading: () => <CustomLoading /> })
+const SketchesSlider = dynamic(() => import('./SketchesSlider'), {
+  loading: () => (
+    <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      {[...Array(3)].map((_, i) => <CustomSkeletonLoader className="h-95" key={i} />)}
+    </div>
+  )
+})
 
 export const SketchesSection = async () => {
-  const images = await getImagesService({
-    page: 1,
-    limit: 6,
-    type: ImageType.SKETCH
-  })
+  const images = await prisma.image.findMany({ where: { type: ImageType.SKETCH }, orderBy: { order: 'asc' }, take: 6 })
 
   const t = await getTranslations('homePage.sketchesSection')
 
@@ -23,7 +25,7 @@ export const SketchesSection = async () => {
           <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
           <p className="max-w-2xl text-white">{t('description')}</p>
         </FramerMotionContainer>
-        {images && <SketchesSlider items={images.items} />}
+        <SketchesSlider items={images} />
       </div>
     </section>
   )

@@ -1,8 +1,8 @@
-import { GetBlogPostResult } from '@/lib/blog/blog.types'
+import type { BlogPost } from '@/generated/prisma/client'
 import { BlogCard } from './BlogCard'
 
 type Props = {
-  initialData: GetBlogPostResult
+  initialData: { items: BlogPost[] }
 }
 
 export const HeroSection = ({ initialData }: Props) => {

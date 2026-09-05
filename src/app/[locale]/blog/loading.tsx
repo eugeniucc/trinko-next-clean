@@ -1,4 +1,4 @@
-import { CustomSkeletonLoader } from '@/app/ui/CustomSkeletonLoader'
+import { BlogCardSkeleton } from '@/app/ui/BlogCardSkeleton'
 
 export default function BlogLoading() {
   return (
@@ -13,9 +13,7 @@ export default function BlogLoading() {
           <div className="mx-auto h-6 w-2/3 animate-pulse rounded bg-zinc-800" />
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {[...Array(6)].map((_, i) => (
-            <CustomSkeletonLoader className="h-100" key={i} />
-          ))}
+          {[...Array(6)].map((_, i) => <BlogCardSkeleton key={i} />)}
         </div>
       </div>
     </section>

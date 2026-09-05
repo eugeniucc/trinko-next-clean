@@ -1,6 +1,6 @@
+import { buildPermanentMakeupServiceJsonLd } from '@/lib/jsonld'
+import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { withSeo } from '../seo/withSeo'
-import { buildPermanentMakeupServiceJsonLd } from './seo/permanent-json'
 import { DescriptionSection } from './ui/DescriptionSection'
 import { GallerySection } from './ui/GallerySection'
 import { HeroSection } from './ui/HeroSection'
@@ -8,7 +8,8 @@ import { ServicesSection } from './ui/ServicesSection'
 
 export const generateMetadata = withSeo('metadata.permanentPageMetadata', '/permanent')
 
-export default async function PermanentPage() {
+export default async function PermanentPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
   return (
     <main className="flex flex-col">
       <HeroSection />
@@ -20,7 +21,7 @@ export default async function PermanentPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buildPermanentMakeupServiceJsonLd())
+          __html: JSON.stringify(await buildPermanentMakeupServiceJsonLd(locale))
         }}
       />
     </main>

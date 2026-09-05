@@ -3,17 +3,16 @@ import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
 import { SUPABASE_S3_URL } from '@/lib/config'
-import { getImagesService } from '@/lib/image/image.service'
+import prisma from '@/lib/prisma'
 
 export const PortfolioSection = async () => {
-  const images = await getImagesService({ page: 1, limit: 6 })
+  const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 6 })
 
   const t = await getTranslations('homePage.portfolioSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), { loading: () => <CustomLoading /> })
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
 
   return (
     <section className="flex flex-col gap-10 bg-zinc-900">
@@ -30,7 +29,7 @@ export const PortfolioSection = async () => {
         <div className="flex flex-col items-center gap-10">
           <Lightbox gallery="home-portfolio">
             <div id="home-portfolio" className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-              {images.items.map((image) => {
+              {images.map((image) => {
                 const full = `${SUPABASE_S3_URL}/${image.url}`
 
                 return (

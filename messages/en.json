@@ -25,8 +25,8 @@
       "twitterDescription": "Order a unique tattoo at Oblivion Tattoo. From concept to execution. All styles: from minimalism to realism."
     },
     "piercingPageMetadata": {
-      "title": "Piercing in Chișinău | Professional and Safe | Oblivion Tattoo Studio",
-      "description": "Safe piercing at the professional Oblivion Tattoo studio in Chișinău. Ear, nose, navel, eyebrow and other piercings. Sterile single-use tools, certified artists, jewelry selection and aftercare consultation.",
+      "title": "Piercing in Chișinău — prices from 150 MDL | Oblivion Tattoo",
+      "description": "Piercing in Chișinău at Oblivion Tattoo: different types of piercing, sterile single-use tools and quality jewelry. Prices from 150 MDL. Book online.",
       "openGraphTitle": "Piercing at Oblivion Tattoo Studio (Chișinău) — safe and professional",
       "openGraphDescription": "Get pierced by experienced professionals. We use only certified materials and single-use needles. Full healing guidance provided. Online booking available.",
       "twitterTitle": "Piercing in Chișinău | Oblivion Tattoo Studio",
@@ -34,7 +34,7 @@
     },
     "coursePageMetadata": {
       "title": "Tattoo and Permanent Makeup Courses in Chișinău | Training from Scratch | Oblivion Tattoo Academy",
-      "description": "Professional courses in Tattooing, Permanent Makeup and Piercing at Oblivion Tattoo studio in Chișinău. Training from scratch, hands-on practice with models, certificate included. Become a востребed professional.",
+      "description": "Professional courses in Tattooing, Permanent Makeup and Piercing at Oblivion Tattoo studio in Chișinău. Training from scratch, hands-on practice with models, certificate included. Become a sought-after professional.",
       "openGraphTitle": "Courses for Tattoo Artists and Permanent Makeup Masters | Oblivion Tattoo Academy",
       "openGraphDescription": "Training for future professions. Custom programs, individual approach and everything you need to start a career. Enroll in tattoo, piercing and permanent makeup courses.",
       "twitterTitle": "Tattoo and Permanent Makeup Courses in Chișinău | Oblivion Tattoo",
@@ -616,6 +616,7 @@
     },
     "latestPiercingSection": {
       "title": "Latest Piercing Works in Chisinau Oblivion Tattoo",
+      "contactsLink": "Contact us and book",
       "description": "Here we publish recent photos of our artists’ work: ear piercings (lobe, helix, tragus, conch, daith), nose (nostril, septum), lips (labret, medusa, monroe), tongue, and navel. All piercings are performed under sterile conditions with single-use needles and titanium/surgical steel jewelry. Tap an image to view it in full size."
     }
   },

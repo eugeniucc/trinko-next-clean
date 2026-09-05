@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 type SkeletonLoaderProps = {
@@ -6,9 +5,5 @@ type SkeletonLoaderProps = {
 }
 
 export const CustomSkeletonLoader = ({ className }: SkeletonLoaderProps) => {
-  return (
-    <div className={cn('flex w-full animate-pulse items-center justify-center rounded-md bg-neutral-400', className || '')}>
-      <Image src="/logo.svg" alt="Logo Oblivion Tattoo" width={64} height={91} unoptimized />
-    </div>
-  )
+  return <div className={cn('w-full animate-pulse rounded-md bg-zinc-800', className || '')} />
 }

@@ -1,34 +1,30 @@
 import { getTranslations } from 'next-intl/server'
 import dynamic from 'next/dynamic'
-import { CustomLoading } from '@/app/ui/CustomLoading'
 import { FramerMotionContainer } from '@/app/ui/FramerMotionContainer'
-import { ImageType } from '@/generated/prisma/client'
-import { getImagesService } from '@/lib/image/image.service'
+import { CustomLinkRouter } from '@/app/ui/CustomLinkRouter'
 import { LatestPiercingCard } from './LatestPiercingCard'
 
 export const LatestPiercingSection = async () => {
   const t = await getTranslations('piercingPage.latestPiercingSection')
 
-  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'), {
-    loading: () => <CustomLoading />
-  })
+  const Lightbox = dynamic(() => import('@/app/ui/Lightbox'))
 
   const images = [
     {
       src: '/images/piercingPage/piercing-price-1.webp',
-      alt: 'test'
+      alt: 'Схема пирсинга уха с видами проколов и ценами'
     },
     {
       src: '/images/piercingPage/piercing-price-2.webp',
-      alt: 'test'
+      alt: 'Схема пирсинга лица с видами проколов и ценами'
     },
     {
       src: '/images/piercingPage/piercing-price-3.webp',
-      alt: 'test'
+      alt: 'Схема пирсинга губ с видами проколов и ценами'
     },
     {
       src: '/images/piercingPage/piercing-price-4.webp',
-      alt: 'test'
+      alt: 'Схема других видов пирсинга с ценами'
     }
   ]
 
@@ -60,6 +56,7 @@ export const LatestPiercingSection = async () => {
             ))}
           </div>
         </Lightbox>
+        <CustomLinkRouter href="/contacts" className="mx-auto" text={t('contactsLink')} />
       </div>
     </section>
   )

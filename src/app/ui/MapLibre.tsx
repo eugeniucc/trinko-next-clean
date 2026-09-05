@@ -74,7 +74,15 @@ export default function Map3D() {
 
       el.appendChild(logo)
 
-      new Marker({ element: el }).setLngLat([28.8473541, 47.0200287]).addTo(map)
+      const marker = new Marker({
+        element: el,
+        opacity: '1',
+        opacityWhenCovered: '1'
+      })
+        .setLngLat([28.8473541, 47.0200287])
+        .addTo(map)
+
+      marker.getElement().style.transition = 'none'
     })
 
     return () => map.remove()

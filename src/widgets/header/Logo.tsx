@@ -18,7 +18,6 @@ export default function Logo() {
         width={64}
         height={91}
         unoptimized
-        priority
       />
     </Link>
   )

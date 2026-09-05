@@ -1,22 +1,30 @@
+import { getTranslations } from 'next-intl/server'
+import Link from 'next/link'
+import { buildCoursesJsonLd } from '@/lib/jsonld'
+import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
-import { withSeo } from '../seo/withSeo'
-import { buildCoursesJsonLd } from './seo/course-json'
 import { CertificateSection } from './ui/CertificateSection'
 import { HeroSection } from './ui/HeroSection'
 
 export const generateMetadata = withSeo('metadata.coursePageMetadata', '/course')
 
-export default async function Course() {
+export default async function Course({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations('homePage.contactsSection.contacts')
+
   return (
     <main className="flex flex-col">
       <HeroSection />
       <CertificateSection />
+      <Link href="/contacts" className="mx-auto mb-20 rounded-md bg-white px-6 py-4 font-bold text-black hover:text-red-500">
+        {t('title')}
+      </Link>
       <ContactsSection />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buildCoursesJsonLd())
+          __html: JSON.stringify(await buildCoursesJsonLd(locale))
         }}
       />
     </main>
