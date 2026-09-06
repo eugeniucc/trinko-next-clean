@@ -9,7 +9,7 @@ type Props = {
 export const LatestPiercingCard = (props: Props) => {
   return (
     <div className="min-h-100">
-      <a className="relative block" href={props.src} data-pswp-width={1200} data-pswp-height={1600} aria-label={props.alt}>
+      <a className="relative block" href={props.src} data-gtm="piercing-image-open" data-pswp-width={1200} data-pswp-height={1600} aria-label={props.alt}>
       <Image
         className="h-full w-full rounded-md object-cover"
         src={props.src}

@@ -29,7 +29,7 @@ export const GallerySection = async () => {
               ? [...Array(6)].map((_, i) => <Skeleton className="h-100 w-full bg-zinc-800" key={i} />)
               : images.map((photo) => (
                   <FramerMotionContainer key={photo.id}>
-                    <a className="relative block h-105 w-full overflow-hidden" href={`${SUPABASE_S3_URL}/${photo.url}`} data-pswp-width={1200} data-pswp-height={1600} aria-label={photo.alt}>
+                    <a className="relative block h-105 w-full overflow-hidden" href={`${SUPABASE_S3_URL}/${photo.url}`} data-gtm="permanent-gallery-image-open" data-pswp-width={1200} data-pswp-height={1600} aria-label={photo.alt}>
                       <Image
                         className="rounded-md object-cover"
                         src={`${SUPABASE_S3_URL}/${photo.url}`}

@@ -34,6 +34,8 @@ export default function NavigationLink({ locale, links }: Props) {
           <li key={href}>
             <Link
               href={getLocalizedPath(locale, href)}
+              data-gtm={href === '/contacts' ? 'nav-contacts' : 'nav-link'}
+              data-gtm-destination={href}
               className={cn(
                 'transition-colors duration-300',
                 isActive ? (isPermanent ? 'text-fuchsia-500' : 'text-red-500') : 'text-white hover:text-red-500'

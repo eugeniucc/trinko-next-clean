@@ -62,6 +62,8 @@ export const CertificateSection = async () => {
               </div>
               <a
                 href="https://t.me/TrinkoTattoo"
+                data-gtm="course-enroll"
+                data-gtm-course="tattoo-permanent"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"
@@ -84,6 +86,8 @@ export const CertificateSection = async () => {
               </div>
               <a
                 href="https://t.me/TrinkoTattoo"
+                data-gtm="course-enroll"
+                data-gtm-course="piercing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"

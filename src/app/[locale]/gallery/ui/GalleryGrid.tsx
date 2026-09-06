@@ -23,14 +23,15 @@ export async function GalleryGrid({ searchParams }: GalleryProps) {
           {imageSlots.map((photo, index) =>
             photo ? (
               <div key={photo.id}>
-                <a className="relative block h-105 w-full overflow-hidden" href={`${supabaseS3Url}/${photo.url}`} data-pswp-width={1200} data-pswp-height={1600} aria-label={photo.alt}>
+                <a className="relative block h-105 w-full overflow-hidden" href={`${supabaseS3Url}/${photo.url}`} data-gtm="gallery-image-open" data-pswp-width={1200} data-pswp-height={1600} aria-label={photo.alt}>
                   <NextImage
                     className="rounded-md object-cover"
                     src={`${supabaseS3Url}/${photo.url}`}
                     fill
                     preload={index === 0}
+                    loading={index !== 0 && photo.url === 'Piercing/piercing-1.webp' ? 'eager' : undefined}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    fetchPriority={index === 0 ? 'high' : 'low'}
+                    fetchPriority={index === 0 ? 'high' : undefined}
                     alt={photo.alt}
                   />
                   <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />

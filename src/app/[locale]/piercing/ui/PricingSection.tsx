@@ -60,6 +60,8 @@ export const PricingSection = async () => {
 
                       <a
                         href="https://t.me/TrinkoTattoo"
+                        data-gtm="piercing-booking"
+                        data-gtm-service={service.name}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full rounded-md bg-white px-6 py-4 text-center font-bold text-black transition-colors duration-200 hover:text-red-500 sm:w-fit"

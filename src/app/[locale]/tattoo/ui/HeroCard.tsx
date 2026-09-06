@@ -29,7 +29,7 @@ export const HeroCard = ({ item, Icon }: Props) => {
             ))}
           </ul>
         </div>
-        <a href="https://t.me/TrinkoTattoo" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
+        <a href="https://t.me/TrinkoTattoo" data-gtm="tattoo-hero-booking" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
           {item.button}
         </a>
       </div>

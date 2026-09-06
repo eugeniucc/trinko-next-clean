@@ -28,7 +28,7 @@ export async function BlogPosts() {
               <Calendar className="size-5 shrink-0 text-red-500" />
               <span className="text-white">{dayjs(post.createdAt).format('DD.MM.YYYY')}</span>
             </div>
-            <Link target="_blank" href={`/blog/${post.slug}`} className="w-full rounded-md bg-red-500 px-6 py-3 text-center font-bold text-white hover:text-white">
+            <Link target="_blank" href={`/blog/${post.slug}`} data-gtm="blog-read-more" className="w-full rounded-md bg-red-500 px-6 py-3 text-center font-bold text-white hover:text-white">
               Читать далее
             </Link>
           </article>

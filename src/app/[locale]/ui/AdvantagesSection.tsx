@@ -2,7 +2,6 @@
 
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
-import { useTranslations } from 'next-intl'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type VideoProps = {
@@ -34,17 +33,23 @@ const AutoPlayVideo = ({ src, poster, title }: VideoProps) => {
   )
 }
 
-export const AdvantagesSection = () => {
-  const t = useTranslations('homePage.advantagesSection')
+type AdvantagesTranslations = {
+  text: string
+  title: string
+  description: string
+  extra: string
+  more_text: string
+}
 
+export const AdvantagesSection = ({ translations }: { translations: AdvantagesTranslations }) => {
   return (
     <section>
       <div className="container grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-6">
           <FramerMotionContainer className="flex flex-col gap-4">
-            <p className="text-4xl lg:text-6xl">{t('text')}</p>
-            <h3 className="text-lg font-semibold">{t('title')}</h3>
-            <p>{t('description')}</p>
+            <p className="text-4xl lg:text-6xl">{translations.text}</p>
+            <h3 className="text-lg font-semibold">{translations.title}</h3>
+            <p>{translations.description}</p>
           </FramerMotionContainer>
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayVideo
@@ -53,7 +58,7 @@ export const AdvantagesSection = () => {
             />
           </div>
           <FramerMotionContainer>
-            <p className="max-w-2xl text-left text-lg font-semibold sm:text-right">{t('extra')}</p>
+            <p className="max-w-2xl text-left text-lg font-semibold sm:text-right">{translations.extra}</p>
           </FramerMotionContainer>
         </div>
         <div className="flex flex-col gap-6">
@@ -64,7 +69,7 @@ export const AdvantagesSection = () => {
             />
           </div>
           <FramerMotionContainer>
-            <p>{t('more_text')}</p>
+            <p>{translations.more_text}</p>
           </FramerMotionContainer>
           <div className="aspect-video overflow-hidden rounded-lg">
             <AutoPlayVideo

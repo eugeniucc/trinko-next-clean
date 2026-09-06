@@ -35,6 +35,7 @@ export const LatestTattoo = async () => {
         </Lightbox>
         <Link
           href="/gallery"
+          data-gtm="tattoo-view-gallery"
           className="mx-auto block w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
         >
           {t('cta')}

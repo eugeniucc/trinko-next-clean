@@ -26,6 +26,7 @@ export const AboutSection = async () => {
             <p className="text-base text-white">{t('description')}</p>
             <a
               href="https://t.me/TrinkoTattoo"
+              data-gtm="about-booking-telegram"
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"

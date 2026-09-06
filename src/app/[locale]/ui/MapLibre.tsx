@@ -64,6 +64,7 @@ export default function Map3D() {
 
       const el = document.createElement('a')
       el.href = 'https://maps.app.goo.gl/mwzBjfDHK3dASGUp7'
+      el.dataset.gtm = 'google-maps-marker'
       el.target = '_blank'
       el.rel = 'noopener noreferrer'
       el.style.display = 'flex'

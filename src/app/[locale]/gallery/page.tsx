@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { Suspense } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { withSeo } from '@/lib/metadata'
@@ -20,17 +21,19 @@ export default async function Gallery({ searchParams }: GalleryProps) {
             <p className="mx-auto max-w-5xl text-xl text-gray-200">{t('text')}</p>
           </div>
 
-          <Suspense
-            fallback={
-              <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4" aria-hidden="true">
-                {[...Array(8)].map((_, index) => (
-                  <Skeleton className="h-105 w-full bg-zinc-800" key={index} />
-                ))}
-              </div>
-            }
-          >
-            <GalleryGrid searchParams={searchParams} />
-          </Suspense>
+          <NuqsAdapter>
+            <Suspense
+              fallback={
+                <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4" aria-hidden="true">
+                  {[...Array(8)].map((_, index) => (
+                    <Skeleton className="h-105 w-full bg-zinc-800" key={index} />
+                  ))}
+                </div>
+              }
+            >
+              <GalleryGrid searchParams={searchParams} />
+            </Suspense>
+          </NuqsAdapter>
         </div>
       </section>
       <ContactsSection />

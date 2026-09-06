@@ -34,6 +34,7 @@ export const PortfolioSection = async () => {
                     key={image.id}
                     className="relative"
                     href={full}
+                    data-gtm="portfolio-image-open"
                     data-pswp-width={1200}
                     data-pswp-height={1600}
                     aria-label={`${t('linkLabel')} ${image.alt}`}
@@ -54,6 +55,7 @@ export const PortfolioSection = async () => {
           </Lightbox>
           <Link
             href="/gallery"
+            data-gtm="portfolio-view-gallery"
             className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
           >
             {t('link')}

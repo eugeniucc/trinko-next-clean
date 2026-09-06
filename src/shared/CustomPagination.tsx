@@ -17,6 +17,7 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
         <PaginationItem>
           <PaginationPrevious
             href="#"
+            data-gtm="pagination-previous"
             className={`rounded-md bg-white text-black hover:bg-white hover:text-black ${page === 1 ? 'pointer-events-none opacity-50' : ''}`}
             aria-disabled={page === 1}
             tabIndex={page === 1 ? -1 : 0}
@@ -37,6 +38,8 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
             <PaginationItem key={pageNumber}>
               <PaginationLink
                 href="#"
+                data-gtm="pagination-page"
+                data-gtm-page={pageNumber}
                 isActive={page === pageNumber}
                 className={`rounded-md bg-white hover:bg-white ${page === pageNumber ? 'font-bold text-red-500 hover:text-red-500' : 'text-black hover:text-black'}`}
                 onClick={(event) => {
@@ -53,6 +56,7 @@ export function CustomPagination({ page, totalPages, onPageChange }: CustomPagin
         <PaginationItem>
           <PaginationNext
             href="#"
+            data-gtm="pagination-next"
             className={`rounded-md bg-white text-black hover:bg-white hover:text-black ${page === totalPages ? 'pointer-events-none opacity-50' : ''}`}
             aria-disabled={page === totalPages}
             tabIndex={page === totalPages ? -1 : 0}

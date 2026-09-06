@@ -15,7 +15,7 @@ export default async function NotFound() {
         </div>
         <h1 className="text-4xl font-bold">{t('title')}</h1>
         <p className="text-gray-400">{t('text')}</p>
-        <Link href="/" className="text-white transition-colors hover:text-red-500">
+        <Link href="/" data-gtm="not-found-home" className="text-white transition-colors hover:text-red-500">
           {t('button')}
         </Link>
       </div>

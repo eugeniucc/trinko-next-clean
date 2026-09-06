@@ -1,14 +1,12 @@
 'use client'
 
 import { Languages } from 'lucide-react'
-import { useLocale, useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next/navigation'
 import { useTransition } from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { AppLocale, routing } from '@/i18n/routing'
 
-export const LangSwitcher = () => {
-  const locale = useLocale() as AppLocale
+export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel: string }) => {
   const router = useRouter()
   const pathname = usePathname()
   const [isPending, startTransition] = useTransition()
@@ -28,12 +26,11 @@ export const LangSwitcher = () => {
     })
   }
 
-  const t = useTranslations('pageSpeedLabel')
-
   return (
     <Select value={locale} onValueChange={handleLanguageChange} disabled={isPending}>
       <SelectTrigger
-        aria-label={t('translationButton')}
+        aria-label={ariaLabel}
+        data-gtm="language-switcher"
         className="flex w-fit min-w-30 items-center gap-2 bg-transparent text-white [&>svg]:text-white!"
       >
         <Languages className="text-white" size={16} />
@@ -41,7 +38,7 @@ export const LangSwitcher = () => {
       </SelectTrigger>
       <SelectContent>
         {routing.locales.map((localeOption) => (
-          <SelectItem key={localeOption} value={localeOption}>
+          <SelectItem key={localeOption} value={localeOption} data-gtm="language-switch" data-gtm-locale={localeOption}>
             <div className="flex items-center gap-2">{localeOption.toUpperCase()}</div>
           </SelectItem>
         ))}

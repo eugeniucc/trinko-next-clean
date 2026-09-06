@@ -23,7 +23,7 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
             <div className="text-muted-foreground text-sm">
               <p>
                 Need immediate help?{' '}
-                <a href="https://t.me/d0nt_sell" className="text-primary hover:underline">
+                <a href="https://t.me/d0nt_sell" data-gtm="support-telegram" className="text-primary hover:underline">
                   Contact support
                 </a>
               </p>

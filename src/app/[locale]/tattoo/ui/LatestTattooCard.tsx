@@ -12,7 +12,7 @@ export const LatestTattooCard = (props: Props) => {
   const url = `${SUPABASE_S3_URL}/${props.src}`
 
   return (
-    <a className="relative block h-125" href={url} data-pswp-width={1200} data-pswp-height={1600} aria-label={props.alt}>
+    <a className="relative block h-125" href={url} data-gtm="tattoo-image-open" data-pswp-width={1200} data-pswp-height={1600} aria-label={props.alt}>
       <Image
         className="h-full w-full rounded-md object-cover"
         src={url}

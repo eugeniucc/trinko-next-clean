@@ -1,7 +1,6 @@
 'use client'
 
 import { Camera, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Send } from 'lucide-react'
-import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
@@ -13,17 +12,18 @@ const defaultLocale = 'ru'
 
 type MobileMenuProps = {
   currentYear: number
+  locale: string
+  links: { label: string; href: string }[]
+  labels: {
+    description: string
+    home: string
+    appointment: string
+    workingHours: string
+    burgerMenu: string
+  }
 }
 
-export default function MobileMenu({ currentYear }: MobileMenuProps) {
-  const t = useTranslations('homePage')
-  const tSpeed = useTranslations('pageSpeedLabel')
-
-  const links = t.raw('header.links') as { label: string; href: string }[]
-  const burgerAria = tSpeed('burgerMenu')
-
-  const locale = useLocale()
-
+export default function MobileMenu({ currentYear, locale, links, labels }: MobileMenuProps) {
   const pathnameRaw = usePathname()
   const pathname = normalize(pathnameRaw)
 
@@ -42,7 +42,7 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
   return (
     <div className="flex items-center lg:hidden">
       <Sheet>
-        <SheetTrigger aria-label={burgerAria}>
+        <SheetTrigger aria-label={labels.burgerMenu}>
           <Menu className="text-red-500" />
         </SheetTrigger>
 
@@ -51,7 +51,7 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
             <SheetTitle>
               <span className="mb-12 text-red-500">Oblivion Tattoo</span>
             </SheetTitle>
-            <SheetDescription>{t('headerMobile.description')}</SheetDescription>
+            <SheetDescription>{labels.description}</SheetDescription>
           </SheetHeader>
 
           <div className="flex-1 overflow-y-auto px-6 py-4">
@@ -59,12 +59,13 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
               <SheetClose asChild>
                 <Link
                   href={locale === defaultLocale ? '/' : `/${locale}`}
+                  data-gtm="nav-home"
                   className={cn(
                     'transition-colors duration-300',
                     pathname === (locale === defaultLocale ? '/' : `/${locale}`) ? 'text-red-500' : 'text-black hover:text-red-500'
                   )}
                 >
-                  {t('headerMobile.home')}
+                  {labels.home}
                 </Link>
               </SheetClose>
 
@@ -72,6 +73,8 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
                 <SheetClose key={link.href} asChild>
                   <Link
                     href={withLocale(link.href)}
+                    data-gtm={link.href === '/contacts' ? 'nav-contacts' : 'nav-link'}
+                    data-gtm-destination={link.href}
                     className={cn(
                       'transition-colors duration-300',
                       isActive(link.href) ? (link.href === '/permanent' ? 'text-fuchsia-500' : 'text-red-500') : 'text-black hover:text-red-500'
@@ -90,19 +93,21 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
                 <a
                   className="flex items-center justify-center gap-2 text-lg font-medium text-black duration-200 hover:text-red-500"
                   href="tel:+37379146506"
+                  data-gtm="phone"
                   rel="noopener noreferrer"
                 >
                   <PhoneOutgoing className="size-5 shrink-0" />
                   <span>+373 79 146 506</span>
                 </a>
 
-                <p className="text-center text-sm text-red-500">{t('headerMobile.appointment')}</p>
-                <p className="text-center text-sm text-gray-600">{t('headerMobile.workingHours')}</p>
+                <p className="text-center text-sm text-red-500">{labels.appointment}</p>
+                <p className="text-center text-sm text-gray-600">{labels.workingHours}</p>
               </div>
 
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
                   href="https://www.instagram.com/trinko_tattoo/"
+                  data-gtm="instagram"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
                   rel="noopener noreferrer"
@@ -113,6 +118,7 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
 
                 <a
                   href="https://t.me/TrinkoTattoo"
+                  data-gtm="telegram"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-blue-50 hover:text-blue-500"
                   rel="noopener noreferrer"
@@ -123,6 +129,7 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
 
                 <a
                   href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
+                  data-gtm="whatsapp"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-green-50 hover:text-green-500"
                   rel="noopener noreferrer"
@@ -133,6 +140,7 @@ export default function MobileMenu({ currentYear }: MobileMenuProps) {
 
                 <a
                   href="viber://chat?number=%2B37379146506"
+                  data-gtm="viber"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-purple-50 hover:text-purple-500 md:hidden"
                   rel="noopener noreferrer"

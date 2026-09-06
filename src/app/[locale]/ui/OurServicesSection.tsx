@@ -29,7 +29,7 @@ export const OurServicesSection = async () => {
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
             <FramerMotionContainer key={i}>
-              <Link href={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
+              <Link href={card.href} data-gtm="service-navigation" data-gtm-destination={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
                 <Image
                   src={`${cardsImages[i]}`}
                   width={80}

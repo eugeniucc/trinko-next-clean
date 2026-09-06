@@ -20,7 +20,7 @@ export default function Error({ error, reset }: ErrorProps) {
     <div className="flex h-screen w-full flex-col items-center justify-center bg-zinc-900 p-4">
       <div className="bg-card w-full max-w-md space-y-6 rounded-lg border p-8 text-center shadow-sm">
         <div className="space-y-2">
-          <h1 className="text-destructive text-4xl font-bold tracking-tight">Something went wrong</h1>
+          <p className="text-destructive text-4xl font-bold tracking-tight">Something went wrong</p>
           <p className="text-muted-foreground">We apologize for the inconvenience. Please try again or contact support if the problem persists.</p>
           <p className="text-muted-foreground text-sm">Error: {error.message || 'Unknown error'}</p>
         </div>
@@ -37,7 +37,7 @@ export default function Error({ error, reset }: ErrorProps) {
         <div className="text-muted-foreground pt-4 text-sm">
           <p>
             Need help?{' '}
-            <a href="https://t.me/d0nt_sell" className="text-primary font-medium hover:underline">
+            <a href="https://t.me/d0nt_sell" data-gtm="support-telegram" className="text-primary font-medium hover:underline">
               Contact support
             </a>
           </p>

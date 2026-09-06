@@ -41,7 +41,7 @@ export const ContactsSection = () => {
                   <Phone className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('contacts.title')}</p>
-                    <a href="tel:+37379146506" className="inline-block text-white">
+                    <a href="tel:+37379146506" data-gtm="phone" className="inline-block text-white">
                       <span className="block text-lg text-white duration-200 hover:text-red-500">+373 79 146 506</span>
                     </a>
                     <p className="mt-1 text-sm text-zinc-400">{t('contacts.text')}</p>
@@ -56,6 +56,7 @@ export const ContactsSection = () => {
               <div className="flex flex-col flex-wrap gap-6 sm:flex-row">
                 <a
                   href="https://www.instagram.com/trinko_tattoo/"
+                  data-gtm="instagram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
@@ -65,6 +66,7 @@ export const ContactsSection = () => {
                 </a>
                 <a
                   href="https://facebook.com/Oblivion Tattoo"
+                  data-gtm="facebook"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
@@ -75,6 +77,7 @@ export const ContactsSection = () => {
                 </a>
                 <a
                   href="https://t.me/TrinkoTattoo"
+                  data-gtm="telegram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
@@ -84,6 +87,7 @@ export const ContactsSection = () => {
                 </a>
                 <a
                   href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
+                  data-gtm="whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600"
@@ -93,6 +97,7 @@ export const ContactsSection = () => {
                 </a>
                 <a
                   href="viber://chat?number=%2B37379146506"
+                  data-gtm="viber"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-fit items-center gap-4 rounded-full bg-zinc-700 px-4 py-2 text-white transition duration-200 hover:bg-red-600 md:hidden"

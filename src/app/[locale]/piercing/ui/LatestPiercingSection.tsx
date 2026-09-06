@@ -50,6 +50,7 @@ export const LatestPiercingSection = async () => {
         </Lightbox>
         <Link
           href="/contacts"
+          data-gtm="piercing-contacts"
           className="mx-auto w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
         >
           {t('contactsLink')}

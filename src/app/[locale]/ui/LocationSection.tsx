@@ -1,6 +1,5 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -14,10 +13,15 @@ const Map = dynamic(() => import('./MapLibre'), {
 
 interface Props {
   className?: string
+  translations: {
+    title: string
+    text: string
+    appointment: string
+    description: string
+  }
 }
 
-export const LocationSection = ({ className }: Props) => {
-  const t = useTranslations('homePage.locationSection')
+export const LocationSection = ({ className, translations }: Props) => {
   const [isMapOpen, setIsMapOpen] = useState(false)
   const mapContainerRef = useRef<HTMLDivElement>(null)
 
@@ -45,11 +49,11 @@ export const LocationSection = ({ className }: Props) => {
     <section className={cn('pt-20', className)}>
       <div className="container">
         <FramerMotionContainer className="flex flex-col gap-4">
-          <h2 className="text-center text-4xl">{t('title')}</h2>
+          <h2 className="text-center text-4xl">{translations.title}</h2>
           <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-4 text-center">
-            <p>{t('text')}</p>
-            <p className="text-xl font-bold">{t('appointment')}</p>
-            <p>{t('description')}</p>
+            <p>{translations.text}</p>
+            <p className="text-xl font-bold">{translations.appointment}</p>
+            <p>{translations.description}</p>
           </div>
         </FramerMotionContainer>
       </div>
@@ -68,6 +72,7 @@ export const LocationSection = ({ className }: Props) => {
               </div>
               <button
                 type="button"
+                data-gtm="map-open"
                 onClick={() => setIsMapOpen(true)}
                 className="rounded-md bg-white px-6 py-3 font-bold text-black transition-colors hover:text-red-500"
               >
@@ -75,6 +80,7 @@ export const LocationSection = ({ className }: Props) => {
               </button>
               <a
                 href="https://maps.app.goo.gl/mwzBjfDHK3dASGUp7"
+                data-gtm="google-maps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-zinc-300 underline underline-offset-4 transition-colors hover:text-white"

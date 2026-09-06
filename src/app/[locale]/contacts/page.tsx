@@ -8,6 +8,7 @@ export const generateMetadata = withSeo('metadata.contactsPageMetadata', '/conta
 
 export default async function Contacts() {
   const t = await getTranslations('contactsPage')
+  const location = await getTranslations('homePage.locationSection')
   const raw = t.raw('hero.paragraphs') as string[]
   const features = t.raw('features') as { title: string; text: string }[]
 
@@ -41,6 +42,7 @@ export default async function Contacts() {
               <div className="mx-auto flex w-full max-w-112.5 flex-col gap-4">
                 <a
                   href="https://t.me/TrinkoTattoo"
+                  data-gtm="contact-booking-telegram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
@@ -49,6 +51,7 @@ export default async function Contacts() {
                 </a>
                 <Link
                   href="/gallery"
+                  data-gtm="contact-view-portfolio"
                   className="w-full rounded-md border border-gray-500 bg-transparent px-6 py-4 font-bold text-white transition-colors duration-200 hover:text-red-500"
                 >
                   {t('cta.portfolio')}
@@ -63,7 +66,15 @@ export default async function Contacts() {
         </div>
       </section>
       <ContactsSection />
-      <LocationSection className="bg-zinc-900 pt-0 text-white" />
+      <LocationSection
+        className="bg-zinc-900 pt-0 text-white"
+        translations={{
+          title: location('title'),
+          text: location('text'),
+          appointment: location('appointment'),
+          description: location('description')
+        }}
+      />
     </main>
   )
 }

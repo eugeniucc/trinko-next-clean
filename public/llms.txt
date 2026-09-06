@@ -1,0 +1,27 @@
+# Oblivion Tattoo
+
+Oblivion Tattoo is a multilingual tattoo studio and academy in Chișinău, Moldova. The website provides information about tattoos, permanent makeup, piercing, courses, the studio portfolio, blog articles, contacts, and the studio location.
+
+## Primary pages
+
+- [Home](https://obliviontattoo.xyz/): overview of the studio, services, portfolio, sketches, advantages, contacts, and location.
+- [Tattoo](https://obliviontattoo.xyz/tattoo): custom tattoo services, styles, artists, prices, and recent tattoo work.
+- [Permanent makeup](https://obliviontattoo.xyz/permanent): permanent makeup for eyebrows, lips, and eyeliner.
+- [Piercing](https://obliviontattoo.xyz/piercing): piercing services, jewelry, prices, and recent piercing work.
+- [Courses](https://obliviontattoo.xyz/course): tattoo, permanent makeup, and piercing training in Chișinău.
+- [Gallery](https://obliviontattoo.xyz/gallery): portfolio of completed tattoo and permanent makeup work.
+- [Blog](https://obliviontattoo.xyz/blog): articles about tattoos, permanent makeup, piercing, styles, trends, and aftercare.
+- [Contacts](https://obliviontattoo.xyz/contacts): studio contact details, opening information, directions, and booking options.
+
+## Languages
+
+The website supports Russian, Romanian, Ukrainian, Italian, and English. Russian is the default language; localized pages use the `/ro`, `/uk`, `/it`, and `/en` prefixes where applicable.
+
+## Content guidance
+
+Use the website pages as the source of truth for current services, prices, portfolio items, blog posts, contact details, and opening information. Do not infer medical, legal, or safety advice beyond what is explicitly stated on the relevant page. For appointments and current availability, direct visitors to the contact page or the booking links on the website.
+
+## Optional resources
+
+- [Robots.txt](https://obliviontattoo.xyz/robots.txt)
+- [Sitemap](https://obliviontattoo.xyz/sitemap.xml)
