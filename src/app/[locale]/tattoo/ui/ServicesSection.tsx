@@ -18,7 +18,7 @@ export const ServicesSection = async () => {
   return (
     <section className="bg-zinc-900">
       <div className="container flex flex-col gap-12 py-20">
-        <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer>
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-center text-3xl font-bold text-white">{t('title')}</h2>
             <p className="text-center text-lg text-zinc-400">{t('description')}</p>
@@ -34,7 +34,7 @@ export const ServicesSection = async () => {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {list.map((item, i) => (
-            <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+            <FramerMotionContainer key={i}>
               <ServiceCard {...item} />
             </FramerMotionContainer>
           ))}

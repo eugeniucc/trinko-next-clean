@@ -22,12 +22,12 @@ export const AboutSection = async () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col gap-10 sm:gap-15">
-        <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
+        <FramerMotionContainer className="space-y-6 text-center">
           <h2 className="text-4xl font-bold wrap-break-word text-white">{t('title')}</h2>
           <p className="mx-auto max-w-5xl text-xl leading-relaxed text-white">{t('lead')}</p>
         </FramerMotionContainer>
 
-        <FramerMotionContainer initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer>
           <div className="mx-auto flex max-w-5xl flex-col items-center gap-8">
             <h3 className="text-center text-2xl font-bold text-white">{t('whyTitle')}</h3>
 
@@ -48,7 +48,7 @@ export const AboutSection = async () => {
           </div>
         </FramerMotionContainer>
 
-        <FramerMotionContainer className="space-y-8" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
+        <FramerMotionContainer className="space-y-8">
           <h3 className="text-center text-3xl font-bold text-white">{t('catalogTitle')}</h3>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,9 +70,6 @@ export const AboutSection = async () => {
 
         <FramerMotionContainer
           className="flex flex-col gap-8 rounded-xl p-8 text-white"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.6}
         >
           <h3 className="text-center text-3xl font-bold wrap-break-word">{t('processTitle')}</h3>
           <div className="grid gap-6 md:grid-cols-4">

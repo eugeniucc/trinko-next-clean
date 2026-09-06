@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const HeroSection = () => {
   const t = useTranslations('permanentPage.heroSection')
@@ -19,12 +18,7 @@ export const HeroSection = () => {
 
       <div className="relative z-2 container">
         <div className="flex flex-col gap-12 text-white">
-          <FramerMotionContainer
-            className="flex flex-col items-center gap-6 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            duration={0.5}
-          >
+          <div className="flex flex-col items-center gap-6 text-center">
             <h1 className="bg-linear-to-r from-white via-rose-100 to-fuchsia-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl lg:text-6xl">
               {t('title')}
               <span className="block text-3xl sm:text-4xl lg:text-5xl">{t('titleExtend')}</span>
@@ -40,23 +34,17 @@ export const HeroSection = () => {
                 {t('button')}
               </a>
             </div>
-          </FramerMotionContainer>
+          </div>
 
           <div className="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
             {cards.map((card, i) => (
-              <FramerMotionContainer
-                key={i}
-                className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                duration={0.5}
-              >
+              <div key={i} className="flex h-full flex-col justify-between gap-4 rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm">
                 <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-amber-500/20">
                   <span className="text-xl">{card.badge}</span>
                 </div>
                 <h2 className="mx-auto max-w-2xs text-lg font-semibold text-white">{card.title}</h2>
                 <p className="text-sm text-zinc-400">{card.text}</p>
-              </FramerMotionContainer>
+              </div>
             ))}
           </div>
         </div>

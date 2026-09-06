@@ -28,7 +28,7 @@ export const OurServicesSection = async () => {
         <h1 className="xl:3xl wrap-break-words text-center text-2xl 2xl:text-5xl">{t('mainTitle')}</h1>
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
-            <FramerMotionContainer key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+            <FramerMotionContainer key={i}>
               <Link href={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
                 <Image
                   src={`${cardsImages[i]}`}

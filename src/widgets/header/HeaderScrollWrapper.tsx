@@ -19,7 +19,7 @@ export const HeaderScrollWrapper = ({ children }: Props) => {
 
   return (
     <header
-      className={cn('fixed top-0 z-20 w-full transition-all duration-300', isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent')}
+      className={cn('fixed top-0 z-50 w-full transition-all duration-300', isScrolled ? 'bg-zinc-900 shadow-md backdrop-blur' : 'bg-transparent')}
     >
       {children}
     </header>

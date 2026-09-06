@@ -13,7 +13,7 @@ type ProvidersProps = {
 export function Providers({ children, locale, messages }: ProvidersProps) {
   return (
     <NuqsAdapter>
-      <NextIntlClientProvider locale={locale} messages={messages}>
+      <NextIntlClientProvider locale={locale} timeZone="UTC" messages={messages}>
         {children}
       </NextIntlClientProvider>
     </NuqsAdapter>

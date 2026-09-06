@@ -8,12 +8,12 @@ export const ContactsSection = () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col items-center gap-20">
-        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer className="flex flex-col gap-10">
           <h2 className="xl:3xl text-center text-2xl wrap-break-word text-white 2xl:text-5xl">{t('title')}</h2>
           <p className="mx-auto max-w-2xl text-center text-white">{t('text')}</p>
         </FramerMotionContainer>
 
-        <FramerMotionContainer className="flex flex-col gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer className="flex flex-col gap-4">
           <div className="bg-zinc-900">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="space-y-6">

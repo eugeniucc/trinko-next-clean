@@ -11,7 +11,11 @@ const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) 
 
 const defaultLocale = 'ru'
 
-export default function MobileMenu() {
+type MobileMenuProps = {
+  currentYear: number
+}
+
+export default function MobileMenu({ currentYear }: MobileMenuProps) {
   const t = useTranslations('homePage')
   const tSpeed = useTranslations('pageSpeedLabel')
 
@@ -34,8 +38,6 @@ export default function MobileMenu() {
   }
 
   const filteredLinks = links.filter((l) => !(locale !== 'ru' && l.href.startsWith('/blog')))
-
-  const acctualYear = new Date().getFullYear()
 
   return (
     <div className="flex items-center lg:hidden">
@@ -140,7 +142,7 @@ export default function MobileMenu() {
                 </a>
               </div>
 
-              <p className="text-center text-xs text-gray-500">Oblivion Tattoo Studio © {acctualYear}</p>
+              <p className="text-center text-xs text-gray-500">Oblivion Tattoo Studio © {currentYear}</p>
             </div>
           </div>
         </SheetContent>

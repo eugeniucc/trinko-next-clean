@@ -16,7 +16,7 @@ export const ServicesSection = () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container flex flex-col gap-20">
-        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer className="flex flex-col gap-10">
           <h2 className="bg-linear-to-r from-white to-zinc-300 bg-clip-text text-center text-2xl font-bold text-transparent">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-center text-zinc-400">{t('text')}</p>
         </FramerMotionContainer>

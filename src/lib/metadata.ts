@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import type { Locale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
+import { getBlogPost } from '@/lib/cachedPrisma'
 import { routing } from '@/i18n/routing'
 const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
 
 if (!BASE_URL) {
   throw new Error('NEXT_PUBLIC_DOMAIN_URL is required')
 }
-import prisma from '@/lib/prisma'
 
 const baseMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -100,7 +100,7 @@ export function withSeo(namespace: string, path?: string, alternateLocales?: rea
 type BuildBlogPostMetadataParams = { locale: Locale; slug: string }
 
 export async function buildBlogPostMetadata({ locale, slug }: BuildBlogPostMetadataParams): Promise<Metadata> {
-  const post = await prisma.blogPost.findUnique({ where: { slug: slug.toLowerCase() } })
+  const post = await getBlogPost(slug)
   if (!post) notFound()
 
   const path = `/blog/${post.slug}`

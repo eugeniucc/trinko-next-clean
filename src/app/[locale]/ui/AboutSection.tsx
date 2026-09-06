@@ -13,10 +13,11 @@ export const AboutSection = async () => {
         width={1920}
         height={1080}
         alt="тату ласточки на спине"
+        sizes="100vw"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover grayscale"
       />
       <div className="relative z-1 container flex min-h-screen flex-col justify-center">
-        <FramerMotionContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer>
           <div className="ml-auto flex max-w-2xl flex-col gap-4">
             <h2 id="about-section-title" className="text-3xl font-bold text-white">
               {t('title')}

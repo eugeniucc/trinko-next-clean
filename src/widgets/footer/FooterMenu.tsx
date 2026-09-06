@@ -1,10 +1,19 @@
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { cacheLife } from 'next/cache'
+import { getTranslations } from 'next-intl/server'
 
-export default function FooterMenu() {
-  const date = new Date().getFullYear()
+async function getCurrentYear() {
+  'use cache'
 
-  const t = useTranslations('homePage.footer')
+  cacheLife('days')
+
+  return new Date().getFullYear()
+}
+
+export default async function FooterMenu() {
+  const date = await getCurrentYear()
+
+  const t = await getTranslations('homePage.footer')
 
   return (
     <footer className="bg-zinc-900 py-10">

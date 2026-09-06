@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const HeroSection = async () => {
   const t = await getTranslations('coursesPage')
@@ -12,17 +11,12 @@ export const HeroSection = async () => {
   return (
     <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30 pb-20">
       <div className="container flex flex-col gap-10">
-        <FramerMotionContainer
-          className="flex flex-col gap-6 text-white"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.5}
-        >
+        <div className="flex flex-col gap-6 text-white">
           <h1 className="text-center text-3xl font-bold break-all sm:text-4xl">{t('hero.title')}</h1>
           <p className="text-center">{t('hero.lead')}</p>
-        </FramerMotionContainer>
+        </div>
 
-        <FramerMotionContainer className="flex flex-col text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <div className="flex flex-col text-white">
           <p className="text-left text-3xl font-bold">{t('overview.title')}</p>
           <div className="my-4 h-px w-full bg-gray-700"></div>
 
@@ -60,9 +54,9 @@ export const HeroSection = async () => {
               </ul>
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
 
-        <FramerMotionContainer className="flex flex-col text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <div className="flex flex-col text-white">
           <p className="text-left text-3xl font-bold">{t('types.title')}</p>
           <div className="my-4 h-px w-full bg-gray-700"></div>
 
@@ -82,7 +76,7 @@ export const HeroSection = async () => {
               <p className="flex flex-1 text-lg">{t('types.piercing.text')}</p>
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

@@ -15,7 +15,8 @@ export const LatestPiercingCard = (props: Props) => {
         src={props.src}
         width={450}
         height={650}
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        fetchPriority="low"
         alt={props.alt}
       />
         <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />

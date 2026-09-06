@@ -11,6 +11,13 @@ const BLOG_PATH_RE = new RegExp(`^/(?:${LOCALES})/blog(?:/|$)`)
 
 export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
+  const defaultLocalePrefix = `/${routing.defaultLocale}`
+
+  if (pathname === defaultLocalePrefix || pathname.startsWith(`${defaultLocalePrefix}/`)) {
+    const url = req.nextUrl.clone()
+    url.pathname = pathname.slice(defaultLocalePrefix.length) || '/'
+    return NextResponse.redirect(url, 308)
+  }
 
   if (BLOG_PATH_RE.test(pathname)) {
     const locale = pathname.split('/')[1]
@@ -26,5 +33,5 @@ export function proxy(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|trpc|_next|_vercel|.*\\..*).*)']
 }

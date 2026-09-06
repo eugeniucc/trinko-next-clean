@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import { withSeo } from '@/lib/metadata'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { LocationSection } from '../ui/LocationSection'
 
@@ -16,12 +15,7 @@ export default async function Contacts() {
     <main className="flex flex-col bg-zinc-900">
       <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 pt-30 pb-20">
         <div className="container flex flex-col items-center gap-8 text-center">
-          <FramerMotionContainer
-            className="flex flex-col items-center gap-8 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            duration={0.5}
-          >
+          <div className="flex flex-col items-center gap-8 text-center">
             <h1 className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">{t('hero.title')}</h1>
             <h2 className="text-xl font-light text-zinc-300 md:text-2xl">{t('hero.subtitle')}</h2>
 
@@ -39,14 +33,9 @@ export default async function Contacts() {
                 </div>
               ))}
             </div>
-          </FramerMotionContainer>
+          </div>
 
-          <FramerMotionContainer
-            className="flex flex-col items-center gap-8 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            duration={0.5}
-          >
+          <div className="flex flex-col items-center gap-8 text-center">
             <div className="flex w-full flex-col gap-6 text-center">
               <p className="text-zinc-300">{t('cta.lead')}</p>
               <div className="mx-auto flex w-full max-w-112.5 flex-col gap-4">
@@ -70,7 +59,7 @@ export default async function Contacts() {
             <div className="max-w-2xl text-sm text-zinc-500">
               <p>{t('seoLine')}</p>
             </div>
-          </FramerMotionContainer>
+          </div>
         </div>
       </section>
       <ContactsSection />

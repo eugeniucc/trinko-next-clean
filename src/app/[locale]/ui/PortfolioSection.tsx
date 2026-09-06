@@ -1,28 +1,24 @@
 import { Expand } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
-import prisma from '@/lib/prisma'
+import { getPortfolioImages } from '@/lib/cachedPrisma'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import Lightbox from '@/shared/Lightbox'
 
 const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
 export const PortfolioSection = async () => {
-  const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 6 })
+  const images = await getPortfolioImages()
 
   const t = await getTranslations('homePage.portfolioSection')
 
-  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
 
   return (
     <section className="flex flex-col gap-10 bg-zinc-900">
       <div className="container py-20">
         <FramerMotionContainer
           className="mb-15 flex flex-col gap-10 text-white"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.5}
         >
           <h2 className="xl:3xl text-center text-2xl wrap-break-word 2xl:text-5xl">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-center">{t('text')}</p>
@@ -42,7 +38,14 @@ export const PortfolioSection = async () => {
                     data-pswp-height={1600}
                     aria-label={`${t('linkLabel')} ${image.alt}`}
                   >
-                    <Image className="h-full w-full rounded-md object-cover" src={full} width={450} height={400} alt={image.alt} />
+                    <Image
+                      className="h-full w-full rounded-md object-cover"
+                      src={full}
+                      width={450}
+                      height={400}
+                      sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      alt={image.alt}
+                    />
                     <Expand className="pointer-events-none absolute right-3 bottom-3 size-10 rounded-full bg-zinc-900/70 p-2 text-white shadow-lg backdrop-blur-sm" />
                   </a>
                 )

@@ -1,13 +1,11 @@
 import { getTranslations } from 'next-intl/server'
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import Lightbox from '@/shared/Lightbox'
 import { LatestPiercingCard } from './LatestPiercingCard'
 
 export const LatestPiercingSection = async () => {
   const t = await getTranslations('piercingPage.latestPiercingSection')
-
-  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
 
   const images = [
     {
@@ -33,9 +31,6 @@ export const LatestPiercingSection = async () => {
       <div className="container flex flex-col gap-12 pb-20">
         <FramerMotionContainer
           className="flex flex-col items-center gap-4 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.5}
         >
           <h2 className="text-center text-3xl font-bold text-white sm:text-4xl">{t('title')}</h2>
           <p className="mx-auto max-w-4xl text-center text-white">{t('description')}</p>
@@ -47,9 +42,6 @@ export const LatestPiercingSection = async () => {
               <FramerMotionContainer
                 key={i}
                 className="flex flex-col gap-12"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                duration={0.5}
               >
                 <LatestPiercingCard src={photo.src} alt={photo.alt} />
               </FramerMotionContainer>

@@ -2,11 +2,9 @@ import parse from 'html-react-parser'
 import { Metadata } from 'next'
 import { Locale } from 'next-intl'
 import { notFound } from 'next/navigation'
+import { getBlogPost } from '@/lib/cachedPrisma'
 import { buildBlogPostJsonLd } from '@/lib/jsonld'
 import { buildBlogPostMetadata } from '@/lib/metadata'
-import prisma from '@/lib/prisma'
-
-export const dynamic = 'force-dynamic'
 
 type MetadataProps = {
   params: Promise<{
@@ -30,7 +28,7 @@ type Props = {
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params
 
-  const post = await prisma.blogPost.findUnique({ where: { slug: slug.toLowerCase() } })
+  const post = await getBlogPost(slug)
 
   if (!post) {
     notFound()

@@ -14,7 +14,7 @@ export const PricingSection = async () => {
   return (
     <section className="relative bg-zinc-900">
       <div className="container flex flex-col gap-10 sm:gap-15">
-        <FramerMotionContainer className="space-y-6 text-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} duration={0.6}>
+        <FramerMotionContainer className="space-y-6 text-center">
           <h2 className="text-4xl font-bold text-white">{t('title')}</h2>
           <p className="mx-auto max-w-3xl text-xl text-white">{t('description')}</p>
 
@@ -35,9 +35,6 @@ export const PricingSection = async () => {
             <FramerMotionContainer
               key={categoryIndex}
               className="rounded-xl bg-zinc-800 p-4 sm:p-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              duration={0.6}
             >
               <div className="mb-6 flex items-center gap-4">
                 <span className="text-3xl">{category.icon}</span>
@@ -79,9 +76,6 @@ export const PricingSection = async () => {
 
         <FramerMotionContainer
           className="flex flex-col gap-6 rounded-xl bg-zinc-800 p-4 text-center text-white sm:p-6"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.6}
         >
           <h3 className="text-2xl font-bold">{t('includesTitle')}</h3>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

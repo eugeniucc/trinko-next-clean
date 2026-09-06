@@ -1,11 +1,10 @@
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Locale, hasLocale } from 'next-intl'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import { getLocale, getMessages } from 'next-intl/server'
 import { Montserrat, Roboto } from 'next/font/google'
-import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
+import '../globals.css'
 import { routing } from '@/i18n/routing'
 import { LazyJivoChat } from '@/lib/LazyJivoChat'
 import { buildLocalBusinessJsonLd } from '@/lib/jsonld'
@@ -13,16 +12,18 @@ import FooterMenu from '@/widgets/footer/FooterMenu'
 import HeaderMenu from '@/widgets/header/HeaderMenu'
 import { Providers } from './providers'
 
+export const instant = false
+
 const roboto = Roboto({
   variable: '--font-roboto',
   weight: ['400', '700'],
-  subsets: ['latin']
+  subsets: ['cyrillic', 'latin']
 })
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
   weight: ['400', '700'],
-  subsets: ['latin']
+  subsets: ['cyrillic', 'latin']
 })
 
 export function generateStaticParams() {
@@ -31,18 +32,21 @@ export function generateStaticParams() {
 
 type LayoutProps = {
   children: ReactNode
-  params: Promise<{ locale: Locale }>
 }
 
-export default async function LocaleLayout({ children, params }: LayoutProps) {
-  const { locale } = await params
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound()
-  }
-
-  setRequestLocale(locale)
+export default async function LocaleLayout({ children }: LayoutProps) {
+  const locale = await getLocale()
   const messages = await getMessages()
+  const clientMessages = {
+    pageSpeedLabel: messages.pageSpeedLabel,
+    homePage: {
+      header: messages.homePage.header,
+      headerMobile: messages.homePage.headerMobile,
+      heroSection: { cards: messages.homePage.heroSection.cards },
+      advantagesSection: messages.homePage.advantagesSection,
+      locationSection: messages.homePage.locationSection
+    }
+  }
 
   return (
     <html lang={locale}>
@@ -56,7 +60,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           />
         </noscript>
 
-        <Providers locale={locale} messages={messages}>
+        <Providers locale={locale} messages={clientMessages}>
           <HeaderMenu />
           {children}
           <FooterMenu />
@@ -65,7 +69,6 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <Analytics />
         <SpeedInsights />
 
-        <GoogleAnalytics gaId="G-N2KV7LWE10" />
         <GoogleTagManager gtmId="GTM-5M92WL6J" />
 
         <LazyJivoChat />

@@ -8,6 +8,7 @@ import { OurServicesSection } from './ui/OurServicesSection'
 import { PortfolioSection } from './ui/PortfolioSection'
 import { SketchesSection } from './ui/SketchesSection'
 
+
 export const generateMetadata = withSeo('metadata.homePageMetadata')
 
 export default async function Home() {

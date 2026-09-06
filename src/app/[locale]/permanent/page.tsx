@@ -1,8 +1,9 @@
+import { Suspense } from 'react'
 import { buildPermanentMakeupServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { DescriptionSection } from './ui/DescriptionSection'
-import { GallerySection } from './ui/GallerySection'
+import { GallerySection, GallerySectionFallback } from './ui/GallerySection'
 import { HeroSection } from './ui/HeroSection'
 import { ServicesSection } from './ui/ServicesSection'
 
@@ -15,7 +16,9 @@ export default async function PermanentPage({ params }: { params: Promise<{ loca
       <HeroSection />
       <DescriptionSection />
       <ServicesSection />
-      <GallerySection />
+      <Suspense fallback={<GallerySectionFallback />}>
+        <GallerySection />
+      </Suspense>
       <ContactsSection />
 
       <script

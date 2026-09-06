@@ -1,26 +1,22 @@
 import { getTranslations } from 'next-intl/server'
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import prisma from '@/lib/prisma'
+import { getLatestTattooImages } from '@/lib/cachedPrisma'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
+import Lightbox from '@/shared/Lightbox'
+import { Skeleton } from '@/components/ui/skeleton'
 import { LatestTattooCard } from './LatestTattooCard'
 
 export const LatestTattoo = async () => {
   const t = await getTranslations('tattooPage.latestTattooSection')
 
-  const Lightbox = dynamic(() => import('@/shared/Lightbox'))
-
-  const images = await prisma.image.findMany({ orderBy: { order: 'asc' }, take: 8 })
+  const images = await getLatestTattooImages()
 
   return (
     <section className="bg-zinc-900">
       <div className="container flex flex-col gap-12">
         <FramerMotionContainer
           className="flex flex-col items-center gap-4 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.5}
         >
           <h2 className="text-3xl font-bold text-white sm:text-4xl">{t('title')}</h2>
           <p className="max-w-3xl text-zinc-300">{t('description')}</p>
@@ -31,9 +27,6 @@ export const LatestTattoo = async () => {
               <FramerMotionContainer
                 key={photo.id}
                 className="flex flex-col gap-12"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                duration={0.5}
               >
                 <LatestTattooCard src={photo.url} alt={photo.alt} />
               </FramerMotionContainer>
@@ -51,3 +44,17 @@ export const LatestTattoo = async () => {
     </section>
   )
 }
+
+export const LatestTattooFallback = () => (
+  <section className="bg-zinc-900" aria-hidden="true">
+    <div className="container flex flex-col gap-12">
+      <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-4">
+        <Skeleton className="h-10 w-72 bg-zinc-800" />
+        <Skeleton className="h-5 w-full max-w-xl bg-zinc-800" />
+      </div>
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        {[...Array(8)].map((_, i) => <Skeleton className="h-125 w-full bg-zinc-800" key={i} />)}
+      </div>
+    </div>
+  </section>
+)

@@ -1,8 +1,9 @@
+import { Suspense } from 'react'
 import { buildTattooServiceJsonLd } from '@/lib/jsonld'
 import { withSeo } from '@/lib/metadata'
 import { AboutSection } from './ui/AboutSection'
 import { HeroSection } from './ui/HeroSection'
-import { LatestTattoo } from './ui/LatestTattoo'
+import { LatestTattoo, LatestTattooFallback } from './ui/LatestTattoo'
 import { ServicesSection } from './ui/ServicesSection'
 
 export const generateMetadata = withSeo('metadata.tattooPageMetadata', '/tattoo')
@@ -14,7 +15,9 @@ export default async function TattooPage({ params }: { params: Promise<{ locale:
       <HeroSection />
       <ServicesSection />
       <AboutSection />
-      <LatestTattoo />
+      <Suspense fallback={<LatestTattooFallback />}>
+        <LatestTattoo />
+      </Suspense>
 
       <script
         type="application/ld+json"

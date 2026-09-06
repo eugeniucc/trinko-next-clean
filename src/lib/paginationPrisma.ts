@@ -1,4 +1,5 @@
 import prisma from '@/lib/prisma'
+import { getPaginatedImagesCached } from '@/lib/cachedPrisma'
 
 const DEFAULT_PAGE_LIMIT = 10
 
@@ -14,10 +15,7 @@ export async function getPaginatedImages(pageParam?: string, limit = DEFAULT_PAG
   const safeLimit = Math.max(1, limit)
   const skip = (page - 1) * safeLimit
 
-  const [items, total] = await Promise.all([
-    prisma.image.findMany({ orderBy: { order: 'asc' }, skip, take: safeLimit }),
-    prisma.image.count()
-  ])
+  const { items, total } = await getPaginatedImagesCached(page, safeLimit)
 
   return {
     items,

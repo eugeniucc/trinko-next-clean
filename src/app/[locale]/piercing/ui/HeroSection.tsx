@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const HeroSection = async () => {
   const t = await getTranslations('piercingPage.heroSection')
@@ -8,19 +7,19 @@ export const HeroSection = async () => {
   return (
     <section className="relative flex min-h-screen items-center justify-center bg-zinc-900 py-30 2xl:py-0">
       <div className="container flex flex-col items-center gap-10">
-        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <div className="flex flex-col gap-10">
           <h1 className="text-center text-3xl font-bold break-all text-white sm:text-4xl">{t('title')}</h1>
           <p className="mx-auto max-w-5xl text-center text-xl break-all text-gray-200">{t('text')}</p>
-        </FramerMotionContainer>
+        </div>
 
-        <FramerMotionContainer className="flex flex-col gap-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <div className="flex flex-col gap-10">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <Image
               src="/images/piercingPage/piercing.webp"
               alt="виды пирсинга - прокол уха, прокол носа, прокол языка"
               width={400}
               height={400}
-              priority
+              preload
               className="col-span-1 h-full w-full rounded-lg"
             />
             <div className="flex flex-col justify-between gap-10 xl:col-span-2">
@@ -47,7 +46,7 @@ export const HeroSection = async () => {
               </div>
             </div>
           </div>
-        </FramerMotionContainer>
+        </div>
       </div>
     </section>
   )

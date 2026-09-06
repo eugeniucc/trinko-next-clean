@@ -11,9 +11,6 @@ export const AboutSection = async () => {
       <div className="container pb-20">
         <FramerMotionContainer
           className="grid grid-cols-1 items-center gap-12 xl:grid-cols-2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          duration={0.5}
         >
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl font-bold wrap-break-word text-white">{t('title')}</h2>

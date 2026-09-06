@@ -12,7 +12,7 @@ export const CertificateSection = async () => {
   return (
     <section className="bg-zinc-900 pb-20">
       <div className="container">
-        <FramerMotionContainer className="flex flex-col gap-6 pb-20" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer className="flex flex-col gap-6 pb-20">
           <h2 className="text-3xl font-bold text-white">{t('certificates.title')}</h2>
           <div className="my-4 h-px w-full bg-gray-700" />
           <div className="flex flex-col gap-10">
@@ -23,24 +23,28 @@ export const CertificateSection = async () => {
             </div>
             <div className="flex flex-col items-center gap-4 xl:flex-row">
               <Image
-                className="h-full w-full rounded-lg"
+                className="h-auto w-full min-w-0 rounded-lg object-cover xl:w-1/2"
                 src="/images/coursePage/course-1.webp"
                 alt="студент с сертификатами в руках прошел курс в тату-студии Oblivion Tattoo"
                 width={600}
                 height={400}
+                sizes="(max-width: 1280px) 100vw, 50vw"
+                loading="lazy"
               />
               <Image
-                className="h-full w-full rounded-lg"
+                className="h-auto w-full min-w-0 rounded-lg object-cover xl:w-1/2"
                 src="/images/coursePage/course-2.webp"
                 alt="студент с сертификатами в руках прошел курс в тату-студии Oblivion Tattoo"
                 width={600}
                 height={400}
+                sizes="(max-width: 1280px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
         </FramerMotionContainer>
 
-        <FramerMotionContainer className="flex flex-col" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} duration={0.5}>
+        <FramerMotionContainer className="flex flex-col">
           <h2 className="text-3xl font-bold text-white">{t('pricing.title')}</h2>
           <div className="my-4 h-px w-full bg-gray-700" />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
