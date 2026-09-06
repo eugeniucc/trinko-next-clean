@@ -1,9 +1,11 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import Link from 'next/link'
+import { routing } from '@/i18n/routing'
 
 export default async function NotFound() {
-  const t = await getTranslations('notFound')
+  const [locale, t] = await Promise.all([getLocale(), getTranslations('notFound')])
+  const homeHref = locale === routing.defaultLocale ? '/' : `/${locale}`
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-900 text-white">
@@ -15,7 +17,7 @@ export default async function NotFound() {
         </div>
         <h1 className="text-4xl font-bold">{t('title')}</h1>
         <p className="text-gray-400">{t('text')}</p>
-        <Link href="/" data-gtm="not-found-home" className="text-white transition-colors hover:text-red-500">
+        <Link href={homeHref} data-gtm="not-found-home" className="text-white transition-colors hover:text-red-500">
           {t('button')}
         </Link>
       </div>

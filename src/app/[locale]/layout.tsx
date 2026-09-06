@@ -14,13 +14,15 @@ import '../globals.css'
 const roboto = Roboto({
   variable: '--font-roboto',
   weight: ['400', '700'],
-  subsets: ['cyrillic', 'latin']
+  subsets: ['cyrillic', 'latin'],
+  display: 'swap'
 })
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
   weight: ['400', '700'],
-  subsets: ['cyrillic', 'latin']
+  subsets: ['cyrillic', 'latin'],
+  display: 'swap'
 })
 
 export function generateStaticParams() {

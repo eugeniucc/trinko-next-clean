@@ -70,3 +70,15 @@ export async function getBlogPosts() {
 
   return prisma.blogPost.findMany({ orderBy: { id: 'desc' }, take: 9 })
 }
+
+export async function getBlogPostsForSitemap() {
+  'use cache'
+
+  cacheLife('days')
+  cacheTag('blog-posts')
+
+  return prisma.blogPost.findMany({
+    select: { slug: true, updatedAt: true },
+    orderBy: { id: 'desc' }
+  })
+}
