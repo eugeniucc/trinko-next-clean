@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { LocationSection } from '../ui/LocationSection'
@@ -30,7 +31,7 @@ export default async function Contacts() {
               {features.map((feature, index) => (
                 <div key={index} className="flex h-full flex-col justify-between gap-6 rounded-lg bg-zinc-800 p-6">
                   <h3 className="font-semibold text-white">{feature.title}</h3>
-                  <p className="text-sm text-zinc-400">{feature.text}</p>
+                  <p className="text-sm text-zinc-300">{feature.text}</p>
                 </div>
               ))}
             </div>
@@ -41,8 +42,8 @@ export default async function Contacts() {
               <p className="text-zinc-300">{t('cta.lead')}</p>
               <div className="mx-auto flex w-full max-w-112.5 flex-col gap-4">
                 <a
-                  href="https://t.me/TrinkoTattoo"
-                  data-gtm="contact-booking-telegram"
+                  href={CONTACT_TELEGRAM}
+                  data-gtm="telegram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
@@ -59,7 +60,7 @@ export default async function Contacts() {
               </div>
             </div>
 
-            <div className="max-w-2xl text-sm text-zinc-500">
+            <div className="max-w-2xl text-sm text-zinc-400">
               <p>{t('seoLine')}</p>
             </div>
           </div>

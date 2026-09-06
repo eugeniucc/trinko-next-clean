@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
+import { CONTACT_INSTAGRAM, CONTACT_PHONE_NUMBER, CONTACT_TELEGRAM } from '@/lib/contactLinks'
 const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN_URL
 
 const businessId = `${BASE_URL}/#tattoo-parlor`
@@ -13,8 +14,8 @@ export function buildLocalBusinessJsonLd() {
     image: `${BASE_URL}/og_image.png`,
     logo: `${BASE_URL}/logo.png`,
     url: BASE_URL,
-    telephone: '+37379146506',
-    sameAs: ['https://www.instagram.com/trinko_tattoo/', 'https://t.me/TrinkoTattoo'],
+    telephone: CONTACT_PHONE_NUMBER,
+    sameAs: [CONTACT_INSTAGRAM, CONTACT_TELEGRAM],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -50,6 +51,7 @@ function buildServiceJsonLd(locale: string, path: string, name: string, descript
     '@id': `${url}#service`,
     name,
     description,
+    inLanguage: locale,
     url,
     provider: { '@id': businessId },
     areaServed: { '@type': 'City', name: 'Chișinău' }
@@ -104,6 +106,7 @@ export async function buildCoursesJsonLd(locale: string) {
       '@id': `${url}#tattoo-permanent-course`,
       name: t('titleTattooPM'),
       description: t('descriptionTattooPM'),
+      inLanguage: locale,
       provider,
       offers: { '@type': 'Offer', price: 450, priceCurrency: 'EUR', url }
     },
@@ -113,6 +116,7 @@ export async function buildCoursesJsonLd(locale: string) {
       '@id': `${url}#piercing-course`,
       name: t('titlePiercing'),
       description: t('descriptionPiercing'),
+      inLanguage: locale,
       provider,
       offers: { '@type': 'Offer', price: 300, priceCurrency: 'EUR', url }
     }

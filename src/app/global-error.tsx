@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { SUPPORT_TELEGRAM } from '@/lib/contactLinks'
 
 export default function GlobalError({ error }: { error: Error & { digest?: string } }) {
   useEffect(() => {
@@ -23,7 +24,7 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
             <div className="text-muted-foreground text-sm">
               <p>
                 Need immediate help?{' '}
-                <a href="https://t.me/d0nt_sell" data-gtm="support-telegram" className="text-primary hover:underline">
+                <a href={SUPPORT_TELEGRAM} data-gtm="telegram" className="text-primary hover:underline">
                   Contact support
                 </a>
               </p>

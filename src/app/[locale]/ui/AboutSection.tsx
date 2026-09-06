@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const AboutSection = async () => {
@@ -25,8 +26,8 @@ export const AboutSection = async () => {
             <h3 className="text-xl font-semibold text-white">{t('text')}</h3>
             <p className="text-base text-white">{t('description')}</p>
             <a
-              href="https://t.me/TrinkoTattoo"
-              data-gtm="about-booking-telegram"
+              href={CONTACT_TELEGRAM}
+              data-gtm="telegram"
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"

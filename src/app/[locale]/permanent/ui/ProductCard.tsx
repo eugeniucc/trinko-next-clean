@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 
 export type PermanentCardData = {
   badge: string
@@ -78,8 +79,8 @@ export const ProductCard = ({ item, image }: Props) => {
         </div>
 
         <a
-          href="https://t.me/TrinkoTattoo"
-          data-gtm="permanent-service-booking"
+          href={CONTACT_TELEGRAM}
+          data-gtm="telegram"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-auto w-full rounded-full bg-linear-to-r from-rose-500 to-pink-500 px-2 py-3 text-center text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 sm:px-4"

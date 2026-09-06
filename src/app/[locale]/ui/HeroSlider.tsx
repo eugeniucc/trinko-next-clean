@@ -8,6 +8,7 @@ import 'swiper/css/effect-fade'
 import { Autoplay, EffectFade } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useRef, useState } from 'react'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 
 const slides = [
   {
@@ -95,8 +96,8 @@ const HeroSlider = ({ cards, labels }: HeroSliderProps) => {
                   <p className="max-w-3xl text-lg">{cards[slide.key].description}</p>
 
                   <a
-                    href="https://t.me/TrinkoTattoo"
-                    data-gtm="hero-booking-telegram"
+                    href={CONTACT_TELEGRAM}
+                    data-gtm="telegram"
                     data-gtm-slide={slide.key}
                     target="_blank"
                     rel="noopener noreferrer"

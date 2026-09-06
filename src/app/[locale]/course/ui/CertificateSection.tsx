@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const CertificateSection = async () => {
@@ -61,8 +62,8 @@ export const CertificateSection = async () => {
                 </ul>
               </div>
               <a
-                href="https://t.me/TrinkoTattoo"
-                data-gtm="course-enroll"
+                href={CONTACT_TELEGRAM}
+                data-gtm="telegram"
                 data-gtm-course="tattoo-permanent"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,8 +86,8 @@ export const CertificateSection = async () => {
                 </ul>
               </div>
               <a
-                href="https://t.me/TrinkoTattoo"
-                data-gtm="course-enroll"
+                href={CONTACT_TELEGRAM}
+                data-gtm="telegram"
                 data-gtm-course="piercing"
                 target="_blank"
                 rel="noopener noreferrer"

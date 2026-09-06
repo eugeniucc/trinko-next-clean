@@ -1,5 +1,6 @@
 import { Calendar, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 type Service = { name: string; price: number; hasBase?: boolean }
@@ -59,8 +60,8 @@ export const PricingSection = async () => {
                       </div>
 
                       <a
-                        href="https://t.me/TrinkoTattoo"
-                        data-gtm="piercing-booking"
+                        href={CONTACT_TELEGRAM}
+                        data-gtm="telegram"
                         data-gtm-service={service.name}
                         target="_blank"
                         rel="noopener noreferrer"

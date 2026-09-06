@@ -1,4 +1,5 @@
 import { TrendingUp } from 'lucide-react'
+import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 
 type Props = {
   title: string
@@ -24,7 +25,7 @@ export const ServiceCard = (props: Props) => {
 
       <div className="flex w-full flex-col gap-4">
         <span className="text-3xl font-bold text-gray-900 dark:text-white">{props.price}</span>
-        <a href="https://t.me/TrinkoTattoo" data-gtm="tattoo-service-booking" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
+        <a href={CONTACT_TELEGRAM} data-gtm="telegram" target="_blank" rel="noopener noreferrer" className="w-full rounded-md bg-red-500 px-6 py-4 text-center font-bold text-white transition-colors duration-200 hover:text-white">
           {props.button}
         </a>
       </div>

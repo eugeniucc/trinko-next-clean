@@ -3,6 +3,7 @@
 import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useRef } from 'react'
+import { LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 
 setWorkerUrl('/maplibre/maplibre-gl-worker.mjs')
 
@@ -63,7 +64,7 @@ export default function Map3D() {
       )
 
       const el = document.createElement('a')
-      el.href = 'https://maps.app.goo.gl/mwzBjfDHK3dASGUp7'
+      el.href = LOCATION_GOOGLE_MAPS
       el.dataset.gtm = 'google-maps-marker'
       el.target = '_blank'
       el.rel = 'noopener noreferrer'

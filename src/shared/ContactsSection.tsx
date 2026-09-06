@@ -1,5 +1,6 @@
 import { Camera, Clock, MapPin, MessageCircleHeart, MessageCircleMore, Phone, Send, UsersRound } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { CONTACT_FACEBOOK, CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 export const ContactsSection = () => {
@@ -41,7 +42,7 @@ export const ContactsSection = () => {
                   <Phone className="mt-1 h-6 w-6 shrink-0 text-red-600" />
                   <div>
                     <p className="mb-2 text-xl font-semibold text-white">{t('contacts.title')}</p>
-                    <a href="tel:+37379146506" data-gtm="phone" className="inline-block text-white">
+                    <a href={CONTACT_PHONE} data-gtm="phone" className="inline-block text-white">
                       <span className="block text-lg text-white duration-200 hover:text-red-500">+373 79 146 506</span>
                     </a>
                     <p className="mt-1 text-sm text-zinc-400">{t('contacts.text')}</p>
@@ -55,7 +56,7 @@ export const ContactsSection = () => {
 
               <div className="flex flex-col flex-wrap gap-6 sm:flex-row">
                 <a
-                  href="https://www.instagram.com/trinko_tattoo/"
+                  href={CONTACT_INSTAGRAM}
                   data-gtm="instagram"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +66,7 @@ export const ContactsSection = () => {
                   <span>Instagram</span>
                 </a>
                 <a
-                  href="https://facebook.com/Oblivion Tattoo"
+                  href={CONTACT_FACEBOOK}
                   data-gtm="facebook"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -76,7 +77,7 @@ export const ContactsSection = () => {
                   <span>Facebook</span>
                 </a>
                 <a
-                  href="https://t.me/TrinkoTattoo"
+                  href={CONTACT_TELEGRAM}
                   data-gtm="telegram"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -86,7 +87,7 @@ export const ContactsSection = () => {
                   <span>Telegram</span>
                 </a>
                 <a
-                  href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
+                  href={CONTACT_WHATSAPP}
                   data-gtm="whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,7 +97,7 @@ export const ContactsSection = () => {
                   <span>WhatsApp</span>
                 </a>
                 <a
-                  href="viber://chat?number=%2B37379146506"
+                  href={CONTACT_VIBER}
                   data-gtm="viber"
                   target="_blank"
                   rel="noopener noreferrer"

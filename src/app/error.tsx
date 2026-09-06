@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { Button } from '@/components/ui/button'
+import { SUPPORT_TELEGRAM } from '@/lib/contactLinks'
 
 interface ErrorProps {
   error: Error & { digest?: string }
@@ -37,7 +38,7 @@ export default function Error({ error, reset }: ErrorProps) {
         <div className="text-muted-foreground pt-4 text-sm">
           <p>
             Need help?{' '}
-            <a href="https://t.me/d0nt_sell" data-gtm="support-telegram" className="text-primary font-medium hover:underline">
+            <a href={SUPPORT_TELEGRAM} data-gtm="telegram" className="text-primary font-medium hover:underline">
               Contact support
             </a>
           </p>

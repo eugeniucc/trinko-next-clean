@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
+import { LOCATION_GOOGLE_MAPS } from '@/lib/contactLinks'
 import { cn } from '@/lib/utils'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
@@ -79,7 +80,7 @@ export const LocationSection = ({ className, translations }: Props) => {
                 Открыть карту
               </button>
               <a
-                href="https://maps.app.goo.gl/mwzBjfDHK3dASGUp7"
+                href={LOCATION_GOOGLE_MAPS}
                 data-gtm="google-maps"
                 target="_blank"
                 rel="noopener noreferrer"

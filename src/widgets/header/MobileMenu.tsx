@@ -4,6 +4,7 @@ import { Camera, Menu, MessageCircleHeart, MessageCircleMore, PhoneOutgoing, Sen
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { CONTACT_INSTAGRAM, CONTACT_PHONE, CONTACT_TELEGRAM, CONTACT_VIBER, CONTACT_WHATSAPP } from '@/lib/contactLinks'
 import { cn } from '@/lib/utils'
 
 const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p)
@@ -92,7 +93,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
               <div className="space-y-2">
                 <a
                   className="flex items-center justify-center gap-2 text-lg font-medium text-black duration-200 hover:text-red-500"
-                  href="tel:+37379146506"
+                  href={CONTACT_PHONE}
                   data-gtm="phone"
                   rel="noopener noreferrer"
                 >
@@ -106,7 +107,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
 
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
-                  href="https://www.instagram.com/trinko_tattoo/"
+                  href={CONTACT_INSTAGRAM}
                   data-gtm="instagram"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-red-50 hover:text-red-500"
@@ -117,7 +118,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                 </a>
 
                 <a
-                  href="https://t.me/TrinkoTattoo"
+                  href={CONTACT_TELEGRAM}
                   data-gtm="telegram"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-blue-50 hover:text-blue-500"
@@ -128,7 +129,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                 </a>
 
                 <a
-                  href="https://api.whatsapp.com/message/RLI5HPWJHFCHJ1"
+                  href={CONTACT_WHATSAPP}
                   data-gtm="whatsapp"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-green-50 hover:text-green-500"
@@ -139,7 +140,7 @@ export default function MobileMenu({ currentYear, locale, links, labels }: Mobil
                 </a>
 
                 <a
-                  href="viber://chat?number=%2B37379146506"
+                  href={CONTACT_VIBER}
                   data-gtm="viber"
                   target="_blank"
                   className="flex items-center justify-center gap-2 rounded-lg bg-gray-50 p-3 text-black duration-200 hover:bg-purple-50 hover:text-purple-500 md:hidden"
