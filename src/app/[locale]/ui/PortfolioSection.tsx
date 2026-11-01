@@ -1,7 +1,8 @@
 import { Expand } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getPathname } from '@/i18n/navigation'
 import { getPortfolioImages } from '@/lib/cachedPrisma'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import Lightbox from '@/shared/Lightbox'
@@ -9,6 +10,7 @@ import Lightbox from '@/shared/Lightbox'
 const SUPABASE_S3_URL = process.env.NEXT_PUBLIC_SUPABASE_URL_S3
 
 export const PortfolioSection = async () => {
+  const locale = await getLocale()
   const images = await getPortfolioImages()
 
   const t = await getTranslations('homePage.portfolioSection')
@@ -54,7 +56,7 @@ export const PortfolioSection = async () => {
             </div>
           </Lightbox>
           <Link
-            href="/gallery"
+            href={getPathname({ locale, href: '/gallery' })}
             data-gtm="portfolio-view-gallery"
             className="w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
           >

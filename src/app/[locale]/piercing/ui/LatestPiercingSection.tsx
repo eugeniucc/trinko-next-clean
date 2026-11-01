@@ -1,10 +1,12 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import { getPathname } from '@/i18n/navigation'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 import Lightbox from '@/shared/Lightbox'
 import { LatestPiercingCard } from './LatestPiercingCard'
 
 export const LatestPiercingSection = async () => {
+  const locale = await getLocale()
   const t = await getTranslations('piercingPage.latestPiercingSection')
 
   const images = [
@@ -49,7 +51,7 @@ export const LatestPiercingSection = async () => {
           </div>
         </Lightbox>
         <Link
-          href="/contacts"
+          href={getPathname({ locale, href: '/contacts' })}
           data-gtm="piercing-contacts"
           className="mx-auto w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
         >

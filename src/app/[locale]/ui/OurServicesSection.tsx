@@ -1,7 +1,8 @@
 import { SquareArrowOutUpRight } from 'lucide-react'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getPathname } from '@/i18n/navigation'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
 
 const cardsImages = [
@@ -15,6 +16,7 @@ const cardsImages = [
 
 export const OurServicesSection = async () => {
   const t = await getTranslations('homePage.ourServicesSection')
+  const locale = await getLocale()
 
   const cardsArray = t.raw('cards') as {
     title: string
@@ -29,7 +31,7 @@ export const OurServicesSection = async () => {
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 xl:grid-cols-3">
           {cardsArray.map((card, i) => (
             <FramerMotionContainer key={i}>
-              <Link href={card.href} data-gtm="service-navigation" data-gtm-destination={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
+              <Link href={getPathname({ locale, href: card.href })} data-gtm="service-navigation" data-gtm-destination={card.href} className="group relative -mb-px -ml-px flex flex-col items-center gap-4 border border-gray-200 p-6 text-center">
                 <Image
                   src={`${cardsImages[i]}`}
                   width={80}

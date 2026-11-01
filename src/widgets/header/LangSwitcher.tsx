@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import { useTransition } from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { AppLocale, routing } from '@/i18n/routing'
+import { getPathname } from '@/i18n/navigation'
 
 export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel: string }) => {
   const router = useRouter()
@@ -14,15 +15,10 @@ export const LangSwitcher = ({ locale, ariaLabel }: { locale: string; ariaLabel:
   const handleLanguageChange = (newLocale: AppLocale) => {
     startTransition(() => {
       const segments = pathname.split('/')
-
-      if (routing.locales.includes(segments[1] as AppLocale)) {
-        segments[1] = newLocale
-      } else {
-        segments.splice(1, 0, newLocale)
-      }
-
-      const newPath = segments.join('/')
-      router.push(newPath)
+      if (routing.locales.includes(segments[1] as AppLocale)) segments.splice(1, 1)
+      const path = segments.join('/') || '/'
+      const href = newLocale !== routing.defaultLocale && (path === '/blog' || path.startsWith('/blog/')) ? '/' : path
+      router.push(getPathname({ locale: newLocale, href }))
     })
   }
 

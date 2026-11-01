@@ -1,5 +1,6 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import { getPathname } from '@/i18n/navigation'
 import { CONTACT_TELEGRAM } from '@/lib/contactLinks'
 import { withSeo } from '@/lib/metadata'
 import { ContactsSection } from '@/shared/ContactsSection'
@@ -8,6 +9,7 @@ import { LocationSection } from '../ui/LocationSection'
 export const generateMetadata = withSeo('metadata.contactsPageMetadata', '/contacts')
 
 export default async function Contacts() {
+  const locale = await getLocale()
   const t = await getTranslations('contactsPage')
   const location = await getTranslations('homePage.locationSection')
   const raw = t.raw('hero.paragraphs') as string[]
@@ -51,7 +53,7 @@ export default async function Contacts() {
                   {t('cta.appointment')}
                 </a>
                 <Link
-                  href="/gallery"
+                  href={getPathname({ locale, href: '/gallery' })}
                   data-gtm="contact-view-portfolio"
                   className="w-full rounded-md border border-gray-500 bg-transparent px-6 py-4 font-bold text-white transition-colors duration-200 hover:text-red-500"
                 >

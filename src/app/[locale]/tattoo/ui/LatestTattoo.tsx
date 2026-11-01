@@ -1,5 +1,6 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import { getPathname } from '@/i18n/navigation'
 import { getLatestTattooImages } from '@/lib/cachedPrisma'
 import { ContactsSection } from '@/shared/ContactsSection'
 import { FramerMotionContainer } from '@/shared/FramerMotionContainer'
@@ -8,6 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { LatestTattooCard } from './LatestTattooCard'
 
 export const LatestTattoo = async () => {
+  const locale = await getLocale()
   const t = await getTranslations('tattooPage.latestTattooSection')
 
   const images = await getLatestTattooImages()
@@ -34,7 +36,7 @@ export const LatestTattoo = async () => {
           </div>
         </Lightbox>
         <Link
-          href="/gallery"
+          href={getPathname({ locale, href: '/gallery' })}
           data-gtm="tattoo-view-gallery"
           className="mx-auto block w-fit rounded-md bg-white px-6 py-4 font-bold text-black transition-colors duration-200 hover:text-red-500"
         >
